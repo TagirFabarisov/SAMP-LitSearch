@@ -56,7 +56,7 @@ id_formats:
 
 # Document scope (section 7). The upper cutoff is the date the first real 4B retrieval starts;
 # it is set once by `run.py set-cutoff` and never changed afterwards without a deviation-log entry.
-upper_cutoff_date: null
+upper_cutoff_date: "2026-09-29"
 lower_year_limit: null         # none, by protocol
 
 # Sources against which the OpenAlex construct check (brief section 1b) has been resolved.
