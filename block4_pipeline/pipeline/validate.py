@@ -90,8 +90,8 @@ def validate(queries_path=None, sources_path=None, protocol_path=None, denylist_
         errors.append("threshold_structured must be 300")
     if protocol.get("openalex_page_size") != 100:
         errors.append("openalex_page_size must be 100")
-    if protocol.get("openalex_order") != "publication_date:asc,id:asc":
-        errors.append("openalex_order must be publication_date:asc,id:asc")
+    if protocol.get("openalex_order") != "publication_date:asc,ids.openalex:asc":
+        errors.append("openalex_order must be publication_date:asc,ids.openalex:asc (deviation log, 2026-09-29)")
     if protocol.get("refinement_order") != ["title_restrict_free_group", "add_mechanism_group", "subject_area_limit", "split_or_groups"]:
         errors.append("refinement_order differs from protocol section 8")
     if protocol.get("dedup_order") != ["doi", "source_ids", "normalized_title_year"]:

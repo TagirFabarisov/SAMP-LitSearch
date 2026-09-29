@@ -35,7 +35,7 @@ def test_request_description_has_no_key(monkeypatch):
     assert "abcdefghij1234567890XYZ" not in text
     assert desc["headers"]["Authorization"] == "Bearer <REDACTED>"
     assert desc["json"]["per_page"] == 100
-    assert desc["json"]["sort"] == "publication_date:asc,id:asc"
+    assert desc["json"]["sort"] == "publication_date:asc,ids.openalex:asc"
     assert desc["json"]["cursor"] == "*"
     assert desc["method"] == "POST" and desc["url"].endswith("openalex.org/")
 

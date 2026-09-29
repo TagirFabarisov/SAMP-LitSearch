@@ -51,7 +51,12 @@ def test_live_without_flag_is_blocked(monkeypatch, tmp_path):
         retrieve.retrieve("openalex", query_ids=["B4-Q01"])
 
 
-def test_openalex_blocked_until_construct_check_resolved():
+def test_openalex_blocked_until_construct_check_resolved(monkeypatch, tmp_path):
+    proto = cl.load_protocol()
+    proto["openalex_construct_check_resolved"] = False
+    p = tmp_path / "protocol.yaml"
+    p.write_text(yaml.safe_dump(proto), encoding="utf-8")
+    monkeypatch.setattr(paths, "PROTOCOL_FILE", p)
     with pytest.raises(retrieve.RetrievalBlocked):
         retrieve.retrieve("openalex", query_ids=["B4-Q01"], live_confirmed=True)
 

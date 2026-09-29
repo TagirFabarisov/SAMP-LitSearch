@@ -25,7 +25,7 @@ refinement_order:
 
 # OpenAlex execution rules (section 6)
 openalex_page_size: 100
-openalex_order: "publication_date:asc,id:asc"
+openalex_order: "publication_date:asc,ids.openalex:asc"
 openalex_api_base: "https://api.openalex.org"
 openalex_entity_prefix: "works where"   # prepended to the query bank's `title_and_abstract has (...)`
 
@@ -56,4 +56,4 @@ lower_year_limit: null         # none, by protocol
 # Sources against which the OpenAlex construct check (brief section 1b) has been resolved.
 # `retrieve --source openalex` refuses to run until this is true; set by `run.py oql-check --resolve`
 # after the user has recorded the outcome in the deviation log.
-openalex_construct_check_resolved: false
+openalex_construct_check_resolved: true   # resolved 2026-09-29, deviation log entries 1-3
