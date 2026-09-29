@@ -60,7 +60,10 @@ def cmd_scopus_check(args) -> int:
 
 def cmd_refine(args) -> int:
     from block4_pipeline.pipeline import refine
-    res = refine.refine(args.source, query_ids=args.query or None, live=args.live)
+    if args.further:
+        res = refine.split_further(args.source, live=args.live)
+    else:
+        res = refine.refine(args.source, query_ids=args.query or None, live=args.live)
     _print(res)
     return 0
 
@@ -165,6 +168,7 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--source", required=True)
     s.add_argument("--query", action="append")
     s.add_argument("--live", action="store_true", help="send count requests; without it, print the forms only")
+    s.add_argument("--further", action="store_true", help="split parts still above the threshold again (deviation entry 5)")
     s.set_defaults(fn=cmd_refine)
 
     sub.add_parser("propose-quoting", help="write the OpenAlex forms with bare wildcards quoted, for review; config untouched").set_defaults(fn=cmd_propose_quoting)

@@ -108,7 +108,7 @@ def validate(queries_path=None, sources_path=None, protocol_path=None, denylist_
         extra = sorted(set(base_ids) - set(EXPECTED_QUERY_IDS))
         errors.append("query set differs from the 54 pre-registered IDs; missing=%s extra=%s" % (missing, extra))
     for rid in refinement_ids:
-        if not re.match(r"^B4-(Q\d{2}|XC\d{2}|BR\d{2})\.r\d+(\.\d+)?$", rid):
+        if not re.match(r"^B4-(Q\d{2}|XC\d{2}|BR\d{2})\.r\d+(\.\d+)*$", rid):
             errors.append("malformed refinement ID %s" % rid)
         elif rid.split(".")[0] not in base_ids:
             errors.append("refinement %s has no parent query" % rid)
