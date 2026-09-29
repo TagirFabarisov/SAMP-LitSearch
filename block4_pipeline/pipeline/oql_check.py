@@ -39,6 +39,9 @@ CONSTRUCTS: List[Dict[str, str]] = [
     {"id": "C1", "name": "parentheses and AND/OR", "oql": 'works where title_and_abstract has (("resource dependence" OR "social dependence") AND (actor OR agent))'},
     {"id": "C2", "name": "quoted phrase", "oql": 'works where title_and_abstract has ("resource dependence")'},
     {"id": "C3", "name": "bare truncation", "oql": "works where title_and_abstract has (actor*)"},
+    {"id": "C3q", "name": "quoted single-word truncation (the fix OpenAlex proposes)", "oql": 'works where title_and_abstract has ("actor*")'},
+    {"id": "C3a", "name": "bare word, stemmed (comparison)", "oql": "works where title_and_abstract has (actor)"},
+    {"id": "C3b", "name": "quoted word, exact (comparison)", "oql": 'works where title_and_abstract has ("actor")'},
     {"id": "C4", "name": "phrase-internal truncation", "oql": 'works where title_and_abstract has ("dependence relation*")'},
     {"id": "C4a", "name": "phrase without truncation (comparison)", "oql": 'works where title_and_abstract has ("dependence relation")'},
     {"id": "C4b", "name": "phrase plural (comparison)", "oql": 'works where title_and_abstract has ("dependence relations")'},
@@ -72,7 +75,9 @@ def live_report(execute: bool = False) -> Dict[str, Any]:
     props = adapter.properties()
     storage.write_json(out_dir / "properties_works.json", secrets.redact_obj(props))
     columns = _column_ids(props.get("body"))
-    report["column_title_and_abstract_known"] = ("title_and_abstract" in columns) if columns else None
+    # OQL's `title_and_abstract has (...)` is registered as title_and_abstract.search (stemmed)
+    # and title_and_abstract.search.exact (unstemmed, used for quoted values)
+    report["column_title_and_abstract_known"] = ("title_and_abstract.search" in columns) if columns else None
     report["columns_sample"] = [c for c in columns if "title" in c or "abstract" in c or "search" in c or "cite" in c][:40]
 
     for c in CONSTRUCTS:
@@ -91,10 +96,24 @@ def live_report(execute: bool = False) -> Dict[str, Any]:
         storage.write_json(out_dir / ("%s.json" % c["id"]), secrets.redact_obj(entry))
 
     if execute:
+        # Ordering check: the protocol's "publication date, then OpenAlex work ID". `id` is not a
+        # sortable column (recorded 29 Sep 2026); `ids.openalex` is. One request, per_page=1.
+        report["sort_checks"] = {}
+        for sort in (protocol.get("openalex_order", ""), "publication_date:asc,ids.openalex:asc"):
+            body = {"oql": CONSTRUCTS[1]["oql"], "sort": sort, "per_page": 1, "cursor": "*"}
+            try:
+                data = adapter._post(body)
+                report["sort_checks"][sort] = {"accepted": True, "first_id": (data.get("results") or [{}])[0].get("id"),
+                                               "next_cursor_present": bool((data.get("meta") or {}).get("next_cursor"))}
+            except Exception as exc:
+                report["sort_checks"][sort] = {"accepted": False, "error": secrets.redact_text(str(exc))[:400]}
+        storage.write_json(out_dir / "sort_checks.json", report["sort_checks"])
         counts = {e["id"]: e.get("count") for e in report["constructs"]}
         report["truncation_comparison"] = {
             "dependence relation*": counts.get("C4"), "dependence relation": counts.get("C4a"),
             "dependence relations": counts.get("C4b"),
+            '"actor*" quoted wildcard': counts.get("C3q"), "actor bare (stemmed)": counts.get("C3a"),
+            '"actor" quoted (exact)': counts.get("C3b"),
             "reading": ("if C4 >= max(C4a, C4b) and differs from both, phrase-internal truncation is honoured; "
                         "if C4 equals C4a, the '*' is ignored or stemming already covers the plural; "
                         "if C4 is 0 or errors, the '*' is taken literally or rejected"),
@@ -149,5 +168,7 @@ def format_report(report: Dict[str, Any]) -> str:
             lines.append("       count: %s" % e["count"])
     if report.get("truncation_comparison"):
         lines.append("  truncation comparison: %s" % json.dumps(report["truncation_comparison"], ensure_ascii=False))
+    for sort, res in (report.get("sort_checks") or {}).items():
+        lines.append("  sort %-45s %s" % (sort, "accepted" if res.get("accepted") else "REJECTED: " + res.get("error", "")))
     lines.append("saved to %s" % report.get("saved_to"))
     return "\n".join(lines)

@@ -1,0 +1,156 @@
+{
+ "count_error": "OpenAlex returned HTTP 400: {\"oqo\":{\"get_rows\":\"works\",\"filter_rows\":[{\"column_id\":\"title_and_abstract.search.exact\",\"value\":\"\\\"dependence relation\\\"\",\"operator\":\"has\"}],\"sort_by\":[{\"column_id\":\"publication_date\",\"direction\":\"asc\"},{\"column_id\":\"id\",\"direction\":\"asc\"}],\"per_page\":1},\"validation\":{\"valid\":false,\"errors\":[{\"type\":\"invalid_column\",\"message\":\"'id' is not a sortable column on 'works'\",\"location\":\"sort_by[1].column_id\"}],\"warnings\":[]}}\n",
+ "id": "C4a",
+ "name": "phrase without truncation (comparison)",
+ "oql": "works where title_and_abstract has (\"dependence relation\")",
+ "translate": {
+  "body": {
+   "oql": "works where title/abstract has (\"dependence relation\")",
+   "oql_oneline": "works where title/abstract has (\"dependence relation\")",
+   "oql_render_v2": {
+    "corpus_phrase": "",
+    "directives": [],
+    "entity": {
+     "id": "works",
+     "text": "works"
+    },
+    "lines": [
+     {
+      "indent": 0,
+      "n": 1,
+      "tokens": [
+       {
+        "id": "works",
+        "label": "works",
+        "t": "kw",
+        "text": "works"
+       },
+       {
+        "label": "where",
+        "t": "kw",
+        "text": " where "
+       },
+       {
+        "addr": "1",
+        "column_id": "title_and_abstract.search.exact",
+        "id": "n1",
+        "t": "col",
+        "text": "title/abstract"
+       },
+       {
+        "addr": "1",
+        "id": "n1",
+        "t": "op",
+        "text": " has "
+       },
+       {
+        "addr": "1",
+        "id": "n1",
+        "t": "text",
+        "text": "("
+       },
+       {
+        "addr": "1.1",
+        "id": "n1",
+        "kind": "text",
+        "t": "vbrick",
+        "text": "\"dependence relation\"",
+        "value": "\"dependence relation\""
+       },
+       {
+        "addr": "1",
+        "id": "n1",
+        "t": "text",
+        "text": ")"
+       }
+      ]
+     }
+    ],
+    "version": "2.0",
+    "where": {
+     "addr": [
+      1
+     ],
+     "clause_kind": "text",
+     "column": "title/abstract",
+     "column_id": "title_and_abstract.search.exact",
+     "id": "n1",
+     "leaf": {
+      "column_id": "title_and_abstract.search.exact",
+      "operator": "has",
+      "value": "\"dependence relation\""
+     },
+     "node": "clause",
+     "operator": "has",
+     "segments": [
+      {
+       "kind": "column",
+       "meta": {
+        "column_id": "title_and_abstract.search.exact"
+       },
+       "text": "title/abstract"
+      },
+      {
+       "kind": "operator",
+       "text": " has "
+      },
+      {
+       "kind": "text",
+       "text": "("
+      },
+      {
+       "kind": "value",
+       "meta": {
+        "value": "\"dependence relation\""
+       },
+       "text": "\"dependence relation\""
+      },
+      {
+       "kind": "text",
+       "text": ")"
+      }
+     ]
+    },
+    "where_keyword": " where "
+   },
+   "oqo": {
+    "filter_rows": [
+     {
+      "column_id": "title_and_abstract.search.exact",
+      "operator": "has",
+      "value": "\"dependence relation\""
+     }
+    ],
+    "get_rows": "works"
+   },
+   "oxurl": "/works?filter=title_and_abstract.search.exact:%22dependence relation%22",
+   "validation": {
+    "errors": [],
+    "valid": true,
+    "warnings": []
+   }
+  },
+  "http_status": 200
+ },
+ "validate": {
+  "body": {
+   "diagnostics": [],
+   "oql": "works where title/abstract has (\"dependence relation\")",
+   "oql_oneline": "works where title/abstract has (\"dependence relation\")",
+   "oqo": {
+    "filter_rows": [
+     {
+      "column_id": "title_and_abstract.search.exact",
+      "operator": "has",
+      "value": "\"dependence relation\""
+     }
+    ],
+    "get_rows": "works"
+   },
+   "oxurl": "/works?filter=title_and_abstract.search.exact:%22dependence relation%22",
+   "valid": true
+  },
+  "http_status": 200
+ },
+ "verdict": "accepted by the parser (meaning still to be judged from translate/count)"
+}

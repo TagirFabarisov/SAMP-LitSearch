@@ -1,0 +1,11 @@
+{
+ "publication_date:asc,id:asc": {
+  "accepted": false,
+  "error": "OpenAlex returned HTTP 400: {\"oqo\":{\"get_rows\":\"works\",\"filter_rows\":[{\"column_id\":\"title_and_abstract.search.exact\",\"value\":\"\\\"resource dependence\\\"\",\"operator\":\"has\"}],\"sort_by\":[{\"column_id\":\"publication_date\",\"direction\":\"asc\"},{\"column_id\":\"id\",\"direction\":\"asc\"}],\"per_page\":1,\"cursor\":\"*\"},\"validation\":{\"valid\":false,\"errors\":[{\"type\":\"invalid_column\",\"message\":\"'id' is not a sortable column"
+ },
+ "publication_date:asc,ids.openalex:asc": {
+  "accepted": true,
+  "first_id": "https://openalex.org/W2132845428",
+  "next_cursor_present": true
+ }
+}

@@ -1,0 +1,338 @@
+{
+ "count_error": "OpenAlex returned HTTP 400: {\"oqo\":{\"get_rows\":\"works\",\"filter_rows\":[{\"join\":\"or\",\"filters\":[{\"column_id\":\"title_and_abstract.search.exact\",\"value\":\"\\\"resource dependence\\\"\",\"operator\":\"has\"},{\"column_id\":\"title_and_abstract.search.exact\",\"value\":\"\\\"social dependence\\\"\",\"operator\":\"has\"}]},{\"join\":\"or\",\"filters\":[{\"column_id\":\"title_and_abstract.search\",\"value\":\"actor\",\"operator\":\"has\"},{\"column_id\":\"title_and_abstract.search\",\"value\":\"agent\",\"operator\":\"has\"}]}],\"sort_by\":[{\"column_id\":\"publication_date\",\"direction\":\"asc\"},{\"column_id\":\"id\",\"direction\":\"asc\"}],\"per_page\":1},\"validation\":{\"valid\":false,\"errors\":[{\"type\":\"invalid_column\",\"message\":\"'id' is not a sortable column on 'works'\",\"location\":\"sort_by[1].column_id\"}],\"warnings\":[]}}\n",
+ "id": "C1",
+ "name": "parentheses and AND/OR",
+ "oql": "works where title_and_abstract has ((\"resource dependence\" OR \"social dependence\") AND (actor OR agent))",
+ "translate": {
+  "body": {
+   "oql": "works where title/abstract has (\n    (\"resource dependence\" or \"social dependence\")\n    and (actor or agent)\n  )",
+   "oql_oneline": "works where title/abstract has ((\"resource dependence\" or \"social dependence\") and (actor or agent))",
+   "oql_render_v2": {
+    "corpus_phrase": "",
+    "directives": [],
+    "entity": {
+     "id": "works",
+     "text": "works"
+    },
+    "lines": [
+     {
+      "indent": 0,
+      "n": 1,
+      "tokens": [
+       {
+        "id": "works",
+        "label": "works",
+        "t": "kw",
+        "text": "works"
+       },
+       {
+        "label": "where",
+        "t": "kw",
+        "text": " where "
+       },
+       {
+        "addr": "1",
+        "column_id": "title_and_abstract.search.exact",
+        "id": "n8",
+        "t": "col",
+        "text": "title/abstract"
+       },
+       {
+        "addr": "1",
+        "id": "n8",
+        "t": "op",
+        "text": " has "
+       },
+       {
+        "id": "n7",
+        "t": "paren",
+        "text": "("
+       }
+      ]
+     },
+     {
+      "indent": 4,
+      "n": 2,
+      "tokens": [
+       {
+        "addr": "1.1",
+        "id": "n3",
+        "t": "paren",
+        "text": "("
+       },
+       {
+        "addr": "1.1.1",
+        "display": "\"resource dependence\"",
+        "id": "n1",
+        "negated": false,
+        "t": "vbrick",
+        "text": "\"resource dependence\"",
+        "value": "\"resource dependence\""
+       },
+       {
+        "addr": "1.1",
+        "id": "n3",
+        "label": "or",
+        "t": "conn",
+        "text": " or "
+       },
+       {
+        "addr": "1.1.2",
+        "display": "\"social dependence\"",
+        "id": "n2",
+        "negated": false,
+        "t": "vbrick",
+        "text": "\"social dependence\"",
+        "value": "\"social dependence\""
+       },
+       {
+        "addr": "1.1",
+        "id": "n3",
+        "t": "paren",
+        "text": ")"
+       }
+      ]
+     },
+     {
+      "indent": 4,
+      "n": 3,
+      "tokens": [
+       {
+        "id": "n7",
+        "label": "and",
+        "t": "conn",
+        "text": " and "
+       },
+       {
+        "addr": "1.2",
+        "id": "n6",
+        "t": "paren",
+        "text": "("
+       },
+       {
+        "addr": "1.2.1",
+        "display": "actor",
+        "id": "n4",
+        "negated": false,
+        "t": "vbrick",
+        "text": "actor",
+        "value": "actor"
+       },
+       {
+        "addr": "1.2",
+        "id": "n6",
+        "label": "or",
+        "t": "conn",
+        "text": " or "
+       },
+       {
+        "addr": "1.2.2",
+        "display": "agent",
+        "id": "n5",
+        "negated": false,
+        "t": "vbrick",
+        "text": "agent",
+        "value": "agent"
+       },
+       {
+        "addr": "1.2",
+        "id": "n6",
+        "t": "paren",
+        "text": ")"
+       }
+      ]
+     },
+     {
+      "indent": 2,
+      "n": 4,
+      "tokens": [
+       {
+        "id": "n7",
+        "t": "paren",
+        "text": ")"
+       }
+      ]
+     }
+    ],
+    "version": "2.0",
+    "where": {
+     "addr": [
+      1
+     ],
+     "clause_kind": "text",
+     "column": "title/abstract",
+     "column_id": "title_and_abstract.search.exact",
+     "id": "n8",
+     "node": "clause",
+     "operator": "has",
+     "value": {
+      "children": [
+       {
+        "addr": [
+         1,
+         1
+        ],
+        "children": [
+         {
+          "addr": [
+           1,
+           1,
+           1
+          ],
+          "display": "\"resource dependence\"",
+          "id": "n1",
+          "negated": false,
+          "node": "vleaf",
+          "value": "\"resource dependence\""
+         },
+         {
+          "addr": [
+           1,
+           1,
+           2
+          ],
+          "display": "\"social dependence\"",
+          "id": "n2",
+          "negated": false,
+          "node": "vleaf",
+          "value": "\"social dependence\""
+         }
+        ],
+        "id": "n3",
+        "join": "or",
+        "node": "vgroup"
+       },
+       {
+        "addr": [
+         1,
+         2
+        ],
+        "children": [
+         {
+          "addr": [
+           1,
+           2,
+           1
+          ],
+          "display": "actor",
+          "id": "n4",
+          "negated": false,
+          "node": "vleaf",
+          "value": "actor"
+         },
+         {
+          "addr": [
+           1,
+           2,
+           2
+          ],
+          "display": "agent",
+          "id": "n5",
+          "negated": false,
+          "node": "vleaf",
+          "value": "agent"
+         }
+        ],
+        "id": "n6",
+        "join": "or",
+        "node": "vgroup"
+       }
+      ],
+      "id": "n7",
+      "join": "and",
+      "node": "vgroup"
+     }
+    },
+    "where_keyword": " where "
+   },
+   "oqo": {
+    "filter_rows": [
+     {
+      "filters": [
+       {
+        "column_id": "title_and_abstract.search.exact",
+        "operator": "has",
+        "value": "\"resource dependence\""
+       },
+       {
+        "column_id": "title_and_abstract.search.exact",
+        "operator": "has",
+        "value": "\"social dependence\""
+       }
+      ],
+      "join": "or"
+     },
+     {
+      "filters": [
+       {
+        "column_id": "title_and_abstract.search",
+        "operator": "has",
+        "value": "actor"
+       },
+       {
+        "column_id": "title_and_abstract.search",
+        "operator": "has",
+        "value": "agent"
+       }
+      ],
+      "join": "or"
+     }
+    ],
+    "get_rows": "works"
+   },
+   "oxurl": "/works?filter=title_and_abstract.search.exact:%22resource dependence%22|%22social dependence%22,title_and_abstract.search:actor|agent",
+   "validation": {
+    "errors": [],
+    "valid": true,
+    "warnings": []
+   }
+  },
+  "http_status": 200
+ },
+ "validate": {
+  "body": {
+   "diagnostics": [],
+   "oql": "works where title/abstract has (\n    (\"resource dependence\" or \"social dependence\")\n    and (actor or agent)\n  )",
+   "oql_oneline": "works where title/abstract has ((\"resource dependence\" or \"social dependence\") and (actor or agent))",
+   "oqo": {
+    "filter_rows": [
+     {
+      "filters": [
+       {
+        "column_id": "title_and_abstract.search.exact",
+        "operator": "has",
+        "value": "\"resource dependence\""
+       },
+       {
+        "column_id": "title_and_abstract.search.exact",
+        "operator": "has",
+        "value": "\"social dependence\""
+       }
+      ],
+      "join": "or"
+     },
+     {
+      "filters": [
+       {
+        "column_id": "title_and_abstract.search",
+        "operator": "has",
+        "value": "actor"
+       },
+       {
+        "column_id": "title_and_abstract.search",
+        "operator": "has",
+        "value": "agent"
+       }
+      ],
+      "join": "or"
+     }
+    ],
+    "get_rows": "works"
+   },
+   "oxurl": "/works?filter=title_and_abstract.search.exact:%22resource dependence%22|%22social dependence%22,title_and_abstract.search:actor|agent",
+   "valid": true
+  },
+  "http_status": 200
+ },
+ "verdict": "accepted by the parser (meaning still to be judged from translate/count)"
+}

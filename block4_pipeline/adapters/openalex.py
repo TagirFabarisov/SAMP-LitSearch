@@ -79,8 +79,13 @@ class OpenAlexAdapter(BaseAdapter):
             headers["Authorization"] = "Bearer " + key
         return headers
 
-    def _body(self, exact_query: str, per_page: int, cursor: Optional[str], cited_by: Optional[str] = None) -> Dict[str, Any]:
-        body: Dict[str, Any] = {"sort": self.order, "per_page": per_page}
+    def _body(self, exact_query: str, per_page: int, cursor: Optional[str], cited_by: Optional[str] = None,
+              with_sort: bool = True) -> Dict[str, Any]:
+        # A count-only request carries no sort: the count does not depend on it, and OpenAlex
+        # rejects sort columns it does not support (recorded 29 Sep 2026: 'id' is not sortable).
+        body: Dict[str, Any] = {"per_page": per_page}
+        if with_sort:
+            body["sort"] = self.order
         if cited_by:
             # Forward snowballing: works citing a given work. This is a plain filter, not a text
             # search, so it is expressed in OQL as well (validated by the construct check).
@@ -110,7 +115,7 @@ class OpenAlexAdapter(BaseAdapter):
         return resp.json()
 
     def count(self, exact_query: str, **kwargs) -> CountResult:
-        body = self._body(exact_query, 1, None, kwargs.get("cited_by"))
+        body = self._body(exact_query, 1, None, kwargs.get("cited_by"), with_sort=False)
         data = self._post(body)
         count = int(data.get("meta", {}).get("count", 0))
         return CountResult(count=count, raw=data, request=secrets.redact_obj(self.describe_request(exact_query, **kwargs) | {"json": body}))

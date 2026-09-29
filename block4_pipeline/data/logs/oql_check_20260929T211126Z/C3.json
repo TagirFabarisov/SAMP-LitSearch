@@ -1,0 +1,44 @@
+{
+ "count_error": "OpenAlex returned HTTP 400: {\"validation\":{\"valid\":false,\"errors\":[{\"type\":\"parse_error\",\"message\":\"wildcards run on exact (no-stem) text: actor*  Fix: quote it: \\\"actor*\\\"\",\"position\":36,\"context\":\"\\u2026title_and_abstract has (actor*)\",\"location\":null}],\"warnings\":[]}}\n",
+ "id": "C3",
+ "name": "bare truncation",
+ "oql": "works where title_and_abstract has (actor*)",
+ "translate": {
+  "body": {
+   "validation": {
+    "errors": [
+     {
+      "location": null,
+      "message": "Failed to parse OQL: wildcards run on exact (no-stem) text: actor*  Fix: quote it: \"actor*\"",
+      "type": "parse_error"
+     }
+    ],
+    "valid": false,
+    "warnings": []
+   }
+  },
+  "http_status": 400
+ },
+ "validate": {
+  "body": {
+   "diagnostics": [
+    {
+     "code": "OQL_WILDCARD_NEEDS_EXACT",
+     "end": 36,
+     "fixit": "quote it: \"actor*\"",
+     "location": null,
+     "message": "wildcards run on exact (no-stem) text: actor*",
+     "path": null,
+     "severity": "error",
+     "start": 36
+    }
+   ],
+   "oql": null,
+   "oqo": null,
+   "oxurl": null,
+   "valid": false
+  },
+  "http_status": 200
+ },
+ "verdict": "REJECTED: "
+}

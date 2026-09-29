@@ -1,0 +1,186 @@
+{
+ "count": 1253,
+ "id": "C7",
+ "meta_x_query": {
+  "oql": "works where it cites (W2741809807)",
+  "oqo": {
+   "filter_rows": [
+    {
+     "column_id": "referenced_works",
+     "value": "W2741809807"
+    }
+   ],
+   "get_rows": "works"
+  },
+  "url": "/works?filter=referenced_works:W2741809807&per_page=1"
+ },
+ "name": "cites filter for forward snowballing",
+ "oql": "works where cites is (W2741809807)",
+ "translate": {
+  "body": {
+   "oql": "works where it cites (W2741809807 [The state of OA: a large-scale analysis of the pr…])",
+   "oql_oneline": "works where it cites (W2741809807 [The state of OA: a large-scale analysis of the pr…])",
+   "oql_render_v2": {
+    "corpus_phrase": "",
+    "directives": [],
+    "entity": {
+     "id": "works",
+     "text": "works"
+    },
+    "lines": [
+     {
+      "indent": 0,
+      "n": 1,
+      "tokens": [
+       {
+        "id": "works",
+        "label": "works",
+        "t": "kw",
+        "text": "works"
+       },
+       {
+        "label": "where",
+        "t": "kw",
+        "text": " where "
+       },
+       {
+        "addr": "1",
+        "column_id": "referenced_works",
+        "id": "n1",
+        "t": "col",
+        "text": "it"
+       },
+       {
+        "addr": "1",
+        "id": "n1",
+        "t": "op",
+        "text": " cites "
+       },
+       {
+        "addr": "1",
+        "id": "n1",
+        "t": "text",
+        "text": "("
+       },
+       {
+        "addr": "1.1",
+        "column_id": "referenced_works",
+        "id": "n1",
+        "kind": "entity",
+        "t": "vbrick",
+        "text": "W2741809807",
+        "value": "W2741809807"
+       },
+       {
+        "addr": "1",
+        "id": "n1",
+        "t": "id",
+        "text": "[The state of OA: a large-scale analysis of the pr…]"
+       },
+       {
+        "addr": "1",
+        "id": "n1",
+        "t": "text",
+        "text": ")"
+       }
+      ]
+     }
+    ],
+    "version": "2.0",
+    "where": {
+     "addr": [
+      1
+     ],
+     "clause_kind": "entity",
+     "column": "cites",
+     "column_id": "referenced_works",
+     "id": "n1",
+     "leaf": {
+      "column_id": "referenced_works",
+      "value": "W2741809807"
+     },
+     "node": "clause",
+     "operator": "is",
+     "segments": [
+      {
+       "kind": "column",
+       "meta": {
+        "column_id": "referenced_works"
+       },
+       "text": "it"
+      },
+      {
+       "kind": "operator",
+       "text": " cites "
+      },
+      {
+       "kind": "text",
+       "text": "("
+      },
+      {
+       "kind": "value",
+       "meta": {
+        "column_id": "referenced_works",
+        "value": "W2741809807"
+       },
+       "text": "W2741809807"
+      },
+      {
+       "kind": "text",
+       "text": " "
+      },
+      {
+       "kind": "id",
+       "meta": {
+        "entity_display_id": "[The state of OA: a large-scale analysis of the pr…]",
+        "entity_display_name": "The state of OA: a large-scale analysis of the pr…"
+       },
+       "text": "[The state of OA: a large-scale analysis of the pr…]"
+      },
+      {
+       "kind": "text",
+       "text": ")"
+      }
+     ]
+    },
+    "where_keyword": " where "
+   },
+   "oqo": {
+    "filter_rows": [
+     {
+      "column_id": "referenced_works",
+      "value": "W2741809807"
+     }
+    ],
+    "get_rows": "works"
+   },
+   "oxurl": "/works?filter=referenced_works:W2741809807",
+   "validation": {
+    "errors": [],
+    "valid": true,
+    "warnings": []
+   }
+  },
+  "http_status": 200
+ },
+ "validate": {
+  "body": {
+   "diagnostics": [],
+   "oql": "works where it cites (W2741809807 [The state of OA: a large-scale analysis of the pr…])",
+   "oql_oneline": "works where it cites (W2741809807 [The state of OA: a large-scale analysis of the pr…])",
+   "oqo": {
+    "filter_rows": [
+     {
+      "column_id": "referenced_works",
+      "value": "W2741809807"
+     }
+    ],
+    "get_rows": "works"
+   },
+   "oxurl": "/works?filter=referenced_works:W2741809807",
+   "valid": true
+  },
+  "http_status": 200
+ },
+ "verdict": "accepted by the parser (meaning still to be judged from translate/count)"
+}

@@ -1,0 +1,5002 @@
+{
+ "body": {
+  "meta": {
+   "cost_usd": 0.0001,
+   "entity": "works",
+   "entity_count": 26,
+   "fingerprint": "4f595f9081b3516d13ffa97d5869807f1ed6009f32820a5bad03c53bb9e5c623",
+   "property_count": 859,
+   "version": "14.1.0"
+  },
+  "properties": {
+   "works": {
+    "abstract.search": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "abstract",
+     "entity_type": null,
+     "name": "abstract.search",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "search"
+    },
+    "abstract.search.exact": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "abstract",
+     "entity_type": null,
+     "name": "abstract.search.exact",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [],
+     "type": "search"
+    },
+    "abstract_inverted_index": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "abstract inverted index",
+     "entity_type": null,
+     "name": "abstract_inverted_index",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "apc_list": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "apc list",
+     "entity_type": null,
+     "name": "apc_list",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "apc_list.currency": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "APC list currency",
+     "entity_type": null,
+     "name": "apc_list.currency",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "apc_list.provenance": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "APC list provenance",
+     "entity_type": null,
+     "name": "apc_list.provenance",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "apc_list.value": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "APC list price",
+     "entity_type": null,
+     "name": "apc_list.value",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "number"
+    },
+    "apc_list.value_usd": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "APC list price USD",
+     "entity_type": null,
+     "name": "apc_list.value_usd",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "number"
+    },
+    "apc_paid": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "apc paid",
+     "entity_type": null,
+     "name": "apc_paid",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "apc_paid.currency": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "APC paid currency",
+     "entity_type": null,
+     "name": "apc_paid.currency",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "apc_paid.provenance": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "APC paid provenance",
+     "entity_type": null,
+     "name": "apc_paid.provenance",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "apc_paid.value": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "APC paid",
+     "entity_type": null,
+     "name": "apc_paid.value",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "number"
+    },
+    "apc_paid.value_usd": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "estimated APC paid",
+     "entity_type": null,
+     "name": "apc_paid.value_usd",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "authors_count": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "author",
+     "display_name": "authors count",
+     "entity_type": null,
+     "name": "authors_count",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "authorships": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "authorships",
+     "entity_type": null,
+     "name": "authorships",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "authorships.affiliations.institution_ids": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "affiliation institution",
+     "entity_type": null,
+     "name": "authorships.affiliations.institution_ids",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "authorships.author.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "author.id"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "author",
+     "display_name": "author",
+     "entity_type": "authors",
+     "name": "authorships.author.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "authorships.author.orcid": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [
+      "author orcid"
+     ],
+     "alternate_keys": [
+      "author.orcid"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "ORCID",
+     "entity_type": null,
+     "name": "authorships.author.orcid",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "authorships.countries": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "geo",
+     "display_name": "country",
+     "entity_type": "countries",
+     "name": "authorships.countries",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "authorships.institutions.continent": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "institutions.continent"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "geo",
+     "display_name": "continent",
+     "entity_type": "continents",
+     "name": "authorships.institutions.continent",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "authorships.institutions.country_code": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "institutions.country_code"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "geo",
+     "display_name": "institution country",
+     "entity_type": "countries",
+     "name": "authorships.institutions.country_code",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "authorships.institutions.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "institution.id",
+      "institutions.id"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "exact institution",
+     "entity_type": "institutions",
+     "name": "authorships.institutions.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "authorships.institutions.is_global_south": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "institutions.is_global_south"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "global south",
+     "entity_type": null,
+     "name": "authorships.institutions.is_global_south",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "authorships.institutions.lineage": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "institution",
+     "display_name": "institution",
+     "entity_type": "institutions",
+     "name": "authorships.institutions.lineage",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "authorships.institutions.ror": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "institutions.ror"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "ROR ID",
+     "entity_type": null,
+     "name": "authorships.institutions.ror",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "authorships.institutions.type": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "institutions.type"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "institution",
+     "display_name": "institution type",
+     "entity_type": "institution-types",
+     "name": "authorships.institutions.type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "authorships.is_corresponding": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "is_corresponding"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "is corresponding author",
+     "entity_type": null,
+     "name": "authorships.is_corresponding",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "authorships.raw_orcid": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "raw ORCID",
+     "entity_type": null,
+     "name": "authorships.raw_orcid",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "awards": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "awards",
+     "entity_type": null,
+     "name": "awards",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "awards.doi": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "award DOI",
+     "entity_type": null,
+     "name": "awards.doi",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "awards.funder_award_id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "award ID",
+     "entity_type": null,
+     "name": "awards.funder_award_id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "awards.funder_display_name": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "award funder name",
+     "entity_type": null,
+     "name": "awards.funder_display_name",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "awards.funder_id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "award funder",
+     "entity_type": "funders",
+     "name": "awards.funder_id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "openalex_id"
+    },
+    "awards.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "funder",
+     "display_name": "awards",
+     "entity_type": "awards",
+     "name": "awards.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "best_oa_location": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best oa location",
+     "entity_type": null,
+     "name": "best_oa_location",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "best_oa_location.is_accepted": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "open access",
+     "display_name": "OA accepted",
+     "entity_type": null,
+     "name": "best_oa_location.is_accepted",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "best_oa_location.is_oa": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA location is open access",
+     "entity_type": null,
+     "name": "best_oa_location.is_oa",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [],
+     "type": "boolean"
+    },
+    "best_oa_location.is_published": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "open access",
+     "display_name": "OA published",
+     "entity_type": null,
+     "name": "best_oa_location.is_published",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "best_oa_location.landing_page_url": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA landing page URL",
+     "entity_type": null,
+     "name": "best_oa_location.landing_page_url",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "best_oa_location.license": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "best_oa_location.license_id"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "open access",
+     "display_name": "best OA license",
+     "entity_type": "licenses",
+     "name": "best_oa_location.license",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "best_oa_location.raw_type": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA location type (raw)",
+     "entity_type": null,
+     "name": "best_oa_location.raw_type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "best_oa_location.source.host_organization": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA host organization",
+     "entity_type": null,
+     "name": "best_oa_location.source.host_organization",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "best_oa_location.source.host_organization_lineage": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA publisher",
+     "entity_type": "publishers",
+     "name": "best_oa_location.source.host_organization_lineage",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "openalex_id"
+    },
+    "best_oa_location.source.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA source",
+     "entity_type": "sources",
+     "name": "best_oa_location.source.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "best_oa_location.source.is_in_doaj": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA source DOAJ",
+     "entity_type": null,
+     "name": "best_oa_location.source.is_in_doaj",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "best_oa_location.source.is_oa": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA source is OA",
+     "entity_type": null,
+     "name": "best_oa_location.source.is_oa",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [],
+     "type": "boolean"
+    },
+    "best_oa_location.source.issn": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "best OA source ISSN",
+     "entity_type": null,
+     "name": "best_oa_location.source.issn",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "best_oa_location.source.listed_in": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "best OA source listed in",
+     "entity_type": "source-lists",
+     "name": "best_oa_location.source.listed_in",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "best_oa_location.source.type": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA source type",
+     "entity_type": "source-types",
+     "name": "best_oa_location.source.type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "best_oa_location.version": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best OA version",
+     "entity_type": null,
+     "name": "best_oa_location.version",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "best_open_version": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "best open version",
+     "entity_type": null,
+     "name": "best_open_version",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "biblio": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "biblio",
+     "entity_type": null,
+     "name": "biblio",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "biblio.first_page": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "first page",
+     "entity_type": null,
+     "name": "biblio.first_page",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "biblio.issue": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "issue",
+     "entity_type": null,
+     "name": "biblio.issue",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "biblio.last_page": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "last page",
+     "entity_type": null,
+     "name": "biblio.last_page",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "biblio.volume": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "volume",
+     "entity_type": null,
+     "name": "biblio.volume",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "citation_normalized_percentile": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "citation normalized percentile",
+     "entity_type": null,
+     "name": "citation_normalized_percentile",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "citation_normalized_percentile.is_in_top_10_percent": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "top 10% cited",
+     "entity_type": null,
+     "name": "citation_normalized_percentile.is_in_top_10_percent",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "citation_normalized_percentile.is_in_top_1_percent": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "top 1% cited",
+     "entity_type": null,
+     "name": "citation_normalized_percentile.is_in_top_1_percent",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "citation_normalized_percentile.value": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "citation percentile by subfield",
+     "entity_type": null,
+     "name": "citation_normalized_percentile.value",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "cited_by": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "citation",
+     "display_name": "cited by",
+     "entity_type": null,
+     "name": "cited_by",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "cited_by_api_url": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "cited by api url",
+     "entity_type": null,
+     "name": "cited_by_api_url",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "cited_by_count": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [
+      "citations",
+      "cited by count"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "citation",
+     "display_name": "citation count",
+     "entity_type": null,
+     "name": "cited_by_count",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "cited_by_percentile_year": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "cited by percentile year",
+     "entity_type": null,
+     "name": "cited_by_percentile_year",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "cited_by_percentile_year.max": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "citation percentile (max)",
+     "entity_type": null,
+     "name": "cited_by_percentile_year.max",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [],
+     "type": "number"
+    },
+    "cited_by_percentile_year.min": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "citation percentile by year",
+     "entity_type": null,
+     "name": "cited_by_percentile_year.min",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [],
+     "type": "number"
+    },
+    "collection": {
+     "actions": [],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "collection",
+     "entity_type": "works",
+     "name": "collection",
+     "operators": [
+      "collection"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "collection"
+    },
+    "concepts": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "concepts",
+     "entity_type": null,
+     "name": "concepts",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "concepts.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "concept.id"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "concept",
+     "entity_type": "concepts",
+     "name": "concepts.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "concepts.wikidata": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "concept Wikidata ID",
+     "entity_type": null,
+     "name": "concepts.wikidata",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "concepts_count": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "concepts count",
+     "entity_type": null,
+     "name": "concepts_count",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "number"
+    },
+    "content_urls": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "content urls",
+     "entity_type": null,
+     "name": "content_urls",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "corresponding_author_ids": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "author",
+     "display_name": "corresponding author",
+     "entity_type": "authors",
+     "name": "corresponding_author_ids",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "corresponding_institution_ids": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "institution",
+     "display_name": "corresponding institution",
+     "entity_type": "institutions",
+     "name": "corresponding_institution_ids",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "countries_distinct_count": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "geo",
+     "display_name": "countries count",
+     "entity_type": null,
+     "name": "countries_distinct_count",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "counts_by_year": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "counts by year",
+     "entity_type": null,
+     "name": "counts_by_year",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "created_date": {
+     "actions": [
+      "column",
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "created date",
+     "entity_type": null,
+     "name": "created_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "date"
+    },
+    "datasets": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "datasets",
+     "entity_type": null,
+     "name": "datasets",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "openalex_id"
+    },
+    "display_name": {
+     "actions": [
+      "column",
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "title",
+     "entity_type": null,
+     "name": "display_name",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "display_name.search": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [
+      "display_name"
+     ],
+     "alternate_keys": [
+      "title.search"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "title",
+     "entity_type": null,
+     "name": "display_name.search",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "search"
+    },
+    "display_name.search.exact": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "title.search.exact"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "display name",
+     "entity_type": null,
+     "name": "display_name.search.exact",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [],
+     "type": "search"
+    },
+    "doi": {
+     "actions": [
+      "column",
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "DOI",
+     "entity_type": null,
+     "name": "doi",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "doi_starts_with": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "DOI prefix",
+     "entity_type": null,
+     "name": "doi_starts_with",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "from_created_date": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "created since date",
+     "entity_type": null,
+     "name": "from_created_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "date"
+    },
+    "from_publication_date": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "from publication date",
+     "entity_type": null,
+     "name": "from_publication_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "date"
+    },
+    "from_updated_date": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "updated since date",
+     "entity_type": null,
+     "name": "from_updated_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "datetime"
+    },
+    "fulltext.search": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [
+      "any field",
+      "anywhere",
+      "default",
+      "default.search",
+      "full text",
+      "fulltext"
+     ],
+     "alternate_keys": [
+      "default.search"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "full text",
+     "entity_type": null,
+     "name": "fulltext.search",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "search"
+    },
+    "fulltext.search.exact": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "default.search.exact"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "fulltext",
+     "entity_type": null,
+     "name": "fulltext.search.exact",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [],
+     "type": "search"
+    },
+    "fulltext_origin": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "fulltext origin",
+     "entity_type": null,
+     "name": "fulltext_origin",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "funders": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "funders",
+     "entity_type": null,
+     "name": "funders",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "funders.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [
+      "grants.funder"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "funder",
+     "display_name": "funder",
+     "entity_type": "funders",
+     "name": "funders.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "fwci": {
+     "actions": [
+      "column",
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "citation",
+     "display_name": "FWCI",
+     "entity_type": null,
+     "name": "fwci",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "has_abstract": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "has abstract",
+     "entity_type": null,
+     "name": "has_abstract",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "has_content": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has content",
+     "entity_type": null,
+     "name": "has_content",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "has_content.grobid_xml": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has content grobid xml",
+     "entity_type": null,
+     "name": "has_content.grobid_xml",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "has_content.pdf": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "open access",
+     "display_name": "PDF-linked",
+     "entity_type": null,
+     "name": "has_content.pdf",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "has_doi": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "has DOI",
+     "entity_type": null,
+     "name": "has_doi",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "has_embeddings": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has embeddings",
+     "entity_type": null,
+     "name": "has_embeddings",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [],
+     "type": "boolean"
+    },
+    "has_fulltext": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has fulltext",
+     "entity_type": null,
+     "name": "has_fulltext",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "has_oa_accepted_or_published_version": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has oa accepted or published version",
+     "entity_type": null,
+     "name": "has_oa_accepted_or_published_version",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "has_oa_submitted_version": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has oa submitted version",
+     "entity_type": null,
+     "name": "has_oa_submitted_version",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "has_old_authors": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has old authors",
+     "entity_type": null,
+     "name": "has_old_authors",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [],
+     "type": "boolean"
+    },
+    "has_orcid": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "has ORCID",
+     "entity_type": null,
+     "name": "has_orcid",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "has_pdf_url": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has pdf url",
+     "entity_type": null,
+     "name": "has_pdf_url",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [],
+     "type": "boolean"
+    },
+    "has_pmcid": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "has PMCID",
+     "entity_type": null,
+     "name": "has_pmcid",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "has_pmid": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "PubMed",
+     "entity_type": null,
+     "name": "has_pmid",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "has_raw_affiliation_strings": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has raw affiliation strings",
+     "entity_type": null,
+     "name": "has_raw_affiliation_strings",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [],
+     "type": "boolean"
+    },
+    "has_references": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has references",
+     "entity_type": null,
+     "name": "has_references",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "id": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "id",
+     "entity_type": null,
+     "name": "id",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "ids": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "ids",
+     "entity_type": null,
+     "name": "ids",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "ids.mag": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "mag"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "MAG ID",
+     "entity_type": null,
+     "name": "ids.mag",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "ids.openalex": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "openalex",
+      "openalex_id"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "OpenAlex ID",
+     "entity_type": "works",
+     "name": "ids.openalex",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "ids.pmcid": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "pmcid"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "PMCID",
+     "entity_type": null,
+     "name": "ids.pmcid",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "ids.pmid": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "pmid"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "PMID",
+     "entity_type": null,
+     "name": "ids.pmid",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "indexed_in": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "indexed in",
+     "entity_type": "indexes",
+     "name": "indexed_in",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "institution_assertions": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "institution assertions",
+     "entity_type": null,
+     "name": "institution_assertions",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "institution_assertions.country_code": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "geo",
+     "display_name": "asserted institution country",
+     "entity_type": "countries",
+     "name": "institution_assertions.country_code",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "institution_assertions.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "asserted institution",
+     "entity_type": "institutions",
+     "name": "institution_assertions.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "openalex_id"
+    },
+    "institution_assertions.lineage": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "asserted institution lineage",
+     "entity_type": "institutions",
+     "name": "institution_assertions.lineage",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "openalex_id"
+    },
+    "institution_assertions.ror": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "asserted institution ROR",
+     "entity_type": null,
+     "name": "institution_assertions.ror",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "institution_assertions.type": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "asserted institution type",
+     "entity_type": "institution-types",
+     "name": "institution_assertions.type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "institutions": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "institutions",
+     "entity_type": null,
+     "name": "institutions",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "institutions_distinct_count": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "institution",
+     "display_name": "institutions count",
+     "entity_type": null,
+     "name": "institutions_distinct_count",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "is_authors_truncated": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "is authors truncated",
+     "entity_type": null,
+     "name": "is_authors_truncated",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "is_paratext": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "is paratext",
+     "entity_type": null,
+     "name": "is_paratext",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "is_retracted": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "retracted",
+     "entity_type": null,
+     "name": "is_retracted",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "keyword.search": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "keyword",
+     "entity_type": null,
+     "name": "keyword.search",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [],
+     "type": "search"
+    },
+    "keywords": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "keywords",
+     "entity_type": null,
+     "name": "keywords",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "keywords.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "keyword",
+     "entity_type": "keywords",
+     "name": "keywords.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "language": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "geo",
+     "display_name": "language",
+     "entity_type": "languages",
+     "name": "language",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "locations": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "locations",
+     "entity_type": null,
+     "name": "locations",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "locations.is_accepted": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location accepted",
+     "entity_type": null,
+     "name": "locations.is_accepted",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "locations.is_oa": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location OA",
+     "entity_type": null,
+     "name": "locations.is_oa",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "locations.is_published": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location published",
+     "entity_type": null,
+     "name": "locations.is_published",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "locations.landing_page_url": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "landing page URL (any location)",
+     "entity_type": null,
+     "name": "locations.landing_page_url",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "locations.license": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "locations.license_id"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location license",
+     "entity_type": "licenses",
+     "name": "locations.license",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "locations.raw_type": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "location type, raw (any location)",
+     "entity_type": null,
+     "name": "locations.raw_type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "locations.source.has_issn": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "source has ISSN (any location)",
+     "entity_type": null,
+     "name": "locations.source.has_issn",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [],
+     "type": "boolean"
+    },
+    "locations.source.host_organization": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location host organization",
+     "entity_type": null,
+     "name": "locations.source.host_organization",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "locations.source.host_organization_lineage": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "locations.source.host_institution_lineage",
+      "locations.source.publisher_lineage"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location publisher",
+     "entity_type": "publishers",
+     "name": "locations.source.host_organization_lineage",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "locations.source.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "any location source",
+     "entity_type": "sources",
+     "name": "locations.source.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "locations.source.is_core": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location CWTS core",
+     "entity_type": null,
+     "name": "locations.source.is_core",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "locations.source.is_in_doaj": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location DOAJ",
+     "entity_type": null,
+     "name": "locations.source.is_in_doaj",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "locations.source.is_oa": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "source is OA (any location)",
+     "entity_type": null,
+     "name": "locations.source.is_oa",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [],
+     "type": "boolean"
+    },
+    "locations.source.issn": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "any location source ISSN",
+     "entity_type": null,
+     "name": "locations.source.issn",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "locations.source.listed_in": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "any location source listed in",
+     "entity_type": "source-lists",
+     "name": "locations.source.listed_in",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "locations.source.type": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location source type",
+     "entity_type": "source-types",
+     "name": "locations.source.type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "locations.version": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "version"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "any location version",
+     "entity_type": null,
+     "name": "locations.version",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "locations_count": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "locations count",
+     "entity_type": null,
+     "name": "locations_count",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "number"
+    },
+    "mag_only": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "MAG-only",
+     "entity_type": null,
+     "name": "mag_only",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "mesh": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "mesh",
+     "entity_type": null,
+     "name": "mesh",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "open_access": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "open access",
+     "entity_type": null,
+     "name": "open_access",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "open_access.any_repository_has_fulltext": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "has repository fulltext",
+     "entity_type": null,
+     "name": "open_access.any_repository_has_fulltext",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "open_access.is_oa": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "is_oa"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "open access",
+     "display_name": "open access",
+     "entity_type": null,
+     "name": "open_access.is_oa",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "open_access.oa_status": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [
+      "OA status"
+     ],
+     "alternate_keys": [
+      "oa_status"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "open access",
+     "display_name": "open access status",
+     "entity_type": "oa-statuses",
+     "name": "open_access.oa_status",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "primary_location": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "primary location",
+     "entity_type": null,
+     "name": "primary_location",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "primary_location.is_accepted": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "primary accepted",
+     "entity_type": null,
+     "name": "primary_location.is_accepted",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "primary_location.is_oa": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "primary OA",
+     "entity_type": null,
+     "name": "primary_location.is_oa",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "primary_location.is_published": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "primary published",
+     "entity_type": null,
+     "name": "primary_location.is_published",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "primary_location.landing_page_url": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "landing page URL",
+     "entity_type": null,
+     "name": "primary_location.landing_page_url",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "primary_location.license": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "primary_location.license_id"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "license",
+     "entity_type": "licenses",
+     "name": "primary_location.license",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "primary_location.raw_type": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "location type (raw)",
+     "entity_type": null,
+     "name": "primary_location.raw_type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "string"
+    },
+    "primary_location.source.has_issn": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "has ISSN",
+     "entity_type": null,
+     "name": "primary_location.source.has_issn",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "boolean"
+    },
+    "primary_location.source.host_organization": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "host organization",
+     "entity_type": null,
+     "name": "primary_location.source.host_organization",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "primary_location.source.host_organization_lineage": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "primary_location.source.host_institution_lineage",
+      "primary_location.source.publisher_lineage"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "publisher",
+     "entity_type": "publishers",
+     "name": "primary_location.source.host_organization_lineage",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "primary_location.source.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [
+      "journal"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "source",
+     "entity_type": "sources",
+     "name": "primary_location.source.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "primary_location.source.is_core": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "CWTS core",
+     "entity_type": null,
+     "name": "primary_location.source.is_core",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "primary_location.source.is_in_doaj": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "DOAJ",
+     "entity_type": null,
+     "name": "primary_location.source.is_in_doaj",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "primary_location.source.is_oa": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "OA source",
+     "entity_type": null,
+     "name": "primary_location.source.is_oa",
+     "operators": [
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "boolean"
+    },
+    "primary_location.source.issn": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "ids",
+     "display_name": "ISSN",
+     "entity_type": null,
+     "name": "primary_location.source.issn",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "primary_location.source.listed_in": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "source listed in",
+     "entity_type": "source-lists",
+     "name": "primary_location.source.listed_in",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "primary_location.source.type": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "source",
+     "display_name": "source type",
+     "entity_type": "source-types",
+     "name": "primary_location.source.type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "primary_location.version": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "primary version",
+     "entity_type": null,
+     "name": "primary_location.version",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "primary_topic": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "primary topic",
+     "entity_type": null,
+     "name": "primary_topic",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "primary_topic.domain.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "domain",
+     "entity_type": "domains",
+     "name": "primary_topic.domain.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "primary_topic.field.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "field",
+     "entity_type": "fields",
+     "name": "primary_topic.field.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "primary_topic.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "topic",
+     "entity_type": "topics",
+     "name": "primary_topic.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "primary_topic.subfield.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "subfield",
+     "entity_type": "subfields",
+     "name": "primary_topic.subfield.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "publication_date": {
+     "actions": [
+      "column",
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "date",
+     "entity_type": null,
+     "name": "publication_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "date"
+    },
+    "publication_year": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "year",
+     "entity_type": null,
+     "name": "publication_year",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "raw_affiliation_strings": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "exact raw affiliation",
+     "entity_type": null,
+     "name": "raw_affiliation_strings",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "raw_affiliation_strings.search": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [
+      "affiliation",
+      "raw affiliation string"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "raw affiliation",
+     "entity_type": null,
+     "name": "raw_affiliation_strings.search",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "search"
+    },
+    "raw_affiliation_strings.search.exact": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "raw affiliation",
+     "entity_type": null,
+     "name": "raw_affiliation_strings.search.exact",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [],
+     "type": "search"
+    },
+    "raw_author_name.search": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [
+      "raw author name"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "byline",
+     "entity_type": null,
+     "name": "raw_author_name.search",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [],
+     "type": "search"
+    },
+    "referenced_works": {
+     "actions": [
+      "column",
+      "filter",
+      "sort"
+     ],
+     "aliases": [
+      "referenced works",
+      "references"
+     ],
+     "alternate_keys": [
+      "cites"
+     ],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "cites",
+     "entity_type": null,
+     "name": "referenced_works",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "referenced_works_count": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [
+      "references count"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "citation",
+     "display_name": "reference count",
+     "entity_type": null,
+     "name": "referenced_works_count",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "number"
+    },
+    "related_to": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "citation",
+     "display_name": "related to",
+     "entity_type": null,
+     "name": "related_to",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "openalex_id"
+    },
+    "related_works": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "related works",
+     "entity_type": null,
+     "name": "related_works",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "relevance_score": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "relevance score",
+     "entity_type": null,
+     "name": "relevance_score",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "repository": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "repository",
+     "entity_type": "sources",
+     "name": "repository",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [],
+     "type": "openalex_id"
+    },
+    "semantic.search": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "semantic",
+     "entity_type": null,
+     "name": "semantic.search",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [],
+     "type": "search"
+    },
+    "sources": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "sources",
+     "entity_type": null,
+     "name": "sources",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "study_designs": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "study designs",
+     "entity_type": null,
+     "name": "study_designs",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "study_designs.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [
+      "study designs",
+      "study_designs",
+      "study_designs.id"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "study design",
+     "entity_type": "study-designs",
+     "name": "study_designs.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "sustainable_development_goals": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "sustainable development goals",
+     "entity_type": null,
+     "name": "sustainable_development_goals",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "sustainable_development_goals.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [
+      "sustainable development goal",
+      "sustainable development goals"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "SDG",
+     "entity_type": "sdgs",
+     "name": "sustainable_development_goals.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "sustainable_development_goals.score": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "SDG score",
+     "entity_type": null,
+     "name": "sustainable_development_goals.score",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [],
+     "type": "number"
+    },
+    "title": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "title",
+     "entity_type": null,
+     "name": "title",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "title_and_abstract.search": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [
+      "title & abstract",
+      "title and abstract",
+      "title&abstract",
+      "title/abs",
+      "title_and_abstract"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "title/abstract",
+     "entity_type": null,
+     "name": "title_and_abstract.search",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "search"
+    },
+    "title_and_abstract.search.exact": {
+     "actions": [
+      "search"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "title and abstract",
+     "entity_type": null,
+     "name": "title_and_abstract.search.exact",
+     "operators": [
+      "search"
+     ],
+     "supported_by": [],
+     "type": "search"
+    },
+    "to_created_date": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "to created date",
+     "entity_type": null,
+     "name": "to_created_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "date"
+    },
+    "to_publication_date": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "to publication date",
+     "entity_type": null,
+     "name": "to_publication_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "date"
+    },
+    "to_updated_date": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "to updated date",
+     "entity_type": null,
+     "name": "to_updated_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "datetime"
+    },
+    "topics": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "topics",
+     "entity_type": null,
+     "name": "topics",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "topics.domain.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "domain",
+     "entity_type": "domains",
+     "name": "topics.domain.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "topics.field.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "field",
+     "entity_type": "fields",
+     "name": "topics.field.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "topics.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "topics",
+     "entity_type": "topics",
+     "name": "topics.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui",
+      "oxurl"
+     ],
+     "type": "openalex_id"
+    },
+    "topics.subfield.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "subfield",
+     "entity_type": "subfields",
+     "name": "topics.subfield.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "topics_count": {
+     "actions": [
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "topics count",
+     "entity_type": null,
+     "name": "topics_count",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or",
+      "range"
+     ],
+     "supported_by": [],
+     "type": "number"
+    },
+    "type": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "other",
+     "display_name": "type",
+     "entity_type": "work-types",
+     "name": "type",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    },
+    "type_crossref": {
+     "actions": [
+      "column",
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "Crossref type",
+     "entity_type": null,
+     "name": "type_crossref",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "string"
+    },
+    "updated_date": {
+     "actions": [
+      "column",
+      "filter",
+      "sort"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "dates",
+     "display_name": "updated date",
+     "entity_type": null,
+     "name": "updated_date",
+     "operators": [
+      "date_range",
+      "eq",
+      "null"
+     ],
+     "supported_by": [
+      "oxurl"
+     ],
+     "type": "date"
+    },
+    "versions": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "versions",
+     "entity_type": null,
+     "name": "versions",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "x_sdgs": {
+     "actions": [
+      "column"
+     ],
+     "aliases": [],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": null,
+     "display_name": "x sdgs",
+     "entity_type": null,
+     "name": "x_sdgs",
+     "operators": [],
+     "supported_by": [],
+     "type": null
+    },
+    "x_sdgs.id": {
+     "actions": [
+      "filter",
+      "group_by",
+      "sort"
+     ],
+     "aliases": [
+      "experimental SDG",
+      "shadow SDG",
+      "x sdgs",
+      "x_sdgs"
+     ],
+     "alternate_keys": [],
+     "bool_false": null,
+     "bool_true": null,
+     "category": "aboutness",
+     "display_name": "experimental SDGs",
+     "entity_type": "sdgs",
+     "name": "x_sdgs.id",
+     "operators": [
+      "eq",
+      "not",
+      "null",
+      "or"
+     ],
+     "supported_by": [
+      "gui"
+     ],
+     "type": "string"
+    }
+   }
+  }
+ },
+ "http_status": 200
+}
