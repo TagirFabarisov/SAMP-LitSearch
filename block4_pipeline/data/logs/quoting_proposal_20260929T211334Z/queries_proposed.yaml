@@ -1,0 +1,866 @@
+revision: 3
+queries:
+- id: B4-Q01
+  direction: B4-D01
+  lens: A semantic
+  canonical: ("social dependence" OR "dependence relation*" OR "resource dependence" OR "strategic dependenc*") AND (actor* OR agent* OR organi?ation*) AND (model* OR formal* OR representation)
+  openalex_oql: title_and_abstract has (("social dependence" OR "dependence relation*" OR "resource dependence" OR "strategic dependenc*") AND ("actor*" OR "agent*" OR ("organization*" OR "organisation*")) AND ("model*" OR "formal*" OR representation))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("social dependence" OR "dependence relation*" OR "resource dependence" OR "strategic dependenc*") AND (actor* OR agent* OR organi?ation*) AND (model* OR formal* OR representation))
+  wos: TS=(("social dependence" OR "dependence relation*" OR "resource dependence" OR "strategic dependenc*") AND (actor* OR agent* OR organi?ation*) AND (model* OR formal* OR representation))
+  ieee: ("social dependence" OR ("dependence relation" OR "dependence relations") OR "resource dependence" OR ("strategic dependence" OR "strategic dependency" OR "strategic dependencies")) AND (actor* OR agent* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational)) AND (model* OR formal* OR representation)
+  heinonline: ("social dependence" OR "dependence relation*" OR "resource dependence" OR "strategic dependenc*") AND (actor* OR agent* OR organi?ation*) AND (model* OR formal* OR representation)
+  scholar: '"social dependence" OR "resource dependence" actors formal model'
+  dblp: '"social dependence" | "resource dependence" actors formal model'
+  ssrn: '"social dependence" OR "resource dependence" actors formal model'
+  basis: C4.2, C7.1–C7.3, C8.1
+  community: dependence between actors as a represented relation; social reasoning in MAS, organization studies, RE
+  register: P1
+- id: B4-Q02
+  direction: B4-D01
+  lens: B community
+  canonical: ("dependence network*" OR "power-dependence" OR "actor dependency model*" OR "goal model*" OR "stakeholder model*") AND (language OR framework OR formalism OR metamodel)
+  openalex_oql: title_and_abstract has (("dependence network*" OR "power-dependence" OR "actor dependency model*" OR "goal model*" OR "stakeholder model*") AND (language OR framework OR formalism OR metamodel))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard
+  scopus: TITLE-ABS-KEY(("dependence network*" OR "power-dependence" OR "actor dependency model*" OR "goal model*" OR "stakeholder model*") AND (language OR framework OR formalism OR metamodel))
+  wos: TS=(("dependence network*" OR "power-dependence" OR "actor dependency model*" OR "goal model*" OR "stakeholder model*") AND (language OR framework OR formalism OR metamodel))
+  ieee: (("dependence network" OR "dependence networks") OR "power-dependence" OR ("actor dependency model" OR "actor dependency models") OR ("goal model" OR "goal models") OR ("stakeholder model" OR "stakeholder models")) AND (language OR framework OR formalism OR metamodel)
+  heinonline: ("dependence network*" OR "power-dependence" OR "actor dependency model*" OR "goal model*" OR "stakeholder model*") AND (language OR framework OR formalism OR metamodel)
+  scholar: '"dependence networks" OR "actor dependency" OR "goal model" language framework'
+  dblp: '"dependence networks" | "actor dependency" | "goal model" language framework'
+  ssrn: '"dependence networks" OR "actor dependency" OR "goal model" language framework'
+  basis: C4.9, C8.1–C8.6, C2.7
+  community: 'community vocabulary: dependence networks (MAS), goal and actor models (RE), stakeholder models (SE)'
+  register: P1
+- id: B4-Q03
+  direction: B4-D01
+  lens: C mechanism
+  canonical: (dependenc* OR "power of influence") AND (actor* OR agent*) AND (ontolog* OR metamodel OR "graph model*" OR "network model*" OR "formal semantics")
+  openalex_oql: title_and_abstract has (("dependenc*" OR "power of influence") AND ("actor*" OR "agent*") AND ("ontolog*" OR metamodel OR "graph model*" OR "network model*" OR "formal semantics"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((dependenc* OR "power of influence") AND (actor* OR agent*) AND (ontolog* OR metamodel OR "graph model*" OR "network model*" OR "formal semantics"))
+  wos: TS=((dependenc* OR "power of influence") AND (actor* OR agent*) AND (ontolog* OR metamodel OR "graph model*" OR "network model*" OR "formal semantics"))
+  ieee: (dependenc* OR "power of influence") AND (actor* OR agent*) AND (ontolog* OR metamodel OR ("graph model" OR "graph models") OR ("network model" OR "network models") OR "formal semantics")
+  heinonline: (dependenc* OR "power of influence") AND (actor* OR agent*) AND (ontolog* OR metamodel OR "graph model*" OR "network model*" OR "formal semantics")
+  scholar: actor dependency metamodel OR ontology OR "graph model"
+  dblp: actor dependency metamodel | ontology | "graph model"
+  ssrn: actor dependency metamodel OR ontology OR "graph model"
+  basis: C4.2, C4.9, C8.2
+  community: dependence as graph or metamodel relation; ontology engineering, RE metamodels
+  register: P1
+- id: B4-Q04
+  direction: B4-D02
+  lens: A semantic
+  canonical: ("social commitment*" OR "directed commitment*" OR "conditional commitment*") AND (lifecycle OR "life cycle" OR operation* OR violation OR deadline*) AND (formal* OR semantic* OR specification)
+  openalex_oql: title_and_abstract has (("social commitment*" OR "directed commitment*" OR "conditional commitment*") AND (lifecycle OR "life cycle" OR "operation*" OR violation OR "deadline*") AND ("formal*" OR "semantic*" OR specification))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("social commitment*" OR "directed commitment*" OR "conditional commitment*") AND (lifecycle OR "life cycle" OR operation* OR violation OR deadline*) AND (formal* OR semantic* OR specification))
+  wos: TS=(("social commitment*" OR "directed commitment*" OR "conditional commitment*") AND (lifecycle OR "life cycle" OR operation* OR violation OR deadline*) AND (formal* OR semantic* OR specification))
+  ieee: (("social commitment" OR "social commitments") OR ("directed commitment" OR "directed commitments") OR ("conditional commitment" OR "conditional commitments")) AND (lifecycle OR "life cycle" OR operation* OR violation OR deadline*) AND (formal* OR semantic* OR specification)
+  heinonline: ("social commitment*" OR "directed commitment*" OR "conditional commitment*") AND (lifecycle OR "life cycle" OR operation* OR violation OR deadline*) AND (formal* OR semantic* OR specification)
+  scholar: '"social commitment" lifecycle formal semantics'
+  dblp: '"social commitment" lifecycle formal semantics'
+  ssrn: '"social commitment" lifecycle formal semantics'
+  basis: C2.1–C2.6
+  community: commitment lifecycle and operations; MAS commitment community
+  register: P1
+- id: B4-Q05
+  direction: B4-D02
+  lens: B community
+  canonical: ("commitment protocol*" OR "commitment-based" OR "commitment modeling" OR "commitment modelling" OR "economic commitment*") AND (language OR framework OR verification OR ontolog*)
+  openalex_oql: title_and_abstract has (("commitment protocol*" OR "commitment-based" OR "commitment modeling" OR "commitment modelling" OR "economic commitment*") AND (language OR framework OR verification OR "ontolog*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("commitment protocol*" OR "commitment-based" OR "commitment modeling" OR "commitment modelling" OR "economic commitment*") AND (language OR framework OR verification OR ontolog*))
+  wos: TS=(("commitment protocol*" OR "commitment-based" OR "commitment modeling" OR "commitment modelling" OR "economic commitment*") AND (language OR framework OR verification OR ontolog*))
+  ieee: (("commitment protocol" OR "commitment protocols") OR "commitment-based" OR "commitment modeling" OR "commitment modelling" OR ("economic commitment" OR "economic commitments")) AND (language OR framework OR verification OR ontolog*)
+  heinonline: ("commitment protocol*" OR "commitment-based" OR "commitment modeling" OR "commitment modelling" OR "economic commitment*") AND (language OR framework OR verification OR ontolog*)
+  scholar: '"commitment protocol" OR "economic commitment" language ontology'
+  dblp: '"commitment protocol" | "economic commitment" language ontology'
+  ssrn: '"commitment protocol" OR "economic commitment" language ontology'
+  basis: C2.1, C2.3, C2.4, C4.3
+  community: commitment protocols (MAS) and economic commitments (REA, value modeling)
+  register: P1
+- id: B4-Q06
+  direction: B4-D02
+  lens: C mechanism
+  canonical: commitment* AND (agent* OR actor* OR party OR parties) AND ("event calculus" OR "state machine" OR "temporal logic" OR ontolog* OR "answer set")
+  openalex_oql: title_and_abstract has ("commitment*" AND ("agent*" OR "actor*" OR party OR parties) AND ("event calculus" OR "state machine" OR "temporal logic" OR "ontolog*" OR "answer set"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(commitment* AND (agent* OR actor* OR party OR parties) AND ("event calculus" OR "state machine" OR "temporal logic" OR ontolog* OR "answer set"))
+  wos: TS=(commitment* AND (agent* OR actor* OR party OR parties) AND ("event calculus" OR "state machine" OR "temporal logic" OR ontolog* OR "answer set"))
+  ieee: commitment* AND (agent* OR actor* OR party OR parties) AND ("event calculus" OR "state machine" OR "temporal logic" OR ontolog* OR "answer set")
+  heinonline: commitment* AND (agent* OR actor* OR party OR parties) AND ("event calculus" OR "state machine" OR "temporal logic" OR ontolog* OR "answer set")
+  scholar: commitments agents "event calculus" OR "state machine" OR "temporal logic"
+  dblp: commitments agents "event calculus" | "state machine" | "temporal logic"
+  ssrn: commitments agents "event calculus" OR "state machine" OR "temporal logic"
+  basis: C2.4, C2.5, C2.7
+  community: commitments as event-driven state objects; logic and rule communities
+  register: P1
+- id: B4-Q07
+  direction: B4-D03
+  lens: A semantic
+  canonical: ("normative position*" OR "jural relation*" OR "rights and duties" OR "contrary-to-duty" OR "strong permission" OR "weak permission") AND (formal* OR logic OR model* OR ontolog*)
+  openalex_oql: title_and_abstract has (("normative position*" OR "jural relation*" OR "rights and duties" OR "contrary-to-duty" OR "strong permission" OR "weak permission") AND ("formal*" OR logic OR "model*" OR "ontolog*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("normative position*" OR "jural relation*" OR "rights and duties" OR "contrary-to-duty" OR "strong permission" OR "weak permission") AND (formal* OR logic OR model* OR ontolog*))
+  wos: TS=(("normative position*" OR "jural relation*" OR "rights and duties" OR "contrary-to-duty" OR "strong permission" OR "weak permission") AND (formal* OR logic OR model* OR ontolog*))
+  ieee: (("normative position" OR "normative positions") OR ("jural relation" OR "jural relations") OR "rights and duties" OR "contrary-to-duty" OR "strong permission" OR "weak permission") AND (formal* OR logic OR model* OR ontolog*)
+  heinonline: ("normative position*" OR "jural relation*" OR "rights and duties" OR "contrary-to-duty" OR "strong permission" OR "weak permission") AND (formal* OR logic OR model* OR ontolog*)
+  scholar: '"normative positions" OR "rights and duties" OR "contrary-to-duty" formal model'
+  dblp: '"normative positions" | "rights and duties" | "contrary-to-duty" formal model'
+  ssrn: '"normative positions" OR "rights and duties" OR "contrary-to-duty" formal model'
+  basis: C1.18, C5.1, C5.3, C5.5
+  community: the space of normative relations between parties; deontic logic, AI and law
+  register: P1
+- id: B4-Q08
+  direction: B4-D03
+  lens: B community
+  canonical: ("deontic logic" OR "defeasible deontic" OR "legal core ontology" OR "legal relation*" OR "legal ontology") AND ((norm OR norms OR normative) OR contract* OR obligation*) AND (model* OR language OR representation)
+  openalex_oql: title_and_abstract has (("deontic logic" OR "defeasible deontic" OR "legal core ontology" OR "legal relation*" OR "legal ontology") AND ((norm OR norms OR normative) OR "contract*" OR "obligation*") AND ("model*" OR language OR representation))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("deontic logic" OR "defeasible deontic" OR "legal core ontology" OR "legal relation*" OR "legal ontology") AND ((norm OR norms OR normative) OR contract* OR obligation*) AND (model* OR language OR representation))
+  wos: TS=(("deontic logic" OR "defeasible deontic" OR "legal core ontology" OR "legal relation*" OR "legal ontology") AND ((norm OR norms OR normative) OR contract* OR obligation*) AND (model* OR language OR representation))
+  ieee: ("deontic logic" OR "defeasible deontic" OR "legal core ontology" OR ("legal relation" OR "legal relations") OR "legal ontology") AND ((norm OR norms OR normative) OR contract* OR obligation*) AND (model* OR language OR representation)
+  heinonline: ("deontic logic" OR "defeasible deontic" OR "legal core ontology" OR "legal relation*" OR "legal ontology") AND ((norm OR norms OR normative) OR contract* OR obligation*) AND (model* OR language OR representation)
+  scholar: '"deontic logic" OR "legal core ontology" OR "legal relations" model'
+  dblp: '"deontic logic" | "legal core ontology" | "legal relations" model'
+  ssrn: '"deontic logic" OR "legal core ontology" OR "legal relations" model'
+  basis: C1.3, C1.4, C5.2, C5.4, C5.6
+  community: community vocabulary of deontic logic and legal ontology engineering
+  register: P1
+- id: B4-Q09
+  direction: B4-D03
+  lens: C mechanism
+  canonical: ("norm conflict*" OR "normative conflict*" OR precedence OR priorit* OR derogation) AND ((norm OR norms OR normative) OR obligation*) AND ("rule language" OR executable OR "formal semantics" OR "answer set" OR defeasible)
+  openalex_oql: title_and_abstract has (("norm conflict*" OR "normative conflict*" OR precedence OR "priorit*" OR derogation) AND ((norm OR norms OR normative) OR "obligation*") AND ("rule language" OR executable OR "formal semantics" OR "answer set" OR defeasible))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("norm conflict*" OR "normative conflict*" OR precedence OR priorit* OR derogation) AND ((norm OR norms OR normative) OR obligation*) AND ("rule language" OR executable OR "formal semantics" OR "answer set" OR defeasible))
+  wos: TS=(("norm conflict*" OR "normative conflict*" OR precedence OR priorit* OR derogation) AND ((norm OR norms OR normative) OR obligation*) AND ("rule language" OR executable OR "formal semantics" OR "answer set" OR defeasible))
+  ieee: (("norm conflict" OR "norm conflicts") OR ("normative conflict" OR "normative conflicts") OR precedence OR priorit* OR derogation) AND ((norm OR norms OR normative) OR obligation*) AND ("rule language" OR executable OR "formal semantics" OR "answer set" OR defeasible)
+  heinonline: ("norm conflict*" OR "normative conflict*" OR precedence OR priorit* OR derogation) AND ((norm OR norms OR normative) OR obligation*) AND ("rule language" OR executable OR "formal semantics" OR "answer set" OR defeasible)
+  scholar: '"norm conflict" precedence "rule language" OR defeasible OR executable'
+  dblp: '"norm conflict" precedence "rule language" | defeasible | executable'
+  ssrn: '"norm conflict" precedence "rule language" OR defeasible OR executable'
+  basis: C5.4, C5.6, X3
+  community: conflict and precedence handled by rule languages and defeasible reasoning
+  register: P1
+- id: B4-Q10
+  direction: B4-D04
+  lens: A semantic
+  canonical: ("institutional power" OR "counts-as" OR "counts as" OR "constitutive rule*" OR "institutional act*" OR "institutional fact*") AND (formal* OR model* OR specification OR logic)
+  openalex_oql: title_and_abstract has (("institutional power" OR "counts-as" OR "counts as" OR "constitutive rule*" OR "institutional act*" OR "institutional fact*") AND ("formal*" OR "model*" OR specification OR logic))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("institutional power" OR "counts-as" OR "counts as" OR "constitutive rule*" OR "institutional act*" OR "institutional fact*") AND (formal* OR model* OR specification OR logic))
+  wos: TS=(("institutional power" OR "counts-as" OR "counts as" OR "constitutive rule*" OR "institutional act*" OR "institutional fact*") AND (formal* OR model* OR specification OR logic))
+  ieee: ("institutional power" OR "counts-as" OR "counts as" OR ("constitutive rule" OR "constitutive rules") OR ("institutional act" OR "institutional acts") OR ("institutional fact" OR "institutional facts")) AND (formal* OR model* OR specification OR logic)
+  heinonline: ("institutional power" OR "counts-as" OR "counts as" OR "constitutive rule*" OR "institutional act*" OR "institutional fact*") AND (formal* OR model* OR specification OR logic)
+  scholar: '"institutional power" OR "counts-as" OR "constitutive rules" formal model'
+  dblp: '"institutional power" | "counts-as" | "constitutive rules" formal model'
+  ssrn: '"institutional power" OR "counts-as" OR "constitutive rules" formal model'
+  basis: C1.12, C3.2, C4.6, C4.7
+  community: power to change institutional state; institutional modeling, normative MAS
+  register: P1
+- id: B4-Q11
+  direction: B4-D04
+  lens: B community
+  canonical: ("electronic institution*" OR "artificial institution*" OR "normative multi-agent" OR "institutional model*" OR "agent institution*") AND (language OR framework OR specification OR metamodel)
+  openalex_oql: title_and_abstract has (("electronic institution*" OR "artificial institution*" OR "normative multi-agent" OR "institutional model*" OR "agent institution*") AND (language OR framework OR specification OR metamodel))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard
+  scopus: TITLE-ABS-KEY(("electronic institution*" OR "artificial institution*" OR "normative multi-agent" OR "institutional model*" OR "agent institution*") AND (language OR framework OR specification OR metamodel))
+  wos: TS=(("electronic institution*" OR "artificial institution*" OR "normative multi-agent" OR "institutional model*" OR "agent institution*") AND (language OR framework OR specification OR metamodel))
+  ieee: (("electronic institution" OR "electronic institutions") OR ("artificial institution" OR "artificial institutions") OR "normative multi-agent" OR ("institutional model" OR "institutional models") OR ("agent institution" OR "agent institutions")) AND (language OR framework OR specification OR metamodel)
+  heinonline: ("electronic institution*" OR "artificial institution*" OR "normative multi-agent" OR "institutional model*" OR "agent institution*") AND (language OR framework OR specification OR metamodel)
+  scholar: '"electronic institution" OR "artificial institution" specification language'
+  dblp: '"electronic institution" | "artificial institution" specification language'
+  ssrn: '"electronic institution" OR "artificial institution" specification language'
+  basis: C4.6–C4.8, C5.7
+  community: community vocabulary of agent institutions
+  register: P1
+- id: B4-Q12
+  direction: B4-D04
+  lens: C mechanism
+  canonical: institution* AND ((norm OR norms OR normative) OR (power OR powers) OR authorit*) AND (executable OR "answer set" OR "event calculus" OR "model checking" OR "transition system" OR "dynamic logic")
+  openalex_oql: title_and_abstract has ("institution*" AND ((norm OR norms OR normative) OR (power OR powers) OR "authorit*") AND (executable OR "answer set" OR "event calculus" OR "model checking" OR "transition system" OR "dynamic logic"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(institution* AND ((norm OR norms OR normative) OR (power OR powers) OR authorit*) AND (executable OR "answer set" OR "event calculus" OR "model checking" OR "transition system" OR "dynamic logic"))
+  wos: TS=(institution* AND ((norm OR norms OR normative) OR (power OR powers) OR authorit*) AND (executable OR "answer set" OR "event calculus" OR "model checking" OR "transition system" OR "dynamic logic"))
+  ieee: institution* AND ((norm OR norms OR normative) OR (power OR powers) OR authorit*) AND (executable OR "answer set" OR "event calculus" OR "model checking" OR "transition system" OR "dynamic logic")
+  heinonline: institution* AND ((norm OR norms OR normative) OR (power OR powers) OR authorit*) AND (executable OR "answer set" OR "event calculus" OR "model checking" OR "transition system" OR "dynamic logic")
+  scholar: institution norms executable "transition system" OR "model checking" OR "answer set"
+  dblp: institution norms executable "transition system" | "model checking" | "answer set"
+  ssrn: institution norms executable "transition system" OR "model checking" OR "answer set"
+  basis: C4.8, C1.13, C12.2
+  community: institutions as executable or verifiable transition systems
+  register: P1
+- id: B4-Q13
+  direction: B4-D05
+  lens: A semantic
+  canonical: ("role enactment" OR "decision right*" OR veto OR "approval authorit*" OR "action situation" OR "boundary rule*") AND (organi?ation* OR institution* OR actor*) AND (model* OR formal* OR representation)
+  openalex_oql: title_and_abstract has (("role enactment" OR "decision right*" OR veto OR "approval authorit*" OR "action situation" OR "boundary rule*") AND (("organization*" OR "organisation*") OR "institution*" OR "actor*") AND ("model*" OR "formal*" OR representation))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("role enactment" OR "decision right*" OR veto OR "approval authorit*" OR "action situation" OR "boundary rule*") AND (organi?ation* OR institution* OR actor*) AND (model* OR formal* OR representation))
+  wos: TS=(("role enactment" OR "decision right*" OR veto OR "approval authorit*" OR "action situation" OR "boundary rule*") AND (organi?ation* OR institution* OR actor*) AND (model* OR formal* OR representation))
+  ieee: ("role enactment" OR ("decision right" OR "decision rights") OR veto OR ("approval authority" OR "approval authorities") OR "action situation" OR ("boundary rule" OR "boundary rules")) AND ((organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR institution* OR actor*) AND (model* OR formal* OR representation)
+  heinonline: ("role enactment" OR "decision right*" OR veto OR "approval authorit*" OR "action situation" OR "boundary rule*") AND (organi?ation* OR institution* OR actor*) AND (model* OR formal* OR representation)
+  scholar: '"role enactment" OR "decision rights" OR "action situation" organization model'
+  dblp: '"role enactment" | "decision rights" | "action situation" organization model'
+  ssrn: '"role enactment" OR "decision rights" OR "action situation" organization model'
+  basis: C1.11, C3.5, C3.6, C4.4, C9.7, C9.10
+  community: who takes part and who may decide; organizational MAS, institutional analysis, governance
+  register: P1
+- id: B4-Q14
+  direction: B4-D05
+  lens: B community
+  canonical: ("organi?ational model*" OR "organi?ation model*" OR "governance model*" OR "stakeholder model*" OR "organi?ational specification") AND (role* OR position* OR authorit* OR participat*) AND (metamodel OR language OR framework OR ontolog*)
+  openalex_oql: title_and_abstract has ((("organizational model*" OR "organisational model*") OR ("organization model*" OR "organisation model*") OR "governance model*" OR "stakeholder model*" OR ("organizational specification" OR "organisational specification")) AND ("role*" OR "position*" OR "authorit*" OR "participat*") AND (metamodel OR language OR framework OR "ontolog*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("organi?ational model*" OR "organi?ation model*" OR "governance model*" OR "stakeholder model*" OR "organi?ational specification") AND (role* OR position* OR authorit* OR participat*) AND (metamodel OR language OR framework OR ontolog*))
+  wos: TS=(("organi?ational model*" OR "organi?ation model*" OR "governance model*" OR "stakeholder model*" OR "organi?ational specification") AND (role* OR position* OR authorit* OR participat*) AND (metamodel OR language OR framework OR ontolog*))
+  ieee: (("organizational model" OR "organisational model" OR "organizational models" OR "organisational models") OR ("organization model" OR "organisation model" OR "organization models" OR "organisation models") OR ("governance model" OR "governance models") OR ("stakeholder model" OR "stakeholder models") OR ("organizational specification" OR "organisational specification")) AND (role* OR position* OR authorit* OR participat*) AND (metamodel OR language OR framework OR ontolog*)
+  heinonline: ("organi?ational model*" OR "organi?ation model*" OR "governance model*" OR "stakeholder model*" OR "organi?ational specification") AND (role* OR position* OR authorit* OR participat*) AND (metamodel OR language OR framework OR ontolog*)
+  scholar: '"organizational model" OR "governance model" roles authority metamodel'
+  dblp: '"organizational model" | "governance model" roles authority metamodel'
+  ssrn: '"organizational model" OR "governance model" roles authority metamodel'
+  basis: C4.4, C4.5, C6.2, C6.7, C11.5, C11.6
+  community: 'kind-of-model vocabulary: organizational, governance, stakeholder models'
+  register: P1
+- id: B4-Q15
+  direction: B4-D05
+  lens: C mechanism
+  canonical: role* AND (organi?ation* OR institution*) AND (agent* OR actor*) AND (metamodel OR ontolog* OR "formal specification" OR "temporal trace" OR executable)
+  openalex_oql: title_and_abstract has ("role*" AND (("organization*" OR "organisation*") OR "institution*") AND ("agent*" OR "actor*") AND (metamodel OR "ontolog*" OR "formal specification" OR "temporal trace" OR executable))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(role* AND (organi?ation* OR institution*) AND (agent* OR actor*) AND (metamodel OR ontolog* OR "formal specification" OR "temporal trace" OR executable))
+  wos: TS=(role* AND (organi?ation* OR institution*) AND (agent* OR actor*) AND (metamodel OR ontolog* OR "formal specification" OR "temporal trace" OR executable))
+  ieee: role* AND ((organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR institution*) AND (agent* OR actor*) AND (metamodel OR ontolog* OR "formal specification" OR "temporal trace" OR executable)
+  heinonline: role* AND (organi?ation* OR institution*) AND (agent* OR actor*) AND (metamodel OR ontolog* OR "formal specification" OR "temporal trace" OR executable)
+  scholar: roles organization agents metamodel OR ontology "formal specification"
+  dblp: roles organization agents metamodel | ontology "formal specification"
+  ssrn: roles organization agents metamodel OR ontology "formal specification"
+  basis: C4.4, C3.6
+  community: roles and positions as metamodel or ontology elements with formal semantics
+  register: P1
+- id: B4-Q16
+  direction: B4-D06
+  lens: A semantic
+  canonical: ("non-binding" OR "binding force" OR "preliminary agreement*" OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound") AND (formal* OR model* OR representation OR ontolog* OR computational)
+  openalex_oql: title_and_abstract has (("non-binding" OR "binding force" OR "preliminary agreement*" OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound") AND ("formal*" OR "model*" OR representation OR "ontolog*" OR computational))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("non-binding" OR "binding force" OR "preliminary agreement*" OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound") AND (formal* OR model* OR representation OR ontolog* OR computational))
+  wos: TS=(("non-binding" OR "binding force" OR "preliminary agreement*" OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound") AND (formal* OR model* OR representation OR ontolog* OR computational))
+  ieee: ("non-binding" OR "binding force" OR ("preliminary agreement" OR "preliminary agreements") OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound") AND (formal* OR model* OR representation OR ontolog* OR computational)
+  heinonline: ("non-binding" OR "binding force" OR "preliminary agreement*" OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound") AND (formal* OR model* OR representation OR ontolog* OR computational)
+  scholar: '"non-binding" OR "preliminary agreement" OR "soft law" formal representation'
+  dblp: '"non-binding" | "preliminary agreement" | "soft law" formal representation'
+  ssrn: '"non-binding" OR "preliminary agreement" OR "soft law" formal representation'
+  basis: C1.1–C1.3, C1.5
+  community: degrees of bindingness; law, international relations, legal informatics
+  register: P1
+- id: B4-Q17
+  direction: B4-D06
+  lens: B community
+  canonical: ("contract formation" OR "offer and acceptance" OR "pre-contractual" OR "contract ontology" OR legalization OR legalisation) AND (model* OR formal* OR representation OR agent*)
+  openalex_oql: title_and_abstract has (("contract formation" OR "offer and acceptance" OR "pre-contractual" OR "contract ontology" OR legalization OR legalisation) AND ("model*" OR "formal*" OR representation OR "agent*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("contract formation" OR "offer and acceptance" OR "pre-contractual" OR "contract ontology" OR legalization OR legalisation) AND (model* OR formal* OR representation OR agent*))
+  wos: TS=(("contract formation" OR "offer and acceptance" OR "pre-contractual" OR "contract ontology" OR legalization OR legalisation) AND (model* OR formal* OR representation OR agent*))
+  ieee: ("contract formation" OR "offer and acceptance" OR "pre-contractual" OR "contract ontology" OR legalization OR legalisation) AND (model* OR formal* OR representation OR agent*)
+  heinonline: ("contract formation" OR "offer and acceptance" OR "pre-contractual" OR "contract ontology" OR legalization OR legalisation) AND (model* OR formal* OR representation OR agent*)
+  scholar: '"contract formation" OR "offer and acceptance" OR "contract ontology" formal model'
+  dblp: '"contract formation" | "offer and acceptance" | "contract ontology" formal model'
+  ssrn: '"contract formation" OR "offer and acceptance" OR "contract ontology" formal model'
+  basis: C1.5, C1.17, C1.2
+  community: formation of agreements; AI and law, agent negotiation, legal ontologies
+  register: P1
+- id: B4-Q18
+  direction: B4-D06
+  lens: C mechanism
+  canonical: (agreement* OR contract*) AND (party OR parties) AND (ontolog* OR "conceptual model*" OR "formal language" OR "specification language") AND (consent OR bind* OR precision OR degree)
+  openalex_oql: title_and_abstract has (("agreement*" OR "contract*") AND (party OR parties) AND ("ontolog*" OR "conceptual model*" OR "formal language" OR "specification language") AND (consent OR "bind*" OR precision OR degree))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((agreement* OR contract*) AND (party OR parties) AND (ontolog* OR "conceptual model*" OR "formal language" OR "specification language") AND (consent OR bind* OR precision OR degree))
+  wos: TS=((agreement* OR contract*) AND (party OR parties) AND (ontolog* OR "conceptual model*" OR "formal language" OR "specification language") AND (consent OR bind* OR precision OR degree))
+  ieee: (agreement* OR contract*) AND (party OR parties) AND (ontolog* OR ("conceptual model" OR "conceptual models") OR "formal language" OR "specification language") AND (consent OR bind* OR precision OR degree)
+  heinonline: (agreement* OR contract*) AND (party OR parties) AND (ontolog* OR "conceptual model*" OR "formal language" OR "specification language") AND (consent OR bind* OR precision OR degree)
+  scholar: agreement parties ontology OR "conceptual model" consent binding precision
+  dblp: agreement parties ontology | "conceptual model" consent binding precision
+  ssrn: agreement parties ontology OR "conceptual model" consent binding precision
+  basis: C1.4, C1.17, C1.21, C7.9
+  community: agreements as ontological or conceptual-model objects with graded properties
+  register: P1
+- id: B4-Q19
+  direction: B4-D07
+  lens: A semantic
+  canonical: (amendment OR novation OR assignment OR substitution OR suspension OR termination) AND (contract* OR obligation* OR "legal relation*" OR agreement*) AND (formal* OR model* OR semantic* OR ontolog*)
+  openalex_oql: title_and_abstract has ((amendment OR novation OR assignment OR substitution OR suspension OR termination) AND ("contract*" OR "obligation*" OR "legal relation*" OR "agreement*") AND ("formal*" OR "model*" OR "semantic*" OR "ontolog*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((amendment OR novation OR assignment OR substitution OR suspension OR termination) AND (contract* OR obligation* OR "legal relation*" OR agreement*) AND (formal* OR model* OR semantic* OR ontolog*))
+  wos: TS=((amendment OR novation OR assignment OR substitution OR suspension OR termination) AND (contract* OR obligation* OR "legal relation*" OR agreement*) AND (formal* OR model* OR semantic* OR ontolog*))
+  ieee: (amendment OR novation OR assignment OR substitution OR suspension OR termination) AND (contract* OR obligation* OR ("legal relation" OR "legal relations") OR agreement*) AND (formal* OR model* OR semantic* OR ontolog*)
+  heinonline: (amendment OR novation OR assignment OR substitution OR suspension OR termination) AND (contract* OR obligation* OR "legal relation*" OR agreement*) AND (formal* OR model* OR semantic* OR ontolog*)
+  scholar: contract amendment OR novation OR suspension OR termination formal model
+  dblp: contract amendment | novation | suspension | termination formal model
+  ssrn: contract amendment OR novation OR suspension OR termination formal model
+  basis: C1.6–C1.8, C1.15, C1.19, C1.20
+  community: transformation and ending of a relation; contract languages, legal ontology
+  register: P1
+- id: B4-Q20
+  direction: B4-D07
+  lens: B community
+  canonical: ("contract dynamics" OR "contract lifecycle" OR "contract life cycle" OR "contract evolution" OR "legal change") AND (model* OR ontolog* OR language OR formal*) AND (change* OR modif* OR version* OR identity)
+  openalex_oql: title_and_abstract has (("contract dynamics" OR "contract lifecycle" OR "contract life cycle" OR "contract evolution" OR "legal change") AND ("model*" OR "ontolog*" OR language OR "formal*") AND ("change*" OR "modif*" OR "version*" OR identity))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("contract dynamics" OR "contract lifecycle" OR "contract life cycle" OR "contract evolution" OR "legal change") AND (model* OR ontolog* OR language OR formal*) AND (change* OR modif* OR version* OR identity))
+  wos: TS=(("contract dynamics" OR "contract lifecycle" OR "contract life cycle" OR "contract evolution" OR "legal change") AND (model* OR ontolog* OR language OR formal*) AND (change* OR modif* OR version* OR identity))
+  ieee: ("contract dynamics" OR "contract lifecycle" OR "contract life cycle" OR "contract evolution" OR "legal change") AND (model* OR ontolog* OR language OR formal*) AND (change* OR modif* OR version* OR identity)
+  heinonline: ("contract dynamics" OR "contract lifecycle" OR "contract life cycle" OR "contract evolution" OR "legal change") AND (model* OR ontolog* OR language OR formal*) AND (change* OR modif* OR version* OR identity)
+  scholar: '"contract dynamics" OR "contract lifecycle" OR "legal change" model ontology'
+  dblp: '"contract dynamics" | "contract lifecycle" | "legal change" model ontology'
+  ssrn: '"contract dynamics" OR "contract lifecycle" OR "legal change" model ontology'
+  basis: C1.8, C1.19, C7.4
+  community: 'community vocabulary: contract dynamics, lifecycle, legal change'
+  register: P1
+- id: B4-Q21
+  direction: B4-D07
+  lens: C mechanism
+  canonical: (contract* OR agreement* OR "legal relation*") AND ("state machine" OR "finite state" OR "transition system" OR versioning OR "identity criteria" OR persistence) AND (formal* OR semantic* OR ontolog*)
+  openalex_oql: title_and_abstract has (("contract*" OR "agreement*" OR "legal relation*") AND ("state machine" OR "finite state" OR "transition system" OR versioning OR "identity criteria" OR persistence) AND ("formal*" OR "semantic*" OR "ontolog*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((contract* OR agreement* OR "legal relation*") AND ("state machine" OR "finite state" OR "transition system" OR versioning OR "identity criteria" OR persistence) AND (formal* OR semantic* OR ontolog*))
+  wos: TS=((contract* OR agreement* OR "legal relation*") AND ("state machine" OR "finite state" OR "transition system" OR versioning OR "identity criteria" OR persistence) AND (formal* OR semantic* OR ontolog*))
+  ieee: (contract* OR agreement* OR ("legal relation" OR "legal relations")) AND ("state machine" OR "finite state" OR "transition system" OR versioning OR "identity criteria" OR persistence) AND (formal* OR semantic* OR ontolog*)
+  heinonline: (contract* OR agreement* OR "legal relation*") AND ("state machine" OR "finite state" OR "transition system" OR versioning OR "identity criteria" OR persistence) AND (formal* OR semantic* OR ontolog*)
+  scholar: contract "state machine" OR "transition system" OR versioning identity formal
+  dblp: contract "state machine" | "transition system" | versioning identity formal
+  ssrn: contract "state machine" OR "transition system" OR versioning identity formal
+  basis: C1.7, C1.19, C6.1
+  community: relations as state machines or versioned objects; formal methods, ontology engineering
+  register: P1
+- id: B4-Q22
+  direction: B4-D08
+  lens: A semantic
+  canonical: ("rules of change" OR "meta-norm*" OR "rules about rules" OR "constitutional rule*" OR "collective-choice rule*" OR "institutional change") AND (formal* OR model* OR representation OR computational)
+  openalex_oql: title_and_abstract has (("rules of change" OR "meta-norm*" OR "rules about rules" OR "constitutional rule*" OR "collective-choice rule*" OR "institutional change") AND ("formal*" OR "model*" OR representation OR computational))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("rules of change" OR "meta-norm*" OR "rules about rules" OR "constitutional rule*" OR "collective-choice rule*" OR "institutional change") AND (formal* OR model* OR representation OR computational))
+  wos: TS=(("rules of change" OR "meta-norm*" OR "rules about rules" OR "constitutional rule*" OR "collective-choice rule*" OR "institutional change") AND (formal* OR model* OR representation OR computational))
+  ieee: ("rules of change" OR ("meta-norm" OR "meta-norms") OR "rules about rules" OR ("constitutional rule" OR "constitutional rules") OR ("collective-choice rule" OR "collective-choice rules") OR "institutional change") AND (formal* OR model* OR representation OR computational)
+  heinonline: ("rules of change" OR "meta-norm*" OR "rules about rules" OR "constitutional rule*" OR "collective-choice rule*" OR "institutional change") AND (formal* OR model* OR representation OR computational)
+  scholar: '"rules of change" OR "meta-norms" OR "constitutional rules" formal model'
+  dblp: '"rules of change" | "meta-norms" | "constitutional rules" formal model'
+  ssrn: '"rules of change" OR "meta-norms" OR "constitutional rules" formal model'
+  basis: C3.3, C3.4, C3.8
+  community: rule levels and change of rules; institutional analysis, normative systems
+  register: P1
+- id: B4-Q23
+  direction: B4-D08
+  lens: B community
+  canonical: ("institutional grammar" OR "institutional statement*" OR "norm change" OR "normative system change" OR "norm revision" OR "norm dynamics") AND (formal* OR computational OR language OR framework)
+  openalex_oql: title_and_abstract has (("institutional grammar" OR "institutional statement*" OR "norm change" OR "normative system change" OR "norm revision" OR "norm dynamics") AND ("formal*" OR computational OR language OR framework))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("institutional grammar" OR "institutional statement*" OR "norm change" OR "normative system change" OR "norm revision" OR "norm dynamics") AND (formal* OR computational OR language OR framework))
+  wos: TS=(("institutional grammar" OR "institutional statement*" OR "norm change" OR "normative system change" OR "norm revision" OR "norm dynamics") AND (formal* OR computational OR language OR framework))
+  ieee: ("institutional grammar" OR ("institutional statement" OR "institutional statements") OR "norm change" OR "normative system change" OR "norm revision" OR "norm dynamics") AND (formal* OR computational OR language OR framework)
+  heinonline: ("institutional grammar" OR "institutional statement*" OR "norm change" OR "normative system change" OR "norm revision" OR "norm dynamics") AND (formal* OR computational OR language OR framework)
+  scholar: '"institutional grammar" OR "norm change" OR "norm revision" formal framework'
+  dblp: '"institutional grammar" | "norm change" | "norm revision" formal framework'
+  ssrn: '"institutional grammar" OR "norm change" OR "norm revision" formal framework'
+  basis: C3.7, C3.4, C3.1
+  community: 'community vocabulary: institutional grammar, norm change and revision'
+  register: P1
+- id: B4-Q24
+  direction: B4-D08
+  lens: C mechanism
+  canonical: ((norm OR norms OR normative) OR rule OR rules) AND (change OR revision OR modification OR dynamic*) AND ("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision")
+  openalex_oql: title_and_abstract has (((norm OR norms OR normative) OR rule OR rules) AND (change OR revision OR modification OR "dynamic*") AND ("dynamic logic" OR defeasible OR "temporal logic" OR "ontolog*" OR "rule language" OR "belief revision"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(((norm OR norms OR normative) OR rule OR rules) AND (change OR revision OR modification OR dynamic*) AND ("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision"))
+  wos: TS=(((norm OR norms OR normative) OR rule OR rules) AND (change OR revision OR modification OR dynamic*) AND ("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision"))
+  ieee: ((norm OR norms OR normative) OR rule OR rules) AND (change OR revision OR modification OR dynamic*) AND ("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision")
+  heinonline: ((norm OR norms OR normative) OR rule OR rules) AND (change OR revision OR modification OR dynamic*) AND ("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision")
+  scholar: norm change "dynamic logic" OR defeasible OR "belief revision" ontology
+  dblp: norm change "dynamic logic" | defeasible | "belief revision" ontology
+  ssrn: norm change "dynamic logic" OR defeasible OR "belief revision" ontology
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+- id: B4-Q25
+  direction: B4-D09
+  lens: A semantic
+  canonical: ("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR reorgani?ation) AND (collaboration* OR "virtual organi?ation*" OR alliance* OR organi?ation*) AND (model* OR formal* OR specification)
+  openalex_oql: title_and_abstract has (("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR (reorganization OR reorganisation)) AND ("collaboration*" OR ("virtual organization*" OR "virtual organisation*") OR "alliance*" OR ("organization*" OR "organisation*")) AND ("model*" OR "formal*" OR specification))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR reorgani?ation) AND (collaboration* OR "virtual organi?ation*" OR alliance* OR organi?ation*) AND (model* OR formal* OR specification))
+  wos: TS=(("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR reorgani?ation) AND (collaboration* OR "virtual organi?ation*" OR alliance* OR organi?ation*) AND (model* OR formal* OR specification))
+  ieee: ("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR (reorganization OR reorganisation)) AND (collaboration* OR ("virtual organization" OR "virtual organizations" OR "virtual organisation" OR "virtual organisations") OR alliance* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational)) AND (model* OR formal* OR specification)
+  heinonline: ("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR reorgani?ation) AND (collaboration* OR "virtual organi?ation*" OR alliance* OR organi?ation*) AND (model* OR formal* OR specification)
+  scholar: '"membership change" OR "joining and leaving" OR reorganization collaboration formal model'
+  dblp: '"membership change" | "joining and leaving" | reorganization collaboration formal model'
+  ssrn: '"membership change" OR "joining and leaving" OR reorganization collaboration formal model'
+  basis: C6.5, C6.6, C7.5, C7.6, C11.7
+  community: change of who takes part and how the structure changes; collaborative networks, organizational MAS
+  register: P1
+- id: B4-Q26
+  direction: B4-D09
+  lens: B community
+  canonical: ("dynamic virtual organi?ation*" OR "collaborative network*" OR "reorgani?ation operation*" OR "organi?ational change" OR "adaptive organi?ation*") AND (agent* OR formal* OR model*) AND (specification OR language OR semantics OR contract*)
+  openalex_oql: title_and_abstract has ((("dynamic virtual organization*" OR "dynamic virtual organisation*") OR "collaborative network*" OR ("reorganization operation*" OR "reorganisation operation*") OR ("organizational change" OR "organisational change") OR ("adaptive organization*" OR "adaptive organisation*")) AND ("agent*" OR "formal*" OR "model*") AND (specification OR language OR semantics OR "contract*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("dynamic virtual organi?ation*" OR "collaborative network*" OR "reorgani?ation operation*" OR "organi?ational change" OR "adaptive organi?ation*") AND (agent* OR formal* OR model*) AND (specification OR language OR semantics OR contract*))
+  wos: TS=(("dynamic virtual organi?ation*" OR "collaborative network*" OR "reorgani?ation operation*" OR "organi?ational change" OR "adaptive organi?ation*") AND (agent* OR formal* OR model*) AND (specification OR language OR semantics OR contract*))
+  ieee: (("dynamic virtual organization" OR "dynamic virtual organizations" OR "dynamic virtual organisation" OR "dynamic virtual organisations") OR ("collaborative network" OR "collaborative networks") OR ("reorganization operation" OR "reorganisation operation" OR "reorganization operations" OR "reorganisation operations") OR ("organizational change" OR "organisational change") OR ("adaptive organization" OR "adaptive organizations" OR "adaptive organisation" OR "adaptive organisations")) AND (agent* OR formal* OR model*) AND (specification OR language OR semantics OR contract*)
+  heinonline: ("dynamic virtual organi?ation*" OR "collaborative network*" OR "reorgani?ation operation*" OR "organi?ational change" OR "adaptive organi?ation*") AND (agent* OR formal* OR model*) AND (specification OR language OR semantics OR contract*)
+  scholar: '"dynamic virtual organization" OR "reorganization operations" formal specification'
+  dblp: '"dynamic virtual organization" | "reorganization operations" formal specification'
+  ssrn: '"dynamic virtual organization" OR "reorganization operations" formal specification'
+  basis: C6.1, C6.5, C6.6, C7.4
+  community: 'community vocabulary: dynamic VOs, reorganization operations'
+  register: P1
+- id: B4-Q27
+  direction: B4-D09
+  lens: C mechanism
+  canonical: (organi?ation* OR collaboration* OR coalition*) AND (reconfigur* OR reorgani?* OR "structural change") AND ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra")
+  openalex_oql: title_and_abstract has ((("organization*" OR "organisation*") OR "collaboration*" OR "coalition*") AND ("reconfigur*" OR ("reorganiz*" OR "reorganis*") OR "structural change") AND ("graph transformation" OR "graph rewriting" OR "bigraph*" OR "formal model" OR "operational semantics" OR "process algebra"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((organi?ation* OR collaboration* OR coalition*) AND (reconfigur* OR reorgani?* OR "structural change") AND ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra"))
+  wos: TS=((organi?ation* OR collaboration* OR coalition*) AND (reconfigur* OR reorgani?* OR "structural change") AND ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra"))
+  ieee: ((organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR collaboration* OR coalition*) AND (reconfigur* OR (reorganization OR reorganisation OR reorganizational) OR "structural change") AND ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra")
+  heinonline: (organi?ation* OR collaboration* OR coalition*) AND (reconfigur* OR reorgani?* OR "structural change") AND ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra")
+  scholar: organization reconfiguration "graph transformation" OR "operational semantics" OR bigraph
+  dblp: organization reconfiguration "graph transformation" | "operational semantics" | bigraph
+  ssrn: organization reconfiguration "graph transformation" OR "operational semantics" OR bigraph
+  basis: C6.6, C7.6, C11.4
+  community: structure change as graph rewriting or process algebra; formal methods
+  register: P1
+- id: B4-Q28
+  direction: B4-D10
+  lens: A semantic
+  canonical: (deadline* OR "temporal constraint*" OR "achievement obligation*" OR "maintenance obligation*" OR "conditional obligation*" OR "activation condition*") AND ((norm OR norms OR normative) OR commitment* OR obligation* OR contract*) AND (formal* OR monitor* OR semantic*)
+  openalex_oql: title_and_abstract has (("deadline*" OR "temporal constraint*" OR "achievement obligation*" OR "maintenance obligation*" OR "conditional obligation*" OR "activation condition*") AND ((norm OR norms OR normative) OR "commitment*" OR "obligation*" OR "contract*") AND ("formal*" OR "monitor*" OR "semantic*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((deadline* OR "temporal constraint*" OR "achievement obligation*" OR "maintenance obligation*" OR "conditional obligation*" OR "activation condition*") AND ((norm OR norms OR normative) OR commitment* OR obligation* OR contract*) AND (formal* OR monitor* OR semantic*))
+  wos: TS=((deadline* OR "temporal constraint*" OR "achievement obligation*" OR "maintenance obligation*" OR "conditional obligation*" OR "activation condition*") AND ((norm OR norms OR normative) OR commitment* OR obligation* OR contract*) AND (formal* OR monitor* OR semantic*))
+  ieee: (deadline* OR ("temporal constraint" OR "temporal constraints") OR ("achievement obligation" OR "achievement obligations") OR ("maintenance obligation" OR "maintenance obligations") OR ("conditional obligation" OR "conditional obligations") OR ("activation condition" OR "activation conditions")) AND ((norm OR norms OR normative) OR commitment* OR obligation* OR contract*) AND (formal* OR monitor* OR semantic*)
+  heinonline: (deadline* OR "temporal constraint*" OR "achievement obligation*" OR "maintenance obligation*" OR "conditional obligation*" OR "activation condition*") AND ((norm OR norms OR normative) OR commitment* OR obligation* OR contract*) AND (formal* OR monitor* OR semantic*)
+  scholar: deadlines "temporal constraints" obligations norms formal semantics
+  dblp: deadlines "temporal constraints" obligations norms formal semantics
+  ssrn: deadlines "temporal constraints" obligations norms formal semantics
+  basis: C2.5, C2.6, C5.2, C8.6
+  community: time-bound and conditional normative states; temporal reasoning
+  register: P1
+- id: B4-Q29
+  direction: B4-D10
+  lens: B community
+  canonical: ("norm monitoring" OR "runtime monitoring" OR "compliance checking" OR "runtime norm change" OR "norm enforcement" OR "contract monitoring") AND ((norm OR norms OR normative) OR contract* OR obligation* OR commitment*)
+  openalex_oql: title_and_abstract has (("norm monitoring" OR "runtime monitoring" OR "compliance checking" OR "runtime norm change" OR "norm enforcement" OR "contract monitoring") AND ((norm OR norms OR normative) OR "contract*" OR "obligation*" OR "commitment*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("norm monitoring" OR "runtime monitoring" OR "compliance checking" OR "runtime norm change" OR "norm enforcement" OR "contract monitoring") AND ((norm OR norms OR normative) OR contract* OR obligation* OR commitment*))
+  wos: TS=(("norm monitoring" OR "runtime monitoring" OR "compliance checking" OR "runtime norm change" OR "norm enforcement" OR "contract monitoring") AND ((norm OR norms OR normative) OR contract* OR obligation* OR commitment*))
+  ieee: ("norm monitoring" OR "runtime monitoring" OR "compliance checking" OR "runtime norm change" OR "norm enforcement" OR "contract monitoring") AND ((norm OR norms OR normative) OR contract* OR obligation* OR commitment*)
+  heinonline: ("norm monitoring" OR "runtime monitoring" OR "compliance checking" OR "runtime norm change" OR "norm enforcement" OR "contract monitoring") AND ((norm OR norms OR normative) OR contract* OR obligation* OR commitment*)
+  scholar: '"norm monitoring" OR "compliance checking" OR "runtime norm change" OR "contract monitoring"'
+  dblp: '"norm monitoring" | "compliance checking" | "runtime norm change" | "contract monitoring"'
+  ssrn: '"norm monitoring" OR "compliance checking" OR "runtime norm change" OR "contract monitoring"'
+  basis: C5.8, C1.13, C3.10
+  community: 'community vocabulary: monitoring and runtime enforcement'
+  register: P1
+- id: B4-Q30
+  direction: B4-D10
+  lens: C mechanism
+  canonical: (obligation* OR (norm OR norms OR normative) OR commitment*) AND ("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal")
+  openalex_oql: title_and_abstract has (("obligation*" OR (norm OR norms OR normative) OR "commitment*") AND ("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((obligation* OR (norm OR norms OR normative) OR commitment*) AND ("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal"))
+  wos: TS=((obligation* OR (norm OR norms OR normative) OR commitment*) AND ("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal"))
+  ieee: (obligation* OR (norm OR norms OR normative) OR commitment*) AND ("temporal logic" OR "event calculus" OR ("timed automata" OR "timed automaton") OR "answer set" OR "runtime verification" OR "metric temporal")
+  heinonline: (obligation* OR (norm OR norms OR normative) OR commitment*) AND ("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal")
+  scholar: obligations norms "temporal logic" OR "event calculus" OR "timed automata"
+  dblp: obligations norms "temporal logic" | "event calculus" | "timed automata"
+  ssrn: obligations norms "temporal logic" OR "event calculus" OR "timed automata"
+  basis: C2.5, C12.2, C1.9
+  community: temporal semantics as logics or automata; formal methods
+  register: P1
+- id: B4-Q31
+  direction: B4-D11
+  lens: A semantic
+  canonical: ("stage-gate" OR "phase gate" OR "gate review*" OR "milestone review*" OR "technical review*" OR "entrance criteria" OR "exit criteria" OR "acceptance review") AND (model* OR formal* OR framework OR method*)
+  openalex_oql: title_and_abstract has (("stage-gate" OR "phase gate" OR "gate review*" OR "milestone review*" OR "technical review*" OR "entrance criteria" OR "exit criteria" OR "acceptance review") AND ("model*" OR "formal*" OR framework OR "method*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("stage-gate" OR "phase gate" OR "gate review*" OR "milestone review*" OR "technical review*" OR "entrance criteria" OR "exit criteria" OR "acceptance review") AND (model* OR formal* OR framework OR method*))
+  wos: TS=(("stage-gate" OR "phase gate" OR "gate review*" OR "milestone review*" OR "technical review*" OR "entrance criteria" OR "exit criteria" OR "acceptance review") AND (model* OR formal* OR framework OR method*))
+  ieee: ("stage-gate" OR "phase gate" OR ("gate review" OR "gate reviews") OR ("milestone review" OR "milestone reviews") OR ("technical review" OR "technical reviews") OR "entrance criteria" OR "exit criteria" OR "acceptance review") AND (model* OR formal* OR framework OR method*)
+  heinonline: ("stage-gate" OR "phase gate" OR "gate review*" OR "milestone review*" OR "technical review*" OR "entrance criteria" OR "exit criteria" OR "acceptance review") AND (model* OR formal* OR framework OR method*)
+  scholar: '"stage-gate" OR "milestone review" OR "technical review" OR "entrance criteria" model'
+  dblp: '"stage-gate" | "milestone review" | "technical review" | "entrance criteria" model'
+  ssrn: '"stage-gate" OR "milestone review" OR "technical review" OR "entrance criteria" model'
+  basis: C9.1–C9.5, C9.12
+  community: gates and reviews as decision points; project management, systems engineering
+  register: P1
+- id: B4-Q32
+  direction: B4-D11
+  lens: B community
+  canonical: ("systems engineering" OR "project management" OR acquisition OR "space program" OR "space programs" OR "space programme" OR "space programmes") AND ("technical review*" OR milestone* OR "decision gate*" OR "gate criteria") AND ("model-based" OR MBSE OR "process model*" OR "lifecycle model*")
+  openalex_oql: title_and_abstract has (("systems engineering" OR "project management" OR acquisition OR "space program" OR "space programs" OR "space programme" OR "space programmes") AND ("technical review*" OR "milestone*" OR "decision gate*" OR "gate criteria") AND ("model-based" OR MBSE OR "process model*" OR "lifecycle model*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("systems engineering" OR "project management" OR acquisition OR "space program" OR "space programs" OR "space programme" OR "space programmes") AND ("technical review*" OR milestone* OR "decision gate*" OR "gate criteria") AND ("model-based" OR MBSE OR "process model*" OR "lifecycle model*"))
+  wos: TS=(("systems engineering" OR "project management" OR acquisition OR "space program" OR "space programs" OR "space programme" OR "space programmes") AND ("technical review*" OR milestone* OR "decision gate*" OR "gate criteria") AND ("model-based" OR MBSE OR "process model*" OR "lifecycle model*"))
+  ieee: ("systems engineering" OR "project management" OR acquisition OR "space program" OR "space programs" OR "space programme" OR "space programmes") AND (("technical review" OR "technical reviews") OR milestone* OR ("decision gate" OR "decision gates") OR "gate criteria") AND ("model-based" OR MBSE OR ("process model" OR "process models") OR ("lifecycle model" OR "lifecycle models"))
+  heinonline: ("systems engineering" OR "project management" OR acquisition OR "space program" OR "space programs" OR "space programme" OR "space programmes") AND ("technical review*" OR milestone* OR "decision gate*" OR "gate criteria") AND ("model-based" OR MBSE OR "process model*" OR "lifecycle model*")
+  scholar: '"systems engineering" "technical review" OR milestone "model-based" OR "process model"'
+  dblp: '"systems engineering" "technical review" | milestone "model-based" | "process model"'
+  ssrn: '"systems engineering" "technical review" OR milestone "model-based" OR "process model"'
+  basis: C9.2, C9.3, C9.6, C9.7
+  community: 'community vocabulary: MBSE reviews, acquisition milestones'
+  register: P1
+- id: B4-Q33
+  direction: B4-D11
+  lens: C mechanism
+  canonical: ("stage-gate" OR "phase gate" OR milestone* OR "staged commitment") AND ("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*")
+  openalex_oql: title_and_abstract has (("stage-gate" OR "phase gate" OR "milestone*" OR "staged commitment") AND ("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("stage-gate" OR "phase gate" OR milestone* OR "staged commitment") AND ("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*"))
+  wos: TS=(("stage-gate" OR "phase gate" OR milestone* OR "staged commitment") AND ("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*"))
+  ieee: ("stage-gate" OR "phase gate" OR milestone* OR "staged commitment") AND (("process model" OR "process models") OR ("Petri net" OR "Petri nets") OR workflow OR "state machine" OR ("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming"))
+  heinonline: ("stage-gate" OR "phase gate" OR milestone* OR "staged commitment") AND ("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*")
+  scholar: '"stage-gate" OR milestone "process model" OR "Petri net" OR "decision model" OR "stochastic programming"'
+  dblp: '"stage-gate" | milestone "process model" | "Petri net" | "decision model" | "stochastic programming"'
+  ssrn: '"stage-gate" OR milestone "process model" OR "Petri net" OR "decision model" OR "stochastic programming"'
+  basis: C9.3, C9.4, C9.6, C10.5
+  community: staged processes as process models or decision models; process modeling, operations research
+  register: P1
+- id: B4-Q34
+  direction: B4-D12
+  lens: A semantic
+  canonical: ("configuration management" OR "change control" OR "engineering change" OR "change request*" OR "configuration baseline" OR "change board") AND (model* OR ontolog* OR formal* OR metamodel)
+  openalex_oql: title_and_abstract has (("configuration management" OR "change control" OR "engineering change" OR "change request*" OR "configuration baseline" OR "change board") AND ("model*" OR "ontolog*" OR "formal*" OR metamodel))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("configuration management" OR "change control" OR "engineering change" OR "change request*" OR "configuration baseline" OR "change board") AND (model* OR ontolog* OR formal* OR metamodel))
+  wos: TS=(("configuration management" OR "change control" OR "engineering change" OR "change request*" OR "configuration baseline" OR "change board") AND (model* OR ontolog* OR formal* OR metamodel))
+  ieee: ("configuration management" OR "change control" OR "engineering change" OR ("change request" OR "change requests") OR "configuration baseline" OR "change board") AND (model* OR ontolog* OR formal* OR metamodel)
+  heinonline: ("configuration management" OR "change control" OR "engineering change" OR "change request*" OR "configuration baseline" OR "change board") AND (model* OR ontolog* OR formal* OR metamodel)
+  scholar: '"configuration management" OR "change control" OR "engineering change" ontology OR model'
+  dblp: '"configuration management" | "change control" | "engineering change" ontology | model'
+  ssrn: '"configuration management" OR "change control" OR "engineering change" ontology OR model'
+  basis: C9.8–C9.11
+  community: controlled change of a baseline; systems engineering, ontology engineering
+  register: P1
+- id: B4-Q35
+  direction: B4-D12
+  lens: B community
+  canonical: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis)
+  openalex_oql: title_and_abstract has (("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND ("change*" OR "modif*") AND ("method*" OR "model*" OR analysis))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis))
+  wos: TS=(("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis))
+  ieee: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis)
+  heinonline: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis)
+  scholar: '"change propagation" OR "dependency structure matrix" OR "design structure matrix" change method'
+  dblp: '"change propagation" | "dependency structure matrix" | "design structure matrix" change method'
+  ssrn: '"change propagation" OR "dependency structure matrix" OR "design structure matrix" change method'
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+- id: B4-Q36
+  direction: B4-D12
+  lens: C mechanism
+  canonical: ("engineering change" OR "change request*" OR "configuration control" OR "change approval") AND (ontolog* OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process")
+  openalex_oql: title_and_abstract has (("engineering change" OR "change request*" OR "configuration control" OR "change approval") AND ("ontolog*" OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("engineering change" OR "change request*" OR "configuration control" OR "change approval") AND (ontolog* OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process"))
+  wos: TS=(("engineering change" OR "change request*" OR "configuration control" OR "change approval") AND (ontolog* OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process"))
+  ieee: ("engineering change" OR ("change request" OR "change requests") OR "configuration control" OR "change approval") AND (ontolog* OR ("Petri net" OR "Petri nets") OR workflow OR ("process model" OR "process models") OR metamodel OR "business process")
+  heinonline: ("engineering change" OR "change request*" OR "configuration control" OR "change approval") AND (ontolog* OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process")
+  scholar: '"engineering change" OR "change request" ontology OR workflow OR "Petri net"'
+  dblp: '"engineering change" | "change request" ontology | workflow | "Petri net"'
+  ssrn: '"engineering change" OR "change request" ontology OR workflow OR "Petri net"'
+  basis: C9.9–C9.11
+  community: change control as workflow or ontology; process modeling, ontology engineering
+  register: P1
+- id: B4-Q37
+  direction: B4-D13
+  lens: A semantic
+  canonical: ("real option*" OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND (model* OR formal* OR framework) AND (engineering OR (project OR projects) OR organi?ation* OR design)
+  openalex_oql: title_and_abstract has (("real option*" OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND ("model*" OR "formal*" OR framework) AND (engineering OR (project OR projects) OR ("organization*" OR "organisation*") OR design))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("real option*" OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND (model* OR formal* OR framework) AND (engineering OR (project OR projects) OR organi?ation* OR design))
+  wos: TS=(("real option*" OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND (model* OR formal* OR framework) AND (engineering OR (project OR projects) OR organi?ation* OR design))
+  ieee: (("real option" OR "real options") OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND (model* OR formal* OR framework) AND (engineering OR (project OR projects) OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR design)
+  heinonline: ("real option*" OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND (model* OR formal* OR framework) AND (engineering OR (project OR projects) OR organi?ation* OR design)
+  scholar: '"real options" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence" model'
+  dblp: '"real options" | "delayed commitment" | "design freeze" | "lock-in" | "path dependence" model'
+  ssrn: '"real options" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence" model'
+  basis: C10.1–C10.8, C3.9, C9.6
+  community: when to commit and irreversibility; real options, engineering design, organization studies
+  register: P1
+- id: B4-Q38
+  direction: B4-D13
+  lens: B community
+  canonical: ("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems") AND (model* OR method* OR framework OR valuation)
+  openalex_oql: title_and_abstract has (("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems") AND ("model*" OR "method*" OR framework OR valuation))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems") AND (model* OR method* OR framework OR valuation))
+  wos: TS=(("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems") AND (model* OR method* OR framework OR valuation))
+  ieee: ("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems") AND (model* OR method* OR framework OR valuation)
+  heinonline: ("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems") AND (model* OR method* OR framework OR valuation)
+  scholar: '"flexibility in engineering design" OR "real options in projects" OR "set-based design"'
+  dblp: '"flexibility in engineering design" | "real options in projects" | "set-based design"'
+  ssrn: '"flexibility in engineering design" OR "real options in projects" OR "set-based design"'
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+- id: B4-Q39
+  direction: B4-D13
+  lens: C mechanism
+  canonical: ("real option*" OR "staged investment" OR irreversib* OR "option value") AND ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov)
+  openalex_oql: title_and_abstract has (("real option*" OR "staged investment" OR "irreversib*" OR "option value") AND ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("real option*" OR "staged investment" OR irreversib* OR "option value") AND ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov))
+  wos: TS=(("real option*" OR "staged investment" OR irreversib* OR "option value") AND ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov))
+  ieee: (("real option" OR "real options") OR "staged investment" OR irreversib* OR "option value") AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  heinonline: ("real option*" OR "staged investment" OR irreversib* OR "option value") AND ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov)
+  scholar: '"real options" OR "staged investment" "decision model" OR "stochastic programming" OR "dynamic programming"'
+  dblp: '"real options" | "staged investment" "decision model" | "stochastic programming" | "dynamic programming"'
+  ssrn: '"real options" OR "staged investment" "decision model" OR "stochastic programming" OR "dynamic programming"'
+  basis: C10.1–C10.5
+  community: options as decision models; operations research, decision analysis
+  register: P1
+- id: B4-Q40
+  direction: B4-D14
+  lens: A semantic
+  canonical: ("exogenous event*" OR "external event*" OR "force majeure" OR "non-agentive" OR "agent causation" OR "event causation" OR "changed circumstances") AND (model* OR formal* OR representation OR contract*)
+  openalex_oql: title_and_abstract has (("exogenous event*" OR "external event*" OR "force majeure" OR "non-agentive" OR "agent causation" OR "event causation" OR "changed circumstances") AND ("model*" OR "formal*" OR representation OR "contract*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("exogenous event*" OR "external event*" OR "force majeure" OR "non-agentive" OR "agent causation" OR "event causation" OR "changed circumstances") AND (model* OR formal* OR representation OR contract*))
+  wos: TS=(("exogenous event*" OR "external event*" OR "force majeure" OR "non-agentive" OR "agent causation" OR "event causation" OR "changed circumstances") AND (model* OR formal* OR representation OR contract*))
+  ieee: (("exogenous event" OR "exogenous events") OR ("external event" OR "external events") OR "force majeure" OR "non-agentive" OR "agent causation" OR "event causation" OR "changed circumstances") AND (model* OR formal* OR representation OR contract*)
+  heinonline: ("exogenous event*" OR "external event*" OR "force majeure" OR "non-agentive" OR "agent causation" OR "event causation" OR "changed circumstances") AND (model* OR formal* OR representation OR contract*)
+  scholar: '"exogenous events" OR "force majeure" OR "agent causation" OR "event causation" formal model'
+  dblp: '"exogenous events" | "force majeure" | "agent causation" | "event causation" formal model'
+  ssrn: '"exogenous events" OR "force majeure" OR "agent causation" OR "event causation" formal model'
+  basis: C1.9, C7.8, C12.1, C12.2
+  community: change that nobody decided; action theory, law, event modeling
+  register: P1
+- id: B4-Q41
+  direction: B4-D14
+  lens: B community
+  canonical: ("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND (formal* OR model*)
+  openalex_oql: title_and_abstract has (("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR "disruption*") AND ((norm OR norms OR normative) OR "contract*" OR "institution*" OR ("organization*" OR "organisation*") OR "agent*") AND ("formal*" OR "model*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND (formal* OR model*))
+  wos: TS=(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND (formal* OR model*))
+  ieee: (("action language" OR "action languages") OR "actual causality" OR ("causal model" OR "causal models") OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR agent*) AND (formal* OR model*)
+  heinonline: ("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND (formal* OR model*)
+  scholar: '"action language" OR "actual causality" OR "causal model" norms agents formal'
+  dblp: '"action language" | "actual causality" | "causal model" norms agents formal'
+  ssrn: '"action language" OR "actual causality" OR "causal model" norms agents formal'
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+- id: B4-Q42
+  direction: B4-D14
+  lens: C mechanism
+  canonical: ((event OR events) OR disruption* OR "external shock*") AND (agent* OR actor* OR institution*) AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event")
+  openalex_oql: title_and_abstract has (((event OR events) OR "disruption*" OR "external shock*") AND ("agent*" OR "actor*" OR "institution*") AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(((event OR events) OR disruption* OR "external shock*") AND (agent* OR actor* OR institution*) AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event"))
+  wos: TS=(((event OR events) OR disruption* OR "external shock*") AND (agent* OR actor* OR institution*) AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event"))
+  ieee: ((event OR events) OR disruption* OR ("external shock" OR "external shocks")) AND (agent* OR actor* OR institution*) AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event")
+  heinonline: ((event OR events) OR disruption* OR "external shock*") AND (agent* OR actor* OR institution*) AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event")
+  scholar: events disruption agents "event calculus" OR "situation calculus" OR "causal model"
+  dblp: events disruption agents "event calculus" | "situation calculus" | "causal model"
+  ssrn: events disruption agents "event calculus" OR "situation calculus" OR "causal model"
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+- id: B4-Q43
+  direction: B4-D15
+  lens: A semantic
+  canonical: ("system of systems" OR "systems of systems") AND (constituent* OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR disengag*) AND (model* OR formal* OR architect* OR framework)
+  openalex_oql: title_and_abstract has (("system of systems" OR "systems of systems") AND ("constituent*" OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR "disengag*") AND ("model*" OR "formal*" OR "architect*" OR framework))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("system of systems" OR "systems of systems") AND (constituent* OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR disengag*) AND (model* OR formal* OR architect* OR framework))
+  wos: TS=(("system of systems" OR "systems of systems") AND (constituent* OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR disengag*) AND (model* OR formal* OR architect* OR framework))
+  ieee: ("system of systems" OR "systems of systems") AND (constituent* OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR disengag*) AND (model* OR formal* OR architect* OR framework)
+  heinonline: ("system of systems" OR "systems of systems") AND (constituent* OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR disengag*) AND (model* OR formal* OR architect* OR framework)
+  scholar: '"system of systems" constituent autonomy OR ownership OR joining OR leaving model'
+  dblp: '"system of systems" constituent autonomy | ownership | joining | leaving model'
+  ssrn: '"system of systems" constituent autonomy OR ownership OR joining OR leaving model'
+  basis: C11.1, C11.2, C11.5–C11.7
+  community: constituent autonomy and participation; SoS engineering
+  register: P1
+- id: B4-Q44
+  direction: B4-D15
+  lens: B community
+  canonical: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("architecture description" OR "modeling language" OR "modelling language" OR "reconfiguration pattern*" OR framework OR method*)
+  openalex_oql: title_and_abstract has (("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("architecture description" OR "modeling language" OR "modelling language" OR "reconfiguration pattern*" OR framework OR "method*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("architecture description" OR "modeling language" OR "modelling language" OR "reconfiguration pattern*" OR framework OR method*))
+  wos: TS=(("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("architecture description" OR "modeling language" OR "modelling language" OR "reconfiguration pattern*" OR framework OR method*))
+  ieee: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("architecture description" OR "modeling language" OR "modelling language" OR ("reconfiguration pattern" OR "reconfiguration patterns") OR framework OR method*)
+  heinonline: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("architecture description" OR "modeling language" OR "modelling language" OR "reconfiguration pattern*" OR framework OR method*)
+  scholar: '"system of systems engineering" "dynamic reconfiguration" OR "architecture description language"'
+  dblp: '"system of systems engineering" "dynamic reconfiguration" | "architecture description language"'
+  ssrn: '"system of systems engineering" "dynamic reconfiguration" OR "architecture description language"'
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+- id: B4-Q45
+  direction: B4-D15
+  lens: C mechanism
+  canonical: '"system of systems" AND (reconfigur* OR evolution* OR emergen*) AND ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")'
+  openalex_oql: title_and_abstract has ("system of systems" AND ("reconfigur*" OR "evolution*" OR "emergen*") AND ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY("system of systems" AND (reconfigur* OR evolution* OR emergen*) AND ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based"))
+  wos: TS=("system of systems" AND (reconfigur* OR evolution* OR emergen*) AND ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based"))
+  ieee: '"system of systems" AND (reconfigur* OR evolution* OR emergen*) AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")'
+  heinonline: '"system of systems" AND (reconfigur* OR evolution* OR emergen*) AND ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")'
+  scholar: '"system of systems" reconfiguration "formal model" OR rewriting OR "agent-based"'
+  dblp: '"system of systems" reconfiguration "formal model" | rewriting | "agent-based"'
+  ssrn: '"system of systems" reconfiguration "formal model" OR rewriting OR "agent-based"'
+  basis: C11.3, C11.4, C6.4
+  community: SoS reconfiguration as formal or agent-based model; formal methods, MBSE
+  register: P1
+- id: B4-Q46
+  direction: B4-D16
+  lens: A semantic
+  canonical: ("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND (interorgani?ational OR "inter-organi?ational" OR alliance* OR partner* OR collaboration*) AND (model* OR formal* OR representation)
+  openalex_oql: title_and_abstract has (("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND ((interorganizational OR interorganisational) OR ("inter-organizational" OR "inter-organisational") OR "alliance*" OR "partner*" OR "collaboration*") AND ("model*" OR "formal*" OR representation))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND (interorgani?ational OR "inter-organi?ational" OR alliance* OR partner* OR collaboration*) AND (model* OR formal* OR representation))
+  wos: TS=(("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND (interorgani?ational OR "inter-organi?ational" OR alliance* OR partner* OR collaboration*) AND (model* OR formal* OR representation))
+  ieee: ("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND ((interorganizational OR interorganisational) OR ("inter-organizational" OR "inter-organisational") OR alliance* OR partner* OR collaboration*) AND (model* OR formal* OR representation)
+  heinonline: ("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND (interorgani?ational OR "inter-organi?ational" OR alliance* OR partner* OR collaboration*) AND (model* OR formal* OR representation)
+  scholar: '"relational governance" OR trust interorganizational alliance formal model'
+  dblp: '"relational governance" | trust interorganizational alliance formal model'
+  ssrn: '"relational governance" OR trust interorganizational alliance formal model'
+  basis: C7.9, C3.1, C1.16, C7.3
+  community: the informal side of arrangements; organization studies, interorganizational relations
+  register: P1
+- id: B4-Q47
+  direction: B4-D16
+  lens: B community
+  canonical: ("computational trust" OR "trust model*" OR "reputation model*" OR "trust and reputation" OR "trust dynamics") AND (agent* OR organi?ation* OR partner*) AND (formal* OR model* OR framework OR logic)
+  openalex_oql: title_and_abstract has (("computational trust" OR "trust model*" OR "reputation model*" OR "trust and reputation" OR "trust dynamics") AND ("agent*" OR ("organization*" OR "organisation*") OR "partner*") AND ("formal*" OR "model*" OR framework OR logic))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("computational trust" OR "trust model*" OR "reputation model*" OR "trust and reputation" OR "trust dynamics") AND (agent* OR organi?ation* OR partner*) AND (formal* OR model* OR framework OR logic))
+  wos: TS=(("computational trust" OR "trust model*" OR "reputation model*" OR "trust and reputation" OR "trust dynamics") AND (agent* OR organi?ation* OR partner*) AND (formal* OR model* OR framework OR logic))
+  ieee: ("computational trust" OR ("trust model" OR "trust models") OR ("reputation model" OR "reputation models") OR "trust and reputation" OR "trust dynamics") AND (agent* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR partner*) AND (formal* OR model* OR framework OR logic)
+  heinonline: ("computational trust" OR "trust model*" OR "reputation model*" OR "trust and reputation" OR "trust dynamics") AND (agent* OR organi?ation* OR partner*) AND (formal* OR model* OR framework OR logic)
+  scholar: '"computational trust" OR "trust model" OR "reputation model" agents organizations formal'
+  dblp: '"computational trust" | "trust model" | "reputation model" agents organizations formal'
+  ssrn: '"computational trust" OR "trust model" OR "reputation model" agents organizations formal'
+  basis: C4.2, C4.9, C7.9
+  community: 'community vocabulary: computational trust and reputation'
+  register: P1
+- id: B4-Q48
+  direction: B4-D16
+  lens: C mechanism
+  canonical: (trust OR "relational governance" OR "path dependence" OR "lock-in") AND (organi?ation* OR agent* OR network*) AND ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation)
+  openalex_oql: title_and_abstract has ((trust OR "relational governance" OR "path dependence" OR "lock-in") AND (("organization*" OR "organisation*") OR "agent*" OR "network*") AND ("agent-based" OR "formal model" OR logic OR "ontolog*" OR "network model*" OR simulation))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((trust OR "relational governance" OR "path dependence" OR "lock-in") AND (organi?ation* OR agent* OR network*) AND ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation))
+  wos: TS=((trust OR "relational governance" OR "path dependence" OR "lock-in") AND (organi?ation* OR agent* OR network*) AND ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation))
+  ieee: (trust OR "relational governance" OR "path dependence" OR "lock-in") AND ((organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR agent* OR network*) AND ("agent-based" OR "formal model" OR logic OR ontolog* OR ("network model" OR "network models") OR simulation)
+  heinonline: (trust OR "relational governance" OR "path dependence" OR "lock-in") AND (organi?ation* OR agent* OR network*) AND ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation)
+  scholar: trust OR "path dependence" organizations "agent-based" OR "formal model" OR "network model"
+  dblp: trust | "path dependence" organizations "agent-based" | "formal model" | "network model"
+  ssrn: trust OR "path dependence" organizations "agent-based" OR "formal model" OR "network model"
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+- id: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  canonical: ("contrary-to-duty" OR "violation handling" OR reparation OR sanction* OR compensation OR "surviving obligation*" OR "residual obligation*") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*) AND (formal* OR model* OR language OR semantic*)
+  openalex_oql: title_and_abstract has (("contrary-to-duty" OR "violation handling" OR reparation OR "sanction*" OR compensation OR "surviving obligation*" OR "residual obligation*") AND ("contract*" OR (norm OR norms OR normative) OR "commitment*" OR "agreement*") AND ("formal*" OR "model*" OR language OR "semantic*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("contrary-to-duty" OR "violation handling" OR reparation OR sanction* OR compensation OR "surviving obligation*" OR "residual obligation*") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*) AND (formal* OR model* OR language OR semantic*))
+  wos: TS=(("contrary-to-duty" OR "violation handling" OR reparation OR sanction* OR compensation OR "surviving obligation*" OR "residual obligation*") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*) AND (formal* OR model* OR language OR semantic*))
+  ieee: ("contrary-to-duty" OR "violation handling" OR reparation OR sanction* OR compensation OR ("surviving obligation" OR "surviving obligations") OR ("residual obligation" OR "residual obligations")) AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*) AND (formal* OR model* OR language OR semantic*)
+  heinonline: ("contrary-to-duty" OR "violation handling" OR reparation OR sanction* OR compensation OR "surviving obligation*" OR "residual obligation*") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*) AND (formal* OR model* OR language OR semantic*)
+  scholar: '"contrary-to-duty" OR reparation OR sanction OR compensation contract norms formal model'
+  dblp: '"contrary-to-duty" | reparation | sanction | compensation contract norms formal model'
+  ssrn: '"contrary-to-duty" OR reparation OR sanction OR compensation contract norms formal model'
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+- id: B4-XC02
+  direction: cross-cutting
+  lens: 'modifier: automatic vs discretionary'
+  canonical: (automatic OR "by operation of law" OR trigger* OR "condition-triggered" OR "self-executing") AND (discretion* OR optional OR decision OR "right but not") AND (contract* OR (norm OR norms OR normative) OR institution* OR agreement*) AND (formal* OR model* OR semantic*)
+  openalex_oql: title_and_abstract has ((automatic OR "by operation of law" OR "trigger*" OR "condition-triggered" OR "self-executing") AND ("discretion*" OR optional OR decision OR "right but not") AND ("contract*" OR (norm OR norms OR normative) OR "institution*" OR "agreement*") AND ("formal*" OR "model*" OR "semantic*"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((automatic OR "by operation of law" OR trigger* OR "condition-triggered" OR "self-executing") AND (discretion* OR optional OR decision OR "right but not") AND (contract* OR (norm OR norms OR normative) OR institution* OR agreement*) AND (formal* OR model* OR semantic*))
+  wos: TS=((automatic OR "by operation of law" OR trigger* OR "condition-triggered" OR "self-executing") AND (discretion* OR optional OR decision OR "right but not") AND (contract* OR (norm OR norms OR normative) OR institution* OR agreement*) AND (formal* OR model* OR semantic*))
+  ieee: (automatic OR "by operation of law" OR trigger* OR "condition-triggered" OR "self-executing") AND (discretion* OR optional OR decision OR "right but not") AND (contract* OR (norm OR norms OR normative) OR institution* OR agreement*) AND (formal* OR model* OR semantic*)
+  heinonline: (automatic OR "by operation of law" OR trigger* OR "condition-triggered" OR "self-executing") AND (discretion* OR optional OR decision OR "right but not") AND (contract* OR (norm OR norms OR normative) OR institution* OR agreement*) AND (formal* OR model* OR semantic*)
+  scholar: automatic OR trigger discretionary OR optional contract norm formal semantics
+  dblp: automatic | trigger discretionary | optional contract norm formal semantics
+  ssrn: automatic OR trigger discretionary OR optional contract norm formal semantics
+  basis: C1.13, C9.5, C10.7, A9
+  community: transitions that fire by themselves vs by decision; contract and institution formalisms
+  register: P1
+- id: B4-BR01
+  direction: bridge
+  lens: RQ4.3
+  canonical: (holistic OR "multi-level" OR multilevel) AND ("system of systems engineering" OR "systems of systems") AND (stakeholder* OR "business model*") AND (architect* OR methodolog* OR framework)
+  openalex_oql: title_and_abstract has ((holistic OR "multi-level" OR multilevel) AND ("system of systems engineering" OR "systems of systems") AND ("stakeholder*" OR "business model*") AND ("architect*" OR "methodolog*" OR framework))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY((holistic OR "multi-level" OR multilevel) AND ("system of systems engineering" OR "systems of systems") AND (stakeholder* OR "business model*") AND (architect* OR methodolog* OR framework))
+  wos: TS=((holistic OR "multi-level" OR multilevel) AND ("system of systems engineering" OR "systems of systems") AND (stakeholder* OR "business model*") AND (architect* OR methodolog* OR framework))
+  ieee: (holistic OR "multi-level" OR multilevel) AND ("system of systems engineering" OR "systems of systems") AND (stakeholder* OR ("business model" OR "business models")) AND (architect* OR methodolog* OR framework)
+  heinonline: (holistic OR "multi-level" OR multilevel) AND ("system of systems engineering" OR "systems of systems") AND (stakeholder* OR "business model*") AND (architect* OR methodolog* OR framework)
+  scholar: holistic OR "multi-level" "system of systems engineering" stakeholders "business model" architecture
+  dblp: holistic | "multi-level" "system of systems engineering" stakeholders "business model" architecture
+  ssrn: holistic OR "multi-level" "system of systems engineering" stakeholders "business model" architecture
+  basis: C11.5, C11.8, RQ4.3
+  community: holistic SoSE linking business, SoS and constituent levels; aerospace SE
+  register: BR
+- id: B4-BR02
+  direction: bridge
+  lens: RQ4.3
+  canonical: ("architecture design space" OR "system architecture optimization" OR "system architecture optimisation" OR "architecture enumeration" OR tradespace OR "architecting decisions") AND (stakeholder* OR organi?ation* OR decision* OR "design space")
+  openalex_oql: title_and_abstract has (("architecture design space" OR "system architecture optimization" OR "system architecture optimisation" OR "architecture enumeration" OR tradespace OR "architecting decisions") AND ("stakeholder*" OR ("organization*" OR "organisation*") OR "decision*" OR "design space"))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("architecture design space" OR "system architecture optimization" OR "system architecture optimisation" OR "architecture enumeration" OR tradespace OR "architecting decisions") AND (stakeholder* OR organi?ation* OR decision* OR "design space"))
+  wos: TS=(("architecture design space" OR "system architecture optimization" OR "system architecture optimisation" OR "architecture enumeration" OR tradespace OR "architecting decisions") AND (stakeholder* OR organi?ation* OR decision* OR "design space"))
+  ieee: ("architecture design space" OR "system architecture optimization" OR "system architecture optimisation" OR "architecture enumeration" OR tradespace OR "architecting decisions") AND (stakeholder* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR decision* OR "design space")
+  heinonline: ("architecture design space" OR "system architecture optimization" OR "system architecture optimisation" OR "architecture enumeration" OR tradespace OR "architecting decisions") AND (stakeholder* OR organi?ation* OR decision* OR "design space")
+  scholar: '"architecture design space" OR "system architecture optimization" OR tradespace stakeholders decisions'
+  dblp: '"architecture design space" | "system architecture optimization" | tradespace stakeholders decisions'
+  ssrn: '"architecture design space" OR "system architecture optimization" OR tradespace stakeholders decisions'
+  basis: RQ4.3, C9.9
+  community: architecture design spaces and optimization; system-architecting lines
+  register: BR
+- id: B4-BR03
+  direction: bridge
+  lens: RQ4.3
+  canonical: ("stakeholder value" OR "value-driven design" OR "stakeholder value network*" OR "extended enterprise") AND (architect* OR "systems engineering" OR "system design") AND (model* OR method* OR framework)
+  openalex_oql: title_and_abstract has (("stakeholder value" OR "value-driven design" OR "stakeholder value network*" OR "extended enterprise") AND ("architect*" OR "systems engineering" OR "system design") AND ("model*" OR "method*" OR framework))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("stakeholder value" OR "value-driven design" OR "stakeholder value network*" OR "extended enterprise") AND (architect* OR "systems engineering" OR "system design") AND (model* OR method* OR framework))
+  wos: TS=(("stakeholder value" OR "value-driven design" OR "stakeholder value network*" OR "extended enterprise") AND (architect* OR "systems engineering" OR "system design") AND (model* OR method* OR framework))
+  ieee: ("stakeholder value" OR "value-driven design" OR ("stakeholder value network" OR "stakeholder value networks") OR "extended enterprise") AND (architect* OR "systems engineering" OR "system design") AND (model* OR method* OR framework)
+  heinonline: ("stakeholder value" OR "value-driven design" OR "stakeholder value network*" OR "extended enterprise") AND (architect* OR "systems engineering" OR "system design") AND (model* OR method* OR framework)
+  scholar: '"stakeholder value" OR "value-driven design" OR "stakeholder value network" "systems engineering"'
+  dblp: '"stakeholder value" | "value-driven design" | "stakeholder value network" "systems engineering"'
+  ssrn: '"stakeholder value" OR "value-driven design" OR "stakeholder value network" "systems engineering"'
+  basis: RQ4.3, C8.1
+  community: stakeholder value linked to architecture; aerospace SE, INCOSE
+  register: BR
+- id: B4-BR04
+  direction: bridge
+  lens: RQ4.3
+  canonical: ("enterprise architecture" OR "enterprise architecting" OR "organi?ational architectural style*" OR "social pattern*") AND (actor* OR stakeholder* OR contract* OR agreement*) AND (dependen* OR traceab* OR coupling OR motivation)
+  openalex_oql: title_and_abstract has (("enterprise architecture" OR "enterprise architecting" OR ("organizational architectural style*" OR "organisational architectural style*") OR "social pattern*") AND ("actor*" OR "stakeholder*" OR "contract*" OR "agreement*") AND ("dependen*" OR "traceab*" OR coupling OR motivation))
+  openalex_note: OpenAlex Query Language, title_and_abstract has (...); Boolean and * truncation kept; both spellings of organization written out because OpenAlex has no single-character wildcard; bare wildcards quoted (OpenAlex evaluates "word*" as a prefix on unstemmed text, recorded 2026-09-29)
+  scopus: TITLE-ABS-KEY(("enterprise architecture" OR "enterprise architecting" OR "organi?ational architectural style*" OR "social pattern*") AND (actor* OR stakeholder* OR contract* OR agreement*) AND (dependen* OR traceab* OR coupling OR motivation))
+  wos: TS=(("enterprise architecture" OR "enterprise architecting" OR "organi?ational architectural style*" OR "social pattern*") AND (actor* OR stakeholder* OR contract* OR agreement*) AND (dependen* OR traceab* OR coupling OR motivation))
+  ieee: ("enterprise architecture" OR "enterprise architecting" OR ("organizational architectural style" OR "organisational architectural style" OR "organizational architectural styles" OR "organisational architectural styles") OR ("social pattern" OR "social patterns")) AND (actor* OR stakeholder* OR contract* OR agreement*) AND (dependen* OR traceab* OR coupling OR motivation)
+  heinonline: ("enterprise architecture" OR "enterprise architecting" OR "organi?ational architectural style*" OR "social pattern*") AND (actor* OR stakeholder* OR contract* OR agreement*) AND (dependen* OR traceab* OR coupling OR motivation)
+  scholar: '"enterprise architecture" actors contracts dependencies traceability "architectural style"'
+  dblp: '"enterprise architecture" actors contracts dependencies traceability "architectural style"'
+  ssrn: '"enterprise architecture" actors contracts dependencies traceability "architectural style"'
+  basis: RQ4.3, C11.5, MR6
+  community: enterprise and organizational architecture linking actors and technology
+  register: BR

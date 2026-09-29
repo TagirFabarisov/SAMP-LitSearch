@@ -49,6 +49,12 @@ def cmd_oql_check(args) -> int:
     return 0
 
 
+def cmd_propose_quoting(args) -> int:
+    from block4_pipeline.pipeline import propose_quoting
+    _print(propose_quoting.propose())
+    return 0
+
+
 def cmd_retrieve(args) -> int:
     try:
         results = retrieve.retrieve(
@@ -134,6 +140,8 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--live", action="store_true", help="make non-retrieving API calls (needs the user's permission)")
     s.add_argument("--execute", action="store_true", help="with --live: also run count-only probes")
     s.set_defaults(fn=cmd_oql_check)
+
+    sub.add_parser("propose-quoting", help="write the OpenAlex forms with bare wildcards quoted, for review; config untouched").set_defaults(fn=cmd_propose_quoting)
 
     s = sub.add_parser("retrieve")
     s.add_argument("--source", required=True)

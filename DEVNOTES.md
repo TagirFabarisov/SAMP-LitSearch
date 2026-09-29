@@ -72,9 +72,37 @@ Read on 29 September 2026 from help.openalex.org (`/api/oql/`, `/api/searching/`
 - Whether `title_and_abstract` is a valid OQL column (as opposed to `title_and_abstract.search`
   or `default.search`) is **not stated**.
 
-`run.py oql-check --live` answers these with non-retrieving calls; `--execute` adds
-count-only probes comparing `"dependence relation*"`, `"dependence relation"` and
-`"dependence relations"`. Nothing in the query bank is changed by the program.
+## Open question 1b: what the live check recorded (29 September 2026, user-approved)
+
+Recordings: `block4_pipeline/data/logs/oql_check_20260929T210956Z/` and
+`oql_check_20260929T211211Z/` (with count probes; `extra_phrase_decomposition_probe.json`).
+
+| Construct | Result | Evidence |
+|---|---|---|
+| parentheses, AND/OR | accepted as intended | C1 parses; translated to nested OR/AND filter rows |
+| quoted phrase `"resource dependence"` | accepted; evaluated on **unstemmed** text (`title_and_abstract.search.exact`) | C2: 7,703 |
+| bare word `actor` | accepted; evaluated on **stemmed** text (`title_and_abstract.search`) | C3a: 901,744 |
+| bare truncation `actor*` | **rejected** by the parser: "wildcards run on exact (no-stem) text; fix: quote it" | C3 |
+| quoted truncation `"actor*"` | accepted; prefix match on unstemmed text | C3q: 913,810 (vs 206,116 for exact `"actor"`) |
+| phrase-internal truncation `"dependence relation*"` | accepted as intended: phrase kept, `*` honoured | C4: 3,484 vs 715 singular, 985 plural, 966 "relationship"; the AND form `"dependence" AND "relation*"` gives 221,938, so the phrase was not decomposed |
+| hyphenated phrase `"power-dependence"` | accepted | C5: 135,516 |
+| column `title_and_abstract` | accepted; registered as `title_and_abstract.search` / `.search.exact` | properties registry |
+| `cites is (W…)` for forward snowballing | accepted; translated to `referenced_works` | C7: 1,253 |
+| sort `publication_date:asc,id:asc` (protocol.yaml as shipped) | **rejected**: `id` is not sortable | sort_checks |
+| sort `publication_date:asc,ids.openalex:asc` | accepted | sort_checks |
+
+Consequences for the user to decide and record in the deviation log:
+
+1. Every bare `word*` in the 54 `openalex_oql` forms has to be written `"word*"`; 52 of
+   the 54 queries are affected (no `?`, no token shorter than 3 characters). `run.py
+   propose-quoting` writes the rewritten bank and a diff under
+   `data/logs/quoting_proposal_<UTC>/`; the program does not apply it.
+2. Quoted phrases are matched without stemming in OpenAlex (unlike Scopus/WoS loose
+   phrases). Where a phrase's last word may vary (`"social commitment"` vs `"social
+   commitments"`), only the forms already carrying `*` cover the variants. This is a
+   property of the closest-equivalent adaptation, to be noted, not necessarily changed.
+3. `openalex_order` in protocol.yaml must become `publication_date:asc,ids.openalex:asc`
+   (same meaning as the protocol's "publication date, then OpenAlex work ID").
 
 ## Access modes still to confirm (`ACCESS_TO_CONFIRM`)
 
