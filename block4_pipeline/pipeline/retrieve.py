@@ -176,7 +176,8 @@ def _run_one(adapter, source: str, scfg: Dict[str, Any], protocol: Dict[str, Any
         provenance.append_hits(hit_rows)
     storage.write_manifest(run_dir, manifest, {"run_id": run_id, "query_id": qid, "source": source,
                                                "status": outcome.status, "count": outcome.count,
-                                               "records_retrieved": len(hit_rows)})
+                                               "records_retrieved": len(hit_rows),
+                                               "source_quota_after_run": getattr(adapter, "last_quota", None)})
     log_id = provenance.append_search_log({
         "query_id": qid, "direction": q.get("direction"), "lens": q.get("lens"), "source": source,
         "exact_string_sent": exact, "original_count": outcome.count,

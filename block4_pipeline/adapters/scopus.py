@@ -71,6 +71,10 @@ class ScopusAdapter(BaseAdapter):
 
     def _get(self, params: Dict[str, Any]) -> Dict[str, Any]:
         resp = self._request("GET", self.url, params=params, headers=self._headers())
+        # weekly quota as reported by Elsevier; kept for the run record and the status report
+        self.last_quota = {"limit": resp.headers.get("X-RateLimit-Limit"),
+                           "remaining": resp.headers.get("X-RateLimit-Remaining"),
+                           "reset_epoch": resp.headers.get("X-RateLimit-Reset")}
         if resp.status_code in (401, 403):
             raise ScopusEntitlementError(
                 "Scopus returned HTTP %d: %s. The COMPLETE view needs the institution's subscription; "

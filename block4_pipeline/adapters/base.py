@@ -97,6 +97,7 @@ class BaseAdapter:
         self.session = requests.Session()
         self.min_interval_s = 0.15  # polite pacing between requests
         self._last_request = 0.0
+        self.last_quota: Optional[Dict[str, Any]] = None  # filled by adapters whose source reports a quota
 
     # --- capability --------------------------------------------------------
     def supports_api(self) -> bool:
