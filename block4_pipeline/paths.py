@@ -58,6 +58,7 @@ QUERIES_FILE = CONFIG_DIR / "queries.yaml"
 SOURCES_FILE = CONFIG_DIR / "sources.yaml"
 PROTOCOL_FILE = CONFIG_DIR / "protocol.yaml"
 DENYLIST_FILE = CONFIG_DIR / "denylist.txt"
+REFINEMENTS_FILE = CONFIG_DIR / "refinements.yaml"
 
 
 def search_log_file() -> Path:

@@ -22,7 +22,7 @@ def load_queries(path=None, include_refinements: bool = False) -> List[Dict[str,
     data = load_yaml(path or paths.QUERIES_FILE)
     queries = list(data.get("queries", []))
     if include_refinements:
-        rp = paths.CONFIG_DIR / "refinements.yaml"
+        rp = paths.REFINEMENTS_FILE
         if rp.exists():
             queries += [r for r in (load_yaml(rp) or {}).get("refinements", []) if r.get("runnable")]
     return queries

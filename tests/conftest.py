@@ -18,6 +18,8 @@ FIXTURES = Path(__file__).resolve().parent / "fixtures"
 @pytest.fixture(autouse=True)
 def isolated_data_dir(tmp_path, monkeypatch):
     monkeypatch.setenv("BLOCK4_DATA_DIR", str(tmp_path / "data"))
+    from block4_pipeline import paths
+    monkeypatch.setattr(paths, "REFINEMENTS_FILE", tmp_path / "refinements.yaml")  # never the real one
     yield tmp_path / "data"
 
 

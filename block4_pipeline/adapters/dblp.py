@@ -36,6 +36,13 @@ class DblpAdapter(BaseAdapter):
                              headers={"User-Agent": "block4_pipeline (SAMP RQ4.2 systematic search)"})
         if resp.status_code != 200:
             raise RuntimeError("DBLP returned HTTP %d: %s" % (resp.status_code, secrets.redact_text(resp.text[:500])))
+        ctype = resp.headers.get("Content-Type", "")
+        if "json" not in ctype:
+            # Since 2026 dblp.org (and its mirrors) put the search API behind a browser bot-check
+            # page ("Making sure you're not a bot"). The pipeline does not try to pass it: the query
+            # is run in a browser by a person and the JSON answer imported with
+            # `import-manual --format dblp_json` (protocol section 23).
+            raise RuntimeError("DBLP answered with %s instead of JSON (bot-check page); use the browser and import-manual --format dblp_json" % ctype)
         return resp.json()
 
     @staticmethod
@@ -72,8 +79,8 @@ class DblpAdapter(BaseAdapter):
 
     def normalize_record(self, h: Dict[str, Any]) -> Dict[str, Any]:
         info = h.get("info") or {}
-        rec = empty_record(self.name)
-        rec["source_record_id"] = self.source_record_id(h)
+        rec = empty_record(getattr(self, "name", "dblp"))
+        rec["source_record_id"] = DblpAdapter.source_record_id(self, h)
         rec["doi"] = normalize_doi(info.get("doi"))
         rec["title"] = (info.get("title") or "").rstrip(".") or None
         authors = (info.get("authors") or {}).get("author") or []

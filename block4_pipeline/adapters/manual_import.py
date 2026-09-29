@@ -9,6 +9,7 @@ Supported formats (chosen by --format, or detected from the file):
   bibtex       BibTeX (title, author, year, journal|booktitle, doi, abstract, url)
   generic_csv  title, authors, year, venue, url, rank  (Scholar, web, HeinOnline, SSRN)
   openalex_json  a saved OpenAlex works response ({"results": [...]})
+  dblp_json      a saved DBLP search-API answer (format=json), e.g. fetched in a browser
 
 The export file is copied unchanged into the raw run folder; the parsed rows are kept
 next to it as parsed.json so that normalization can locate every record by index.
@@ -24,7 +25,7 @@ from typing import Any, Dict, List, Optional
 from .base import BaseAdapter, MANUAL_EXPORT_REQUIRED, empty_record, normalize_doi
 from .openalex import OpenAlexAdapter
 
-FORMATS = ("scopus_csv", "wos_tab", "ieee_csv", "acm_csv", "ris", "bibtex", "generic_csv", "openalex_json")
+FORMATS = ("scopus_csv", "wos_tab", "ieee_csv", "acm_csv", "ris", "bibtex", "generic_csv", "openalex_json", "dblp_json")
 
 
 # ----------------------------------------------------------------------------- parsers
@@ -120,7 +121,8 @@ def detect_format(path: Path, source: str) -> str:
     if ext in (".bib", ".bibtex"):
         return "bibtex"
     if ext == ".json":
-        return "openalex_json"
+        head = _read_text(path)[:2000]
+        return "dblp_json" if '"result"' in head and "dblp" in head.lower() else "openalex_json"
     head = _read_text(path)[:4000]
     if ext in (".txt", ".tsv") or "\t" in head.splitlines()[0]:
         return "wos_tab"
@@ -137,6 +139,10 @@ def parse_export(path: Path, fmt: str) -> List[Dict[str, Any]]:
     if fmt == "openalex_json":
         import json
         return list(json.loads(_read_text(path)).get("results", []))
+    if fmt == "dblp_json":
+        import json
+        hits = ((json.loads(_read_text(path)).get("result") or {}).get("hits") or {})
+        return list(hits.get("hit") or [])
     text = _read_text(path)
     if fmt == "ris":
         return parse_ris(text)
@@ -184,6 +190,12 @@ def map_record(source: str, fmt: str, row: Dict[str, Any]) -> Dict[str, Any]:
     if fmt == "openalex_json":
         rec.update(OpenAlexAdapter.normalize_record(OpenAlexAdapter.__new__(OpenAlexAdapter), row))  # type: ignore[arg-type]
         rec["source"] = source
+        return rec
+    if fmt == "dblp_json":
+        from .dblp import DblpAdapter
+        rec.update(DblpAdapter.normalize_record(DblpAdapter.__new__(DblpAdapter), row))  # type: ignore[arg-type]
+        rec["source"] = source
+        rec["source_note"] = "DBLP search API answer fetched in a browser and imported; no abstract"
         return rec
     if fmt == "scopus_csv":
         rec["source_record_id"] = _first(row, "EID")
