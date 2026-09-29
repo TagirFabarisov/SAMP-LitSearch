@@ -129,6 +129,15 @@ succeeds, `sources.yaml` keeps `scopus: access_mode: manual_export`; switching i
 is an implementation choice under protocol section 5 and gets a deviation-log entry for
 the record. The Scopus search API does not return the language of a record.
 
+Probe of 29 September 2026 over the Uni.lu VPN (logs `scopus_check_20260929T213709Z.json`,
+`scopus_check_standard_*.json`): the key is valid, but the VPN is split-tunnel (public
+address was a Post Luxembourg home line), so Elsevier saw no subscription: COMPLETE view →
+HTTP 401 AUTHORIZATION_ERROR; STANDARD view → HTTP 200 with title, first author, venue,
+date, DOI, EID, citation count, but no abstract and no author list. Options: run from
+campus (or a full-tunnel VPN), ask Elsevier/the library for an institutional token
+(`SCOPUS_INST_TOKEN`, sent as X-ELS-Insttoken), or retrieve STANDARD metadata by API and
+complete abstracts from OpenAlex by DOI / interface export for the rest.
+
 ## Document folders and the S2 layer (decided 29 September 2026)
 
 `deduplicate` writes `data/documents/B4-R#####/metadata.json` and `provenance.json`. The

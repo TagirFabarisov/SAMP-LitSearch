@@ -1,0 +1,19 @@
+{
+ "body": {
+  "service-error": {
+   "status": {
+    "statusCode": "AUTHORIZATION_ERROR",
+    "statusText": "The requestor is not authorized to access the requested view or fields of the resource"
+   }
+  }
+ },
+ "http_status": 401,
+ "params": {
+  "count": 1,
+  "query": "TITLE-ABS-KEY(\"resource dependence\")",
+  "sort": "+coverDate",
+  "start": 0,
+  "view": "COMPLETE"
+ },
+ "recorded_at": "2026-09-29T21:37:09Z"
+}

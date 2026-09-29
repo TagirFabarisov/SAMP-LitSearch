@@ -1,0 +1,104 @@
+{
+ "body": {
+  "search-results": {
+   "entry": [
+    {
+     "@_fa": "true",
+     "affiliation": [
+      {
+       "@_fa": "true",
+       "affiliation-city": "Ithaca",
+       "affiliation-country": "United States",
+       "affilname": "Cornell University School of Industrial and Labor Relations"
+      }
+     ],
+     "citedby-count": "225",
+     "dc:creator": "Aldrich H.",
+     "dc:identifier": "SCOPUS_ID:84965923211",
+     "dc:title": "Resource dependence and in terorganiza tional relations: Local Employment Service Offices and Social Services Sector Organizations",
+     "eid": "2-s2.0-84965923211",
+     "link": [
+      {
+       "@_fa": "true",
+       "@href": "https://api.elsevier.com/content/abstract/scopus_id/84965923211",
+       "@ref": "self"
+      },
+      {
+       "@_fa": "true",
+       "@href": "https://api.elsevier.com/content/abstract/scopus_id/84965923211?field=author,affiliation",
+       "@ref": "author-affiliation"
+      },
+      {
+       "@_fa": "true",
+       "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84965923211&origin=inward",
+       "@ref": "scopus"
+      },
+      {
+       "@_fa": "true",
+       "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=84965923211&origin=inward",
+       "@ref": "scopus-citedby"
+      }
+     ],
+     "openaccess": "0",
+     "openaccessFlag": false,
+     "prism:aggregationType": "Journal",
+     "prism:coverDate": "1976-01-01",
+     "prism:coverDisplayDate": "February 1976",
+     "prism:doi": "10.1177/009539977600700402",
+     "prism:eIssn": "15523039",
+     "prism:issn": "00953997",
+     "prism:issueIdentifier": "4",
+     "prism:pageRange": "419-454",
+     "prism:publicationName": "Administration Society",
+     "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/84965923211",
+     "prism:volume": "7",
+     "source-id": "16032",
+     "subtype": "ar",
+     "subtypeDescription": "Article"
+    }
+   ],
+   "link": [
+    {
+     "@_fa": "true",
+     "@href": "https://api.elsevier.com/content/search/scopus?start=0&count=1&query=TITLE-ABS-KEY%28%22resource+dependence%22%29&view=STANDARD&sort=%2BcoverDate",
+     "@ref": "self",
+     "@type": "application/json"
+    },
+    {
+     "@_fa": "true",
+     "@href": "https://api.elsevier.com/content/search/scopus?start=0&count=1&query=TITLE-ABS-KEY%28%22resource+dependence%22%29&view=STANDARD&sort=%2BcoverDate",
+     "@ref": "first",
+     "@type": "application/json"
+    },
+    {
+     "@_fa": "true",
+     "@href": "https://api.elsevier.com/content/search/scopus?start=1&count=1&query=TITLE-ABS-KEY%28%22resource+dependence%22%29&view=STANDARD&sort=%2BcoverDate",
+     "@ref": "next",
+     "@type": "application/json"
+    },
+    {
+     "@_fa": "true",
+     "@href": "https://api.elsevier.com/content/search/scopus?start=4148&count=1&query=TITLE-ABS-KEY%28%22resource+dependence%22%29&view=STANDARD&sort=%2BcoverDate",
+     "@ref": "last",
+     "@type": "application/json"
+    }
+   ],
+   "opensearch:Query": {
+    "@role": "request",
+    "@searchTerms": "TITLE-ABS-KEY(\"resource dependence\")",
+    "@startPage": "0"
+   },
+   "opensearch:itemsPerPage": "1",
+   "opensearch:startIndex": "0",
+   "opensearch:totalResults": "4149"
+  }
+ },
+ "http_status": 200,
+ "params": {
+  "count": 1,
+  "query": "TITLE-ABS-KEY(\"resource dependence\")",
+  "sort": "+coverDate",
+  "start": 0,
+  "view": "STANDARD"
+ }
+}
