@@ -58,6 +58,13 @@ def cmd_scopus_check(args) -> int:
     return 0
 
 
+def cmd_refine(args) -> int:
+    from block4_pipeline.pipeline import refine
+    res = refine.refine(args.source, query_ids=args.query or None, live=args.live)
+    _print(res)
+    return 0
+
+
 def cmd_propose_quoting(args) -> int:
     from block4_pipeline.pipeline import propose_quoting
     _print(propose_quoting.propose())
@@ -153,6 +160,12 @@ def build_parser() -> argparse.ArgumentParser:
     s = sub.add_parser("scopus-check", help="one request to test whether the Scopus subscription applies from this network")
     s.add_argument("--live", action="store_true")
     s.set_defaults(fn=cmd_scopus_check)
+
+    s = sub.add_parser("refine", help="apply the section-8 refinement sequence to pairs above the threshold (count-only requests)")
+    s.add_argument("--source", required=True)
+    s.add_argument("--query", action="append")
+    s.add_argument("--live", action="store_true", help="send count requests; without it, print the forms only")
+    s.set_defaults(fn=cmd_refine)
 
     sub.add_parser("propose-quoting", help="write the OpenAlex forms with bare wildcards quoted, for review; config untouched").set_defaults(fn=cmd_propose_quoting)
 

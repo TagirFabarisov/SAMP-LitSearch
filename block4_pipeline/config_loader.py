@@ -18,9 +18,14 @@ def load_yaml(path) -> Any:
         return yaml.safe_load(fh)
 
 
-def load_queries(path=None) -> List[Dict[str, Any]]:
+def load_queries(path=None, include_refinements: bool = False) -> List[Dict[str, Any]]:
     data = load_yaml(path or paths.QUERIES_FILE)
-    return list(data.get("queries", []))
+    queries = list(data.get("queries", []))
+    if include_refinements:
+        rp = paths.CONFIG_DIR / "refinements.yaml"
+        if rp.exists():
+            queries += [r for r in (load_yaml(rp) or {}).get("refinements", []) if r.get("runnable")]
+    return queries
 
 
 def load_query_bank(path=None) -> Dict[str, Any]:

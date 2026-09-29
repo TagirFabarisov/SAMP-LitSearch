@@ -15,6 +15,7 @@ pipeline never refines a query itself.
 from __future__ import annotations
 
 import json
+import re
 import shutil
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -60,13 +61,17 @@ def _ordered_queries(queries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             g = (2, 0)
         lens_rank = {"A semantic": 0, "B community": 1, "C mechanism": 2}.get(q.get("lens"), 3)
         base, _, ref = qid.partition(".")
-        return (g, base, lens_rank, int(ref[1:]) if ref.startswith("r") and ref[1:].isdigit() else 0)
+        ref_key = tuple(int(x) for x in re.findall(r"\d+", ref)) if ref else ()
+        return (g, base, lens_rank, ref_key)
     return sorted(queries, key=key)
 
 
 def select_queries(queries: List[Dict[str, Any]], query_ids: Optional[List[str]]) -> List[Dict[str, Any]]:
     if not query_ids:
         return _ordered_queries(queries)
+    if query_ids and not any("." in x for x in query_ids):
+        # a base ID also selects its refinement sub-queries
+        query_ids = query_ids + [q["id"] for q in queries if q["id"].split(".")[0] in query_ids and "." in q["id"]]
     picked = []
     for qid in query_ids:
         q = cl.query_by_id(queries, qid)
@@ -102,7 +107,9 @@ def retrieve(source: str, query_ids: Optional[List[str]] = None, dry_run: bool =
         return [_run_one(adapter, source, scfg, protocol, pseudo, threshold, dry_run, rerun, live_confirmed,
                          cited_by=cited_by, provenance="snowball forward from %s" % (anchor or cited_by))]
 
-    for q in select_queries(cl.load_queries(), query_ids):
+    for q in select_queries(cl.load_queries(include_refinements=True), query_ids):
+        if q.get("applies_to_source") and q["applies_to_source"] != source:
+            continue  # a refinement sub-query belongs to the source whose count triggered it
         mandatory = cl.is_mandatory(scfg, q)
         supplementary = cl.is_supplementary(scfg, q)
         if not mandatory and not (include_supplementary and supplementary):
