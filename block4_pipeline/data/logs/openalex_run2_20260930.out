@@ -1,0 +1,1256 @@
+[
+  {
+    "query_id": "B4-Q01",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1193,
+    "hits": 0,
+    "log_id": "B4-L00230",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q01/20260929T222243Z"
+  },
+  {
+    "query_id": "B4-Q01.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 190,
+    "hits": 190,
+    "log_id": "B4-L00231",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q01.r1/20260929T222245Z"
+  },
+  {
+    "query_id": "B4-Q02",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 14247,
+    "hits": 0,
+    "log_id": "B4-L00232",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q02/20260929T222249Z"
+  },
+  {
+    "query_id": "B4-Q02.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 46,
+    "hits": 46,
+    "log_id": "B4-L00233",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q02.r2/20260929T222250Z"
+  },
+  {
+    "query_id": "B4-Q03",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1182,
+    "hits": 0,
+    "log_id": "B4-L00234",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q03/20260929T222253Z"
+  },
+  {
+    "query_id": "B4-Q03.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 152,
+    "hits": 152,
+    "log_id": "B4-L00235",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q03.r1/20260929T222254Z"
+  },
+  {
+    "query_id": "B4-Q04",
+    "source": "openalex",
+    "status": "already_done",
+    "log_id": "B4-L00004"
+  },
+  {
+    "query_id": "B4-Q05",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 39673,
+    "hits": 0,
+    "log_id": "B4-L00236",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q05/20260929T222258Z"
+  },
+  {
+    "query_id": "B4-Q05.r3",
+    "source": "openalex",
+    "status": "done",
+    "count": 237,
+    "hits": 237,
+    "log_id": "B4-L00237",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q05.r3/20260929T222259Z"
+  },
+  {
+    "query_id": "B4-Q06",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1389,
+    "hits": 0,
+    "log_id": "B4-L00238",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q06/20260929T222304Z"
+  },
+  {
+    "query_id": "B4-Q06.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 234,
+    "hits": 234,
+    "log_id": "B4-L00239",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q06.r1/20260929T222305Z"
+  },
+  {
+    "query_id": "B4-Q07",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3013,
+    "hits": 0,
+    "log_id": "B4-L00240",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q07/20260929T222309Z"
+  },
+  {
+    "query_id": "B4-Q07.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 17,
+    "hits": 17,
+    "log_id": "B4-L00241",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q07.r2/20260929T222311Z"
+  },
+  {
+    "query_id": "B4-Q08",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1793,
+    "hits": 0,
+    "log_id": "B4-L00242",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q08/20260929T222313Z"
+  },
+  {
+    "query_id": "B4-Q08.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 228,
+    "hits": 228,
+    "log_id": "B4-L00243",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q08.r1/20260929T222313Z"
+  },
+  {
+    "query_id": "B4-Q09",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 927,
+    "hits": 0,
+    "log_id": "B4-L00244",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q09/20260929T222318Z"
+  },
+  {
+    "query_id": "B4-Q09.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 15,
+    "hits": 15,
+    "log_id": "B4-L00245",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q09.r1/20260929T222319Z"
+  },
+  {
+    "query_id": "B4-Q10",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 99924,
+    "hits": 0,
+    "log_id": "B4-L00246",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q10/20260929T222320Z"
+  },
+  {
+    "query_id": "B4-Q10.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 228,
+    "hits": 228,
+    "log_id": "B4-L00247",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q10.r2/20260929T222321Z"
+  },
+  {
+    "query_id": "B4-Q11",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1798,
+    "hits": 0,
+    "log_id": "B4-L00248",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q11/20260929T222328Z"
+  },
+  {
+    "query_id": "B4-Q11.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 227,
+    "hits": 227,
+    "log_id": "B4-L00249",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q11.r1/20260929T222329Z"
+  },
+  {
+    "query_id": "B4-Q12",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 6255,
+    "hits": 0,
+    "log_id": "B4-L00250",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q12/20260929T222334Z"
+  },
+  {
+    "query_id": "B4-Q12.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 99,
+    "hits": 99,
+    "log_id": "B4-L00251",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q12.r1/20260929T222335Z"
+  },
+  {
+    "query_id": "B4-Q13",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2885,
+    "hits": 0,
+    "log_id": "B4-L00252",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q13/20260929T222337Z"
+  },
+  {
+    "query_id": "B4-Q13.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 292,
+    "hits": 292,
+    "log_id": "B4-L00253",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q13.r1/20260929T222338Z"
+  },
+  {
+    "query_id": "B4-Q14",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 7268,
+    "hits": 0,
+    "log_id": "B4-L00254",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q14/20260929T222343Z"
+  },
+  {
+    "query_id": "B4-Q14.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 99,
+    "hits": 99,
+    "log_id": "B4-L00255",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q14.r2/20260929T222344Z"
+  },
+  {
+    "query_id": "B4-Q15",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3066,
+    "hits": 0,
+    "log_id": "B4-L00256",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q15/20260929T222348Z"
+  },
+  {
+    "query_id": "B4-Q15.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 205,
+    "hits": 205,
+    "log_id": "B4-L00257",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q15.r1/20260929T222349Z"
+  },
+  {
+    "query_id": "B4-Q16",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 89940,
+    "hits": 0,
+    "log_id": "B4-L00258",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q16/20260929T222352Z"
+  },
+  {
+    "query_id": "B4-Q16.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 91,
+    "hits": 91,
+    "log_id": "B4-L00259",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q16.r4.2/20260929T222354Z"
+  },
+  {
+    "query_id": "B4-Q16.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L00260",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q16.r4.3/20260929T222356Z"
+  },
+  {
+    "query_id": "B4-Q16.r4.4",
+    "source": "openalex",
+    "status": "done",
+    "count": 4,
+    "hits": 4,
+    "log_id": "B4-L00261",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q16.r4.4/20260929T222358Z"
+  },
+  {
+    "query_id": "B4-Q16.r4.5",
+    "source": "openalex",
+    "status": "done",
+    "count": 8,
+    "hits": 8,
+    "log_id": "B4-L00262",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q16.r4.5/20260929T222359Z"
+  },
+  {
+    "query_id": "B4-Q16.r4.6",
+    "source": "openalex",
+    "status": "done",
+    "count": 33,
+    "hits": 33,
+    "log_id": "B4-L00263",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q16.r4.6/20260929T222400Z"
+  },
+  {
+    "query_id": "B4-Q16.r4.7",
+    "source": "openalex",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00264",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q16.r4.7/20260929T222402Z"
+  },
+  {
+    "query_id": "B4-Q17",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 9622,
+    "hits": 0,
+    "log_id": "B4-L00265",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q17/20260929T222403Z"
+  },
+  {
+    "query_id": "B4-Q17.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 78,
+    "hits": 78,
+    "log_id": "B4-L00266",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q17.r2/20260929T222404Z"
+  },
+  {
+    "query_id": "B4-Q18",
+    "source": "openalex",
+    "status": "already_done",
+    "log_id": "B4-L00018"
+  },
+  {
+    "query_id": "B4-Q19",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 39530,
+    "hits": 0,
+    "log_id": "B4-L00267",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q19/20260929T222406Z"
+  },
+  {
+    "query_id": "B4-Q19.r4.1",
+    "source": "openalex",
+    "status": "done",
+    "count": 71,
+    "hits": 71,
+    "log_id": "B4-L00268",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q19.r4.1/20260929T222407Z"
+  },
+  {
+    "query_id": "B4-Q19.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L00269",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q19.r4.2/20260929T222410Z"
+  },
+  {
+    "query_id": "B4-Q19.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 164,
+    "hits": 164,
+    "log_id": "B4-L00270",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q19.r4.3/20260929T222411Z"
+  },
+  {
+    "query_id": "B4-Q19.r4.4",
+    "source": "openalex",
+    "status": "done",
+    "count": 250,
+    "hits": 250,
+    "log_id": "B4-L00271",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q19.r4.4/20260929T222415Z"
+  },
+  {
+    "query_id": "B4-Q19.r4.5",
+    "source": "openalex",
+    "status": "done",
+    "count": 21,
+    "hits": 21,
+    "log_id": "B4-L00272",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q19.r4.5/20260929T222420Z"
+  },
+  {
+    "query_id": "B4-Q19.r4.6",
+    "source": "openalex",
+    "status": "done",
+    "count": 107,
+    "hits": 107,
+    "log_id": "B4-L00273",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q19.r4.6/20260929T222421Z"
+  },
+  {
+    "query_id": "B4-Q20",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 748,
+    "hits": 0,
+    "log_id": "B4-L00274",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q20/20260929T222424Z"
+  },
+  {
+    "query_id": "B4-Q20.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 139,
+    "hits": 139,
+    "log_id": "B4-L00275",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q20.r1/20260929T222425Z"
+  },
+  {
+    "query_id": "B4-Q21",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 9317,
+    "hits": 0,
+    "log_id": "B4-L00276",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q21/20260929T222428Z"
+  },
+  {
+    "query_id": "B4-Q21.r4.1",
+    "source": "openalex",
+    "status": "done",
+    "count": 31,
+    "hits": 31,
+    "log_id": "B4-L00277",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q21.r4.1/20260929T222429Z"
+  },
+  {
+    "query_id": "B4-Q21.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 50,
+    "hits": 50,
+    "log_id": "B4-L00278",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q21.r4.2/20260929T222431Z"
+  },
+  {
+    "query_id": "B4-Q21.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 11,
+    "hits": 11,
+    "log_id": "B4-L00279",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q21.r4.3/20260929T222434Z"
+  },
+  {
+    "query_id": "B4-Q21.r4.5",
+    "source": "openalex",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00280",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q21.r4.5/20260929T222435Z"
+  },
+  {
+    "query_id": "B4-Q21.r4.6",
+    "source": "openalex",
+    "status": "done",
+    "count": 63,
+    "hits": 63,
+    "log_id": "B4-L00281",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q21.r4.6/20260929T222437Z"
+  },
+  {
+    "query_id": "B4-Q22",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 6957,
+    "hits": 0,
+    "log_id": "B4-L00282",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q22/20260929T222439Z"
+  },
+  {
+    "query_id": "B4-Q22.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 5,
+    "hits": 5,
+    "log_id": "B4-L00283",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q22.r2/20260929T222440Z"
+  },
+  {
+    "query_id": "B4-Q23",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 477,
+    "hits": 0,
+    "log_id": "B4-L00284",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q23/20260929T222442Z"
+  },
+  {
+    "query_id": "B4-Q23.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 62,
+    "hits": 62,
+    "log_id": "B4-L00285",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q23.r1/20260929T222443Z"
+  },
+  {
+    "query_id": "B4-Q24",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 13006,
+    "hits": 0,
+    "log_id": "B4-L00286",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q24/20260929T222445Z"
+  },
+  {
+    "query_id": "B4-Q24.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 221,
+    "hits": 221,
+    "log_id": "B4-L00287",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q24.r4.2/20260929T222446Z"
+  },
+  {
+    "query_id": "B4-Q24.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 102,
+    "hits": 102,
+    "log_id": "B4-L00288",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q24.r4.3/20260929T222450Z"
+  },
+  {
+    "query_id": "B4-Q25",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 15077,
+    "hits": 0,
+    "log_id": "B4-L00289",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q25/20260929T222453Z"
+  },
+  {
+    "query_id": "B4-Q25.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 16,
+    "hits": 16,
+    "log_id": "B4-L00290",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q25.r2/20260929T222455Z"
+  },
+  {
+    "query_id": "B4-Q26",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1262,
+    "hits": 0,
+    "log_id": "B4-L00291",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q26/20260929T222457Z"
+  },
+  {
+    "query_id": "B4-Q26.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 139,
+    "hits": 139,
+    "log_id": "B4-L00292",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q26.r1/20260929T222458Z"
+  },
+  {
+    "query_id": "B4-Q27",
+    "source": "openalex",
+    "status": "already_done",
+    "log_id": "B4-L00027"
+  },
+  {
+    "query_id": "B4-Q28",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1575,
+    "hits": 0,
+    "log_id": "B4-L00293",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q28/20260929T222502Z"
+  },
+  {
+    "query_id": "B4-Q28.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 114,
+    "hits": 114,
+    "log_id": "B4-L00294",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q28.r1/20260929T222503Z"
+  },
+  {
+    "query_id": "B4-Q29",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1441,
+    "hits": 0,
+    "log_id": "B4-L00295",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q29/20260929T222507Z"
+  },
+  {
+    "query_id": "B4-Q29.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 16,
+    "hits": 16,
+    "log_id": "B4-L00296",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q29.r2/20260929T222508Z"
+  },
+  {
+    "query_id": "B4-Q30",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 607,
+    "hits": 0,
+    "log_id": "B4-L00297",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q30/20260929T222510Z"
+  },
+  {
+    "query_id": "B4-Q30.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 109,
+    "hits": 109,
+    "log_id": "B4-L00298",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q30.r1/20260929T222510Z"
+  },
+  {
+    "query_id": "B4-Q31",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 14339,
+    "hits": 0,
+    "log_id": "B4-L00299",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q31/20260929T222513Z"
+  },
+  {
+    "query_id": "B4-Q31.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 161,
+    "hits": 161,
+    "log_id": "B4-L00300",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q31.r2/20260929T222514Z"
+  },
+  {
+    "query_id": "B4-Q32",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 546,
+    "hits": 0,
+    "log_id": "B4-L00301",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q32/20260929T222520Z"
+  },
+  {
+    "query_id": "B4-Q32.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 38,
+    "hits": 38,
+    "log_id": "B4-L00302",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q32.r1/20260929T222521Z"
+  },
+  {
+    "query_id": "B4-Q33",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2375,
+    "hits": 0,
+    "log_id": "B4-L00303",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q33/20260929T222523Z"
+  },
+  {
+    "query_id": "B4-Q33.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 226,
+    "hits": 226,
+    "log_id": "B4-L00304",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q33.r1/20260929T222525Z"
+  },
+  {
+    "query_id": "B4-Q34",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 4730,
+    "hits": 0,
+    "log_id": "B4-L00305",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q34/20260929T222529Z"
+  },
+  {
+    "query_id": "B4-Q34.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 235,
+    "hits": 235,
+    "log_id": "B4-L00306",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q34.r2/20260929T222530Z"
+  },
+  {
+    "query_id": "B4-Q35",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 11229,
+    "hits": 0,
+    "log_id": "B4-L00307",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q35/20260929T222535Z"
+  },
+  {
+    "query_id": "B4-Q35.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 162,
+    "hits": 162,
+    "log_id": "B4-L00308",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q35.r2/20260929T222536Z"
+  },
+  {
+    "query_id": "B4-Q36",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 323,
+    "hits": 0,
+    "log_id": "B4-L00309",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q36/20260929T222541Z"
+  },
+  {
+    "query_id": "B4-Q36.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 79,
+    "hits": 79,
+    "log_id": "B4-L00310",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q36.r1/20260929T222541Z"
+  },
+  {
+    "query_id": "B4-Q37",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 21051,
+    "hits": 0,
+    "log_id": "B4-L00311",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q37/20260929T222543Z"
+  },
+  {
+    "query_id": "B4-Q37.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 126,
+    "hits": 126,
+    "log_id": "B4-L00312",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q37.r2/20260929T222544Z"
+  },
+  {
+    "query_id": "B4-Q38",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 31874,
+    "hits": 0,
+    "log_id": "B4-L00313",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q38/20260929T222548Z"
+  },
+  {
+    "query_id": "B4-Q38.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 273,
+    "hits": 273,
+    "log_id": "B4-L00314",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q38.r2/20260929T222549Z"
+  },
+  {
+    "query_id": "B4-Q39",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2930,
+    "hits": 0,
+    "log_id": "B4-L00315",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q39/20260929T222555Z"
+  },
+  {
+    "query_id": "B4-Q39.r3",
+    "source": "openalex",
+    "status": "done",
+    "count": 275,
+    "hits": 275,
+    "log_id": "B4-L00316",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q39.r3/20260929T222556Z"
+  },
+  {
+    "query_id": "B4-Q40",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 6335,
+    "hits": 0,
+    "log_id": "B4-L00317",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q40/20260929T222601Z"
+  },
+  {
+    "query_id": "B4-Q40.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 29,
+    "hits": 29,
+    "log_id": "B4-L00318",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q40.r2/20260929T222602Z"
+  },
+  {
+    "query_id": "B4-Q41",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 40243,
+    "hits": 0,
+    "log_id": "B4-L00319",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q41/20260929T222605Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.1",
+    "source": "openalex",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00320",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q41.r4.1/20260929T222605Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00321",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q41.r4.2/20260929T222608Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 5,
+    "hits": 5,
+    "log_id": "B4-L00322",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q41.r4.3/20260929T222610Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.5",
+    "source": "openalex",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00323",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q41.r4.5/20260929T222611Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.6",
+    "source": "openalex",
+    "status": "done",
+    "count": 25,
+    "hits": 25,
+    "log_id": "B4-L00324",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q41.r4.6/20260929T222613Z"
+  },
+  {
+    "query_id": "B4-Q42",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3553,
+    "hits": 0,
+    "log_id": "B4-L00325",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q42/20260929T222615Z"
+  },
+  {
+    "query_id": "B4-Q42.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 8,
+    "hits": 8,
+    "log_id": "B4-L00326",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q42.r4.2/20260929T222616Z"
+  },
+  {
+    "query_id": "B4-Q42.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00327",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q42.r4.3/20260929T222617Z"
+  },
+  {
+    "query_id": "B4-Q43",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 925,
+    "hits": 0,
+    "log_id": "B4-L00328",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q43/20260929T222618Z"
+  },
+  {
+    "query_id": "B4-Q43.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 171,
+    "hits": 171,
+    "log_id": "B4-L00329",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q43.r2/20260929T222619Z"
+  },
+  {
+    "query_id": "B4-Q44",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 4778,
+    "hits": 0,
+    "log_id": "B4-L00330",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q44/20260929T222623Z"
+  },
+  {
+    "query_id": "B4-Q44.r2",
+    "source": "openalex",
+    "status": "done",
+    "count": 191,
+    "hits": 191,
+    "log_id": "B4-L00331",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q44.r2/20260929T222625Z"
+  },
+  {
+    "query_id": "B4-Q45",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 451,
+    "hits": 0,
+    "log_id": "B4-L00332",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q45/20260929T222628Z"
+  },
+  {
+    "query_id": "B4-Q45.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 77,
+    "hits": 77,
+    "log_id": "B4-L00333",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q45.r1/20260929T222630Z"
+  },
+  {
+    "query_id": "B4-Q46",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 54646,
+    "hits": 0,
+    "log_id": "B4-L00334",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q46/20260929T222632Z"
+  },
+  {
+    "query_id": "B4-Q46.r4.1",
+    "source": "openalex",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00335",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q46.r4.1/20260929T222633Z"
+  },
+  {
+    "query_id": "B4-Q46.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00336",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q46.r4.2/20260929T222635Z"
+  },
+  {
+    "query_id": "B4-Q46.r4.4",
+    "source": "openalex",
+    "status": "done",
+    "count": 81,
+    "hits": 81,
+    "log_id": "B4-L00337",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q46.r4.4/20260929T222636Z"
+  },
+  {
+    "query_id": "B4-Q46.r4.5",
+    "source": "openalex",
+    "status": "done",
+    "count": 104,
+    "hits": 104,
+    "log_id": "B4-L00338",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q46.r4.5/20260929T222638Z"
+  },
+  {
+    "query_id": "B4-Q46.r4.6",
+    "source": "openalex",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00339",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q46.r4.6/20260929T222642Z"
+  },
+  {
+    "query_id": "B4-Q46.r4.7",
+    "source": "openalex",
+    "status": "done",
+    "count": 14,
+    "hits": 14,
+    "log_id": "B4-L00340",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q46.r4.7/20260929T222643Z"
+  },
+  {
+    "query_id": "B4-Q47",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2986,
+    "hits": 0,
+    "log_id": "B4-L00341",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q47/20260929T222645Z"
+  },
+  {
+    "query_id": "B4-Q47.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 13,
+    "hits": 13,
+    "log_id": "B4-L00342",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q47.r4.2/20260929T222646Z"
+  },
+  {
+    "query_id": "B4-Q47.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 64,
+    "hits": 64,
+    "log_id": "B4-L00343",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q47.r4.3/20260929T222648Z"
+  },
+  {
+    "query_id": "B4-Q47.r4.4",
+    "source": "openalex",
+    "status": "done",
+    "count": 32,
+    "hits": 32,
+    "log_id": "B4-L00344",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q47.r4.4/20260929T222650Z"
+  },
+  {
+    "query_id": "B4-Q47.r4.5",
+    "source": "openalex",
+    "status": "done",
+    "count": 10,
+    "hits": 10,
+    "log_id": "B4-L00345",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q47.r4.5/20260929T222652Z"
+  },
+  {
+    "query_id": "B4-Q47.r4.6",
+    "source": "openalex",
+    "status": "done",
+    "count": 193,
+    "hits": 193,
+    "log_id": "B4-L00346",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q47.r4.6/20260929T222654Z"
+  },
+  {
+    "query_id": "B4-Q48",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 33541,
+    "hits": 0,
+    "log_id": "B4-L00347",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q48/20260929T222658Z"
+  },
+  {
+    "query_id": "B4-Q48.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L00348",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q48.r4.2/20260929T222700Z"
+  },
+  {
+    "query_id": "B4-Q48.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 61,
+    "hits": 61,
+    "log_id": "B4-L00349",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q48.r4.3/20260929T222701Z"
+  },
+  {
+    "query_id": "B4-Q48.r4.4",
+    "source": "openalex",
+    "status": "done",
+    "count": 285,
+    "hits": 285,
+    "log_id": "B4-L00350",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-Q48.r4.4/20260929T222703Z"
+  },
+  {
+    "query_id": "B4-XC01",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 23969,
+    "hits": 0,
+    "log_id": "B4-L00351",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC01/20260929T222708Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.1",
+    "source": "openalex",
+    "status": "done",
+    "count": 16,
+    "hits": 16,
+    "log_id": "B4-L00352",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC01.r4.1/20260929T222710Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00353",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC01.r4.2/20260929T222711Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 37,
+    "hits": 37,
+    "log_id": "B4-L00354",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC01.r4.3/20260929T222712Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.6",
+    "source": "openalex",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00355",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC01.r4.6/20260929T222714Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.7",
+    "source": "openalex",
+    "status": "done",
+    "count": 4,
+    "hits": 4,
+    "log_id": "B4-L00356",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC01.r4.7/20260929T222715Z"
+  },
+  {
+    "query_id": "B4-XC02",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 10009,
+    "hits": 0,
+    "log_id": "B4-L00357",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC02/20260929T222716Z"
+  },
+  {
+    "query_id": "B4-XC02.r4.2",
+    "source": "openalex",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00358",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC02.r4.2/20260929T222718Z"
+  },
+  {
+    "query_id": "B4-XC02.r4.3",
+    "source": "openalex",
+    "status": "done",
+    "count": 295,
+    "hits": 295,
+    "log_id": "B4-L00359",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC02.r4.3/20260929T222719Z"
+  },
+  {
+    "query_id": "B4-XC02.r4.4",
+    "source": "openalex",
+    "status": "done",
+    "count": 15,
+    "hits": 15,
+    "log_id": "B4-L00360",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC02.r4.4/20260929T222725Z"
+  },
+  {
+    "query_id": "B4-XC02.r4.5",
+    "source": "openalex",
+    "status": "done",
+    "count": 14,
+    "hits": 14,
+    "log_id": "B4-L00361",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-XC02.r4.5/20260929T222727Z"
+  },
+  {
+    "query_id": "B4-BR01",
+    "source": "openalex",
+    "status": "already_done",
+    "log_id": "B4-L00051"
+  },
+  {
+    "query_id": "B4-BR02",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 503,
+    "hits": 0,
+    "log_id": "B4-L00362",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-BR02/20260929T222729Z"
+  },
+  {
+    "query_id": "B4-BR02.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 105,
+    "hits": 105,
+    "log_id": "B4-L00363",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-BR02.r1/20260929T222730Z"
+  },
+  {
+    "query_id": "B4-BR03",
+    "source": "openalex",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 322,
+    "hits": 0,
+    "log_id": "B4-L00364",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-BR03/20260929T222733Z"
+  },
+  {
+    "query_id": "B4-BR03.r1",
+    "source": "openalex",
+    "status": "done",
+    "count": 117,
+    "hits": 117,
+    "log_id": "B4-L00365",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/openalex/B4-BR03.r1/20260929T222734Z"
+  },
+  {
+    "query_id": "B4-BR04",
+    "source": "openalex",
+    "status": "already_done",
+    "log_id": "B4-L00054"
+  }
+]

@@ -1,0 +1,326 @@
+[
+  {
+    "query_id": "B4-Q01",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q02",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q03",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q04",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q05",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q06",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q07",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q08",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q09",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q10",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q11",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q12",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q13",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q14",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q15",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q16",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q17",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q18",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q19",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q20",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q21",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q22",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q23",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q24",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q25",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q26",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q27",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q28",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q29",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q30",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q31",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q32",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q33",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q34",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q35",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q36",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q37",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q38",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q39",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q40",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q41",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q42",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q43",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q44",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q45",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q46",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q47",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-Q48",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-XC01",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-XC02",
+    "source": "dblp",
+    "status": "failed",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "query_id": "B4-BR01",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-BR02",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-BR03",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-BR04",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  }
+]

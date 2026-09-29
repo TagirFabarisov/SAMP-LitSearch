@@ -1,0 +1,1642 @@
+[
+  {
+    "query_id": "B4-Q01",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1193
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"formal*\" OR representation) moved to title",
+        "counts": [
+          190
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q01.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q02",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 14247
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (language OR framework OR formalism OR metamodel) moved to title",
+        "counts": [
+          1420
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"ontolog*\" OR metamodel OR \"graph model*\" OR \"network model*\" OR \"formal semantics\") added",
+        "counts": [
+          46
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q02.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q03",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1182
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"ontolog*\" OR metamodel OR \"graph model*\" OR \"network model*\" OR \"formal semantics\") moved to title",
+        "counts": [
+          152
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q03.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q05",
+    "status": "refined_at_step_3",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 39673
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (language OR framework OR verification OR \"ontolog*\") moved to title",
+        "counts": [
+          4013
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"event calculus\" OR \"state machine\" OR \"temporal logic\" OR \"ontolog*\" OR \"answer set\") added",
+        "counts": [
+          310
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          237
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q05.r3"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q06",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1389
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"event calculus\" OR \"state machine\" OR \"temporal logic\" OR \"ontolog*\" OR \"answer set\") moved to title",
+        "counts": [
+          234
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q06.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q07",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 3013
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR logic OR \"model*\" OR \"ontolog*\") moved to title",
+        "counts": [
+          344
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"rule language\" OR executable OR \"formal semantics\" OR \"answer set\" OR defeasible) added",
+        "counts": [
+          17
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q07.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q08",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1793
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR language OR representation) moved to title",
+        "counts": [
+          228
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q08.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q09",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 927
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"rule language\" OR executable OR \"formal semantics\" OR \"answer set\" OR defeasible) moved to title",
+        "counts": [
+          15
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q09.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q10",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 99924
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"model*\" OR specification OR logic) moved to title",
+        "counts": [
+          17002
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (executable OR \"answer set\" OR \"event calculus\" OR \"model checking\" OR \"transition system\" OR \"dynamic logic\") added",
+        "counts": [
+          228
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q10.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q11",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1798
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (language OR framework OR specification OR metamodel) moved to title",
+        "counts": [
+          227
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q11.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q12",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 6255
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (executable OR \"answer set\" OR \"event calculus\" OR \"model checking\" OR \"transition system\" OR \"dynamic logic\") moved to title",
+        "counts": [
+          99
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q12.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q13",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 2885
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"formal*\" OR representation) moved to title",
+        "counts": [
+          292
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q13.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q14",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 7268
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (metamodel OR language OR framework OR \"ontolog*\") moved to title",
+        "counts": [
+          1003
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (metamodel OR \"ontolog*\" OR \"formal specification\" OR \"temporal trace\" OR executable) added",
+        "counts": [
+          99
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q14.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q15",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 3066
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (metamodel OR \"ontolog*\" OR \"formal specification\" OR \"temporal trace\" OR executable) moved to title",
+        "counts": [
+          205
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q15.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q16",
+    "status": "split_7_parts_6_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 89940
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"model*\" OR representation OR \"ontolog*\" OR computational) moved to title",
+        "counts": [
+          13106
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (consent OR \"bind*\" OR precision OR degree) added",
+        "counts": [
+          12800
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          3325
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 7 parts",
+        "counts": [
+          3215,
+          91,
+          2,
+          4,
+          8,
+          33,
+          0
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q16.r4.2",
+      "B4-Q16.r4.3",
+      "B4-Q16.r4.4",
+      "B4-Q16.r4.5",
+      "B4-Q16.r4.6",
+      "B4-Q16.r4.7"
+    ],
+    "still_above": [
+      "B4-Q16.r4.1"
+    ]
+  },
+  {
+    "query_id": "B4-Q17",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 9622
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"formal*\" OR representation OR \"agent*\") moved to title",
+        "counts": [
+          873
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (consent OR \"bind*\" OR precision OR degree) added",
+        "counts": [
+          78
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q17.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q19",
+    "status": "split_6_parts_6_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 39530
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"model*\" OR \"semantic*\" OR \"ontolog*\") moved to title",
+        "counts": [
+          6033
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"formal*\" OR \"semantic*\" OR \"ontolog*\") added",
+        "counts": [
+          843
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          603
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 6 parts",
+        "counts": [
+          71,
+          2,
+          164,
+          250,
+          21,
+          107
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q19.r4.1",
+      "B4-Q19.r4.2",
+      "B4-Q19.r4.3",
+      "B4-Q19.r4.4",
+      "B4-Q19.r4.5",
+      "B4-Q19.r4.6"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q20",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 748
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"change*\" OR \"modif*\" OR \"version*\" OR identity) moved to title",
+        "counts": [
+          139
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q20.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q21",
+    "status": "split_6_parts_5_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 9317
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"semantic*\" OR \"ontolog*\") moved to title",
+        "counts": [
+          848
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "C query already carries its mechanism group"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          522
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 2 split into 6 parts",
+        "counts": [
+          31,
+          50,
+          11,
+          391,
+          1,
+          63
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q21.r4.1",
+      "B4-Q21.r4.2",
+      "B4-Q21.r4.3",
+      "B4-Q21.r4.5",
+      "B4-Q21.r4.6"
+    ],
+    "still_above": [
+      "B4-Q21.r4.4"
+    ]
+  },
+  {
+    "query_id": "B4-Q22",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 6957
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"model*\" OR representation OR computational) moved to title",
+        "counts": [
+          752
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"dynamic logic\" OR defeasible OR \"temporal logic\" OR \"ontolog*\" OR \"rule language\" OR \"belief revision\") added",
+        "counts": [
+          5
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q22.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q23",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 477
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR computational OR language OR framework) moved to title",
+        "counts": [
+          62
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q23.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q24",
+    "status": "split_4_parts_2_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 13006
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"dynamic logic\" OR defeasible OR \"temporal logic\" OR \"ontolog*\" OR \"rule language\" OR \"belief revision\") moved to title",
+        "counts": [
+          2505
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "C query already carries its mechanism group"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          1891
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 2 split into 4 parts",
+        "counts": [
+          850,
+          221,
+          102,
+          1120
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q24.r4.2",
+      "B4-Q24.r4.3"
+    ],
+    "still_above": [
+      "B4-Q24.r4.1",
+      "B4-Q24.r4.4"
+    ]
+  },
+  {
+    "query_id": "B4-Q25",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 15077
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"formal*\" OR specification) moved to title",
+        "counts": [
+          1935
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"graph transformation\" OR \"graph rewriting\" OR \"bigraph*\" OR \"formal model\" OR \"operational semantics\" OR \"process algebra\") added",
+        "counts": [
+          16
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q25.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q26",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1262
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (specification OR language OR semantics OR \"contract*\") moved to title",
+        "counts": [
+          139
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q26.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q28",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1575
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"monitor*\" OR \"semantic*\") moved to title",
+        "counts": [
+          114
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q28.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q29",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1441
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group ((norm OR norms OR normative) OR \"contract*\" OR \"obligation*\" OR \"commitment*\") moved to title",
+        "counts": [
+          651
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"temporal logic\" OR \"event calculus\" OR \"timed automat*\" OR \"answer set\" OR \"runtime verification\" OR \"metric temporal\") added",
+        "counts": [
+          16
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q29.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q30",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 607
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"temporal logic\" OR \"event calculus\" OR \"timed automat*\" OR \"answer set\" OR \"runtime verification\" OR \"metric temporal\") moved to title",
+        "counts": [
+          109
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q30.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q31",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 14339
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"formal*\" OR framework OR \"method*\") moved to title",
+        "counts": [
+          2800
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"process model*\" OR \"Petri net*\" OR workflow OR \"state machine\" OR \"decision model*\" OR \"stochastic program*\") added",
+        "counts": [
+          161
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q31.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q32",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 546
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model-based\" OR MBSE OR \"process model*\" OR \"lifecycle model*\") moved to title",
+        "counts": [
+          38
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q32.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q33",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 2375
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"process model*\" OR \"Petri net*\" OR workflow OR \"state machine\" OR \"decision model*\" OR \"stochastic program*\") moved to title",
+        "counts": [
+          226
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q33.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q34",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 4730
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"ontolog*\" OR \"formal*\" OR metamodel) moved to title",
+        "counts": [
+          1235
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"ontolog*\" OR \"Petri net*\" OR workflow OR \"process model*\" OR metamodel OR \"business process\") added",
+        "counts": [
+          235
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q34.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q35",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 11229
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"method*\" OR \"model*\" OR analysis) moved to title",
+        "counts": [
+          3941
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"ontolog*\" OR \"Petri net*\" OR workflow OR \"process model*\" OR metamodel OR \"business process\") added",
+        "counts": [
+          162
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q35.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q36",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 323
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"ontolog*\" OR \"Petri net*\" OR workflow OR \"process model*\" OR metamodel OR \"business process\") moved to title",
+        "counts": [
+          79
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q36.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q37",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 21051
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (engineering OR (project OR projects) OR (\"organization*\" OR \"organisation*\") OR design) moved to title",
+        "counts": [
+          3198
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"decision model*\" OR \"stochastic program*\" OR \"decision tree*\" OR \"dynamic programming\" OR \"state model*\" OR Markov) added",
+        "counts": [
+          126
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q37.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q38",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 31874
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"method*\" OR framework OR valuation) moved to title",
+        "counts": [
+          8611
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"decision model*\" OR \"stochastic program*\" OR \"decision tree*\" OR \"dynamic programming\" OR \"state model*\" OR Markov) added",
+        "counts": [
+          273
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q38.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q39",
+    "status": "refined_at_step_3",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 2930
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"decision model*\" OR \"stochastic program*\" OR \"decision tree*\" OR \"dynamic programming\" OR \"state model*\" OR Markov) moved to title",
+        "counts": [
+          415
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "C query already carries its mechanism group"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          275
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q39.r3"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q40",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 6335
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"formal*\" OR representation OR \"contract*\") moved to title",
+        "counts": [
+          1648
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"event calculus\" OR \"situation calculus\" OR \"answer set\" OR \"causal model\" OR \"transition system\" OR \"discrete event\") added",
+        "counts": [
+          29
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q40.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q41",
+    "status": "split_6_parts_5_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 40243
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"model*\") moved to title",
+        "counts": [
+          5862
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"event calculus\" OR \"situation calculus\" OR \"answer set\" OR \"causal model\" OR \"transition system\" OR \"discrete event\") added",
+        "counts": [
+          758
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          659
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 3 split into 6 parts",
+        "counts": [
+          1,
+          0,
+          5,
+          629,
+          1,
+          25
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q41.r4.1",
+      "B4-Q41.r4.2",
+      "B4-Q41.r4.3",
+      "B4-Q41.r4.5",
+      "B4-Q41.r4.6"
+    ],
+    "still_above": [
+      "B4-Q41.r4.4"
+    ]
+  },
+  {
+    "query_id": "B4-Q42",
+    "status": "split_3_parts_2_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 3553
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"event calculus\" OR \"situation calculus\" OR \"answer set\" OR \"causal model\" OR \"transition system\" OR \"discrete event\") moved to title",
+        "counts": [
+          663
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "C query already carries its mechanism group"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          616
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 3 parts",
+        "counts": [
+          616,
+          8,
+          0
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q42.r4.2",
+      "B4-Q42.r4.3"
+    ],
+    "still_above": [
+      "B4-Q42.r4.1"
+    ]
+  },
+  {
+    "query_id": "B4-Q43",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 925
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"formal*\" OR \"architect*\" OR framework) moved to title",
+        "counts": [
+          408
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"formal model*\" OR rewriting OR \"architecture description language\" OR \"agent-based\" OR \"graph transformation\" OR \"model-based\") added",
+        "counts": [
+          171
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q43.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q44",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 4778
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"architecture description\" OR \"modeling language\" OR \"modelling language\" OR \"reconfiguration pattern*\" OR framework OR \"method*\") moved to title",
+        "counts": [
+          762
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"formal model*\" OR rewriting OR \"architecture description language\" OR \"agent-based\" OR \"graph transformation\" OR \"model-based\") added",
+        "counts": [
+          191
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q44.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q45",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 451
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal model*\" OR rewriting OR \"architecture description language\" OR \"agent-based\" OR \"graph transformation\" OR \"model-based\") moved to title",
+        "counts": [
+          77
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q45.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q46",
+    "status": "split_7_parts_6_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 54646
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"formal*\" OR representation) moved to title",
+        "counts": [
+          5782
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"agent-based\" OR \"formal model\" OR logic OR \"ontolog*\" OR \"network model*\" OR simulation) added",
+        "counts": [
+          781
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          649
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 7 parts",
+        "counts": [
+          1,
+          1,
+          469,
+          81,
+          104,
+          1,
+          14
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q46.r4.1",
+      "B4-Q46.r4.2",
+      "B4-Q46.r4.4",
+      "B4-Q46.r4.5",
+      "B4-Q46.r4.6",
+      "B4-Q46.r4.7"
+    ],
+    "still_above": [
+      "B4-Q46.r4.3"
+    ]
+  },
+  {
+    "query_id": "B4-Q47",
+    "status": "split_6_parts_5_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 2986
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"model*\" OR framework OR logic) moved to title",
+        "counts": [
+          1209
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"agent-based\" OR \"formal model\" OR logic OR \"ontolog*\" OR \"network model*\" OR simulation) added",
+        "counts": [
+          564
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          546
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 3 split into 6 parts",
+        "counts": [
+          380,
+          13,
+          64,
+          32,
+          10,
+          193
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q47.r4.2",
+      "B4-Q47.r4.3",
+      "B4-Q47.r4.4",
+      "B4-Q47.r4.5",
+      "B4-Q47.r4.6"
+    ],
+    "still_above": [
+      "B4-Q47.r4.1"
+    ]
+  },
+  {
+    "query_id": "B4-Q48",
+    "status": "split_4_parts_3_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 33541
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"agent-based\" OR \"formal model\" OR logic OR \"ontolog*\" OR \"network model*\" OR simulation) moved to title",
+        "counts": [
+          3611
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "C query already carries its mechanism group"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          3112
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 4 parts",
+        "counts": [
+          2781,
+          2,
+          61,
+          285
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q48.r4.2",
+      "B4-Q48.r4.3",
+      "B4-Q48.r4.4"
+    ],
+    "still_above": [
+      "B4-Q48.r4.1"
+    ]
+  },
+  {
+    "query_id": "B4-XC01",
+    "status": "split_7_parts_5_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 23969
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"model*\" OR language OR \"semantic*\") moved to title",
+        "counts": [
+          2531
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "no Q-C mechanism group for this direction"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          2045
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 7 parts",
+        "counts": [
+          16,
+          0,
+          37,
+          588,
+          1423,
+          0,
+          4
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-XC01.r4.1",
+      "B4-XC01.r4.2",
+      "B4-XC01.r4.3",
+      "B4-XC01.r4.6",
+      "B4-XC01.r4.7"
+    ],
+    "still_above": [
+      "B4-XC01.r4.4",
+      "B4-XC01.r4.5"
+    ]
+  },
+  {
+    "query_id": "B4-XC02",
+    "status": "split_5_parts_4_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 10009
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"formal*\" OR \"model*\" OR \"semantic*\") moved to title",
+        "counts": [
+          1096
+        ]
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "no Q-C mechanism group for this direction"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "note": "subject areas limited to fields [14, 17, 18, 20, 22, 33]",
+        "counts": [
+          809
+        ]
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 5 parts",
+        "counts": [
+          516,
+          0,
+          295,
+          15,
+          14
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-XC02.r4.2",
+      "B4-XC02.r4.3",
+      "B4-XC02.r4.4",
+      "B4-XC02.r4.5"
+    ],
+    "still_above": [
+      "B4-XC02.r4.1"
+    ]
+  },
+  {
+    "query_id": "B4-BR02",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 503
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"stakeholder*\" OR (\"organization*\" OR \"organisation*\") OR \"decision*\" OR \"design space\") moved to title",
+        "counts": [
+          105
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-BR02.r1"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-BR03",
+    "status": "refined_at_step_1",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 322
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "note": "free group (\"model*\" OR \"method*\" OR framework) moved to title",
+        "counts": [
+          117
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-BR03.r1"
+    ],
+    "still_above": []
+  }
+]
