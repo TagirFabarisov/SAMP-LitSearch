@@ -66,6 +66,37 @@ def _source_id_keys(rec: Dict[str, Any]) -> List[str]:
     return keys
 
 
+def write_document_folders(docs: Dict[str, Dict[str, Any]], mapping: List[Dict[str, Any]],
+                           records: List[Dict[str, Any]]) -> int:
+    """One folder per document with metadata.json (the document record) and provenance.json
+    (every hit that led to it: query, source, exact string, rank, run, raw file, matching rule).
+    Only these two files are written; anything else in the folder (source.pdf, parsed text,
+    evidence packet, added after S1) is left alone."""
+    by_hit = {r["hit_id"]: r for r in records}
+    matched = {m["hit_id"]: m["matched_by"] for m in mapping}
+    n = 0
+    for doc_id in sorted(docs):
+        d = docs[doc_id]
+        folder = paths.document_dir(doc_id)
+        folder.mkdir(parents=True, exist_ok=True)
+        metadata = {k: v for k, v in d.items() if k not in ("hit_ids", "source_id_keys")}
+        provenance = {
+            "document_id": doc_id,
+            "written_at": storage.utc_now(),
+            "hits": [{
+                "hit_id": h, "query_id": by_hit[h]["query_id"], "source": by_hit[h]["source"],
+                "exact_query": by_hit[h]["exact_query"], "rank": by_hit[h]["rank"], "page": by_hit[h]["page"],
+                "retrieved_at": by_hit[h]["retrieved_at"], "run_id": by_hit[h]["run_id"],
+                "source_record_id": by_hit[h].get("source_record_id"), "matched_by": matched.get(h),
+                "after_cutoff": by_hit[h].get("after_cutoff"),
+            } for h in d.get("hit_ids", []) if h in by_hit],
+        }
+        storage.write_json(folder / "metadata.json", metadata)
+        storage.write_json(folder / "provenance.json", provenance)
+        n += 1
+    return n
+
+
 def deduplicate() -> Dict[str, Any]:
     protocol = cl.load_protocol()
     order = protocol.get("dedup_order", ["doi", "source_ids", "normalized_title_year"])
@@ -132,7 +163,8 @@ def deduplicate() -> Dict[str, Any]:
             stats_merged[(rec["query_id"], rec["source"])] += 1
         doc = docs[doc_id]
         # enrich the document with anything the new record adds (never overwrite present values)
-        for f in ("doi", "openalex_id", "abstract", "publication_date", "venue", "type", "language", "url", "title", "year"):
+        for f in ("doi", "openalex_id", "abstract", "publication_date", "venue", "type", "language", "url", "title", "year",
+                  "is_oa", "oa_pdf_url", "oa_landing_url"):
             if not doc.get(f) and rec.get(f):
                 doc[f] = rec[f]
         if not doc.get("authors") and rec.get("authors"):
@@ -180,6 +212,7 @@ def deduplicate() -> Dict[str, Any]:
 
     storage.rewrite_jsonl(paths.documents_file(), (docs[k] for k in sorted(docs)))
     storage.rewrite_jsonl(paths.hit_document_map_file(), mapping)
+    write_document_folders(docs, mapping, records)
     paths.exports_dir().mkdir(parents=True, exist_ok=True)
     with open(paths.exports_dir() / "near_duplicates.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=["document_a", "document_b", "ratio", "year_a", "year_b", "title_a", "title_b", "doi_a", "doi_b"])

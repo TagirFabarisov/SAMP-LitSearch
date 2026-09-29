@@ -190,4 +190,11 @@ class OpenAlexAdapter(BaseAdapter):
         rec["language"] = w.get("language")
         rec["cited_by_count"] = w.get("cited_by_count")
         rec["url"] = w.get("id")
+        # open-access location, kept for later full-text acquisition (S2): an OA PDF may be
+        # downloaded by the pipeline; anything else has to be obtained by hand
+        oa = w.get("open_access") or {}
+        best = w.get("best_oa_location") or {}
+        rec["is_oa"] = oa.get("is_oa")
+        rec["oa_pdf_url"] = best.get("pdf_url")
+        rec["oa_landing_url"] = best.get("landing_page_url") or oa.get("oa_url")
         return rec

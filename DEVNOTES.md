@@ -118,6 +118,26 @@ Consequences for the user to decide and record in the deviation log:
 The API adapters for Scopus, WoS and IEEE are stubs that report the situation; they are
 implemented only once an entitlement and key exist.
 
+## Scopus API (29 September 2026)
+
+Adapter implemented against the Scopus Search API (dev.elsevier.com): `TITLE-ABS-KEY(...)`
+form sent unchanged, view COMPLETE (abstracts, 25 per page), ordering `+coverDate`, count
+read first with a STANDARD-view request of one record. The key is a free developer key;
+the subscription is checked by Elsevier from the network address, so the entitlement probe
+(`run.py scopus-check --live`) has to be run from the Uni.lu network or VPN. Until it
+succeeds, `sources.yaml` keeps `scopus: access_mode: manual_export`; switching it to `api`
+is an implementation choice under protocol section 5 and gets a deviation-log entry for
+the record. The Scopus search API does not return the language of a record.
+
+## Document folders and the S2 layer (decided 29 September 2026)
+
+`deduplicate` writes `data/documents/B4-R#####/metadata.json` and `provenance.json`. The
+evidence-packet idea (source-linked extraction of what artefact a paper defines, with page
+evidence per claim) is the software-supported S2 worksheet and is built only for
+documents that pass S1; it does not change the frozen protocol's order. Open-access PDFs
+(location recorded from OpenAlex `best_oa_location`) may be downloaded by the pipeline;
+paywalled copies are obtained by hand (`PDF_NEEDED`).
+
 ## Not implemented on purpose
 
 - Browser-assisted export (brief section 8): not implemented until the licence permits it

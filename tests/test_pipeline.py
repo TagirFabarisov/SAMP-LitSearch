@@ -127,6 +127,20 @@ def test_full_pipeline_on_fixtures(monkeypatch, tmp_path, fixtures):
     deduplicate.deduplicate()
     assert sorted(d["document_id"] for d in storage.read_jsonl(paths.documents_file())) == ids_before
 
+    # per-document folders: metadata + provenance only
+    folder = paths.document_dir(paper1["document_id"])
+    assert (folder / "metadata.json").exists() and (folder / "provenance.json").exists()
+    prov = json.loads((folder / "provenance.json").read_text())
+    assert sorted(h["source"] for h in prov["hits"]) == ["dblp", "openalex", "scopus", "wos"]
+    assert all(h["matched_by"] for h in prov["hits"])
+    meta = json.loads((folder / "metadata.json").read_text())
+    assert meta["oa_pdf_url"] == "https://repo.example.org/paper1.pdf" and meta["is_oa"] is True
+    assert "hit_ids" not in meta
+    # a file another stage put there survives a rerun
+    (folder / "source.pdf").write_bytes(b"%PDF-1.4 placeholder")
+    deduplicate.deduplicate()
+    assert (folder / "source.pdf").read_bytes().startswith(b"%PDF")
+
     ex = export.export("all")
     assert ex["excluded_after_cutoff"] == 1
     assert (paths.exports_dir() / "documents_for_s1.csv").exists()

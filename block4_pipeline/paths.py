@@ -38,8 +38,19 @@ def imports_dir() -> Path:
     return data_dir() / "raw" / "manual_exports"
 
 
+def documents_dir() -> Path:
+    """One folder per unique document (B4-R#####). `deduplicate` writes metadata.json and
+    provenance.json; later stages (after S1) add source.pdf, parsed text, sections and the
+    evidence packet into the same folder. Files other than those two are never touched here."""
+    return data_dir() / "documents"
+
+
+def document_dir(document_id: str) -> Path:
+    return documents_dir() / document_id
+
+
 def ensure_dirs() -> None:
-    for d in (raw_dir(), normalized_dir(), exports_dir(), logs_dir()):
+    for d in (raw_dir(), normalized_dir(), exports_dir(), logs_dir(), documents_dir()):
         d.mkdir(parents=True, exist_ok=True)
 
 

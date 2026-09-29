@@ -124,6 +124,21 @@ export is not implemented.
 - **Search log** — one row per query run (`data/logs/search_log.jsonl`), append-only.
 - **Deviation log** — `data/logs/deviations.jsonl`, append-only.
 - **Raw evidence** — write-once files with sha256 manifests.
+- **Document folder** `data/documents/B4-R#####/` — written by `deduplicate` with
+  `metadata.json` (the document record, including any open-access PDF location) and
+  `provenance.json` (every hit that led to the document). After S1, the same folder receives
+  `source.pdf` (+ checksum), parsed page text, sections and the S2 evidence packet; those
+  files are never touched by `deduplicate`.
+
+## Beyond retrieval (planned, not built)
+
+S1 (title-and-abstract screening by two model families) consumes `exports/documents_for_s1.csv`.
+For documents that proceed, S2 will be supported by a per-document *evidence packet*:
+what artefact the source defines, extends, applies or mentions; its constructs, relations,
+states and transitions; the actor-side features it represents; and a page-level pointer
+for every claim, with `NOT FOUND` where the source is silent. Full text is downloaded by
+the pipeline only for open-access copies; anything else is marked `PDF_NEEDED` and
+obtained by hand. No requirement scoring (MR1–MR8) at that stage; that is Block 5.
 
 ## Tests
 

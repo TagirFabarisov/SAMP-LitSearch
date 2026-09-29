@@ -36,6 +36,9 @@ COMMON_FIELDS = (
     "language",
     "cited_by_count",
     "url",
+    "is_oa",              # open-access copy known (OpenAlex open_access.is_oa)
+    "oa_pdf_url",         # direct link to an open-access PDF, if the source reports one
+    "oa_landing_url",     # landing page of the open-access copy
     "source_note",
 )
 

@@ -1,60 +1,144 @@
 {
-  "recorded": false,
-  "note": "Hand-written from the OpenAlex documentation (help.openalex.org, 29 Sep 2026) to exercise the response shape: meta.count, meta.next_cursor, meta.x_query, results[] with abstract_inverted_index. Not a live recording.",
-  "meta": {
-    "count": 3,
-    "db_response_time_ms": 12,
-    "page": null,
-    "per_page": 100,
-    "next_cursor": "IlsxOTk5LTAxLTAxVDAwOjAwOjAwLjAwMCIsICJXMTIzIl0=",
-    "x_query": {
-      "oql": "works where title_and_abstract has (\"resource dependence\")",
-      "oqo": {"get_rows": "works", "filter_rows": [{"column_id": "title_and_abstract", "operator": "has", "value": "\"resource dependence\""}]},
-      "url": "/works?filter=title_and_abstract.search:\"resource dependence\""
+ "recorded": false,
+ "note": "Hand-written from the OpenAlex documentation (help.openalex.org, 29 Sep 2026) to exercise the response shape: meta.count, meta.next_cursor, meta.x_query, results[] with abstract_inverted_index. Not a live recording.",
+ "meta": {
+  "count": 3,
+  "db_response_time_ms": 12,
+  "page": null,
+  "per_page": 100,
+  "next_cursor": "IlsxOTk5LTAxLTAxVDAwOjAwOjAwLjAwMCIsICJXMTIzIl0=",
+  "x_query": {
+   "oql": "works where title_and_abstract has (\"resource dependence\")",
+   "oqo": {
+    "get_rows": "works",
+    "filter_rows": [
+     {
+      "column_id": "title_and_abstract",
+      "operator": "has",
+      "value": "\"resource dependence\""
+     }
+    ]
+   },
+   "url": "/works?filter=title_and_abstract.search:\"resource dependence\""
+  }
+ },
+ "results": [
+  {
+   "id": "https://openalex.org/W1000000001",
+   "doi": "https://doi.org/10.1000/example.001",
+   "display_name": "Resource dependence between actors: a formal model",
+   "publication_year": 1999,
+   "publication_date": "1999-03-01",
+   "type": "article",
+   "language": "en",
+   "cited_by_count": 42,
+   "authorships": [
+    {
+     "author": {
+      "id": "https://openalex.org/A500000001",
+      "display_name": "Ada Example"
+     }
+    },
+    {
+     "author": {
+      "id": "https://openalex.org/A500000002",
+      "display_name": "Bo Sample"
+     }
     }
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Journal of Examples",
+     "issn_l": "1234-5678",
+     "issn": [
+      "1234-5678"
+     ]
+    }
+   },
+   "abstract_inverted_index": {
+    "We": [
+     0
+    ],
+    "model": [
+     1,
+     5
+    ],
+    "resource": [
+     2
+    ],
+    "dependence": [
+     3
+    ],
+    "as": [
+     4
+    ],
+    "a": [
+     6
+    ],
+    "relation.": [
+     7
+    ]
+   },
+   "open_access": {
+    "is_oa": true,
+    "oa_status": "green",
+    "oa_url": "https://repo.example.org/paper1.pdf"
+   },
+   "best_oa_location": {
+    "is_oa": true,
+    "pdf_url": "https://repo.example.org/paper1.pdf",
+    "landing_page_url": "https://repo.example.org/paper1",
+    "version": "acceptedVersion"
+   }
   },
-  "results": [
+  {
+   "id": "https://openalex.org/W1000000002",
+   "doi": null,
+   "display_name": "Dependence relations in organizations",
+   "publication_year": 2005,
+   "publication_date": "2005-06-15",
+   "type": "book-chapter",
+   "language": "en",
+   "cited_by_count": 3,
+   "authorships": [
     {
-      "id": "https://openalex.org/W1000000001",
-      "doi": "https://doi.org/10.1000/example.001",
-      "display_name": "Resource dependence between actors: a formal model",
-      "publication_year": 1999,
-      "publication_date": "1999-03-01",
-      "type": "article",
-      "language": "en",
-      "cited_by_count": 42,
-      "authorships": [
-        {"author": {"id": "https://openalex.org/A500000001", "display_name": "Ada Example"}},
-        {"author": {"id": "https://openalex.org/A500000002", "display_name": "Bo Sample"}}
-      ],
-      "primary_location": {"source": {"display_name": "Journal of Examples", "issn_l": "1234-5678", "issn": ["1234-5678"]}},
-      "abstract_inverted_index": {"We": [0], "model": [1, 5], "resource": [2], "dependence": [3], "as": [4], "a": [6], "relation.": [7]}
-    },
-    {
-      "id": "https://openalex.org/W1000000002",
-      "doi": null,
-      "display_name": "Dependence relations in organizations",
-      "publication_year": 2005,
-      "publication_date": "2005-06-15",
-      "type": "book-chapter",
-      "language": "en",
-      "cited_by_count": 3,
-      "authorships": [{"author": {"id": "https://openalex.org/A500000003", "display_name": "Cy Instance"}}],
-      "primary_location": {"source": {"display_name": "Handbook of Examples", "issn_l": null, "issn": []}},
-      "abstract_inverted_index": null
-    },
-    {
-      "id": "https://openalex.org/W1000000003",
-      "doi": "https://doi.org/10.1000/EXAMPLE.003",
-      "display_name": "Après la date limite: un exemple",
-      "publication_year": 2099,
-      "publication_date": "2099-01-01",
-      "type": "article",
-      "language": "fr",
-      "cited_by_count": 0,
-      "authorships": [],
-      "primary_location": null,
-      "abstract_inverted_index": {"Exemple": [0]}
+     "author": {
+      "id": "https://openalex.org/A500000003",
+      "display_name": "Cy Instance"
+     }
     }
-  ]
+   ],
+   "primary_location": {
+    "source": {
+     "display_name": "Handbook of Examples",
+     "issn_l": null,
+     "issn": []
+    }
+   },
+   "abstract_inverted_index": null,
+   "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "best_oa_location": null
+  },
+  {
+   "id": "https://openalex.org/W1000000003",
+   "doi": "https://doi.org/10.1000/EXAMPLE.003",
+   "display_name": "Après la date limite: un exemple",
+   "publication_year": 2099,
+   "publication_date": "2099-01-01",
+   "type": "article",
+   "language": "fr",
+   "cited_by_count": 0,
+   "authorships": [],
+   "primary_location": null,
+   "abstract_inverted_index": {
+    "Exemple": [
+     0
+    ]
+   }
+  }
+ ]
 }
