@@ -1,0 +1,10 @@
+{
+  "recorded": false,
+  "note": "Shape of an empty Scopus result set: one entry carrying an error string.",
+  "search-results": {
+    "opensearch:totalResults": "0",
+    "opensearch:startIndex": "0",
+    "opensearch:itemsPerPage": "0",
+    "entry": [{"@_fa": "true", "error": "Result set was empty"}]
+  }
+}

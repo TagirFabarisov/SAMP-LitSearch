@@ -29,6 +29,12 @@ openalex_order: "publication_date:asc,ids.openalex:asc"
 openalex_api_base: "https://api.openalex.org"
 openalex_entity_prefix: "works where"   # prepended to the query bank's `title_and_abstract has (...)`
 
+# Scopus Search API (used only when sources.yaml gives scopus access_mode: api)
+scopus_api_base: "https://api.elsevier.com/content/search/scopus"
+scopus_view: COMPLETE          # abstracts and author list; needs the institution's subscription
+scopus_page_size: 25           # maximum of the COMPLETE view
+scopus_order: "+coverDate"     # ascending publication date; ordering has no role in inclusion
+
 # DBLP public API
 dblp_api_base: "https://dblp.org/search/publ/api"
 dblp_page_size: 1000

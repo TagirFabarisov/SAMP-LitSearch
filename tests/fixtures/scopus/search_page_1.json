@@ -1,0 +1,49 @@
+{
+  "recorded": false,
+  "note": "Hand-written in the shape of the Scopus Search API JSON response (view=COMPLETE), from dev.elsevier.com documentation. Not a live recording.",
+  "search-results": {
+    "opensearch:totalResults": "2",
+    "opensearch:startIndex": "0",
+    "opensearch:itemsPerPage": "2",
+    "opensearch:Query": {"@role": "request", "@searchTerms": "TITLE-ABS-KEY(\"resource dependence\")", "@startPage": "0"},
+    "link": [{"@_fa": "true", "@ref": "self", "@href": "https://api.elsevier.com/content/search/scopus?start=0&count=25&query=..."}],
+    "entry": [
+      {
+        "@_fa": "true",
+        "link": [{"@_fa": "true", "@ref": "self", "@href": "https://api.elsevier.com/content/abstract/scopus_id/85000000001"},
+                 {"@_fa": "true", "@ref": "scopus", "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85000000001&origin=inward"}],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85000000001",
+        "dc:identifier": "SCOPUS_ID:85000000001",
+        "eid": "2-s2.0-85000000001",
+        "dc:title": "Resource dependence between actors: a formal model",
+        "dc:creator": "Example A.",
+        "prism:publicationName": "Journal of Examples",
+        "prism:issn": "12345678",
+        "prism:volume": "1",
+        "prism:coverDate": "1999-03-01",
+        "prism:doi": "10.1000/example.001",
+        "dc:description": "We model resource dependence as a relation.",
+        "citedby-count": "42",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author": [
+          {"@_fa": "true", "@seq": "1", "author-url": "https://api.elsevier.com/content/author/author_id/1", "authid": "1", "authname": "Example A.", "surname": "Example", "given-name": "Ada", "initials": "A."},
+          {"@_fa": "true", "@seq": "2", "author-url": "https://api.elsevier.com/content/author/author_id/2", "authid": "2", "authname": "Sample B.", "surname": "Sample", "given-name": "Bo", "initials": "B."}
+        ]
+      },
+      {
+        "@_fa": "true",
+        "link": [],
+        "dc:identifier": "SCOPUS_ID:85000000002",
+        "eid": "2-s2.0-85000000002",
+        "dc:title": "Dependence relations in organizations",
+        "dc:creator": "Instance C.",
+        "prism:publicationName": "Handbook of Examples",
+        "prism:coverDate": "2005-06-15",
+        "citedby-count": "3",
+        "subtype": "ch",
+        "subtypeDescription": "Book Chapter"
+      }
+    ]
+  }
+}
