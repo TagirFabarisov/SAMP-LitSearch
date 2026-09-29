@@ -1,0 +1,6 @@
+# Denylist for query-contamination check (brief section 6, protocol section 27 item 12).
+# One entry per line; matched case-insensitively as a whole phrase against every query form.
+# Only specific candidate artifacts, projects and tool names belong here.
+# Generic formalism, mechanism and community names (event calculus, Petri net, deontic logic,
+# institutional grammar, real options, MBSE, ...) are permitted and must NOT be listed.
+# Lines starting with # are comments. The list starts empty; the user fills it.

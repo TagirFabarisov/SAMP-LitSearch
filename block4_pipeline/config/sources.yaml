@@ -1,0 +1,162 @@
+# Source roles and allocation, encoding section 5 of the frozen protocol (revision 3).
+#
+# role:            core | curated | domain | supplementary
+# access_mode:     api | manual_export | web
+#                  "api" is used only where an official API is available and (for licensed
+#                  databases) an institutional entitlement has been confirmed by the user.
+#                  Until then a licensed database is "manual_export": the user runs the query
+#                  in the database interface and exports it; the pipeline imports the export.
+# access_status:   CONFIRMED | ACCESS_TO_CONFIRM
+# mandatory_for:   "all" or a list of direction IDs (B4-D01..B4-D16, B4-XC, B4-BR).
+#                  A lens restriction is written as {direction: B4-D16, lenses: [B community]}.
+# supplementary_for: "all" or a list; supplementary sources are invoked on demand only.
+#
+# Changing any allocation is a protocol change and needs a deviation-log entry first.
+
+sources:
+  openalex:
+    display_name: OpenAlex
+    role: core
+    access_mode: api
+    access_status: CONFIRMED
+    mandatory_for: all
+    query_field: openalex_oql
+    threshold_key: threshold_structured
+
+  scopus:
+    display_name: Scopus
+    role: curated
+    access_mode: manual_export        # switch to api only if a Scopus API entitlement is confirmed
+    access_status: ACCESS_TO_CONFIRM  # interface and export confirmed; API entitlement unknown
+    mandatory_for: all
+    query_field: scopus
+    threshold_key: threshold_structured
+    export_formats: [scopus_csv, ris, bibtex]
+
+  wos:
+    display_name: Web of Science
+    role: curated
+    access_mode: manual_export
+    access_status: ACCESS_TO_CONFIRM
+    mandatory_for: all
+    query_field: wos
+    threshold_key: threshold_structured
+    export_formats: [wos_tab, ris, bibtex]
+
+  dblp:
+    display_name: DBLP
+    role: domain
+    access_mode: api
+    access_status: CONFIRMED          # public API, no key
+    mandatory_for:
+      - B4-D01
+      - B4-D02
+      - B4-D03
+      - B4-D04
+      - B4-D05
+      - B4-D08
+      - B4-D09
+      - B4-D10
+      - B4-D14
+      - B4-XC
+      - {direction: B4-D16, lenses: [B community]}
+    supplementary_for:
+      - B4-D06
+      - B4-D07
+      - B4-D15
+    query_field: dblp
+    threshold_key: threshold_structured
+
+  ieee:
+    display_name: IEEE Xplore
+    role: domain
+    access_mode: manual_export
+    access_status: ACCESS_TO_CONFIRM
+    mandatory_for:
+      - B4-D09
+      - B4-D11
+      - B4-D12
+      - B4-D13
+      - B4-D15
+      - B4-BR
+    supplementary_for:
+      - B4-D01
+      - B4-D05
+      - B4-D10
+    query_field: ieee
+    threshold_key: threshold_structured
+    export_formats: [ieee_csv, ris, bibtex]
+
+  acm:
+    display_name: ACM Digital Library
+    role: domain
+    access_mode: manual_export
+    access_status: ACCESS_TO_CONFIRM
+    mandatory_for: []
+    supplementary_for:
+      - B4-D02
+      - B4-D04
+    query_field: ieee                 # protocol section 4: IEEE Xplore / ACM DL share one form
+    threshold_key: threshold_structured
+    export_formats: [acm_csv, ris, bibtex]
+
+  heinonline:
+    display_name: HeinOnline
+    role: domain
+    access_mode: manual_export
+    access_status: ACCESS_TO_CONFIRM
+    mandatory_for:
+      - B4-D03
+      - B4-D06
+      - B4-D07
+      - B4-D08
+    supplementary_for: []
+    query_field: heinonline
+    threshold_key: threshold_structured
+    export_formats: [generic_csv]
+
+  ssrn:
+    display_name: SSRN
+    role: supplementary
+    access_mode: manual_export
+    access_status: ACCESS_TO_CONFIRM
+    mandatory_for: []
+    supplementary_for: all
+    query_field: ssrn
+    threshold_key: threshold_structured
+    export_formats: [generic_csv]
+
+  scholar:
+    display_name: Google Scholar
+    role: supplementary
+    access_mode: manual_export
+    access_status: ACCESS_TO_CONFIRM
+    mandatory_for: []
+    supplementary_for: all
+    query_field: scholar
+    threshold_key: scholar_depth      # first 100 results, relevance order, no threshold rule
+    export_formats: [generic_csv]
+
+  web:
+    display_name: General web
+    role: supplementary
+    access_mode: web
+    access_status: ACCESS_TO_CONFIRM
+    mandatory_for: []
+    supplementary_for: all
+    query_field: scholar              # short form; the protocol gives no separate web form
+    threshold_key: web_depth          # first 20 results when invoked
+    export_formats: [generic_csv]
+
+# Fixed order of execution within a query (protocol section 24).
+execution_order:
+  - openalex
+  - scopus
+  - wos
+  - dblp
+  - ieee
+  - acm
+  - heinonline
+  - ssrn
+  - scholar
+  - web

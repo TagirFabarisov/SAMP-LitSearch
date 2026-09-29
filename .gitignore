@@ -1,0 +1,17 @@
+# secrets and sessions: never committed
+.env
+.env.*
+*.key
+browser_profile/
+cookies/
+sessions/
+# raw retrieval evidence and derived data stay local for now (see DEVNOTES.md)
+block4_pipeline/data/raw/
+block4_pipeline/data/normalized/
+block4_pipeline/data/exports/
+!block4_pipeline/data/**/.gitkeep
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

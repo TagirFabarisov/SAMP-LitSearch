@@ -1,0 +1,14 @@
+{
+  "recorded": false,
+  "summary": "Hand-written from the documentation: the HTTP 400 body OpenAlex returns for an expression its parser rejects. Shows the shape oql_check reports; it does not say how the real service treats phrase-internal truncation.",
+  "http_status": 400,
+  "body": {
+    "validation": {
+      "valid": false,
+      "errors": [
+        {"type": "parse_error", "message": "unknown field \"yearx\"", "position": 12, "context": "works where yearx is (2020)"}
+      ],
+      "warnings": []
+    }
+  }
+}

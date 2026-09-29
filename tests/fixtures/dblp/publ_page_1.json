@@ -1,0 +1,22 @@
+{
+  "recorded": false,
+  "note": "Hand-written in the shape of the DBLP publication search API (format=json).",
+  "result": {
+    "query": "\"social dependence\" | \"resource dependence\" actors formal model",
+    "status": {"@code": "200", "text": "OK"},
+    "hits": {
+      "@total": "2", "@computed": "2", "@sent": "2", "@first": "0",
+      "hit": [
+        {"@score": "5", "@id": "1",
+         "info": {"authors": {"author": [{"@pid": "01/1", "text": "Ada Example"}, {"@pid": "02/2", "text": "Bo Sample"}]},
+                  "title": "Resource dependence between actors: a formal model.", "venue": "EXCONF", "year": "1999",
+                  "type": "Conference and Workshop Papers", "key": "conf/exconf/ExampleS99",
+                  "doi": "10.1000/EXAMPLE.001", "ee": "https://doi.org/10.1000/example.001", "url": "https://dblp.org/rec/conf/exconf/ExampleS99"}},
+        {"@score": "3", "@id": "2",
+         "info": {"authors": {"author": {"@pid": "03/3", "text": "Cy Instance"}},
+                  "title": "Dependence Relations in Organisations.", "venue": "J. Ex.", "year": "2005",
+                  "type": "Journal Articles", "key": "journals/jex/Instance05", "url": "https://dblp.org/rec/journals/jex/Instance05"}}
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+# Machine-readable parameters of the frozen protocol
+# "SAMP RQ4.2. Block 4A: Frozen Systematic Search Protocol, revision 3"
+# (approved and frozen 29 September 2026). The Notion page is authoritative;
+# any change here needs a deviation-log entry first (run.py deviation add).
+
+protocol_revision: 3
+frozen: true
+frozen_on: "2026-09-29"
+approved_by: Tagir Fabarisov
+
+# Result-processing rule (section 8)
+threshold_structured: 300      # OpenAlex, Scopus, WoS, IEEE, ACM, DBLP, HeinOnline, SSRN
+scholar_depth: 100             # Google Scholar, first 100 in relevance order, when invoked
+web_depth: 20                  # general web, first 20, when invoked
+snowball_forward_scholar_depth: 100
+
+# Applied in this order, by a person, when a count exceeds the threshold.
+# The pipeline never applies a refinement itself; the refined sub-query gets a sub-ID
+# (B4-Qxx.r1, .r2, ...) and is added to queries.yaml after a deviation-log entry.
+refinement_order:
+  - title_restrict_free_group
+  - add_mechanism_group
+  - subject_area_limit
+  - split_or_groups
+
+# OpenAlex execution rules (section 6)
+openalex_page_size: 100
+openalex_order: "publication_date:asc,id:asc"
+openalex_api_base: "https://api.openalex.org"
+openalex_entity_prefix: "works where"   # prepended to the query bank's `title_and_abstract has (...)`
+
+# DBLP public API
+dblp_api_base: "https://dblp.org/search/publ/api"
+dblp_page_size: 1000
+
+# Deduplication order (section 9 / brief section 10)
+dedup_order:
+  - doi
+  - source_ids
+  - normalized_title_year
+near_duplicate_ratio: 0.92
+near_duplicate_year_tolerance: 1
+
+# Identifier formats (section 9)
+id_formats:
+  hit: "B4-H{:05d}"
+  document: "B4-R{:05d}"
+  search_log: "B4-L{:05d}"
+  run: "run_{ts}_{source}_{query}"
+
+# Document scope (section 7). The upper cutoff is the date the first real 4B retrieval starts;
+# it is set once by `run.py set-cutoff` and never changed afterwards without a deviation-log entry.
+upper_cutoff_date: null
+lower_year_limit: null         # none, by protocol
+
+# Sources against which the OpenAlex construct check (brief section 1b) has been resolved.
+# `retrieve --source openalex` refuses to run until this is true; set by `run.py oql-check --resolve`
+# after the user has recorded the outcome in the deviation log.
+openalex_construct_check_resolved: false

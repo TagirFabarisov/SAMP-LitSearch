@@ -1,0 +1,4 @@
+Authors,Author full names,Author(s) ID,Title,Year,Source title,Volume,Issue,Art. No.,Page start,Page end,Page count,Cited by,DOI,Link,Abstract,Author Keywords,Language of Original Document,Document Type,Source,EID
+"Example A.; Sample B.","Example, Ada (1); Sample, Bo (2)","1;2","Resource dependence between actors: a formal model",1999,Journal of Examples,1,1,,1,10,10,42,10.1000/example.001,https://www.scopus.com/inward/record.uri?eid=2-s2.0-0001,"We model resource dependence as a relation.",dependence,English,Article,Scopus,2-s2.0-0001
+"Instance C.","Instance, Cy (3)","3","Dependence relations in organizations",2005,Handbook of Examples,,,,,,,3,,https://www.scopus.com/inward/record.uri?eid=2-s2.0-0002,"A chapter.",organizations,English,Book Chapter,Scopus,2-s2.0-0002
+"Neu D.","Neu, Di (4)","4","A wholly different paper",2010,Other Venue,,,,,,,0,10.1000/other.010,,"Unrelated.",other,German,Article,Scopus,2-s2.0-0003
