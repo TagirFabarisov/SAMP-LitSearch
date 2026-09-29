@@ -147,6 +147,27 @@ documents that pass S1; it does not change the frozen protocol's order. Open-acc
 (location recorded from OpenAlex `best_oa_location`) may be downloaded by the pipeline;
 paywalled copies are obtained by hand (`PDF_NEEDED`).
 
+## 4B run record, OpenAlex (29–30 September 2026)
+
+- Cutoff set to 2026-09-29. Bank run: 5 of 54 queries at or below 300 (Q04, Q18, Q27, BR01,
+  BR04; 457 hits); 49 above, from 322 to 99,924.
+- Refinement (deviation 4): 20 queries under 300 after step 1 (title restriction), 16 after
+  step 2 (mechanism group), 2 after step 3 (subject areas), 11 needed the OR split; 87 runnable
+  sub-queries, 7,727 hits.
+- Second-level splits (deviation 5): 12 parts split again (levels 2–4); 46 more runnable parts,
+  4,596 hits. Parts that cannot be split further and remain above 300 (REFINEMENT_EXHAUSTED,
+  not retrieved; a decision for Tagir): Q16.r4.1.2 (3,215), Q24.r4.1.2 and .1.3 (680 each),
+  Q24.r4.4.2 and .4.3 (903 each), Q42.r4.1.1.1 and .1.1.2 (540 each), Q48.r4.1.2 (1,624),
+  Q48.r4.1.3 (1,387), Q48.r4.1.1.1 (411), XC01.r4.5.1 (577), XC01.r4.5.4 (535), and
+  Q41.r4.4.3.4.1 (376). The only remaining pre-registered-style move would be splitting the
+  title group as well; it is not implemented.
+- Totals: 12,780 hits, 9,844 unique documents, 147 near-duplicate pairs
+  (`exports/near_duplicates.csv`), 1 record after the cutoff, 246 non-English (flagged).
+- DBLP: all 30 mandatory queries failed on 29 Sep: dblp.org and both mirrors serve a browser
+  bot-check page to programs. To be run in a browser and imported (`--format dblp_json`).
+- Scopus: adapter ready; entitlement probe over split-tunnel VPN failed (COMPLETE view 401);
+  to be run from campus. Web of Science: browser-assisted export via a-z.lu, login pending.
+
 ## Not implemented on purpose
 
 - Browser-assisted export (brief section 8): not implemented until the licence permits it
