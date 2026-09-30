@@ -52,6 +52,9 @@ SYNTAX = {
                  "subject": FIELD_CLAUSE, "prefix_re": r"^title_and_abstract has\s*\((.*)\)$"},
     "scopus": {"field": "scopus", "main": "TITLE-ABS-KEY", "title": "TITLE",
                "subject": SCOPUS_SUBJAREA_CLAUSE, "prefix_re": r"^TITLE-ABS-KEY\s*\((.*)\)$"},
+    # Web of Science: TS= topic (title, abstract, keywords), TI= title; the subject-area step is
+    # applied in the interface with the "Web of Science Categories" refine panel, not as a string
+    "wos": {"field": "wos", "main": "TS=", "title": "TI=", "subject": None, "prefix_re": r"^TS=\s*\((.*)\)$"},
 }
 
 
@@ -165,6 +168,8 @@ def apply_step(step: int, ta_groups: List[str], others: List[str], mech_group: O
             return None, "mechanism group already present"
         return [(ta_groups + [mech_group], others)], "mechanism group %s added" % mech_group
     if step == 3:
+        if not syn.get("subject"):
+            return None, "subject-area limit applied in the interface, not as a query string"
         if syn["subject"] in others:
             return None, "field limit already present"
         return [(ta_groups, others + [syn["subject"]])], "subject areas limited: %s" % syn["subject"]
