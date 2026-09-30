@@ -11,482 +11,16 @@
  "deviations_recorded": 7,
  "failures": [],
  "frozen": true,
- "generated_at": "2026-09-30T11:33:16Z",
+ "generated_at": "2026-09-30T11:34:02Z",
  "mandatory_pairs_by_status": {
   "MANUAL_EXPORT_REQUIRED": 85,
-  "REFINEMENT_REQUIRED": 93,
-  "done": 45
+  "done": 45,
+  "refined": 93
  },
  "openalex_construct_check_resolved": true,
  "pending_manual_imports": 85,
  "protocol_revision": 3,
- "refinement_required": [
-  [
-   "B4-Q01",
-   "openalex",
-   1193
-  ],
-  [
-   "B4-Q01",
-   "scopus",
-   622
-  ],
-  [
-   "B4-Q02",
-   "openalex",
-   14247
-  ],
-  [
-   "B4-Q02",
-   "scopus",
-   1178
-  ],
-  [
-   "B4-Q03",
-   "openalex",
-   1182
-  ],
-  [
-   "B4-Q03",
-   "scopus",
-   626
-  ],
-  [
-   "B4-Q05",
-   "openalex",
-   39673
-  ],
-  [
-   "B4-Q05",
-   "scopus",
-   397
-  ],
-  [
-   "B4-Q06",
-   "openalex",
-   1389
-  ],
-  [
-   "B4-Q06",
-   "scopus",
-   444
-  ],
-  [
-   "B4-Q07",
-   "openalex",
-   3013
-  ],
-  [
-   "B4-Q07",
-   "scopus",
-   698
-  ],
-  [
-   "B4-Q08",
-   "openalex",
-   1793
-  ],
-  [
-   "B4-Q08",
-   "scopus",
-   606
-  ],
-  [
-   "B4-Q09",
-   "openalex",
-   927
-  ],
-  [
-   "B4-Q10",
-   "openalex",
-   99924
-  ],
-  [
-   "B4-Q10",
-   "scopus",
-   9269
-  ],
-  [
-   "B4-Q11",
-   "openalex",
-   1798
-  ],
-  [
-   "B4-Q11",
-   "scopus",
-   683
-  ],
-  [
-   "B4-Q12",
-   "openalex",
-   6255
-  ],
-  [
-   "B4-Q13",
-   "openalex",
-   2885
-  ],
-  [
-   "B4-Q13",
-   "scopus",
-   697
-  ],
-  [
-   "B4-Q14",
-   "openalex",
-   7268
-  ],
-  [
-   "B4-Q14",
-   "scopus",
-   2185
-  ],
-  [
-   "B4-Q15",
-   "openalex",
-   3066
-  ],
-  [
-   "B4-Q15",
-   "scopus",
-   648
-  ],
-  [
-   "B4-Q16",
-   "openalex",
-   89940
-  ],
-  [
-   "B4-Q16",
-   "scopus",
-   3299
-  ],
-  [
-   "B4-Q17",
-   "openalex",
-   9622
-  ],
-  [
-   "B4-Q17",
-   "scopus",
-   2689
-  ],
-  [
-   "B4-Q19",
-   "openalex",
-   39530
-  ],
-  [
-   "B4-Q19",
-   "scopus",
-   18321
-  ],
-  [
-   "B4-Q20",
-   "openalex",
-   748
-  ],
-  [
-   "B4-Q20",
-   "scopus",
-   514
-  ],
-  [
-   "B4-Q21",
-   "openalex",
-   9317
-  ],
-  [
-   "B4-Q21",
-   "scopus",
-   450
-  ],
-  [
-   "B4-Q22",
-   "openalex",
-   6957
-  ],
-  [
-   "B4-Q22",
-   "scopus",
-   4110
-  ],
-  [
-   "B4-Q23",
-   "openalex",
-   477
-  ],
-  [
-   "B4-Q23",
-   "scopus",
-   310
-  ],
-  [
-   "B4-Q24",
-   "openalex",
-   13006
-  ],
-  [
-   "B4-Q24",
-   "scopus",
-   4092
-  ],
-  [
-   "B4-Q25",
-   "openalex",
-   15077
-  ],
-  [
-   "B4-Q25",
-   "scopus",
-   5480
-  ],
-  [
-   "B4-Q26",
-   "openalex",
-   1262
-  ],
-  [
-   "B4-Q26",
-   "scopus",
-   842
-  ],
-  [
-   "B4-Q28",
-   "openalex",
-   1575
-  ],
-  [
-   "B4-Q28",
-   "scopus",
-   328
-  ],
-  [
-   "B4-Q29",
-   "openalex",
-   1441
-  ],
-  [
-   "B4-Q29",
-   "scopus",
-   894
-  ],
-  [
-   "B4-Q30",
-   "openalex",
-   607
-  ],
-  [
-   "B4-Q30",
-   "scopus",
-   536
-  ],
-  [
-   "B4-Q31",
-   "openalex",
-   14339
-  ],
-  [
-   "B4-Q31",
-   "scopus",
-   3012
-  ],
-  [
-   "B4-Q32",
-   "openalex",
-   546
-  ],
-  [
-   "B4-Q33",
-   "openalex",
-   2375
-  ],
-  [
-   "B4-Q33",
-   "scopus",
-   689
-  ],
-  [
-   "B4-Q34",
-   "openalex",
-   4730
-  ],
-  [
-   "B4-Q34",
-   "scopus",
-   3675
-  ],
-  [
-   "B4-Q35",
-   "openalex",
-   11229
-  ],
-  [
-   "B4-Q35",
-   "scopus",
-   23027
-  ],
-  [
-   "B4-Q36",
-   "openalex",
-   323
-  ],
-  [
-   "B4-Q37",
-   "openalex",
-   21051
-  ],
-  [
-   "B4-Q37",
-   "scopus",
-   5316
-  ],
-  [
-   "B4-Q38",
-   "openalex",
-   31874
-  ],
-  [
-   "B4-Q38",
-   "scopus",
-   14354
-  ],
-  [
-   "B4-Q39",
-   "openalex",
-   2930
-  ],
-  [
-   "B4-Q39",
-   "scopus",
-   1959
-  ],
-  [
-   "B4-Q40",
-   "openalex",
-   6335
-  ],
-  [
-   "B4-Q40",
-   "scopus",
-   2603
-  ],
-  [
-   "B4-Q41",
-   "openalex",
-   40243
-  ],
-  [
-   "B4-Q41",
-   "scopus",
-   30249
-  ],
-  [
-   "B4-Q42",
-   "openalex",
-   3553
-  ],
-  [
-   "B4-Q42",
-   "scopus",
-   3278
-  ],
-  [
-   "B4-Q43",
-   "openalex",
-   925
-  ],
-  [
-   "B4-Q43",
-   "scopus",
-   701
-  ],
-  [
-   "B4-Q44",
-   "openalex",
-   4778
-  ],
-  [
-   "B4-Q44",
-   "scopus",
-   3755
-  ],
-  [
-   "B4-Q45",
-   "openalex",
-   451
-  ],
-  [
-   "B4-Q46",
-   "openalex",
-   54646
-  ],
-  [
-   "B4-Q46",
-   "scopus",
-   14003
-  ],
-  [
-   "B4-Q47",
-   "openalex",
-   2986
-  ],
-  [
-   "B4-Q47",
-   "scopus",
-   2018
-  ],
-  [
-   "B4-Q48",
-   "openalex",
-   33541
-  ],
-  [
-   "B4-Q48",
-   "scopus",
-   15129
-  ],
-  [
-   "B4-XC01",
-   "openalex",
-   23969
-  ],
-  [
-   "B4-XC01",
-   "scopus",
-   8603
-  ],
-  [
-   "B4-XC02",
-   "openalex",
-   10009
-  ],
-  [
-   "B4-XC02",
-   "scopus",
-   2013
-  ],
-  [
-   "B4-BR02",
-   "openalex",
-   503
-  ],
-  [
-   "B4-BR02",
-   "scopus",
-   424
-  ],
-  [
-   "B4-BR03",
-   "openalex",
-   322
-  ],
-  [
-   "B4-BR03",
-   "scopus",
-   376
-  ]
- ],
+ "refinement_required": [],
  "rows": [
   {
    "count": 1193,
@@ -499,7 +33,7 @@
    "note": "count 1193 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q01",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 190 hits)"
   },
   {
    "count": 622,
@@ -512,7 +46,7 @@
    "note": "count 622 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q01",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 126 hits)"
   },
   {
    "count": null,
@@ -603,7 +137,7 @@
    "note": "count 14247 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q02",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 46 hits)"
   },
   {
    "count": 1178,
@@ -616,7 +150,7 @@
    "note": "count 1178 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q02",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 182 hits)"
   },
   {
    "count": null,
@@ -707,7 +241,7 @@
    "note": "count 1182 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q03",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 152 hits)"
   },
   {
    "count": 626,
@@ -720,7 +254,7 @@
    "note": "count 626 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q03",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 110 hits)"
   },
   {
    "count": null,
@@ -915,7 +449,7 @@
    "note": "count 39673 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q05",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 237 hits)"
   },
   {
    "count": 397,
@@ -928,7 +462,7 @@
    "note": "count 397 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q05",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 88 hits)"
   },
   {
    "count": null,
@@ -1019,7 +553,7 @@
    "note": "count 1389 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q06",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 234 hits)"
   },
   {
    "count": 444,
@@ -1032,7 +566,7 @@
    "note": "count 444 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q06",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 104 hits)"
   },
   {
    "count": null,
@@ -1123,7 +657,7 @@
    "note": "count 3013 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q07",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 17 hits)"
   },
   {
    "count": 698,
@@ -1136,7 +670,7 @@
    "note": "count 698 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q07",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 144 hits)"
   },
   {
    "count": null,
@@ -1227,7 +761,7 @@
    "note": "count 1793 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q08",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 228 hits)"
   },
   {
    "count": 606,
@@ -1240,7 +774,7 @@
    "note": "count 606 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q08",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 129 hits)"
   },
   {
    "count": null,
@@ -1331,7 +865,7 @@
    "note": "count 927 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q09",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 15 hits)"
   },
   {
    "count": 39,
@@ -1435,7 +969,7 @@
    "note": "count 99924 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q10",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 228 hits)"
   },
   {
    "count": 9269,
@@ -1448,7 +982,7 @@
    "note": "count 9269 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q10",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 6 hits)"
   },
   {
    "count": null,
@@ -1539,7 +1073,7 @@
    "note": "count 1798 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q11",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 227 hits)"
   },
   {
    "count": 683,
@@ -1552,7 +1086,7 @@
    "note": "count 683 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q11",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 91 hits)"
   },
   {
    "count": null,
@@ -1643,7 +1177,7 @@
    "note": "count 6255 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q12",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 99 hits)"
   },
   {
    "count": 88,
@@ -1747,7 +1281,7 @@
    "note": "count 2885 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q13",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 292 hits)"
   },
   {
    "count": 697,
@@ -1760,7 +1294,7 @@
    "note": "count 697 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q13",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 76 hits)"
   },
   {
    "count": null,
@@ -1851,7 +1385,7 @@
    "note": "count 7268 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q14",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 99 hits)"
   },
   {
    "count": 2185,
@@ -1864,7 +1398,7 @@
    "note": "count 2185 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q14",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 288 hits)"
   },
   {
    "count": null,
@@ -1955,7 +1489,7 @@
    "note": "count 3066 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q15",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 205 hits)"
   },
   {
    "count": 648,
@@ -1968,7 +1502,7 @@
    "note": "count 648 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q15",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 113 hits)"
   },
   {
    "count": null,
@@ -2059,7 +1593,7 @@
    "note": "count 89940 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q16",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (9 sub-queries, 367 hits)"
   },
   {
    "count": 3299,
@@ -2072,7 +1606,7 @@
    "note": "count 3299 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q16",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 131 hits)"
   },
   {
    "count": null,
@@ -2163,7 +1697,7 @@
    "note": "count 9622 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q17",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 78 hits)"
   },
   {
    "count": 2689,
@@ -2176,7 +1710,7 @@
    "note": "count 2689 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q17",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 231 hits)"
   },
   {
    "count": null,
@@ -2371,7 +1905,7 @@
    "note": "count 39530 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q19",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (6 sub-queries, 615 hits)"
   },
   {
    "count": 18321,
@@ -2384,7 +1918,7 @@
    "note": "count 18321 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q19",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 236 hits)"
   },
   {
    "count": null,
@@ -2475,7 +2009,7 @@
    "note": "count 748 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q20",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 139 hits)"
   },
   {
    "count": 514,
@@ -2488,7 +2022,7 @@
    "note": "count 514 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q20",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 71 hits)"
   },
   {
    "count": null,
@@ -2579,7 +2113,7 @@
    "note": "count 9317 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q21",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (8 sub-queries, 571 hits)"
   },
   {
    "count": 450,
@@ -2592,7 +2126,7 @@
    "note": "count 450 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q21",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 71 hits)"
   },
   {
    "count": null,
@@ -2683,7 +2217,7 @@
    "note": "count 6957 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q22",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 5 hits)"
   },
   {
    "count": 4110,
@@ -2696,7 +2230,7 @@
    "note": "count 4110 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q22",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 3 hits)"
   },
   {
    "count": null,
@@ -2787,7 +2321,7 @@
    "note": "count 477 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q23",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 62 hits)"
   },
   {
    "count": 310,
@@ -2800,7 +2334,7 @@
    "note": "count 310 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q23",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 39 hits)"
   },
   {
    "count": null,
@@ -2891,7 +2425,7 @@
    "note": "count 13006 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q24",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (4 sub-queries, 786 hits)"
   },
   {
    "count": 4092,
@@ -2904,7 +2438,7 @@
    "note": "count 4092 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q24",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (4 sub-queries, 275 hits)"
   },
   {
    "count": null,
@@ -2995,7 +2529,7 @@
    "note": "count 15077 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q25",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 16 hits)"
   },
   {
    "count": 5480,
@@ -3008,7 +2542,7 @@
    "note": "count 5480 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q25",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 10 hits)"
   },
   {
    "count": null,
@@ -3099,7 +2633,7 @@
    "note": "count 1262 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q26",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 139 hits)"
   },
   {
    "count": 842,
@@ -3112,7 +2646,7 @@
    "note": "count 842 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q26",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 95 hits)"
   },
   {
    "count": null,
@@ -3307,7 +2841,7 @@
    "note": "count 1575 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q28",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 114 hits)"
   },
   {
    "count": 328,
@@ -3320,7 +2854,7 @@
    "note": "count 328 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q28",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 50 hits)"
   },
   {
    "count": null,
@@ -3411,7 +2945,7 @@
    "note": "count 1441 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q29",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 16 hits)"
   },
   {
    "count": 894,
@@ -3424,7 +2958,7 @@
    "note": "count 894 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q29",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 14 hits)"
   },
   {
    "count": null,
@@ -3515,7 +3049,7 @@
    "note": "count 607 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q30",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 109 hits)"
   },
   {
    "count": 536,
@@ -3528,7 +3062,7 @@
    "note": "count 536 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q30",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 72 hits)"
   },
   {
    "count": null,
@@ -3619,7 +3153,7 @@
    "note": "count 14339 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q31",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 161 hits)"
   },
   {
    "count": 3012,
@@ -3632,7 +3166,7 @@
    "note": "count 3012 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q31",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 32 hits)"
   },
   {
    "count": null,
@@ -3710,7 +3244,7 @@
    "note": "count 546 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q32",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 38 hits)"
   },
   {
    "count": 71,
@@ -3801,7 +3335,7 @@
    "note": "count 2375 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q33",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 226 hits)"
   },
   {
    "count": 689,
@@ -3814,7 +3348,7 @@
    "note": "count 689 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q33",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 104 hits)"
   },
   {
    "count": null,
@@ -3892,7 +3426,7 @@
    "note": "count 4730 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q34",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 235 hits)"
   },
   {
    "count": 3675,
@@ -3905,7 +3439,7 @@
    "note": "count 3675 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q34",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 202 hits)"
   },
   {
    "count": null,
@@ -3983,7 +3517,7 @@
    "note": "count 11229 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q35",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 162 hits)"
   },
   {
    "count": 23027,
@@ -3996,7 +3530,7 @@
    "note": "count 23027 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q35",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 221 hits)"
   },
   {
    "count": null,
@@ -4074,7 +3608,7 @@
    "note": "count 323 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q36",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 79 hits)"
   },
   {
    "count": 300,
@@ -4165,7 +3699,7 @@
    "note": "count 21051 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q37",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 126 hits)"
   },
   {
    "count": 5316,
@@ -4178,7 +3712,7 @@
    "note": "count 5316 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q37",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 82 hits)"
   },
   {
    "count": null,
@@ -4256,7 +3790,7 @@
    "note": "count 31874 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q38",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 273 hits)"
   },
   {
    "count": 14354,
@@ -4269,7 +3803,7 @@
    "note": "count 14354 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q38",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 162 hits)"
   },
   {
    "count": null,
@@ -4347,7 +3881,7 @@
    "note": "count 2930 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q39",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 275 hits)"
   },
   {
    "count": 1959,
@@ -4360,7 +3894,7 @@
    "note": "count 1959 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q39",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 236 hits)"
   },
   {
    "count": null,
@@ -4438,7 +3972,7 @@
    "note": "count 6335 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q40",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 29 hits)"
   },
   {
    "count": 2603,
@@ -4451,7 +3985,7 @@
    "note": "count 2603 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q40",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 23 hits)"
   },
   {
    "count": null,
@@ -4529,7 +4063,7 @@
    "note": "count 40243 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q41",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (14 sub-queries, 368 hits)"
   },
   {
    "count": 30249,
@@ -4542,7 +4076,7 @@
    "note": "count 30249 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q41",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (14 sub-queries, 454 hits)"
   },
   {
    "count": null,
@@ -4620,7 +4154,7 @@
    "note": "count 3553 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q42",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (4 sub-queries, 101 hits)"
   },
   {
    "count": 3278,
@@ -4633,7 +4167,7 @@
    "note": "count 3278 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q42",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (4 sub-queries, 68 hits)"
   },
   {
    "count": null,
@@ -4711,7 +4245,7 @@
    "note": "count 925 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q43",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 171 hits)"
   },
   {
    "count": 701,
@@ -4724,7 +4258,7 @@
    "note": "count 701 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q43",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 102 hits)"
   },
   {
    "count": null,
@@ -4815,7 +4349,7 @@
    "note": "count 4778 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q44",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 191 hits)"
   },
   {
    "count": 3755,
@@ -4828,7 +4362,7 @@
    "note": "count 3755 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q44",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 68 hits)"
   },
   {
    "count": null,
@@ -4919,7 +4453,7 @@
    "note": "count 451 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q45",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 77 hits)"
   },
   {
    "count": 259,
@@ -5023,7 +4557,7 @@
    "note": "count 54646 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q46",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (12 sub-queries, 737 hits)"
   },
   {
    "count": 14003,
@@ -5036,7 +4570,7 @@
    "note": "count 14003 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q46",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 265 hits)"
   },
   {
    "count": null,
@@ -5101,7 +4635,7 @@
    "note": "count 2986 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q47",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (10 sub-queries, 804 hits)"
   },
   {
    "count": 2018,
@@ -5114,7 +4648,7 @@
    "note": "count 2018 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q47",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 288 hits)"
   },
   {
    "count": null,
@@ -5192,7 +4726,7 @@
    "note": "count 33541 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q48",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (4 sub-queries, 435 hits)"
   },
   {
    "count": 15129,
@@ -5205,7 +4739,7 @@
    "note": "count 15129 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q48",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (4 sub-queries, 323 hits)"
   },
   {
    "count": null,
@@ -5270,7 +4804,7 @@
    "note": "count 23969 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-XC01",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (13 sub-queries, 1425 hits)"
   },
   {
    "count": 8603,
@@ -5283,7 +4817,7 @@
    "note": "count 8603 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-XC01",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (10 sub-queries, 936 hits)"
   },
   {
    "count": null,
@@ -5361,7 +4895,7 @@
    "note": "count 10009 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-XC02",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (11 sub-queries, 902 hits)"
   },
   {
    "count": 2013,
@@ -5374,7 +4908,7 @@
    "note": "count 2013 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-XC02",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 237 hits)"
   },
   {
    "count": null,
@@ -5543,7 +5077,7 @@
    "note": "count 503 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-BR02",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 105 hits)"
   },
   {
    "count": 424,
@@ -5556,7 +5090,7 @@
    "note": "count 424 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-BR02",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 90 hits)"
   },
   {
    "count": null,
@@ -5634,7 +5168,7 @@
    "note": "count 322 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-BR03",
    "source": "openalex",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 117 hits)"
   },
   {
    "count": 376,
@@ -5647,7 +5181,7 @@
    "note": "count 376 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-BR03",
    "source": "scopus",
-   "status": "REFINEMENT_REQUIRED"
+   "status": "refined (1 sub-queries, 148 hits)"
   },
   {
    "count": null,

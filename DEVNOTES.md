@@ -193,6 +193,14 @@ adjacent single words): all 15 answers fetched by hand were empty (evidence kept
 endpoint with the canonical Boolean evaluated over titles (substring semantics, lower-case),
 ordered by year then record IRI, count first. Counts are small (titles only); no abstracts.
 
+## Corpus after OpenAlex + Scopus + DBLP (30 September 2026, 14:30 UTC)
+
+21,177 hits → 14,342 unique documents; 250 near-duplicate pairs for review; 61 hits (35
+documents) after the cutoff, excluded from the S1 file; 441 non-English hits flagged.
+Source sets: OpenAlex only 6,767; Scopus only 4,088; OpenAlex+Scopus 2,876; DBLP only 342;
+all three 149; DBLP+OpenAlex 61; DBLP+Scopus 59. Still to come: Web of Science (all 54,
+manual export), IEEE Xplore (19, API once the key is active), HeinOnline (12, manual).
+
 ## Not implemented on purpose
 
 - Browser-assisted export (brief section 8): not implemented until the licence permits it

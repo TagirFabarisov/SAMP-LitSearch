@@ -23,6 +23,15 @@ def build_status() -> Dict[str, Any]:
         dedup = json.loads(p.read_text(encoding="utf-8")).get("per_query_source", {})
     order = sources.get("execution_order") or list(sources["sources"].keys())
 
+    # refinement sub-queries that ran: parent (query, source) -> number of done sub-queries and their hits
+    refined: Dict[tuple, Dict[str, int]] = {}
+    for (qid, src), entry in latest.items():
+        if "." in qid and entry.get("status") == DONE:
+            key = (qid.split(".")[0], src)
+            agg = refined.setdefault(key, {"sub_queries": 0, "hits": 0})
+            agg["sub_queries"] += 1
+            agg["hits"] += int(entry.get("hits_created") or 0)
+
     rows: List[Dict[str, Any]] = []
     for q in queries:
         for s in order:
@@ -32,7 +41,9 @@ def build_status() -> Dict[str, Any]:
             if not mandatory and not supplementary:
                 continue
             entry = latest.get((q["id"], s))
-            if entry:
+            if entry and entry.get("status") == REFINEMENT_REQUIRED and (q["id"], s) in refined:
+                st = "refined (%d sub-queries, %d hits)" % (refined[(q["id"], s)]["sub_queries"], refined[(q["id"], s)]["hits"])
+            elif entry:
                 st = entry.get("status")
             elif mandatory and scfg.get("access_mode") != "api":
                 st = MANUAL_EXPORT_REQUIRED
@@ -55,6 +66,7 @@ def build_status() -> Dict[str, Any]:
     failures = [r for r in rows if r["status"] == FAILED]
     pending_manual = [r for r in rows if r["mandatory"] and r["status"] == MANUAL_EXPORT_REQUIRED]
     refine = [r for r in rows if r["status"] == REFINEMENT_REQUIRED]
+    by_status = Counter(("refined" if str(r["status"]).startswith("refined") else r["status"]) for r in rows if r["mandatory"])
     missing_access = [s for s, c in sources["sources"].items() if c.get("access_status") == "ACCESS_TO_CONFIRM"]
     docs_file = paths.documents_file()
     n_docs = sum(1 for _ in storage.read_jsonl(docs_file)) if docs_file.exists() else 0
