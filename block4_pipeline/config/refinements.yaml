@@ -3229,3 +3229,1398 @@ refinements:
   register: P1
   created_at: '2026-09-29T22:43:32Z'
   note: 'deviation entry 5: second-level split'
+- id: B4-Q01.r1
+  refinement_of: B4-Q01
+  direction: B4-D01
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("social dependence" OR "dependence relation*" OR "resource dependence" OR "strategic dependenc*") AND (actor* OR agent* OR organi?ation*)) AND TITLE(model* OR formal* OR representation)
+  count: 126
+  runnable: true
+  basis: C4.2, C7.1–C7.3, C8.1
+  community: dependence between actors as a represented relation; social reasoning in MAS, organization studies, RE
+  register: P1
+  created_at: '2026-09-30T09:15:44Z'
+  note: free group (model* OR formal* OR representation) moved to title
+- id: B4-Q02.r1
+  refinement_of: B4-Q02
+  direction: B4-D01
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("dependence network*" OR "power-dependence" OR "actor dependency model*" OR "goal model*" OR "stakeholder model*")) AND TITLE(language OR framework OR formalism OR metamodel)
+  count: 182
+  runnable: true
+  basis: C4.9, C8.1–C8.6, C2.7
+  community: 'community vocabulary: dependence networks (MAS), goal and actor models (RE), stakeholder models (SE)'
+  register: P1
+  created_at: '2026-09-30T09:15:45Z'
+  note: free group (language OR framework OR formalism OR metamodel) moved to title
+- id: B4-Q03.r1
+  refinement_of: B4-Q03
+  direction: B4-D01
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY((dependenc* OR "power of influence") AND (actor* OR agent*)) AND TITLE(ontolog* OR metamodel OR "graph model*" OR "network model*" OR "formal semantics")
+  count: 110
+  runnable: true
+  basis: C4.2, C4.9, C8.2
+  community: dependence as graph or metamodel relation; ontology engineering, RE metamodels
+  register: P1
+  created_at: '2026-09-30T09:15:46Z'
+  note: free group (ontolog* OR metamodel OR "graph model*" OR "network model*" OR "formal semantics") moved to title
+- id: B4-Q05.r1
+  refinement_of: B4-Q05
+  direction: B4-D02
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("commitment protocol*" OR "commitment-based" OR "commitment modeling" OR "commitment modelling" OR "economic commitment*")) AND TITLE(language OR framework OR verification OR ontolog*)
+  count: 88
+  runnable: true
+  basis: C2.1, C2.3, C2.4, C4.3
+  community: commitment protocols (MAS) and economic commitments (REA, value modeling)
+  register: P1
+  created_at: '2026-09-30T09:15:47Z'
+  note: free group (language OR framework OR verification OR ontolog*) moved to title
+- id: B4-Q06.r1
+  refinement_of: B4-Q06
+  direction: B4-D02
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(commitment* AND (agent* OR actor* OR party OR parties)) AND TITLE("event calculus" OR "state machine" OR "temporal logic" OR ontolog* OR "answer set")
+  count: 104
+  runnable: true
+  basis: C2.4, C2.5, C2.7
+  community: commitments as event-driven state objects; logic and rule communities
+  register: P1
+  created_at: '2026-09-30T09:15:47Z'
+  note: free group ("event calculus" OR "state machine" OR "temporal logic" OR ontolog* OR "answer set") moved to title
+- id: B4-Q07.r1
+  refinement_of: B4-Q07
+  direction: B4-D03
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("normative position*" OR "jural relation*" OR "rights and duties" OR "contrary-to-duty" OR "strong permission" OR "weak permission")) AND TITLE(formal* OR logic OR model* OR ontolog*)
+  count: 144
+  runnable: true
+  basis: C1.18, C5.1, C5.3, C5.5
+  community: the space of normative relations between parties; deontic logic, AI and law
+  register: P1
+  created_at: '2026-09-30T09:15:48Z'
+  note: free group (formal* OR logic OR model* OR ontolog*) moved to title
+- id: B4-Q08.r1
+  refinement_of: B4-Q08
+  direction: B4-D03
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("deontic logic" OR "defeasible deontic" OR "legal core ontology" OR "legal relation*" OR "legal ontology") AND ((norm OR norms OR normative) OR contract* OR obligation*)) AND TITLE(model* OR language OR representation)
+  count: 129
+  runnable: true
+  basis: C1.3, C1.4, C5.2, C5.4, C5.6
+  community: community vocabulary of deontic logic and legal ontology engineering
+  register: P1
+  created_at: '2026-09-30T09:15:49Z'
+  note: free group (model* OR language OR representation) moved to title
+- id: B4-Q10.r1
+  refinement_of: B4-Q10
+  direction: B4-D04
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("institutional power" OR "counts-as" OR "counts as" OR "constitutive rule*" OR "institutional act*" OR "institutional fact*")) AND TITLE(formal* OR model* OR specification OR logic)
+  count: 1269
+  runnable: false
+  basis: C1.12, C3.2, C4.6, C4.7
+  community: power to change institutional state; institutional modeling, normative MAS
+  register: P1
+  created_at: '2026-09-30T09:15:50Z'
+  note: free group (formal* OR model* OR specification OR logic) moved to title
+- id: B4-Q10.r2
+  refinement_of: B4-Q10
+  direction: B4-D04
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("institutional power" OR "counts-as" OR "counts as" OR "constitutive rule*" OR "institutional act*" OR "institutional fact*") AND (executable OR "answer set" OR "event calculus" OR "model checking" OR "transition system" OR "dynamic logic")) AND TITLE(formal* OR model* OR specification OR logic)
+  count: 6
+  runnable: true
+  basis: C1.12, C3.2, C4.6, C4.7
+  community: power to change institutional state; institutional modeling, normative MAS
+  register: P1
+  created_at: '2026-09-30T09:15:51Z'
+  note: mechanism group (executable OR "answer set" OR "event calculus" OR "model checking" OR "transition system" OR "dynamic logic") added
+- id: B4-Q11.r1
+  refinement_of: B4-Q11
+  direction: B4-D04
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("electronic institution*" OR "artificial institution*" OR "normative multi-agent" OR "institutional model*" OR "agent institution*")) AND TITLE(language OR framework OR specification OR metamodel)
+  count: 91
+  runnable: true
+  basis: C4.6–C4.8, C5.7
+  community: community vocabulary of agent institutions
+  register: P1
+  created_at: '2026-09-30T09:15:52Z'
+  note: free group (language OR framework OR specification OR metamodel) moved to title
+- id: B4-Q13.r1
+  refinement_of: B4-Q13
+  direction: B4-D05
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("role enactment" OR "decision right*" OR veto OR "approval authorit*" OR "action situation" OR "boundary rule*") AND (organi?ation* OR institution* OR actor*)) AND TITLE(model* OR formal* OR representation)
+  count: 76
+  runnable: true
+  basis: C1.11, C3.5, C3.6, C4.4, C9.7, C9.10
+  community: who takes part and who may decide; organizational MAS, institutional analysis, governance
+  register: P1
+  created_at: '2026-09-30T09:15:53Z'
+  note: free group (model* OR formal* OR representation) moved to title
+- id: B4-Q14.r1
+  refinement_of: B4-Q14
+  direction: B4-D05
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("organi?ational model*" OR "organi?ation model*" OR "governance model*" OR "stakeholder model*" OR "organi?ational specification") AND (role* OR position* OR authorit* OR participat*)) AND TITLE(metamodel OR language OR framework OR ontolog*)
+  count: 288
+  runnable: true
+  basis: C4.4, C4.5, C6.2, C6.7, C11.5, C11.6
+  community: 'kind-of-model vocabulary: organizational, governance, stakeholder models'
+  register: P1
+  created_at: '2026-09-30T09:15:54Z'
+  note: free group (metamodel OR language OR framework OR ontolog*) moved to title
+- id: B4-Q15.r1
+  refinement_of: B4-Q15
+  direction: B4-D05
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(role* AND (organi?ation* OR institution*) AND (agent* OR actor*)) AND TITLE(metamodel OR ontolog* OR "formal specification" OR "temporal trace" OR executable)
+  count: 113
+  runnable: true
+  basis: C4.4, C3.6
+  community: roles and positions as metamodel or ontology elements with formal semantics
+  register: P1
+  created_at: '2026-09-30T09:15:54Z'
+  note: free group (metamodel OR ontolog* OR "formal specification" OR "temporal trace" OR executable) moved to title
+- id: B4-Q16.r1
+  refinement_of: B4-Q16
+  direction: B4-D06
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("non-binding" OR "binding force" OR "preliminary agreement*" OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound")) AND TITLE(formal* OR model* OR representation OR ontolog* OR computational)
+  count: 445
+  runnable: false
+  basis: C1.1–C1.3, C1.5
+  community: degrees of bindingness; law, international relations, legal informatics
+  register: P1
+  created_at: '2026-09-30T09:15:55Z'
+  note: free group (formal* OR model* OR representation OR ontolog* OR computational) moved to title
+- id: B4-Q16.r2
+  refinement_of: B4-Q16
+  direction: B4-D06
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("non-binding" OR "binding force" OR "preliminary agreement*" OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound") AND (consent OR bind* OR precision OR degree)) AND TITLE(formal* OR model* OR representation OR ontolog* OR computational)
+  count: 331
+  runnable: false
+  basis: C1.1–C1.3, C1.5
+  community: degrees of bindingness; law, international relations, legal informatics
+  register: P1
+  created_at: '2026-09-30T09:15:56Z'
+  note: mechanism group (consent OR bind* OR precision OR degree) added
+- id: B4-Q16.r3
+  refinement_of: B4-Q16
+  direction: B4-D06
+  lens: A semantic
+  applies_to_source: scopus
+  step: 3
+  step_name: subject_area_limit
+  scopus: TITLE-ABS-KEY(("non-binding" OR "binding force" OR "preliminary agreement*" OR "letter of intent" OR "memorandum of understanding" OR "soft law" OR "intention to be bound") AND (consent OR bind* OR precision OR degree)) AND TITLE(formal* OR model* OR representation OR ontolog* OR computational) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 131
+  runnable: true
+  basis: C1.1–C1.3, C1.5
+  community: degrees of bindingness; law, international relations, legal informatics
+  register: P1
+  created_at: '2026-09-30T09:15:56Z'
+  note: 'subject areas limited: SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)'
+- id: B4-Q17.r1
+  refinement_of: B4-Q17
+  direction: B4-D06
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("contract formation" OR "offer and acceptance" OR "pre-contractual" OR "contract ontology" OR legalization OR legalisation)) AND TITLE(model* OR formal* OR representation OR agent*)
+  count: 231
+  runnable: true
+  basis: C1.5, C1.17, C1.2
+  community: formation of agreements; AI and law, agent negotiation, legal ontologies
+  register: P1
+  created_at: '2026-09-30T09:15:57Z'
+  note: free group (model* OR formal* OR representation OR agent*) moved to title
+- id: B4-Q19.r1
+  refinement_of: B4-Q19
+  direction: B4-D07
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY((amendment OR novation OR assignment OR substitution OR suspension OR termination) AND (contract* OR obligation* OR "legal relation*" OR agreement*)) AND TITLE(formal* OR model* OR semantic* OR ontolog*)
+  count: 3354
+  runnable: false
+  basis: C1.6–C1.8, C1.15, C1.19, C1.20
+  community: transformation and ending of a relation; contract languages, legal ontology
+  register: P1
+  created_at: '2026-09-30T09:15:58Z'
+  note: free group (formal* OR model* OR semantic* OR ontolog*) moved to title
+- id: B4-Q19.r2
+  refinement_of: B4-Q19
+  direction: B4-D07
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY((amendment OR novation OR assignment OR substitution OR suspension OR termination) AND (contract* OR obligation* OR "legal relation*" OR agreement*) AND (formal* OR semantic* OR ontolog*)) AND TITLE(formal* OR model* OR semantic* OR ontolog*)
+  count: 236
+  runnable: true
+  basis: C1.6–C1.8, C1.15, C1.19, C1.20
+  community: transformation and ending of a relation; contract languages, legal ontology
+  register: P1
+  created_at: '2026-09-30T09:15:58Z'
+  note: mechanism group (formal* OR semantic* OR ontolog*) added
+- id: B4-Q20.r1
+  refinement_of: B4-Q20
+  direction: B4-D07
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("contract dynamics" OR "contract lifecycle" OR "contract life cycle" OR "contract evolution" OR "legal change") AND (model* OR ontolog* OR language OR formal*)) AND TITLE(change* OR modif* OR version* OR identity)
+  count: 71
+  runnable: true
+  basis: C1.8, C1.19, C7.4
+  community: 'community vocabulary: contract dynamics, lifecycle, legal change'
+  register: P1
+  created_at: '2026-09-30T09:15:59Z'
+  note: free group (change* OR modif* OR version* OR identity) moved to title
+- id: B4-Q21.r1
+  refinement_of: B4-Q21
+  direction: B4-D07
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY((contract* OR agreement* OR "legal relation*") AND ("state machine" OR "finite state" OR "transition system" OR versioning OR "identity criteria" OR persistence)) AND TITLE(formal* OR semantic* OR ontolog*)
+  count: 71
+  runnable: true
+  basis: C1.7, C1.19, C6.1
+  community: relations as state machines or versioned objects; formal methods, ontology engineering
+  register: P1
+  created_at: '2026-09-30T09:16:00Z'
+  note: free group (formal* OR semantic* OR ontolog*) moved to title
+- id: B4-Q22.r1
+  refinement_of: B4-Q22
+  direction: B4-D08
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("rules of change" OR "meta-norm*" OR "rules about rules" OR "constitutional rule*" OR "collective-choice rule*" OR "institutional change")) AND TITLE(formal* OR model* OR representation OR computational)
+  count: 504
+  runnable: false
+  basis: C3.3, C3.4, C3.8
+  community: rule levels and change of rules; institutional analysis, normative systems
+  register: P1
+  created_at: '2026-09-30T09:16:01Z'
+  note: free group (formal* OR model* OR representation OR computational) moved to title
+- id: B4-Q22.r2
+  refinement_of: B4-Q22
+  direction: B4-D08
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("rules of change" OR "meta-norm*" OR "rules about rules" OR "constitutional rule*" OR "collective-choice rule*" OR "institutional change") AND ("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision")) AND TITLE(formal* OR model* OR representation OR computational)
+  count: 3
+  runnable: true
+  basis: C3.3, C3.4, C3.8
+  community: rule levels and change of rules; institutional analysis, normative systems
+  register: P1
+  created_at: '2026-09-30T09:16:01Z'
+  note: mechanism group ("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") added
+- id: B4-Q23.r1
+  refinement_of: B4-Q23
+  direction: B4-D08
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("institutional grammar" OR "institutional statement*" OR "norm change" OR "normative system change" OR "norm revision" OR "norm dynamics")) AND TITLE(formal* OR computational OR language OR framework)
+  count: 39
+  runnable: true
+  basis: C3.7, C3.4, C3.1
+  community: 'community vocabulary: institutional grammar, norm change and revision'
+  register: P1
+  created_at: '2026-09-30T09:16:02Z'
+  note: free group (formal* OR computational OR language OR framework) moved to title
+- id: B4-Q24.r1
+  refinement_of: B4-Q24
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(((norm OR norms OR normative) OR rule OR rules) AND (change OR revision OR modification OR dynamic*)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision")
+  count: 995
+  runnable: false
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T09:16:03Z'
+  note: free group ("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") moved to title
+- id: B4-Q24.r3
+  refinement_of: B4-Q24
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 3
+  step_name: subject_area_limit
+  scopus: TITLE-ABS-KEY(((norm OR norms OR normative) OR rule OR rules) AND (change OR revision OR modification OR dynamic*)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 920
+  runnable: false
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T09:16:03Z'
+  note: 'subject areas limited: SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)'
+- id: B4-Q24.r4.1
+  refinement_of: B4-Q24
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(((norm OR norms OR normative) OR rule OR rules) AND (change)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 373
+  runnable: false
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T09:16:04Z'
+  note: group 2 split into 4 parts
+- id: B4-Q24.r4.2
+  refinement_of: B4-Q24
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(((norm OR norms OR normative) OR rule OR rules) AND (revision)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 102
+  runnable: true
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T09:16:04Z'
+  note: group 2 split into 4 parts
+- id: B4-Q24.r4.3
+  refinement_of: B4-Q24
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(((norm OR norms OR normative) OR rule OR rules) AND (modification)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 63
+  runnable: true
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T09:16:04Z'
+  note: group 2 split into 4 parts
+- id: B4-Q24.r4.4
+  refinement_of: B4-Q24
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(((norm OR norms OR normative) OR rule OR rules) AND (dynamic*)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 526
+  runnable: false
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T09:16:05Z'
+  note: group 2 split into 4 parts
+- id: B4-Q25.r1
+  refinement_of: B4-Q25
+  direction: B4-D09
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR reorgani?ation) AND (collaboration* OR "virtual organi?ation*" OR alliance* OR organi?ation*)) AND TITLE(model* OR formal* OR specification)
+  count: 808
+  runnable: false
+  basis: C6.5, C6.6, C7.5, C7.6, C11.7
+  community: change of who takes part and how the structure changes; collaborative networks, organizational MAS
+  register: P1
+  created_at: '2026-09-30T09:16:06Z'
+  note: free group (model* OR formal* OR specification) moved to title
+- id: B4-Q25.r2
+  refinement_of: B4-Q25
+  direction: B4-D09
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR reorgani?ation) AND (collaboration* OR "virtual organi?ation*" OR alliance* OR organi?ation*) AND ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra")) AND TITLE(model* OR formal* OR specification)
+  count: 10
+  runnable: true
+  basis: C6.5, C6.6, C7.5, C7.6, C11.7
+  community: change of who takes part and how the structure changes; collaborative networks, organizational MAS
+  register: P1
+  created_at: '2026-09-30T09:16:06Z'
+  note: mechanism group ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra") added
+- id: B4-Q26.r1
+  refinement_of: B4-Q26
+  direction: B4-D09
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("dynamic virtual organi?ation*" OR "collaborative network*" OR "reorgani?ation operation*" OR "organi?ational change" OR "adaptive organi?ation*") AND (agent* OR formal* OR model*)) AND TITLE(specification OR language OR semantics OR contract*)
+  count: 95
+  runnable: true
+  basis: C6.1, C6.5, C6.6, C7.4
+  community: 'community vocabulary: dynamic VOs, reorganization operations'
+  register: P1
+  created_at: '2026-09-30T09:16:07Z'
+  note: free group (specification OR language OR semantics OR contract*) moved to title
+- id: B4-Q28.r1
+  refinement_of: B4-Q28
+  direction: B4-D10
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY((deadline* OR "temporal constraint*" OR "achievement obligation*" OR "maintenance obligation*" OR "conditional obligation*" OR "activation condition*") AND ((norm OR norms OR normative) OR commitment* OR obligation* OR contract*)) AND TITLE(formal* OR monitor* OR semantic*)
+  count: 50
+  runnable: true
+  basis: C2.5, C2.6, C5.2, C8.6
+  community: time-bound and conditional normative states; temporal reasoning
+  register: P1
+  created_at: '2026-09-30T09:16:08Z'
+  note: free group (formal* OR monitor* OR semantic*) moved to title
+- id: B4-Q29.r1
+  refinement_of: B4-Q29
+  direction: B4-D10
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("norm monitoring" OR "runtime monitoring" OR "compliance checking" OR "runtime norm change" OR "norm enforcement" OR "contract monitoring")) AND TITLE((norm OR norms OR normative) OR contract* OR obligation* OR commitment*)
+  count: 428
+  runnable: false
+  basis: C5.8, C1.13, C3.10
+  community: 'community vocabulary: monitoring and runtime enforcement'
+  register: P1
+  created_at: '2026-09-30T09:16:09Z'
+  note: free group ((norm OR norms OR normative) OR contract* OR obligation* OR commitment*) moved to title
+- id: B4-Q29.r2
+  refinement_of: B4-Q29
+  direction: B4-D10
+  lens: B community
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("norm monitoring" OR "runtime monitoring" OR "compliance checking" OR "runtime norm change" OR "norm enforcement" OR "contract monitoring") AND ("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal")) AND TITLE((norm OR norms OR normative) OR contract* OR obligation* OR commitment*)
+  count: 14
+  runnable: true
+  basis: C5.8, C1.13, C3.10
+  community: 'community vocabulary: monitoring and runtime enforcement'
+  register: P1
+  created_at: '2026-09-30T09:16:09Z'
+  note: mechanism group ("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal") added
+- id: B4-Q30.r1
+  refinement_of: B4-Q30
+  direction: B4-D10
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY((obligation* OR (norm OR norms OR normative) OR commitment*)) AND TITLE("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal")
+  count: 72
+  runnable: true
+  basis: C2.5, C12.2, C1.9
+  community: temporal semantics as logics or automata; formal methods
+  register: P1
+  created_at: '2026-09-30T09:16:10Z'
+  note: free group ("temporal logic" OR "event calculus" OR "timed automat*" OR "answer set" OR "runtime verification" OR "metric temporal") moved to title
+- id: B4-Q31.r1
+  refinement_of: B4-Q31
+  direction: B4-D11
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("stage-gate" OR "phase gate" OR "gate review*" OR "milestone review*" OR "technical review*" OR "entrance criteria" OR "exit criteria" OR "acceptance review")) AND TITLE(model* OR formal* OR framework OR method*)
+  count: 554
+  runnable: false
+  basis: C9.1–C9.5, C9.12
+  community: gates and reviews as decision points; project management, systems engineering
+  register: P1
+  created_at: '2026-09-30T09:16:11Z'
+  note: free group (model* OR formal* OR framework OR method*) moved to title
+- id: B4-Q31.r2
+  refinement_of: B4-Q31
+  direction: B4-D11
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("stage-gate" OR "phase gate" OR "gate review*" OR "milestone review*" OR "technical review*" OR "entrance criteria" OR "exit criteria" OR "acceptance review") AND ("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*")) AND TITLE(model* OR formal* OR framework OR method*)
+  count: 32
+  runnable: true
+  basis: C9.1–C9.5, C9.12
+  community: gates and reviews as decision points; project management, systems engineering
+  register: P1
+  created_at: '2026-09-30T09:16:12Z'
+  note: mechanism group ("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*") added
+- id: B4-Q33.r1
+  refinement_of: B4-Q33
+  direction: B4-D11
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("stage-gate" OR "phase gate" OR milestone* OR "staged commitment")) AND TITLE("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*")
+  count: 104
+  runnable: true
+  basis: C9.3, C9.4, C9.6, C10.5
+  community: staged processes as process models or decision models; process modeling, operations research
+  register: P1
+  created_at: '2026-09-30T09:16:12Z'
+  note: free group ("process model*" OR "Petri net*" OR workflow OR "state machine" OR "decision model*" OR "stochastic program*") moved to title
+- id: B4-Q34.r1
+  refinement_of: B4-Q34
+  direction: B4-D12
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("configuration management" OR "change control" OR "engineering change" OR "change request*" OR "configuration baseline" OR "change board")) AND TITLE(model* OR ontolog* OR formal* OR metamodel)
+  count: 958
+  runnable: false
+  basis: C9.8–C9.11
+  community: controlled change of a baseline; systems engineering, ontology engineering
+  register: P1
+  created_at: '2026-09-30T09:16:13Z'
+  note: free group (model* OR ontolog* OR formal* OR metamodel) moved to title
+- id: B4-Q34.r2
+  refinement_of: B4-Q34
+  direction: B4-D12
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("configuration management" OR "change control" OR "engineering change" OR "change request*" OR "configuration baseline" OR "change board") AND (ontolog* OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process")) AND TITLE(model* OR ontolog* OR formal* OR metamodel)
+  count: 202
+  runnable: true
+  basis: C9.8–C9.11
+  community: controlled change of a baseline; systems engineering, ontology engineering
+  register: P1
+  created_at: '2026-09-30T09:16:14Z'
+  note: mechanism group (ontolog* OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process") added
+- id: B4-Q35.r1
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*)) AND TITLE(method* OR model* OR analysis)
+  count: 6129
+  runnable: false
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-09-30T09:16:15Z'
+  note: free group (method* OR model* OR analysis) moved to title
+- id: B4-Q35.r2
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (ontolog* OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process")) AND TITLE(method* OR model* OR analysis)
+  count: 221
+  runnable: true
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-09-30T09:16:16Z'
+  note: mechanism group (ontolog* OR "Petri net*" OR workflow OR "process model*" OR metamodel OR "business process") added
+- id: B4-Q37.r1
+  refinement_of: B4-Q37
+  direction: B4-D13
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("real option*" OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND (model* OR formal* OR framework)) AND TITLE(engineering OR (project OR projects) OR organi?ation* OR design)
+  count: 1088
+  runnable: false
+  basis: C10.1–C10.8, C3.9, C9.6
+  community: when to commit and irreversibility; real options, engineering design, organization studies
+  register: P1
+  created_at: '2026-09-30T09:16:16Z'
+  note: free group (engineering OR (project OR projects) OR organi?ation* OR design) moved to title
+- id: B4-Q37.r2
+  refinement_of: B4-Q37
+  direction: B4-D13
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("real option*" OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND (model* OR formal* OR framework) AND ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov)) AND TITLE(engineering OR (project OR projects) OR organi?ation* OR design)
+  count: 82
+  runnable: true
+  basis: C10.1–C10.8, C3.9, C9.6
+  community: when to commit and irreversibility; real options, engineering design, organization studies
+  register: P1
+  created_at: '2026-09-30T09:16:17Z'
+  note: mechanism group ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov) added
+- id: B4-Q38.r1
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems")) AND TITLE(model* OR method* OR framework OR valuation)
+  count: 4353
+  runnable: false
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-09-30T09:16:18Z'
+  note: free group (model* OR method* OR framework OR valuation) moved to title
+- id: B4-Q38.r2
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems") AND ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov)) AND TITLE(model* OR method* OR framework OR valuation)
+  count: 162
+  runnable: true
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-09-30T09:16:19Z'
+  note: mechanism group ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov) added
+- id: B4-Q39.r1
+  refinement_of: B4-Q39
+  direction: B4-D13
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("real option*" OR "staged investment" OR irreversib* OR "option value")) AND TITLE("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov)
+  count: 236
+  runnable: true
+  basis: C10.1–C10.5
+  community: options as decision models; operations research, decision analysis
+  register: P1
+  created_at: '2026-09-30T09:16:20Z'
+  note: free group ("decision model*" OR "stochastic program*" OR "decision tree*" OR "dynamic programming" OR "state model*" OR Markov) moved to title
+- id: B4-Q40.r1
+  refinement_of: B4-Q40
+  direction: B4-D14
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("exogenous event*" OR "external event*" OR "force majeure" OR "non-agentive" OR "agent causation" OR "event causation" OR "changed circumstances")) AND TITLE(model* OR formal* OR representation OR contract*)
+  count: 685
+  runnable: false
+  basis: C1.9, C7.8, C12.1, C12.2
+  community: change that nobody decided; action theory, law, event modeling
+  register: P1
+  created_at: '2026-09-30T09:16:21Z'
+  note: free group (model* OR formal* OR representation OR contract*) moved to title
+- id: B4-Q40.r2
+  refinement_of: B4-Q40
+  direction: B4-D14
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("exogenous event*" OR "external event*" OR "force majeure" OR "non-agentive" OR "agent causation" OR "event causation" OR "changed circumstances") AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event")) AND TITLE(model* OR formal* OR representation OR contract*)
+  count: 23
+  runnable: true
+  basis: C1.9, C7.8, C12.1, C12.2
+  community: change that nobody decided; action theory, law, event modeling
+  register: P1
+  created_at: '2026-09-30T09:16:22Z'
+  note: mechanism group ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") added
+- id: B4-Q41.r1
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*)) AND TITLE(formal* OR model*)
+  count: 4215
+  runnable: false
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:22Z'
+  note: free group (formal* OR model*) moved to title
+- id: B4-Q41.r2
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event")) AND TITLE(formal* OR model*)
+  count: 554
+  runnable: false
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:23Z'
+  note: mechanism group ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") added
+- id: B4-Q41.r3
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 3
+  step_name: subject_area_limit
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 399
+  runnable: false
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:24Z'
+  note: 'subject areas limited: SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)'
+- id: B4-Q41.r4.1
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("event calculus")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 1
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:24Z'
+  note: group 3 split into 6 parts
+- id: B4-Q41.r4.2
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("situation calculus")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 2
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:25Z'
+  note: group 3 split into 6 parts
+- id: B4-Q41.r4.3
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("answer set")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 7
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:25Z'
+  note: group 3 split into 6 parts
+- id: B4-Q41.r4.4
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 375
+  runnable: false
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:26Z'
+  note: group 3 split into 6 parts
+- id: B4-Q41.r4.5
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("transition system")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 2
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:26Z'
+  note: group 3 split into 6 parts
+- id: B4-Q41.r4.6
+  refinement_of: B4-Q41
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("action language*" OR "actual causality" OR "causal model*" OR "causal reasoning" OR disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("discrete event")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 17
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T09:16:27Z'
+  note: group 3 split into 6 parts
+- id: B4-Q42.r1
+  refinement_of: B4-Q42
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(((event OR events) OR disruption* OR "external shock*") AND (agent* OR actor* OR institution*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event")
+  count: 530
+  runnable: false
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T09:16:28Z'
+  note: free group ("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") moved to title
+- id: B4-Q42.r3
+  refinement_of: B4-Q42
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 3
+  step_name: subject_area_limit
+  scopus: TITLE-ABS-KEY(((event OR events) OR disruption* OR "external shock*") AND (agent* OR actor* OR institution*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 451
+  runnable: false
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T09:16:28Z'
+  note: 'subject areas limited: SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)'
+- id: B4-Q42.r4.1
+  refinement_of: B4-Q42
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY((event OR events) AND (agent* OR actor* OR institution*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 451
+  runnable: false
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T09:16:29Z'
+  note: group 1 split into 3 parts
+- id: B4-Q42.r4.2
+  refinement_of: B4-Q42
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY((disruption*) AND (agent* OR actor* OR institution*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 6
+  runnable: true
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T09:16:29Z'
+  note: group 1 split into 3 parts
+- id: B4-Q42.r4.3
+  refinement_of: B4-Q42
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("external shock*") AND (agent* OR actor* OR institution*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 0
+  runnable: true
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T09:16:30Z'
+  note: group 1 split into 3 parts
+- id: B4-Q43.r1
+  refinement_of: B4-Q43
+  direction: B4-D15
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("system of systems" OR "systems of systems") AND (constituent* OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR disengag*)) AND TITLE(model* OR formal* OR architect* OR framework)
+  count: 318
+  runnable: false
+  basis: C11.1, C11.2, C11.5–C11.7
+  community: constituent autonomy and participation; SoS engineering
+  register: P1
+  created_at: '2026-09-30T09:16:31Z'
+  note: free group (model* OR formal* OR architect* OR framework) moved to title
+- id: B4-Q43.r2
+  refinement_of: B4-Q43
+  direction: B4-D15
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("system of systems" OR "systems of systems") AND (constituent* OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR disengag*) AND ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")) AND TITLE(model* OR formal* OR architect* OR framework)
+  count: 102
+  runnable: true
+  basis: C11.1, C11.2, C11.5–C11.7
+  community: constituent autonomy and participation; SoS engineering
+  register: P1
+  created_at: '2026-09-30T09:16:31Z'
+  note: mechanism group ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based") added
+- id: B4-Q44.r1
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution")) AND TITLE("architecture description" OR "modeling language" OR "modelling language" OR "reconfiguration pattern*" OR framework OR method*)
+  count: 664
+  runnable: false
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-09-30T09:16:32Z'
+  note: free group ("architecture description" OR "modeling language" OR "modelling language" OR "reconfiguration pattern*" OR framework OR method*) moved to title
+- id: B4-Q44.r2
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")) AND TITLE("architecture description" OR "modeling language" OR "modelling language" OR "reconfiguration pattern*" OR framework OR method*)
+  count: 68
+  runnable: true
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-09-30T09:16:33Z'
+  note: mechanism group ("formal model*" OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based") added
+- id: B4-Q46.r1
+  refinement_of: B4-Q46
+  direction: B4-D16
+  lens: A semantic
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND (interorgani?ational OR "inter-organi?ational" OR alliance* OR partner* OR collaboration*)) AND TITLE(model* OR formal* OR representation)
+  count: 2139
+  runnable: false
+  basis: C7.9, C3.1, C1.16, C7.3
+  community: the informal side of arrangements; organization studies, interorganizational relations
+  register: P1
+  created_at: '2026-09-30T09:16:34Z'
+  note: free group (model* OR formal* OR representation) moved to title
+- id: B4-Q46.r2
+  refinement_of: B4-Q46
+  direction: B4-D16
+  lens: A semantic
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND (interorgani?ational OR "inter-organi?ational" OR alliance* OR partner* OR collaboration*) AND ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation)) AND TITLE(model* OR formal* OR representation)
+  count: 301
+  runnable: false
+  basis: C7.9, C3.1, C1.16, C7.3
+  community: the informal side of arrangements; organization studies, interorganizational relations
+  register: P1
+  created_at: '2026-09-30T09:16:34Z'
+  note: mechanism group ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) added
+- id: B4-Q46.r3
+  refinement_of: B4-Q46
+  direction: B4-D16
+  lens: A semantic
+  applies_to_source: scopus
+  step: 3
+  step_name: subject_area_limit
+  scopus: TITLE-ABS-KEY(("relational governance" OR "informal governance" OR trust OR "relationship-specific" OR "rules-in-use" OR acquiescence OR embeddedness) AND (interorgani?ational OR "inter-organi?ational" OR alliance* OR partner* OR collaboration*) AND ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation)) AND TITLE(model* OR formal* OR representation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 265
+  runnable: true
+  basis: C7.9, C3.1, C1.16, C7.3
+  community: the informal side of arrangements; organization studies, interorganizational relations
+  register: P1
+  created_at: '2026-09-30T09:16:35Z'
+  note: 'subject areas limited: SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)'
+- id: B4-Q47.r1
+  refinement_of: B4-Q47
+  direction: B4-D16
+  lens: B community
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("computational trust" OR "trust model*" OR "reputation model*" OR "trust and reputation" OR "trust dynamics") AND (agent* OR organi?ation* OR partner*)) AND TITLE(formal* OR model* OR framework OR logic)
+  count: 847
+  runnable: false
+  basis: C4.2, C4.9, C7.9
+  community: 'community vocabulary: computational trust and reputation'
+  register: P1
+  created_at: '2026-09-30T09:16:36Z'
+  note: free group (formal* OR model* OR framework OR logic) moved to title
+- id: B4-Q47.r2
+  refinement_of: B4-Q47
+  direction: B4-D16
+  lens: B community
+  applies_to_source: scopus
+  step: 2
+  step_name: add_mechanism_group
+  scopus: TITLE-ABS-KEY(("computational trust" OR "trust model*" OR "reputation model*" OR "trust and reputation" OR "trust dynamics") AND (agent* OR organi?ation* OR partner*) AND ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation)) AND TITLE(formal* OR model* OR framework OR logic)
+  count: 288
+  runnable: true
+  basis: C4.2, C4.9, C7.9
+  community: 'community vocabulary: computational trust and reputation'
+  register: P1
+  created_at: '2026-09-30T09:16:36Z'
+  note: mechanism group ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) added
+- id: B4-Q48.r1
+  refinement_of: B4-Q48
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY((trust OR "relational governance" OR "path dependence" OR "lock-in") AND (organi?ation* OR agent* OR network*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation)
+  count: 1601
+  runnable: false
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T09:16:37Z'
+  note: free group ("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) moved to title
+- id: B4-Q48.r3
+  refinement_of: B4-Q48
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 3
+  step_name: subject_area_limit
+  scopus: TITLE-ABS-KEY((trust OR "relational governance" OR "path dependence" OR "lock-in") AND (organi?ation* OR agent* OR network*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 1445
+  runnable: false
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T09:16:38Z'
+  note: 'subject areas limited: SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)'
+- id: B4-Q48.r4.1
+  refinement_of: B4-Q48
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY((trust) AND (organi?ation* OR agent* OR network*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 1369
+  runnable: false
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T09:16:38Z'
+  note: group 1 split into 4 parts
+- id: B4-Q48.r4.2
+  refinement_of: B4-Q48
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("relational governance") AND (organi?ation* OR agent* OR network*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 2
+  runnable: true
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T09:16:39Z'
+  note: group 1 split into 4 parts
+- id: B4-Q48.r4.3
+  refinement_of: B4-Q48
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("path dependence") AND (organi?ation* OR agent* OR network*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 33
+  runnable: true
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T09:16:39Z'
+  note: group 1 split into 4 parts
+- id: B4-Q48.r4.4
+  refinement_of: B4-Q48
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("lock-in") AND (organi?ation* OR agent* OR network*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 45
+  runnable: true
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T09:16:40Z'
+  note: group 1 split into 4 parts
+- id: B4-XC01.r1
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("contrary-to-duty" OR "violation handling" OR reparation OR sanction* OR compensation OR "surviving obligation*" OR "residual obligation*") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*)
+  count: 1359
+  runnable: false
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:41Z'
+  note: free group (formal* OR model* OR language OR semantic*) moved to title
+- id: B4-XC01.r3
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 3
+  step_name: subject_area_limit
+  scopus: TITLE-ABS-KEY(("contrary-to-duty" OR "violation handling" OR reparation OR sanction* OR compensation OR "surviving obligation*" OR "residual obligation*") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 903
+  runnable: false
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:41Z'
+  note: 'subject areas limited: SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)'
+- id: B4-XC01.r4.1
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("contrary-to-duty") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 10
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:42Z'
+  note: group 1 split into 7 parts
+- id: B4-XC01.r4.2
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("violation handling") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 1
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:42Z'
+  note: group 1 split into 7 parts
+- id: B4-XC01.r4.3
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY((reparation) AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 13
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:42Z'
+  note: group 1 split into 7 parts
+- id: B4-XC01.r4.4
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY((sanction*) AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 175
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:43Z'
+  note: group 1 split into 7 parts
+- id: B4-XC01.r4.5
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY((compensation) AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 712
+  runnable: false
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:43Z'
+  note: group 1 split into 7 parts
+- id: B4-XC01.r4.6
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("surviving obligation*") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 0
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:44Z'
+  note: group 1 split into 7 parts
+- id: B4-XC01.r4.7
+  refinement_of: B4-XC01
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups
+  scopus: TITLE-ABS-KEY(("residual obligation*") AND (contract* OR (norm OR norms OR normative) OR commitment* OR agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 0
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T09:16:44Z'
+  note: group 1 split into 7 parts
+- id: B4-XC02.r1
+  refinement_of: B4-XC02
+  direction: cross-cutting
+  lens: 'modifier: automatic vs discretionary'
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY((automatic OR "by operation of law" OR trigger* OR "condition-triggered" OR "self-executing") AND (discretion* OR optional OR decision OR "right but not") AND (contract* OR (norm OR norms OR normative) OR institution* OR agreement*)) AND TITLE(formal* OR model* OR semantic*)
+  count: 346
+  runnable: false
+  basis: C1.13, C9.5, C10.7, A9
+  community: transitions that fire by themselves vs by decision; contract and institution formalisms
+  register: P1
+  created_at: '2026-09-30T09:16:45Z'
+  note: free group (formal* OR model* OR semantic*) moved to title
+- id: B4-XC02.r3
+  refinement_of: B4-XC02
+  direction: cross-cutting
+  lens: 'modifier: automatic vs discretionary'
+  applies_to_source: scopus
+  step: 3
+  step_name: subject_area_limit
+  scopus: TITLE-ABS-KEY((automatic OR "by operation of law" OR trigger* OR "condition-triggered" OR "self-executing") AND (discretion* OR optional OR decision OR "right but not") AND (contract* OR (norm OR norms OR normative) OR institution* OR agreement*)) AND TITLE(formal* OR model* OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 237
+  runnable: true
+  basis: C1.13, C9.5, C10.7, A9
+  community: transitions that fire by themselves vs by decision; contract and institution formalisms
+  register: P1
+  created_at: '2026-09-30T09:16:46Z'
+  note: 'subject areas limited: SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)'
+- id: B4-BR02.r1
+  refinement_of: B4-BR02
+  direction: bridge
+  lens: RQ4.3
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("architecture design space" OR "system architecture optimization" OR "system architecture optimisation" OR "architecture enumeration" OR tradespace OR "architecting decisions")) AND TITLE(stakeholder* OR organi?ation* OR decision* OR "design space")
+  count: 90
+  runnable: true
+  basis: RQ4.3, C9.9
+  community: architecture design spaces and optimization; system-architecting lines
+  register: BR
+  created_at: '2026-09-30T09:16:47Z'
+  note: free group (stakeholder* OR organi?ation* OR decision* OR "design space") moved to title
+- id: B4-BR03.r1
+  refinement_of: B4-BR03
+  direction: bridge
+  lens: RQ4.3
+  applies_to_source: scopus
+  step: 1
+  step_name: title_restrict_free_group
+  scopus: TITLE-ABS-KEY(("stakeholder value" OR "value-driven design" OR "stakeholder value network*" OR "extended enterprise") AND (architect* OR "systems engineering" OR "system design")) AND TITLE(model* OR method* OR framework)
+  count: 148
+  runnable: true
+  basis: RQ4.3, C8.1
+  community: stakeholder value linked to architecture; aerospace SE, INCOSE
+  register: BR
+  created_at: '2026-09-30T09:16:48Z'
+  note: free group (model* OR method* OR framework) moved to title

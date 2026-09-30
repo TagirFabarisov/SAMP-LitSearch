@@ -1,0 +1,971 @@
+[
+  {
+    "query_id": "B4-Q01",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 622,
+    "hits": 0,
+    "log_id": "B4-L00673",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q01/20260930T091715Z"
+  },
+  {
+    "query_id": "B4-Q01.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 126,
+    "hits": 126,
+    "log_id": "B4-L00674",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q01.r1/20260930T091715Z"
+  },
+  {
+    "query_id": "B4-Q02",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1178,
+    "hits": 0,
+    "log_id": "B4-L00675",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q02/20260930T091721Z"
+  },
+  {
+    "query_id": "B4-Q02.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 182,
+    "hits": 182,
+    "log_id": "B4-L00676",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q02.r1/20260930T091722Z"
+  },
+  {
+    "query_id": "B4-Q03",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 626,
+    "hits": 0,
+    "log_id": "B4-L00677",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q03/20260930T091730Z"
+  },
+  {
+    "query_id": "B4-Q03.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 110,
+    "hits": 110,
+    "log_id": "B4-L00678",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q03.r1/20260930T091731Z"
+  },
+  {
+    "query_id": "B4-Q04",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00529"
+  },
+  {
+    "query_id": "B4-Q05",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 397,
+    "hits": 0,
+    "log_id": "B4-L00679",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q05/20260930T091736Z"
+  },
+  {
+    "query_id": "B4-Q05.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 88,
+    "hits": 88,
+    "log_id": "B4-L00680",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q05.r1/20260930T091737Z"
+  },
+  {
+    "query_id": "B4-Q06",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 444,
+    "hits": 0,
+    "log_id": "B4-L00681",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q06/20260930T091741Z"
+  },
+  {
+    "query_id": "B4-Q06.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 104,
+    "hits": 104,
+    "log_id": "B4-L00682",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q06.r1/20260930T091741Z"
+  },
+  {
+    "query_id": "B4-Q07",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 698,
+    "hits": 0,
+    "log_id": "B4-L00683",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q07/20260930T091745Z"
+  },
+  {
+    "query_id": "B4-Q07.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 144,
+    "hits": 144,
+    "log_id": "B4-L00684",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q07.r1/20260930T091746Z"
+  },
+  {
+    "query_id": "B4-Q08",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 606,
+    "hits": 0,
+    "log_id": "B4-L00685",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q08/20260930T091752Z"
+  },
+  {
+    "query_id": "B4-Q08.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 129,
+    "hits": 129,
+    "log_id": "B4-L00686",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q08.r1/20260930T091755Z"
+  },
+  {
+    "query_id": "B4-Q09",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00534"
+  },
+  {
+    "query_id": "B4-Q10",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 9269,
+    "hits": 0,
+    "log_id": "B4-L00687",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q10/20260930T091800Z"
+  },
+  {
+    "query_id": "B4-Q10.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 6,
+    "hits": 6,
+    "log_id": "B4-L00688",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q10.r2/20260930T091801Z"
+  },
+  {
+    "query_id": "B4-Q11",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 683,
+    "hits": 0,
+    "log_id": "B4-L00689",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q11/20260930T091806Z"
+  },
+  {
+    "query_id": "B4-Q11.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 91,
+    "hits": 91,
+    "log_id": "B4-L00690",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q11.r1/20260930T091806Z"
+  },
+  {
+    "query_id": "B4-Q12",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00537"
+  },
+  {
+    "query_id": "B4-Q13",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 697,
+    "hits": 0,
+    "log_id": "B4-L00691",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q13/20260930T091811Z"
+  },
+  {
+    "query_id": "B4-Q13.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 76,
+    "hits": 76,
+    "log_id": "B4-L00692",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q13.r1/20260930T091820Z"
+  },
+  {
+    "query_id": "B4-Q14",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2185,
+    "hits": 0,
+    "log_id": "B4-L00693",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q14/20260930T091829Z"
+  },
+  {
+    "query_id": "B4-Q14.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 288,
+    "hits": 288,
+    "log_id": "B4-L00694",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q14.r1/20260930T091829Z"
+  },
+  {
+    "query_id": "B4-Q15",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 648,
+    "hits": 0,
+    "log_id": "B4-L00695",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q15/20260930T091842Z"
+  },
+  {
+    "query_id": "B4-Q15.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 113,
+    "hits": 113,
+    "log_id": "B4-L00696",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q15.r1/20260930T091843Z"
+  },
+  {
+    "query_id": "B4-Q16",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3299,
+    "hits": 0,
+    "log_id": "B4-L00697",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q16/20260930T091847Z"
+  },
+  {
+    "query_id": "B4-Q16.r3",
+    "source": "scopus",
+    "status": "done",
+    "count": 131,
+    "hits": 131,
+    "log_id": "B4-L00698",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q16.r3/20260930T091848Z"
+  },
+  {
+    "query_id": "B4-Q17",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2689,
+    "hits": 0,
+    "log_id": "B4-L00699",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q17/20260930T091853Z"
+  },
+  {
+    "query_id": "B4-Q17.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 231,
+    "hits": 231,
+    "log_id": "B4-L00700",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q17.r1/20260930T091854Z"
+  },
+  {
+    "query_id": "B4-Q18",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00543"
+  },
+  {
+    "query_id": "B4-Q19",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 18321,
+    "hits": 0,
+    "log_id": "B4-L00701",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q19/20260930T091903Z"
+  },
+  {
+    "query_id": "B4-Q19.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 236,
+    "hits": 236,
+    "log_id": "B4-L00702",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q19.r2/20260930T091903Z"
+  },
+  {
+    "query_id": "B4-Q20",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 514,
+    "hits": 0,
+    "log_id": "B4-L00703",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q20/20260930T091913Z"
+  },
+  {
+    "query_id": "B4-Q20.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 71,
+    "hits": 71,
+    "log_id": "B4-L00704",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q20.r1/20260930T091913Z"
+  },
+  {
+    "query_id": "B4-Q21",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 450,
+    "hits": 0,
+    "log_id": "B4-L00705",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q21/20260930T091917Z"
+  },
+  {
+    "query_id": "B4-Q21.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 71,
+    "hits": 71,
+    "log_id": "B4-L00706",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q21.r1/20260930T091917Z"
+  },
+  {
+    "query_id": "B4-Q22",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 4110,
+    "hits": 0,
+    "log_id": "B4-L00707",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q22/20260930T091920Z"
+  },
+  {
+    "query_id": "B4-Q22.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 3,
+    "hits": 3,
+    "log_id": "B4-L00708",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q22.r2/20260930T091920Z"
+  },
+  {
+    "query_id": "B4-Q23",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 310,
+    "hits": 0,
+    "log_id": "B4-L00709",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q23/20260930T091922Z"
+  },
+  {
+    "query_id": "B4-Q23.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 39,
+    "hits": 39,
+    "log_id": "B4-L00710",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q23.r1/20260930T091922Z"
+  },
+  {
+    "query_id": "B4-Q24",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 4092,
+    "hits": 0,
+    "log_id": "B4-L00711",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q24/20260930T091924Z"
+  },
+  {
+    "query_id": "B4-Q24.r4.2",
+    "source": "scopus",
+    "status": "done",
+    "count": 102,
+    "hits": 102,
+    "log_id": "B4-L00712",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q24.r4.2/20260930T091925Z"
+  },
+  {
+    "query_id": "B4-Q24.r4.3",
+    "source": "scopus",
+    "status": "done",
+    "count": 63,
+    "hits": 63,
+    "log_id": "B4-L00713",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q24.r4.3/20260930T091929Z"
+  },
+  {
+    "query_id": "B4-Q25",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 5480,
+    "hits": 0,
+    "log_id": "B4-L00714",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q25/20260930T091932Z"
+  },
+  {
+    "query_id": "B4-Q25.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 10,
+    "hits": 10,
+    "log_id": "B4-L00715",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q25.r2/20260930T091932Z"
+  },
+  {
+    "query_id": "B4-Q26",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 842,
+    "hits": 0,
+    "log_id": "B4-L00716",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q26/20260930T091933Z"
+  },
+  {
+    "query_id": "B4-Q26.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 95,
+    "hits": 95,
+    "log_id": "B4-L00717",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q26.r1/20260930T091938Z"
+  },
+  {
+    "query_id": "B4-Q27",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00552"
+  },
+  {
+    "query_id": "B4-Q28",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 328,
+    "hits": 0,
+    "log_id": "B4-L00718",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q28/20260930T091942Z"
+  },
+  {
+    "query_id": "B4-Q28.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 50,
+    "hits": 50,
+    "log_id": "B4-L00719",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q28.r1/20260930T091943Z"
+  },
+  {
+    "query_id": "B4-Q29",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 894,
+    "hits": 0,
+    "log_id": "B4-L00720",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q29/20260930T091945Z"
+  },
+  {
+    "query_id": "B4-Q29.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 14,
+    "hits": 14,
+    "log_id": "B4-L00721",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q29.r2/20260930T091945Z"
+  },
+  {
+    "query_id": "B4-Q30",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 536,
+    "hits": 0,
+    "log_id": "B4-L00722",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q30/20260930T091947Z"
+  },
+  {
+    "query_id": "B4-Q30.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 72,
+    "hits": 72,
+    "log_id": "B4-L00723",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q30.r1/20260930T091947Z"
+  },
+  {
+    "query_id": "B4-Q31",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3012,
+    "hits": 0,
+    "log_id": "B4-L00724",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q31/20260930T091950Z"
+  },
+  {
+    "query_id": "B4-Q31.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 32,
+    "hits": 32,
+    "log_id": "B4-L00725",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q31.r2/20260930T091950Z"
+  },
+  {
+    "query_id": "B4-Q32",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00557"
+  },
+  {
+    "query_id": "B4-Q33",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 689,
+    "hits": 0,
+    "log_id": "B4-L00726",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q33/20260930T091953Z"
+  },
+  {
+    "query_id": "B4-Q33.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 104,
+    "hits": 104,
+    "log_id": "B4-L00727",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q33.r1/20260930T091954Z"
+  },
+  {
+    "query_id": "B4-Q34",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3675,
+    "hits": 0,
+    "log_id": "B4-L00728",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q34/20260930T091959Z"
+  },
+  {
+    "query_id": "B4-Q34.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 202,
+    "hits": 202,
+    "log_id": "B4-L00729",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q34.r2/20260930T091959Z"
+  },
+  {
+    "query_id": "B4-Q35",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 23027,
+    "hits": 0,
+    "log_id": "B4-L00730",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q35/20260930T092009Z"
+  },
+  {
+    "query_id": "B4-Q35.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 221,
+    "hits": 221,
+    "log_id": "B4-L00731",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q35.r2/20260930T092010Z"
+  },
+  {
+    "query_id": "B4-Q36",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00561"
+  },
+  {
+    "query_id": "B4-Q37",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 5316,
+    "hits": 0,
+    "log_id": "B4-L00732",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q37/20260930T092019Z"
+  },
+  {
+    "query_id": "B4-Q37.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 82,
+    "hits": 82,
+    "log_id": "B4-L00733",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q37.r2/20260930T092019Z"
+  },
+  {
+    "query_id": "B4-Q38",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 14354,
+    "hits": 0,
+    "log_id": "B4-L00734",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q38/20260930T092024Z"
+  },
+  {
+    "query_id": "B4-Q38.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 162,
+    "hits": 162,
+    "log_id": "B4-L00735",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q38.r2/20260930T092024Z"
+  },
+  {
+    "query_id": "B4-Q39",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1959,
+    "hits": 0,
+    "log_id": "B4-L00736",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q39/20260930T092032Z"
+  },
+  {
+    "query_id": "B4-Q39.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 236,
+    "hits": 236,
+    "log_id": "B4-L00737",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q39.r1/20260930T092033Z"
+  },
+  {
+    "query_id": "B4-Q40",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2603,
+    "hits": 0,
+    "log_id": "B4-L00738",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q40/20260930T092041Z"
+  },
+  {
+    "query_id": "B4-Q40.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 23,
+    "hits": 23,
+    "log_id": "B4-L00739",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q40.r2/20260930T092042Z"
+  },
+  {
+    "query_id": "B4-Q41",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 30249,
+    "hits": 0,
+    "log_id": "B4-L00740",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q41/20260930T092044Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.1",
+    "source": "scopus",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00741",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q41.r4.1/20260930T092044Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.2",
+    "source": "scopus",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L00742",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q41.r4.2/20260930T092046Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.3",
+    "source": "scopus",
+    "status": "done",
+    "count": 7,
+    "hits": 7,
+    "log_id": "B4-L00743",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q41.r4.3/20260930T092047Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.5",
+    "source": "scopus",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L00744",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q41.r4.5/20260930T092048Z"
+  },
+  {
+    "query_id": "B4-Q41.r4.6",
+    "source": "scopus",
+    "status": "done",
+    "count": 17,
+    "hits": 17,
+    "log_id": "B4-L00745",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q41.r4.6/20260930T092049Z"
+  },
+  {
+    "query_id": "B4-Q42",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3278,
+    "hits": 0,
+    "log_id": "B4-L00746",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q42/20260930T092050Z"
+  },
+  {
+    "query_id": "B4-Q42.r4.2",
+    "source": "scopus",
+    "status": "done",
+    "count": 6,
+    "hits": 6,
+    "log_id": "B4-L00747",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q42.r4.2/20260930T092051Z"
+  },
+  {
+    "query_id": "B4-Q42.r4.3",
+    "source": "scopus",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00748",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q42.r4.3/20260930T092052Z"
+  },
+  {
+    "query_id": "B4-Q43",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 701,
+    "hits": 0,
+    "log_id": "B4-L00749",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q43/20260930T092053Z"
+  },
+  {
+    "query_id": "B4-Q43.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 102,
+    "hits": 102,
+    "log_id": "B4-L00750",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q43.r2/20260930T092054Z"
+  },
+  {
+    "query_id": "B4-Q44",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3755,
+    "hits": 0,
+    "log_id": "B4-L00751",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q44/20260930T092058Z"
+  },
+  {
+    "query_id": "B4-Q44.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 68,
+    "hits": 68,
+    "log_id": "B4-L00752",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q44.r2/20260930T092059Z"
+  },
+  {
+    "query_id": "B4-Q45",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00570"
+  },
+  {
+    "query_id": "B4-Q46",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 14003,
+    "hits": 0,
+    "log_id": "B4-L00753",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q46/20260930T092103Z"
+  },
+  {
+    "query_id": "B4-Q46.r3",
+    "source": "scopus",
+    "status": "done",
+    "count": 265,
+    "hits": 265,
+    "log_id": "B4-L00754",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q46.r3/20260930T092103Z"
+  },
+  {
+    "query_id": "B4-Q47",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2018,
+    "hits": 0,
+    "log_id": "B4-L00755",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q47/20260930T092113Z"
+  },
+  {
+    "query_id": "B4-Q47.r2",
+    "source": "scopus",
+    "status": "done",
+    "count": 288,
+    "hits": 288,
+    "log_id": "B4-L00756",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q47.r2/20260930T092114Z"
+  },
+  {
+    "query_id": "B4-Q48",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 15129,
+    "hits": 0,
+    "log_id": "B4-L00757",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q48/20260930T092126Z"
+  },
+  {
+    "query_id": "B4-Q48.r4.2",
+    "source": "scopus",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L00758",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q48.r4.2/20260930T092127Z"
+  },
+  {
+    "query_id": "B4-Q48.r4.3",
+    "source": "scopus",
+    "status": "done",
+    "count": 33,
+    "hits": 33,
+    "log_id": "B4-L00759",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q48.r4.3/20260930T092128Z"
+  },
+  {
+    "query_id": "B4-Q48.r4.4",
+    "source": "scopus",
+    "status": "done",
+    "count": 45,
+    "hits": 45,
+    "log_id": "B4-L00760",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-Q48.r4.4/20260930T092130Z"
+  },
+  {
+    "query_id": "B4-XC01",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 8603,
+    "hits": 0,
+    "log_id": "B4-L00761",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC01/20260930T092132Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.1",
+    "source": "scopus",
+    "status": "done",
+    "count": 10,
+    "hits": 10,
+    "log_id": "B4-L00762",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC01.r4.1/20260930T092133Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.2",
+    "source": "scopus",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00763",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC01.r4.2/20260930T092134Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.3",
+    "source": "scopus",
+    "status": "done",
+    "count": 13,
+    "hits": 13,
+    "log_id": "B4-L00764",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC01.r4.3/20260930T092135Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.4",
+    "source": "scopus",
+    "status": "done",
+    "count": 175,
+    "hits": 175,
+    "log_id": "B4-L00765",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC01.r4.4/20260930T092137Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.6",
+    "source": "scopus",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00766",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC01.r4.6/20260930T092144Z"
+  },
+  {
+    "query_id": "B4-XC01.r4.7",
+    "source": "scopus",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00767",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC01.r4.7/20260930T092144Z"
+  },
+  {
+    "query_id": "B4-XC02",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2013,
+    "hits": 0,
+    "log_id": "B4-L00768",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC02/20260930T092145Z"
+  },
+  {
+    "query_id": "B4-XC02.r3",
+    "source": "scopus",
+    "status": "done",
+    "count": 237,
+    "hits": 237,
+    "log_id": "B4-L00769",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-XC02.r3/20260930T092146Z"
+  },
+  {
+    "query_id": "B4-BR01",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00576"
+  },
+  {
+    "query_id": "B4-BR02",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 424,
+    "hits": 0,
+    "log_id": "B4-L00770",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-BR02/20260930T092156Z"
+  },
+  {
+    "query_id": "B4-BR02.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 90,
+    "hits": 90,
+    "log_id": "B4-L00771",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-BR02.r1/20260930T092156Z"
+  },
+  {
+    "query_id": "B4-BR03",
+    "source": "scopus",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 376,
+    "hits": 0,
+    "log_id": "B4-L00772",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-BR03/20260930T092200Z"
+  },
+  {
+    "query_id": "B4-BR03.r1",
+    "source": "scopus",
+    "status": "done",
+    "count": 148,
+    "hits": 148,
+    "log_id": "B4-L00773",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/scopus/B4-BR03.r1/20260930T092201Z"
+  },
+  {
+    "query_id": "B4-BR04",
+    "source": "scopus",
+    "status": "already_done",
+    "log_id": "B4-L00579"
+  }
+]

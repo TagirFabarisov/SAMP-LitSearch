@@ -1,6 +1,5 @@
 {
  "access_to_confirm": [
-  "scopus",
   "wos",
   "ieee",
   "acm",
@@ -9,7 +8,7 @@
   "scholar",
   "web"
  ],
- "deviations_recorded": 5,
+ "deviations_recorded": 6,
  "failures": [
   [
    "B4-Q01",
@@ -193,15 +192,15 @@
   ]
  ],
  "frozen": true,
- "generated_at": "2026-09-29T23:20:08Z",
+ "generated_at": "2026-09-30T10:14:18Z",
  "mandatory_pairs_by_status": {
-  "MANUAL_EXPORT_REQUIRED": 139,
-  "REFINEMENT_REQUIRED": 49,
-  "done": 5,
+  "MANUAL_EXPORT_REQUIRED": 85,
+  "REFINEMENT_REQUIRED": 93,
+  "done": 15,
   "failed": 30
  },
  "openalex_construct_check_resolved": true,
- "pending_manual_imports": 139,
+ "pending_manual_imports": 85,
  "protocol_revision": 3,
  "refinement_required": [
   [
@@ -210,9 +209,19 @@
    1193
   ],
   [
+   "B4-Q01",
+   "scopus",
+   622
+  ],
+  [
    "B4-Q02",
    "openalex",
    14247
+  ],
+  [
+   "B4-Q02",
+   "scopus",
+   1178
   ],
   [
    "B4-Q03",
@@ -220,9 +229,19 @@
    1182
   ],
   [
+   "B4-Q03",
+   "scopus",
+   626
+  ],
+  [
    "B4-Q05",
    "openalex",
    39673
+  ],
+  [
+   "B4-Q05",
+   "scopus",
+   397
   ],
   [
    "B4-Q06",
@@ -230,14 +249,29 @@
    1389
   ],
   [
+   "B4-Q06",
+   "scopus",
+   444
+  ],
+  [
    "B4-Q07",
    "openalex",
    3013
   ],
   [
+   "B4-Q07",
+   "scopus",
+   698
+  ],
+  [
    "B4-Q08",
    "openalex",
    1793
+  ],
+  [
+   "B4-Q08",
+   "scopus",
+   606
   ],
   [
    "B4-Q09",
@@ -250,9 +284,19 @@
    99924
   ],
   [
+   "B4-Q10",
+   "scopus",
+   9269
+  ],
+  [
    "B4-Q11",
    "openalex",
    1798
+  ],
+  [
+   "B4-Q11",
+   "scopus",
+   683
   ],
   [
    "B4-Q12",
@@ -265,9 +309,19 @@
    2885
   ],
   [
+   "B4-Q13",
+   "scopus",
+   697
+  ],
+  [
    "B4-Q14",
    "openalex",
    7268
+  ],
+  [
+   "B4-Q14",
+   "scopus",
+   2185
   ],
   [
    "B4-Q15",
@@ -275,9 +329,19 @@
    3066
   ],
   [
+   "B4-Q15",
+   "scopus",
+   648
+  ],
+  [
    "B4-Q16",
    "openalex",
    89940
+  ],
+  [
+   "B4-Q16",
+   "scopus",
+   3299
   ],
   [
    "B4-Q17",
@@ -285,9 +349,19 @@
    9622
   ],
   [
+   "B4-Q17",
+   "scopus",
+   2689
+  ],
+  [
    "B4-Q19",
    "openalex",
    39530
+  ],
+  [
+   "B4-Q19",
+   "scopus",
+   18321
   ],
   [
    "B4-Q20",
@@ -295,9 +369,19 @@
    748
   ],
   [
+   "B4-Q20",
+   "scopus",
+   514
+  ],
+  [
    "B4-Q21",
    "openalex",
    9317
+  ],
+  [
+   "B4-Q21",
+   "scopus",
+   450
   ],
   [
    "B4-Q22",
@@ -305,9 +389,19 @@
    6957
   ],
   [
+   "B4-Q22",
+   "scopus",
+   4110
+  ],
+  [
    "B4-Q23",
    "openalex",
    477
+  ],
+  [
+   "B4-Q23",
+   "scopus",
+   310
   ],
   [
    "B4-Q24",
@@ -315,9 +409,19 @@
    13006
   ],
   [
+   "B4-Q24",
+   "scopus",
+   4092
+  ],
+  [
    "B4-Q25",
    "openalex",
    15077
+  ],
+  [
+   "B4-Q25",
+   "scopus",
+   5480
   ],
   [
    "B4-Q26",
@@ -325,9 +429,19 @@
    1262
   ],
   [
+   "B4-Q26",
+   "scopus",
+   842
+  ],
+  [
    "B4-Q28",
    "openalex",
    1575
+  ],
+  [
+   "B4-Q28",
+   "scopus",
+   328
   ],
   [
    "B4-Q29",
@@ -335,14 +449,29 @@
    1441
   ],
   [
+   "B4-Q29",
+   "scopus",
+   894
+  ],
+  [
    "B4-Q30",
    "openalex",
    607
   ],
   [
+   "B4-Q30",
+   "scopus",
+   536
+  ],
+  [
    "B4-Q31",
    "openalex",
    14339
+  ],
+  [
+   "B4-Q31",
+   "scopus",
+   3012
   ],
   [
    "B4-Q32",
@@ -355,14 +484,29 @@
    2375
   ],
   [
+   "B4-Q33",
+   "scopus",
+   689
+  ],
+  [
    "B4-Q34",
    "openalex",
    4730
   ],
   [
+   "B4-Q34",
+   "scopus",
+   3675
+  ],
+  [
    "B4-Q35",
    "openalex",
    11229
+  ],
+  [
+   "B4-Q35",
+   "scopus",
+   23027
   ],
   [
    "B4-Q36",
@@ -375,9 +519,19 @@
    21051
   ],
   [
+   "B4-Q37",
+   "scopus",
+   5316
+  ],
+  [
    "B4-Q38",
    "openalex",
    31874
+  ],
+  [
+   "B4-Q38",
+   "scopus",
+   14354
   ],
   [
    "B4-Q39",
@@ -385,9 +539,19 @@
    2930
   ],
   [
+   "B4-Q39",
+   "scopus",
+   1959
+  ],
+  [
    "B4-Q40",
    "openalex",
    6335
+  ],
+  [
+   "B4-Q40",
+   "scopus",
+   2603
   ],
   [
    "B4-Q41",
@@ -395,9 +559,19 @@
    40243
   ],
   [
+   "B4-Q41",
+   "scopus",
+   30249
+  ],
+  [
    "B4-Q42",
    "openalex",
    3553
+  ],
+  [
+   "B4-Q42",
+   "scopus",
+   3278
   ],
   [
    "B4-Q43",
@@ -405,9 +579,19 @@
    925
   ],
   [
+   "B4-Q43",
+   "scopus",
+   701
+  ],
+  [
    "B4-Q44",
    "openalex",
    4778
+  ],
+  [
+   "B4-Q44",
+   "scopus",
+   3755
   ],
   [
    "B4-Q45",
@@ -420,9 +604,19 @@
    54646
   ],
   [
+   "B4-Q46",
+   "scopus",
+   14003
+  ],
+  [
    "B4-Q47",
    "openalex",
    2986
+  ],
+  [
+   "B4-Q47",
+   "scopus",
+   2018
   ],
   [
    "B4-Q48",
@@ -430,9 +624,19 @@
    33541
   ],
   [
+   "B4-Q48",
+   "scopus",
+   15129
+  ],
+  [
    "B4-XC01",
    "openalex",
    23969
+  ],
+  [
+   "B4-XC01",
+   "scopus",
+   8603
   ],
   [
    "B4-XC02",
@@ -440,14 +644,29 @@
    10009
   ],
   [
+   "B4-XC02",
+   "scopus",
+   2013
+  ],
+  [
    "B4-BR02",
    "openalex",
    503
   ],
   [
+   "B4-BR02",
+   "scopus",
+   424
+  ],
+  [
    "B4-BR03",
    "openalex",
    322
+  ],
+  [
+   "B4-BR03",
+   "scopus",
+   376
   ]
  ],
  "rows": [
@@ -465,17 +684,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 622,
    "direction": "B4-D01",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:17:15Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 622 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q01",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -569,17 +788,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 1178,
    "direction": "B4-D01",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:17:22Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 1178 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q02",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -673,17 +892,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 626,
    "direction": "B4-D01",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:17:31Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 626 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q03",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -777,17 +996,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 38,
    "direction": "B4-D02",
-   "hits": null,
-   "last_run": null,
+   "hits": 38,
+   "last_run": "2026-09-30T09:12:29Z",
    "lens": "A semantic",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 6,
    "note": "",
    "query_id": "B4-Q04",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -881,17 +1100,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 397,
    "direction": "B4-D02",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:17:37Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 397 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q05",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -985,17 +1204,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 444,
    "direction": "B4-D02",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:17:41Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 444 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q06",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -1089,17 +1308,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 698,
    "direction": "B4-D03",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:17:46Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 698 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q07",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -1193,17 +1412,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 606,
    "direction": "B4-D03",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:17:55Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 606 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q08",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -1297,17 +1516,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 39,
    "direction": "B4-D03",
-   "hits": null,
-   "last_run": null,
+   "hits": 39,
+   "last_run": "2026-09-30T09:12:32Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 35,
    "note": "",
    "query_id": "B4-Q09",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -1401,17 +1620,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 9269,
    "direction": "B4-D04",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:18:01Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 9269 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q10",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -1505,17 +1724,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 683,
    "direction": "B4-D04",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:18:06Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 683 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q11",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -1609,17 +1828,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 88,
    "direction": "B4-D04",
-   "hits": null,
-   "last_run": null,
+   "hits": 88,
+   "last_run": "2026-09-30T09:12:38Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 78,
    "note": "",
    "query_id": "B4-Q12",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -1713,17 +1932,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 697,
    "direction": "B4-D05",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:18:20Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 697 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q13",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -1817,17 +2036,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 2185,
    "direction": "B4-D05",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:18:29Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 2185 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q14",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -1921,17 +2140,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 648,
    "direction": "B4-D05",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:18:43Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 648 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q15",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2025,17 +2244,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 3299,
    "direction": "B4-D06",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:18:48Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 3299 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q16",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2129,17 +2348,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 2689,
    "direction": "B4-D06",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:18:54Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 2689 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q17",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2233,17 +2452,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 21,
    "direction": "B4-D06",
-   "hits": null,
-   "last_run": null,
+   "hits": 21,
+   "last_run": "2026-09-30T09:12:42Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 6,
    "note": "",
    "query_id": "B4-Q18",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -2337,17 +2556,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 18321,
    "direction": "B4-D07",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:03Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 18321 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q19",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2441,17 +2660,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 514,
    "direction": "B4-D07",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:13Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 514 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q20",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2545,17 +2764,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 450,
    "direction": "B4-D07",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:17Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 450 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q21",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2649,17 +2868,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 4110,
    "direction": "B4-D08",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:20Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 4110 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q22",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2753,17 +2972,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 310,
    "direction": "B4-D08",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:22Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 310 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q23",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2857,17 +3076,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 4092,
    "direction": "B4-D08",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:25Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 4092 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q24",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -2961,17 +3180,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 5480,
    "direction": "B4-D09",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:32Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 5480 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q25",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -3065,17 +3284,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 842,
    "direction": "B4-D09",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:38Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 842 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q26",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -3169,17 +3388,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 24,
    "direction": "B4-D09",
-   "hits": null,
-   "last_run": null,
+   "hits": 24,
+   "last_run": "2026-09-30T09:12:47Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 19,
    "note": "",
    "query_id": "B4-Q27",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -3273,17 +3492,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 328,
    "direction": "B4-D10",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:43Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 328 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q28",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -3377,17 +3596,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 894,
    "direction": "B4-D10",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:45Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 894 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q29",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -3481,17 +3700,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 536,
    "direction": "B4-D10",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:47Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 536 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q30",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -3585,17 +3804,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 3012,
    "direction": "B4-D11",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:50Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 3012 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q31",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -3676,17 +3895,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 71,
    "direction": "B4-D11",
-   "hits": null,
-   "last_run": null,
+   "hits": 71,
+   "last_run": "2026-09-30T09:12:52Z",
    "lens": "B community",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 54,
    "note": "",
    "query_id": "B4-Q32",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -3767,17 +3986,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 689,
    "direction": "B4-D11",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:54Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 689 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q33",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -3858,17 +4077,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 3675,
    "direction": "B4-D12",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:19:59Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 3675 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q34",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -3949,17 +4168,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 23027,
    "direction": "B4-D12",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:10Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 23027 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q35",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4040,17 +4259,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 300,
    "direction": "B4-D12",
-   "hits": null,
-   "last_run": null,
+   "hits": 300,
+   "last_run": "2026-09-30T09:13:05Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 234,
    "note": "",
    "query_id": "B4-Q36",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -4131,17 +4350,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 5316,
    "direction": "B4-D13",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:19Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 5316 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q37",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4222,17 +4441,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 14354,
    "direction": "B4-D13",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:24Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 14354 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q38",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4313,17 +4532,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 1959,
    "direction": "B4-D13",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:33Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 1959 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q39",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4404,17 +4623,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 2603,
    "direction": "B4-D14",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:42Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 2603 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q40",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4495,17 +4714,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 30249,
    "direction": "B4-D14",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:44Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 30249 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q41",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4586,17 +4805,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 3278,
    "direction": "B4-D14",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:51Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 3278 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q42",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4677,17 +4896,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 701,
    "direction": "B4-D15",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:54Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 701 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q43",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4781,17 +5000,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 3755,
    "direction": "B4-D15",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:20:59Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 3755 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q44",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -4885,17 +5104,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 259,
    "direction": "B4-D15",
-   "hits": null,
-   "last_run": null,
+   "hits": 259,
+   "last_run": "2026-09-30T09:13:19Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 189,
    "note": "",
    "query_id": "B4-Q45",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -4989,17 +5208,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 14003,
    "direction": "B4-D16",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:21:03Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 14003 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q46",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -5067,17 +5286,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 2018,
    "direction": "B4-D16",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:21:14Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 2018 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q47",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -5158,17 +5377,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 15129,
    "direction": "B4-D16",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:21:27Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 15129 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-Q48",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -5236,17 +5455,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 8603,
    "direction": "cross-cutting",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:21:33Z",
    "lens": "modifier: noncompliance and reparation",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 8603 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-XC01",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -5327,17 +5546,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 2013,
    "direction": "cross-cutting",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:21:46Z",
    "lens": "modifier: automatic vs discretionary",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 2013 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-XC02",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -5418,17 +5637,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 41,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 41,
+   "last_run": "2026-09-30T09:13:24Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 30,
    "note": "",
    "query_id": "B4-BR01",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -5509,17 +5728,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 424,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:21:56Z",
    "lens": "RQ4.3",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 424 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-BR02",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -5600,17 +5819,17 @@
    "status": "REFINEMENT_REQUIRED"
   },
   {
-   "count": null,
+   "count": 376,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-09-30T09:22:01Z",
    "lens": "RQ4.3",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count 376 exceeds threshold 300; nothing retrieved",
    "query_id": "B4-BR03",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "REFINEMENT_REQUIRED"
   },
   {
    "count": null,
@@ -5691,17 +5910,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 90,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 90,
+   "last_run": "2026-09-30T09:13:29Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
+   "new_documents": 40,
    "note": "",
    "query_id": "B4-BR04",
    "source": "scopus",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -5769,7 +5988,7 @@
    "status": "supplementary (on demand)"
   }
  ],
- "total_documents": 9844,
- "total_hits": 12780,
+ "total_documents": 12897,
+ "total_hits": 18970,
  "upper_cutoff_date": "2026-09-29"
 }
