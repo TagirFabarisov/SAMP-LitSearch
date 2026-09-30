@@ -20,6 +20,8 @@ from typing import Any, Dict, List, Optional, Tuple
 from .. import config_loader as cl
 from .. import paths, storage
 
+_direction_of: Dict[str, str] = {}
+
 STOP_WORDS = {"a", "an", "the", "of", "for", "and", "or", "in", "on", "to", "with", "by", "at",
               "from", "into", "as", "is", "are", "via", "toward", "towards", "using", "based"}
 
@@ -105,6 +107,8 @@ def deduplicate() -> Dict[str, Any]:
     doc_fmt = protocol["id_formats"]["document"]
 
     records = sorted(storage.read_jsonl(paths.records_file()), key=lambda r: r["hit_id"])
+    global _direction_of
+    _direction_of = {q["id"]: cl.direction_group(q) for q in cl.load_queries()}
     existing_docs = {d["document_id"]: d for d in storage.read_jsonl(paths.documents_file())}
     alloc = storage.IdAllocator(doc_fmt, existing_docs.keys())
 
@@ -155,7 +159,7 @@ def deduplicate() -> Dict[str, Any]:
                 "publication_date": rec.get("publication_date"), "venue": rec.get("venue"), "type": rec.get("type"),
                 "abstract": rec.get("abstract"), "language": rec.get("language"), "url": rec.get("url"),
                 "first_seen_run_id": rec.get("run_id"), "first_hit_id": rec["hit_id"], "hit_ids": [],
-                "after_cutoff": bool(rec.get("after_cutoff")), "sources": [],
+                "after_cutoff": bool(rec.get("after_cutoff")), "sources": [], "query_ids": [], "directions": [],
             }
             rule = "new"
             stats_new[(rec["query_id"], rec["source"])] += 1
@@ -170,7 +174,17 @@ def deduplicate() -> Dict[str, Any]:
         if not doc.get("authors") and rec.get("authors"):
             doc["authors"] = rec["authors"]
         if rec.get("source_record_id"):
-            doc.setdefault("source_ids", {})[rec["source"]] = rec["source_record_id"]
+            ids = doc.setdefault("source_ids", {}).setdefault(rec["source"], [])
+            if isinstance(ids, str):  # older single-value form
+                ids = doc["source_ids"][rec["source"]] = [ids]
+            if rec["source_record_id"] not in ids:
+                ids.append(rec["source_record_id"])
+        base_qid = str(rec.get("query_id", "")).split(".")[0]
+        if base_qid and base_qid not in doc.setdefault("query_ids", []):
+            doc["query_ids"].append(base_qid)
+        direction = _direction_of.get(base_qid)
+        if direction and direction not in doc.setdefault("directions", []):
+            doc["directions"].append(direction)
         doc["source_id_keys"] = sorted(set(doc.get("source_id_keys", [])) | set(_source_id_keys(rec)))
         if rec["source"] not in doc.setdefault("sources", []):
             doc["sources"].append(rec["source"])
