@@ -1,0 +1,23 @@
+{
+ "body": "<h1>Developer Inactive</h1>",
+ "headers": {
+  "Connection": "keep-alive",
+  "Content-Length": "27",
+  "Content-Type": "text/xml",
+  "Date": "Wed, 30 Sep 2026 11:10:35 GMT",
+  "Server": "Mashery Proxy",
+  "X-Error-Detail-Header": "Account Inactive",
+  "X-Mashery-Error-Code": "ERR_403_DEVELOPER_INACTIVE",
+  "X-Mashery-Responder": "prod-j-worker-sni-0a54ecdbc07e02110.use1.mashery.com"
+ },
+ "http_status": 403,
+ "params": {
+  "apikey": "<REDACTED>",
+  "format": "json",
+  "max_records": 1,
+  "querytext": "(\"systems engineering\" OR \"project management\" OR acquisition OR \"space program\" OR \"space programs\" OR \"space programme\" OR \"space programmes\") AND ((\"technical review\" OR \"technical reviews\") OR milestone* OR (\"decision gate\" OR \"decision gates\") OR \"gate criteria\") AND (\"model-based\" OR MBSE OR (\"process model\" OR \"process models\") OR (\"lifecycle model\" OR \"lifecycle models\"))",
+  "sort_field": "article_number",
+  "sort_order": "asc",
+  "start_record": 1
+ }
+}

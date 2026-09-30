@@ -1,1 +1,126 @@
-[]
+[
+  {
+    "id": "B4-Q24.r4.1",
+    "status": "split_level_2",
+    "counts": [
+      48,
+      337,
+      337
+    ],
+    "runnable": 1
+  },
+  {
+    "id": "B4-Q24.r4.4",
+    "status": "split_level_2",
+    "counts": [
+      62,
+      475,
+      475
+    ],
+    "runnable": 1
+  },
+  {
+    "id": "B4-Q41.r4.4",
+    "status": "split_level_2",
+    "counts": [
+      0,
+      1,
+      375,
+      10,
+      1
+    ],
+    "runnable": 4
+  },
+  {
+    "id": "B4-Q42.r4.1",
+    "status": "split_level_2",
+    "counts": [
+      401,
+      33,
+      29
+    ],
+    "runnable": 2
+  },
+  {
+    "id": "B4-Q48.r4.1",
+    "status": "split_level_2",
+    "counts": [
+      243,
+      648,
+      839
+    ],
+    "runnable": 1
+  },
+  {
+    "id": "B4-XC01.r4.5",
+    "status": "split_level_2",
+    "counts": [
+      292,
+      106,
+      50,
+      289
+    ],
+    "runnable": 4
+  },
+  {
+    "id": "B4-Q24.r4.1.2",
+    "status": "REFINEMENT_EXHAUSTED",
+    "count": 337
+  },
+  {
+    "id": "B4-Q24.r4.1.3",
+    "status": "REFINEMENT_EXHAUSTED",
+    "count": 337
+  },
+  {
+    "id": "B4-Q24.r4.4.2",
+    "status": "REFINEMENT_EXHAUSTED",
+    "count": 475
+  },
+  {
+    "id": "B4-Q24.r4.4.3",
+    "status": "REFINEMENT_EXHAUSTED",
+    "count": 475
+  },
+  {
+    "id": "B4-Q41.r4.4.3",
+    "status": "split_level_3",
+    "counts": [
+      31,
+      18,
+      57,
+      212,
+      95
+    ],
+    "runnable": 5
+  },
+  {
+    "id": "B4-Q42.r4.1.1",
+    "status": "split_level_3",
+    "counts": [
+      401,
+      401
+    ],
+    "runnable": 0
+  },
+  {
+    "id": "B4-Q48.r4.1.2",
+    "status": "REFINEMENT_EXHAUSTED",
+    "count": 648
+  },
+  {
+    "id": "B4-Q48.r4.1.3",
+    "status": "REFINEMENT_EXHAUSTED",
+    "count": 839
+  },
+  {
+    "id": "B4-Q42.r4.1.1.1",
+    "status": "REFINEMENT_EXHAUSTED",
+    "count": 401
+  },
+  {
+    "id": "B4-Q42.r4.1.1.2",
+    "status": "REFINEMENT_EXHAUSTED",
+    "count": 401
+  }
+]

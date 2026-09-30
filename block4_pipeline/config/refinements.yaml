@@ -4624,3 +4624,459 @@ refinements:
   register: BR
   created_at: '2026-09-30T09:16:48Z'
   note: free group (model* OR method* OR framework) moved to title
+- id: B4-Q24.r4.1.1
+  refinement_of: B4-Q24
+  parent_part: B4-Q24.r4.1
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((norm OR norms OR normative) AND (change)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 48
+  runnable: true
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T10:15:34Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q24.r4.1.2
+  refinement_of: B4-Q24
+  parent_part: B4-Q24.r4.1
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((rule) AND (change)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 337
+  runnable: false
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T10:15:36Z'
+  note: 'deviation entry 5: second-level split'
+  exhausted: true
+- id: B4-Q24.r4.1.3
+  refinement_of: B4-Q24
+  parent_part: B4-Q24.r4.1
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((rules) AND (change)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 337
+  runnable: false
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T10:15:37Z'
+  note: 'deviation entry 5: second-level split'
+  exhausted: true
+- id: B4-Q24.r4.4.1
+  refinement_of: B4-Q24
+  parent_part: B4-Q24.r4.4
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((norm OR norms OR normative) AND (dynamic*)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 62
+  runnable: true
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T10:15:37Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q24.r4.4.2
+  refinement_of: B4-Q24
+  parent_part: B4-Q24.r4.4
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((rule) AND (dynamic*)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 475
+  runnable: false
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T10:15:38Z'
+  note: 'deviation entry 5: second-level split'
+  exhausted: true
+- id: B4-Q24.r4.4.3
+  refinement_of: B4-Q24
+  parent_part: B4-Q24.r4.4
+  direction: B4-D08
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((rules) AND (dynamic*)) AND TITLE("dynamic logic" OR defeasible OR "temporal logic" OR ontolog* OR "rule language" OR "belief revision") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 475
+  runnable: false
+  basis: C3.4, C3.8, C1.21
+  community: rule change as logical update, revision or ontology of change
+  register: P1
+  created_at: '2026-09-30T10:15:38Z'
+  note: 'deviation entry 5: second-level split'
+  exhausted: true
+- id: B4-Q41.r4.4.1
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY(("action language*") AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 0
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:39Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.2
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY(("actual causality") AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 1
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:39Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.3
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY(("causal model*") AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 375
+  runnable: false
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:40Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.4
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY(("causal reasoning") AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 10
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:40Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.5
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((disruption*) AND ((norm OR norms OR normative) OR contract* OR institution* OR organi?ation* OR agent*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 1
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:41Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q42.r4.1.1
+  refinement_of: B4-Q42
+  parent_part: B4-Q42.r4.1
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((event OR events) AND (agent*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 401
+  runnable: false
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T10:15:41Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q42.r4.1.2
+  refinement_of: B4-Q42
+  parent_part: B4-Q42.r4.1
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((event OR events) AND (actor*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 33
+  runnable: true
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T10:15:42Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q42.r4.1.3
+  refinement_of: B4-Q42
+  parent_part: B4-Q42.r4.1
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((event OR events) AND (institution*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 29
+  runnable: true
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T10:15:42Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q48.r4.1.1
+  refinement_of: B4-Q48
+  parent_part: B4-Q48.r4.1
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((trust) AND (organi?ation*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 243
+  runnable: true
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T10:15:43Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q48.r4.1.2
+  refinement_of: B4-Q48
+  parent_part: B4-Q48.r4.1
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((trust) AND (agent*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 648
+  runnable: false
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T10:15:43Z'
+  note: 'deviation entry 5: second-level split'
+  exhausted: true
+- id: B4-Q48.r4.1.3
+  refinement_of: B4-Q48
+  parent_part: B4-Q48.r4.1
+  direction: B4-D16
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((trust) AND (network*)) AND TITLE("agent-based" OR "formal model" OR logic OR ontolog* OR "network model*" OR simulation) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 839
+  runnable: false
+  basis: C3.9, C7.1, C7.8
+  community: informal dynamics as simulation, logic or network models
+  register: P1
+  created_at: '2026-09-30T10:15:44Z'
+  note: 'deviation entry 5: second-level split'
+  exhausted: true
+- id: B4-XC01.r4.5.1
+  refinement_of: B4-XC01
+  parent_part: B4-XC01.r4.5
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((compensation) AND (contract*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 292
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T10:15:44Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-XC01.r4.5.2
+  refinement_of: B4-XC01
+  parent_part: B4-XC01.r4.5
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((compensation) AND (norm OR norms OR normative)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 106
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T10:15:45Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-XC01.r4.5.3
+  refinement_of: B4-XC01
+  parent_part: B4-XC01.r4.5
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((compensation) AND (commitment*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 50
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T10:15:45Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-XC01.r4.5.4
+  refinement_of: B4-XC01
+  parent_part: B4-XC01.r4.5
+  direction: cross-cutting
+  lens: 'modifier: noncompliance and reparation'
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 2
+  scopus: TITLE-ABS-KEY((compensation) AND (agreement*)) AND TITLE(formal* OR model* OR language OR semantic*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 289
+  runnable: true
+  basis: C5.5, C1.15, X2
+  community: what happens on failure and after ending; deontic logic, contract languages
+  register: P1
+  created_at: '2026-09-30T10:15:46Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.3.1
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4.3
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 3
+  scopus: TITLE-ABS-KEY(("causal model*") AND (norm OR norms OR normative) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 31
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:47Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.3.2
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4.3
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 3
+  scopus: TITLE-ABS-KEY(("causal model*") AND (contract*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 18
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:48Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.3.3
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4.3
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 3
+  scopus: TITLE-ABS-KEY(("causal model*") AND (institution*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 57
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:48Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.3.4
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4.3
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 3
+  scopus: TITLE-ABS-KEY(("causal model*") AND (organi?ation*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 212
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:49Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q41.r4.4.3.5
+  refinement_of: B4-Q41
+  parent_part: B4-Q41.r4.4.3
+  direction: B4-D14
+  lens: B community
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 3
+  scopus: TITLE-ABS-KEY(("causal model*") AND (agent*) AND ("causal model")) AND TITLE(formal* OR model*) AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 95
+  runnable: true
+  basis: C12.2, C3.8, C7.8
+  community: 'community vocabulary: action languages, causal reasoning, disruption'
+  register: P1
+  created_at: '2026-09-30T10:15:49Z'
+  note: 'deviation entry 5: second-level split'
+- id: B4-Q42.r4.1.1.1
+  refinement_of: B4-Q42
+  parent_part: B4-Q42.r4.1.1
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 3
+  scopus: TITLE-ABS-KEY((event) AND (agent*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 401
+  runnable: false
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T10:15:50Z'
+  note: 'deviation entry 5: second-level split'
+  exhausted: true
+- id: B4-Q42.r4.1.1.2
+  refinement_of: B4-Q42
+  parent_part: B4-Q42.r4.1.1
+  direction: B4-D14
+  lens: C mechanism
+  applies_to_source: scopus
+  step: 4
+  step_name: split_or_groups level 3
+  scopus: TITLE-ABS-KEY((events) AND (agent*)) AND TITLE("event calculus" OR "situation calculus" OR "answer set" OR "causal model" OR "transition system" OR "discrete event") AND SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)
+  count: 401
+  runnable: false
+  basis: C12.2, C1.9
+  community: events and causes in action formalisms and event systems
+  register: P1
+  created_at: '2026-09-30T10:15:50Z'
+  note: 'deviation entry 5: second-level split'
+  exhausted: true
