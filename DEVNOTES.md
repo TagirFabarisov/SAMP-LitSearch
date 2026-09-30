@@ -184,6 +184,15 @@ paywalled copies are obtained by hand (`PDF_NEEDED`).
   7,149 by OpenAlex only (before the second-level split retrieval).
 - 46 Scopus records carry a cover date after the cutoff (in-press items), flagged `after_cutoff`.
 
+## DBLP (30 September 2026)
+
+The JSON search API is behind a browser bot-check page for programs, and its syntax cannot
+express the bank's short forms (quotes dropped, every word a prefix term, `|` joins only
+adjacent single words): all 15 answers fetched by hand were empty (evidence kept under
+`data/raw/manual_exports/dblp/`). Deviation 7: DBLP is retrieved through its official SPARQL
+endpoint with the canonical Boolean evaluated over titles (substring semantics, lower-case),
+ordered by year then record IRI, count first. Counts are small (titles only); no abstracts.
+
 ## Not implemented on purpose
 
 - Browser-assisted export (brief section 8): not implemented until the licence permits it
