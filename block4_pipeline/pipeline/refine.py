@@ -43,6 +43,17 @@ FIELD_CLAUSE = "topics.field.id is (%s)" % " OR ".join("fields/%d" % i for i in 
 
 STEP_NAMES = ["title_restrict_free_group", "add_mechanism_group", "subject_area_limit", "split_or_groups"]
 
+# Scopus subject areas for the same six areas (ASJC codes): Computer Science, Engineering,
+# Decision Sciences, Social Sciences (includes Law), Business/Management/Accounting, Economics.
+SCOPUS_SUBJAREA_CLAUSE = "SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)"
+
+SYNTAX = {
+    "openalex": {"field": "openalex_oql", "main": "title_and_abstract has", "title": "title has",
+                 "subject": FIELD_CLAUSE, "prefix_re": r"^title_and_abstract has\s*\((.*)\)$"},
+    "scopus": {"field": "scopus", "main": "TITLE-ABS-KEY", "title": "TITLE",
+               "subject": SCOPUS_SUBJAREA_CLAUSE, "prefix_re": r"^TITLE-ABS-KEY\s*\((.*)\)$"},
+}
+
 
 # ----------------------------------------------------------------------------- expression handling
 
@@ -93,16 +104,17 @@ def strip_outer_parens(s: str) -> str:
     return s
 
 
-def parse_oql(openalex_oql: str) -> Tuple[List[str], List[str]]:
-    """Return (AND groups of the title_and_abstract clause, other top-level clauses)."""
-    expr = openalex_oql.strip()
+def parse_oql(form: str, source: str = "openalex") -> Tuple[List[str], List[str]]:
+    """Return (AND groups of the main title/abstract clause, other top-level clauses)."""
+    syn = SYNTAX[source]
+    expr = form.strip()
     if expr.lower().startswith("works where"):
         expr = expr[len("works where"):].strip()
     clauses = split_top_level(expr, "AND")
     ta_groups: List[str] = []
     others: List[str] = []
     for c in clauses:
-        m = re.match(r"^title_and_abstract has\s*\((.*)\)$", c.strip(), re.S)
+        m = re.match(syn["prefix_re"], c.strip(), re.S)
         if m:
             ta_groups = [g.strip() for g in split_top_level(m.group(1).strip(), "AND")]
         else:
@@ -110,18 +122,20 @@ def parse_oql(openalex_oql: str) -> Tuple[List[str], List[str]]:
     return ta_groups, others
 
 
-def build_oql(ta_groups: List[str], others: List[str]) -> str:
+def build_oql(ta_groups: List[str], others: List[str], source: str = "openalex") -> str:
+    syn = SYNTAX[source]
     clauses = []
     if ta_groups:
-        clauses.append("title_and_abstract has (%s)" % " AND ".join(ta_groups))
+        body = " AND ".join(ta_groups)
+        clauses.append("%s (%s)" % (syn["main"], body) if source == "openalex" else "%s(%s)" % (syn["main"], body))
     clauses.extend(others)
     return " AND ".join(clauses)
 
 
-def mechanism_group_of_direction(queries: List[Dict[str, Any]], direction: str) -> Optional[str]:
+def mechanism_group_of_direction(queries: List[Dict[str, Any]], direction: str, source: str = "openalex") -> Optional[str]:
     for q in queries:
         if q.get("direction") == direction and q.get("lens") == "C mechanism":
-            groups, _ = parse_oql(str(q["openalex_oql"]))
+            groups, _ = parse_oql(str(q[SYNTAX[source]["field"]]), source)
             return groups[-1] if groups else None
     return None
 
@@ -133,13 +147,15 @@ def or_alternatives(group: str) -> List[str]:
 # ----------------------------------------------------------------------------- step application
 
 def apply_step(step: int, ta_groups: List[str], others: List[str], mech_group: Optional[str],
-               lens: str) -> Tuple[Optional[List[Tuple[List[str], List[str]]]], str]:
+               lens: str, source: str = "openalex") -> Tuple[Optional[List[Tuple[List[str], List[str]]]], str]:
     """Return (list of (ta_groups, others) variants, note). None means the step is skipped."""
+    syn = SYNTAX[source]
     if step == 1:
         if len(ta_groups) < 2:
             return None, "no free group to move (single group)"
         free = ta_groups[-1]
-        return [(ta_groups[:-1], others + ["title has %s" % _paren(free)])], "free group %s moved to title" % free
+        title_clause = ("%s %s" % (syn["title"], _paren(free))) if source == "openalex" else "%s%s" % (syn["title"], _paren(free))
+        return [(ta_groups[:-1], others + [title_clause])], "free group %s moved to title" % free
     if step == 2:
         if lens == "C mechanism":
             return None, "C query already carries its mechanism group"
@@ -149,9 +165,9 @@ def apply_step(step: int, ta_groups: List[str], others: List[str], mech_group: O
             return None, "mechanism group already present"
         return [(ta_groups + [mech_group], others)], "mechanism group %s added" % mech_group
     if step == 3:
-        if FIELD_CLAUSE in others:
+        if syn["subject"] in others:
             return None, "field limit already present"
-        return [(ta_groups, others + [FIELD_CLAUSE])], "subject areas limited to fields %s" % sorted(FIELD_IDS.values())
+        return [(ta_groups, others + [syn["subject"]])], "subject areas limited: %s" % syn["subject"]
     if step == 4:
         if not ta_groups:
             return None, "nothing to split"
@@ -205,8 +221,11 @@ def refine(source: str, query_ids: Optional[List[str]] = None, live: bool = Fals
     adapter = get_adapter(source, protocol, scfg)
     if not adapter.supports_api():
         raise RuntimeError("refine needs an API source; %s is manual" % source)
+    if source not in SYNTAX:
+        raise RuntimeError("no refinement syntax defined for source %s" % source)
+    field = SYNTAX[source]["field"]
     latest = provenance.latest_by_query_source()
-    existing_ids = {r["id"] for r in load_refinements()}
+    existing_ids = {r["id"] for r in load_refinements() if r.get("applies_to_source") == source}
     results: List[Dict[str, Any]] = []
 
     for q in queries:
@@ -219,36 +238,36 @@ def refine(source: str, query_ids: Optional[List[str]] = None, live: bool = Fals
             results.append({"query_id": q["id"], "status": "already_refined"})
             continue
         base_count = entry.get("original_count")
-        ta_groups, others = parse_oql(str(q["openalex_oql"]))
-        mech = mechanism_group_of_direction(queries, q["direction"]) if str(q["direction"]).startswith("B4-D") else None
+        ta_groups, others = parse_oql(str(q[field]), source)
+        mech = mechanism_group_of_direction(queries, q["direction"], source) if str(q["direction"]).startswith("B4-D") else None
         trajectory: List[Dict[str, Any]] = [{"step": 0, "name": "original", "count": base_count}]
         new_entries: List[Dict[str, Any]] = []
         final_status = "REFINEMENT_EXHAUSTED"
         state = (ta_groups, others)
         for step in (1, 2, 3, 4):
-            variants, note = apply_step(step, state[0], state[1], mech, q.get("lens", ""))
+            variants, note = apply_step(step, state[0], state[1], mech, q.get("lens", ""), source)
             if variants is None:
                 trajectory.append({"step": step, "name": STEP_NAMES[step - 1], "skipped": note})
                 continue
             counts = []
             for n, (g, o) in enumerate(variants, 1):
-                expr = build_oql(g, o)
+                expr = build_oql(g, o, source)
                 sub_id = "%s.r%d" % (q["id"], step) if step < 4 else "%s.r4.%d" % (q["id"], n)
                 if not live:
                     results.append({"query_id": q["id"], "dry_run": sub_id, "oql": expr})
                     counts.append(None)
                     continue
-                c = adapter.count(adapter.exact_query({"openalex_oql": expr}))
+                c = adapter.count(adapter.exact_query({field: expr}))
                 counts.append(c.count)
                 provenance.append_search_log({
                     "query_id": sub_id, "direction": q.get("direction"), "lens": q.get("lens"), "source": source,
-                    "exact_string_sent": adapter.exact_query({"openalex_oql": expr}), "original_count": c.count,
+                    "exact_string_sent": adapter.exact_query({field: expr}), "original_count": c.count,
                     "refinement_steps": [t.get("name") for t in trajectory if "skipped" not in t and t["step"] > 0] + [STEP_NAMES[step - 1]],
                     "status": "refinement_count", "note": note}, protocol)
                 new_entries.append({
                     "id": sub_id, "refinement_of": q["id"], "direction": q.get("direction"), "lens": q.get("lens"),
                     "applies_to_source": source, "step": step, "step_name": STEP_NAMES[step - 1],
-                    "openalex_oql": expr, "count": c.count, "runnable": c.count <= threshold,
+                    field: expr, "count": c.count, "runnable": c.count <= threshold,
                     "basis": q.get("basis"), "community": q.get("community"), "register": q.get("register"),
                     "created_at": storage.utc_now(), "note": note,
                 })
@@ -284,6 +303,7 @@ def split_further(source: str, live: bool = False, max_levels: int = 3) -> List[
     scfg = sources["sources"][source]
     threshold = int(protocol.get(scfg.get("threshold_key", "threshold_structured"), 300))
     adapter = get_adapter(source, protocol, scfg)
+    field = SYNTAX[source]["field"]
     results: List[Dict[str, Any]] = []
     for level in range(1, max_levels + 1):
         refs = load_refinements()
@@ -295,7 +315,7 @@ def split_further(source: str, live: bool = False, max_levels: int = 3) -> List[
             break
         new_entries: List[Dict[str, Any]] = []
         for r in pending:
-            ta_groups, others = parse_oql(str(r["openalex_oql"]))
+            ta_groups, others = parse_oql(str(r[field]), source)
             splittable = [i for i, g in enumerate(ta_groups) if len(or_alternatives(g)) > 1]
             if not splittable:
                 results.append({"id": r["id"], "status": "REFINEMENT_EXHAUSTED", "count": r.get("count")})
@@ -307,22 +327,22 @@ def split_further(source: str, live: bool = False, max_levels: int = 3) -> List[
             for n, alt in enumerate(alts, 1):
                 g = list(ta_groups)
                 g[idx] = _paren(alt)
-                expr = build_oql(g, others)
+                expr = build_oql(g, others, source)
                 sub_id = "%s.%d" % (r["id"], n)
                 if not live:
                     results.append({"id": sub_id, "dry_run": expr})
                     continue
-                c = adapter.count(adapter.exact_query({"openalex_oql": expr}))
+                c = adapter.count(adapter.exact_query({field: expr}))
                 counts.append(c.count)
                 provenance.append_search_log({
                     "query_id": sub_id, "direction": r.get("direction"), "lens": r.get("lens"), "source": source,
-                    "exact_string_sent": adapter.exact_query({"openalex_oql": expr}), "original_count": c.count,
+                    "exact_string_sent": adapter.exact_query({field: expr}), "original_count": c.count,
                     "refinement_steps": ["split_or_groups level %d" % (level + 1)], "status": "refinement_count",
                     "note": "part %s split again along group %d (%d alternatives)" % (r["id"], idx + 1, len(alts))}, protocol)
                 new_entries.append({
                     "id": sub_id, "refinement_of": r["refinement_of"], "parent_part": r["id"],
                     "direction": r.get("direction"), "lens": r.get("lens"), "applies_to_source": source,
-                    "step": 4, "step_name": "split_or_groups level %d" % (level + 1), "openalex_oql": expr,
+                    "step": 4, "step_name": "split_or_groups level %d" % (level + 1), field: expr,
                     "count": c.count, "runnable": c.count <= threshold, "basis": r.get("basis"),
                     "community": r.get("community"), "register": r.get("register"),
                     "created_at": storage.utc_now(), "note": "deviation entry 5: second-level split"})

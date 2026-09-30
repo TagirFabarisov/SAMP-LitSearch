@@ -83,8 +83,8 @@ def test_full_pipeline_on_fixtures(monkeypatch, tmp_path, fixtures):
     r2 = retrieve.retrieve("dblp", query_ids=["B4-Q01"], live_confirmed=True)
     assert r2[0]["status"] == "done" and r2[0]["hits"] == 2
 
-    # scopus is manual: retrieval reports MANUAL_EXPORT_REQUIRED, then an import works
-    r3 = retrieve.retrieve("scopus", query_ids=["B4-Q01"], live_confirmed=True)
+    # a manual-export source reports MANUAL_EXPORT_REQUIRED (wos is manual in the shipped config), then an import works
+    r3 = retrieve.retrieve("wos", query_ids=["B4-Q01"], live_confirmed=True)
     assert r3[0]["status"] == MANUAL_EXPORT_REQUIRED
     imp = retrieve.import_manual("scopus", "B4-Q01", str(fixtures / "exports" / "scopus_sample.csv"), export_date="2026-10-02")
     assert imp["status"] == "done" and imp["hits"] == 3 and imp["format"] == "scopus_csv"
@@ -94,9 +94,10 @@ def test_full_pipeline_on_fixtures(monkeypatch, tmp_path, fixtures):
     hits = provenance.hits()
     assert [h["hit_id"] for h in hits] == ["B4-H%05d" % i for i in range(1, 11)]
     log = provenance.search_log_entries()
-    assert [e["source"] for e in log] == ["openalex", "dblp", "scopus", "scopus", "wos"]
+    assert [e["source"] for e in log] == ["openalex", "dblp", "wos", "scopus", "wos"]
     assert log[0]["exact_string_sent"].startswith("works where")
     assert log[3]["note"].startswith("manual export (scopus_csv), exported 2026-10-02")
+    assert log[2]["status"] == MANUAL_EXPORT_REQUIRED
 
     st = normalize.normalize()
     assert st["records_written"] == 10 and st["after_cutoff"] == 1

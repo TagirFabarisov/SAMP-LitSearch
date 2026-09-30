@@ -44,22 +44,31 @@ def normalize() -> Dict[str, Any]:
     for hit in provenance.hits():
         stats["hits"] += 1
         source = hit["source"]
-        if source not in adapters:
-            adapters[source] = get_adapter(source, protocol, sources["sources"][source])
-        adapter = adapters[source]
         rel = hit["raw_file"]
         try:
             raw = _load_raw(cache, rel)
         except FileNotFoundError:
             stats["missing_raw"] += 1
             continue
-        if isinstance(adapter, ManualImportAdapter):
-            run_dir = (paths.raw_dir() / rel).parent
-            key = str(run_dir)
-            if key not in manifests:
+        # the run manifest says how the records were obtained: a manual import carries `format`
+        run_dir = (paths.raw_dir() / rel).parent
+        key = str(run_dir)
+        if key not in manifests:
+            try:
                 with open(run_dir / "manifest.json", "r", encoding="utf-8") as fh:
                     manifests[key] = json.load(fh)
-            adapter.fmt = manifests[key].get("format")
+            except FileNotFoundError:
+                manifests[key] = {}
+        fmt = manifests[key].get("format")
+        if fmt:
+            adapter = adapters.get(("manual", source))
+            if adapter is None:
+                adapter = adapters[("manual", source)] = ManualImportAdapter(source, protocol, sources["sources"][source])
+            adapter.fmt = fmt
+        else:
+            if source not in adapters:
+                adapters[source] = get_adapter(source, protocol, sources["sources"][source])
+            adapter = adapters[source]
         records = adapter.records_in_raw(raw)
         raw_record = records[hit["raw_index"]]
         rec = adapter.normalize_record(raw_record)
