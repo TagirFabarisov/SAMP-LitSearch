@@ -26,8 +26,8 @@ sources:
   scopus:
     display_name: Scopus
     role: curated
-    access_mode: manual_export        # switch to api only if a Scopus API entitlement is confirmed
-    access_status: ACCESS_TO_CONFIRM  # interface and export confirmed; API entitlement unknown
+    access_mode: api                  # entitlement confirmed from the Uni.lu network on 2026-09-30 (scopus_check_20260930T091157Z)
+    access_status: CONFIRMED          # Scopus Search API, COMPLETE view, from the Uni.lu network
     mandatory_for: all
     query_field: scopus
     threshold_key: threshold_structured
