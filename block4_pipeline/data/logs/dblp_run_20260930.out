@@ -1,0 +1,416 @@
+[
+  {
+    "query_id": "B4-Q01",
+    "source": "dblp",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00864",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q01/20260930T111734Z"
+  },
+  {
+    "query_id": "B4-Q02",
+    "source": "dblp",
+    "status": "done",
+    "count": 24,
+    "hits": 24,
+    "log_id": "B4-L00865",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q02/20260930T111753Z"
+  },
+  {
+    "query_id": "B4-Q03",
+    "source": "dblp",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00866",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q03/20260930T111811Z"
+  },
+  {
+    "query_id": "B4-Q04",
+    "source": "dblp",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00867",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q04/20260930T111828Z"
+  },
+  {
+    "query_id": "B4-Q05",
+    "source": "dblp",
+    "status": "done",
+    "count": 17,
+    "hits": 17,
+    "log_id": "B4-L00868",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q05/20260930T111846Z"
+  },
+  {
+    "query_id": "B4-Q06",
+    "source": "dblp",
+    "status": "done",
+    "count": 3,
+    "hits": 3,
+    "log_id": "B4-L00869",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q06/20260930T111905Z"
+  },
+  {
+    "query_id": "B4-Q07",
+    "source": "dblp",
+    "status": "done",
+    "count": 15,
+    "hits": 15,
+    "log_id": "B4-L00870",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q07/20260930T111923Z"
+  },
+  {
+    "query_id": "B4-Q08",
+    "source": "dblp",
+    "status": "done",
+    "count": 5,
+    "hits": 5,
+    "log_id": "B4-L00871",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q08/20260930T111941Z"
+  },
+  {
+    "query_id": "B4-Q09",
+    "source": "dblp",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00872",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q09/20260930T112001Z"
+  },
+  {
+    "query_id": "B4-Q10",
+    "source": "dblp",
+    "status": "done",
+    "count": 17,
+    "hits": 17,
+    "log_id": "B4-L00873",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q10/20260930T112022Z"
+  },
+  {
+    "query_id": "B4-Q11",
+    "source": "dblp",
+    "status": "done",
+    "count": 18,
+    "hits": 18,
+    "log_id": "B4-L00874",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q11/20260930T112040Z"
+  },
+  {
+    "query_id": "B4-Q12",
+    "source": "dblp",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L00875",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q12/20260930T112058Z"
+  },
+  {
+    "query_id": "B4-Q13",
+    "source": "dblp",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00876",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q13/20260930T112120Z"
+  },
+  {
+    "query_id": "B4-Q14",
+    "source": "dblp",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00877",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q14/20260930T112140Z"
+  },
+  {
+    "query_id": "B4-Q15",
+    "source": "dblp",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L00878",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q15/20260930T112204Z"
+  },
+  {
+    "query_id": "B4-Q16",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q17",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q18",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q19",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q20",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q21",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q22",
+    "source": "dblp",
+    "status": "done",
+    "count": 4,
+    "hits": 4,
+    "log_id": "B4-L00879",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q22/20260930T112224Z"
+  },
+  {
+    "query_id": "B4-Q23",
+    "source": "dblp",
+    "status": "done",
+    "count": 3,
+    "hits": 3,
+    "log_id": "B4-L00880",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q23/20260930T112243Z"
+  },
+  {
+    "query_id": "B4-Q24",
+    "source": "dblp",
+    "status": "done",
+    "count": 37,
+    "hits": 37,
+    "log_id": "B4-L00881",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q24/20260930T112301Z"
+  },
+  {
+    "query_id": "B4-Q25",
+    "source": "dblp",
+    "status": "done",
+    "count": 57,
+    "hits": 58,
+    "log_id": "B4-L00882",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q25/20260930T112323Z"
+  },
+  {
+    "query_id": "B4-Q26",
+    "source": "dblp",
+    "status": "done",
+    "count": 3,
+    "hits": 3,
+    "log_id": "B4-L00883",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q26/20260930T112345Z"
+  },
+  {
+    "query_id": "B4-Q27",
+    "source": "dblp",
+    "status": "done",
+    "count": 3,
+    "hits": 3,
+    "log_id": "B4-L00884",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q27/20260930T112408Z"
+  },
+  {
+    "query_id": "B4-Q28",
+    "source": "dblp",
+    "status": "done",
+    "count": 6,
+    "hits": 6,
+    "log_id": "B4-L00885",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q28/20260930T112428Z"
+  },
+  {
+    "query_id": "B4-Q29",
+    "source": "dblp",
+    "status": "done",
+    "count": 70,
+    "hits": 70,
+    "log_id": "B4-L00886",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q29/20260930T112450Z"
+  },
+  {
+    "query_id": "B4-Q30",
+    "source": "dblp",
+    "status": "done",
+    "count": 58,
+    "hits": 59,
+    "log_id": "B4-L00887",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q30/20260930T112510Z"
+  },
+  {
+    "query_id": "B4-Q31",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q32",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q33",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q34",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q35",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q36",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q37",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q38",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q39",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q40",
+    "source": "dblp",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L00888",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q40/20260930T112530Z"
+  },
+  {
+    "query_id": "B4-Q41",
+    "source": "dblp",
+    "status": "done",
+    "count": 45,
+    "hits": 45,
+    "log_id": "B4-L00889",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q41/20260930T112550Z"
+  },
+  {
+    "query_id": "B4-Q42",
+    "source": "dblp",
+    "status": "done",
+    "count": 87,
+    "hits": 87,
+    "log_id": "B4-L00890",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q42/20260930T112612Z"
+  },
+  {
+    "query_id": "B4-Q43",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q44",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q45",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q46",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q47",
+    "source": "dblp",
+    "status": "done",
+    "count": 139,
+    "hits": 139,
+    "log_id": "B4-L00891",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-Q47/20260930T112633Z"
+  },
+  {
+    "query_id": "B4-Q48",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-XC01",
+    "source": "dblp",
+    "status": "done",
+    "count": 8,
+    "hits": 8,
+    "log_id": "B4-L00892",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-XC01/20260930T112654Z"
+  },
+  {
+    "query_id": "B4-XC02",
+    "source": "dblp",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L00893",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/dblp/B4-XC02/20260930T112717Z"
+  },
+  {
+    "query_id": "B4-BR01",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-BR02",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-BR03",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-BR04",
+    "source": "dblp",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  }
+]

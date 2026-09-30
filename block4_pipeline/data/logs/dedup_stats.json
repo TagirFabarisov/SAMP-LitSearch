@@ -1,7 +1,7 @@
 {
- "computed_at": "2026-09-30T11:17:54Z",
- "documents": 14000,
- "near_duplicate_pairs": 240,
+ "computed_at": "2026-09-30T11:33:13Z",
+ "documents": 14342,
+ "near_duplicate_pairs": 250,
  "per_query_source": {
   "B4-BR01|openalex": {
    "hits": 25,
@@ -53,6 +53,11 @@
    "merged_into_existing": 93,
    "new_documents": 33
   },
+  "B4-Q01|dblp": {
+   "hits": 1,
+   "merged_into_existing": 1,
+   "new_documents": 0
+  },
   "B4-Q02.r1|scopus": {
    "hits": 182,
    "merged_into_existing": 12,
@@ -63,6 +68,11 @@
    "merged_into_existing": 9,
    "new_documents": 37
   },
+  "B4-Q02|dblp": {
+   "hits": 24,
+   "merged_into_existing": 24,
+   "new_documents": 0
+  },
   "B4-Q03.r1|openalex": {
    "hits": 152,
    "merged_into_existing": 26,
@@ -72,6 +82,16 @@
    "hits": 110,
    "merged_into_existing": 59,
    "new_documents": 51
+  },
+  "B4-Q03|dblp": {
+   "hits": 1,
+   "merged_into_existing": 1,
+   "new_documents": 0
+  },
+  "B4-Q04|dblp": {
+   "hits": 1,
+   "merged_into_existing": 1,
+   "new_documents": 0
   },
   "B4-Q04|openalex": {
    "hits": 80,
@@ -93,6 +113,11 @@
    "merged_into_existing": 43,
    "new_documents": 194
   },
+  "B4-Q05|dblp": {
+   "hits": 17,
+   "merged_into_existing": 16,
+   "new_documents": 1
+  },
   "B4-Q06.r1|openalex": {
    "hits": 234,
    "merged_into_existing": 94,
@@ -102,6 +127,11 @@
    "hits": 104,
    "merged_into_existing": 82,
    "new_documents": 22
+  },
+  "B4-Q06|dblp": {
+   "hits": 3,
+   "merged_into_existing": 3,
+   "new_documents": 0
   },
   "B4-Q07.r1|scopus": {
    "hits": 144,
@@ -113,6 +143,11 @@
    "merged_into_existing": 2,
    "new_documents": 15
   },
+  "B4-Q07|dblp": {
+   "hits": 15,
+   "merged_into_existing": 11,
+   "new_documents": 4
+  },
   "B4-Q08.r1|openalex": {
    "hits": 228,
    "merged_into_existing": 6,
@@ -123,10 +158,20 @@
    "merged_into_existing": 73,
    "new_documents": 56
   },
+  "B4-Q08|dblp": {
+   "hits": 5,
+   "merged_into_existing": 3,
+   "new_documents": 2
+  },
   "B4-Q09.r1|openalex": {
    "hits": 15,
    "merged_into_existing": 0,
    "new_documents": 15
+  },
+  "B4-Q09|dblp": {
+   "hits": 1,
+   "merged_into_existing": 1,
+   "new_documents": 0
   },
   "B4-Q09|scopus": {
    "hits": 39,
@@ -143,6 +188,11 @@
    "merged_into_existing": 6,
    "new_documents": 0
   },
+  "B4-Q10|dblp": {
+   "hits": 17,
+   "merged_into_existing": 1,
+   "new_documents": 16
+  },
   "B4-Q11.r1|openalex": {
    "hits": 227,
    "merged_into_existing": 41,
@@ -153,10 +203,20 @@
    "merged_into_existing": 68,
    "new_documents": 23
   },
+  "B4-Q11|dblp": {
+   "hits": 18,
+   "merged_into_existing": 16,
+   "new_documents": 2
+  },
   "B4-Q12.r1|openalex": {
    "hits": 99,
    "merged_into_existing": 21,
    "new_documents": 78
+  },
+  "B4-Q12|dblp": {
+   "hits": 1,
+   "merged_into_existing": 1,
+   "new_documents": 0
   },
   "B4-Q12|scopus": {
    "hits": 88,
@@ -192,6 +252,11 @@
    "hits": 113,
    "merged_into_existing": 83,
    "new_documents": 30
+  },
+  "B4-Q15|dblp": {
+   "hits": 2,
+   "merged_into_existing": 2,
+   "new_documents": 0
   },
   "B4-Q16.r3|scopus": {
    "hits": 131,
@@ -353,6 +418,11 @@
    "merged_into_existing": 2,
    "new_documents": 1
   },
+  "B4-Q22|dblp": {
+   "hits": 4,
+   "merged_into_existing": 0,
+   "new_documents": 4
+  },
   "B4-Q23.r1|openalex": {
    "hits": 62,
    "merged_into_existing": 5,
@@ -362,6 +432,11 @@
    "hits": 39,
    "merged_into_existing": 26,
    "new_documents": 13
+  },
+  "B4-Q23|dblp": {
+   "hits": 3,
+   "merged_into_existing": 3,
+   "new_documents": 0
   },
   "B4-Q24.r4.1.1|openalex": {
    "hits": 205,
@@ -403,6 +478,11 @@
    "merged_into_existing": 51,
    "new_documents": 11
   },
+  "B4-Q24|dblp": {
+   "hits": 37,
+   "merged_into_existing": 21,
+   "new_documents": 16
+  },
   "B4-Q25.r2|openalex": {
    "hits": 16,
    "merged_into_existing": 15,
@@ -413,6 +493,11 @@
    "merged_into_existing": 10,
    "new_documents": 0
   },
+  "B4-Q25|dblp": {
+   "hits": 58,
+   "merged_into_existing": 2,
+   "new_documents": 56
+  },
   "B4-Q26.r1|openalex": {
    "hits": 139,
    "merged_into_existing": 15,
@@ -422,6 +507,16 @@
    "hits": 95,
    "merged_into_existing": 59,
    "new_documents": 36
+  },
+  "B4-Q26|dblp": {
+   "hits": 3,
+   "merged_into_existing": 3,
+   "new_documents": 0
+  },
+  "B4-Q27|dblp": {
+   "hits": 3,
+   "merged_into_existing": 2,
+   "new_documents": 1
   },
   "B4-Q27|openalex": {
    "hits": 58,
@@ -443,6 +538,11 @@
    "merged_into_existing": 43,
    "new_documents": 7
   },
+  "B4-Q28|dblp": {
+   "hits": 6,
+   "merged_into_existing": 5,
+   "new_documents": 1
+  },
   "B4-Q29.r2|openalex": {
    "hits": 16,
    "merged_into_existing": 2,
@@ -453,6 +553,11 @@
    "merged_into_existing": 10,
    "new_documents": 4
   },
+  "B4-Q29|dblp": {
+   "hits": 70,
+   "merged_into_existing": 11,
+   "new_documents": 59
+  },
   "B4-Q30.r1|openalex": {
    "hits": 109,
    "merged_into_existing": 31,
@@ -462,6 +567,11 @@
    "hits": 72,
    "merged_into_existing": 59,
    "new_documents": 13
+  },
+  "B4-Q30|dblp": {
+   "hits": 59,
+   "merged_into_existing": 32,
+   "new_documents": 27
   },
   "B4-Q31.r2|openalex": {
    "hits": 161,
@@ -562,6 +672,11 @@
    "hits": 23,
    "merged_into_existing": 12,
    "new_documents": 11
+  },
+  "B4-Q40|dblp": {
+   "hits": 2,
+   "merged_into_existing": 0,
+   "new_documents": 2
   },
   "B4-Q41.r4.1|openalex": {
    "hits": 1,
@@ -683,6 +798,11 @@
    "merged_into_existing": 12,
    "new_documents": 5
   },
+  "B4-Q41|dblp": {
+   "hits": 45,
+   "merged_into_existing": 22,
+   "new_documents": 23
+  },
   "B4-Q42.r4.1.2|openalex": {
    "hits": 51,
    "merged_into_existing": 10,
@@ -712,6 +832,11 @@
    "hits": 6,
    "merged_into_existing": 5,
    "new_documents": 1
+  },
+  "B4-Q42|dblp": {
+   "hits": 87,
+   "merged_into_existing": 8,
+   "new_documents": 79
   },
   "B4-Q43.r2|openalex": {
    "hits": 171,
@@ -863,6 +988,11 @@
    "merged_into_existing": 40,
    "new_documents": 153
   },
+  "B4-Q47|dblp": {
+   "hits": 139,
+   "merged_into_existing": 93,
+   "new_documents": 46
+  },
   "B4-Q48.r4.1.1.2|openalex": {
    "hits": 87,
    "merged_into_existing": 11,
@@ -998,6 +1128,11 @@
    "merged_into_existing": 2,
    "new_documents": 2
   },
+  "B4-XC01|dblp": {
+   "hits": 8,
+   "merged_into_existing": 5,
+   "new_documents": 3
+  },
   "B4-XC02.r3|scopus": {
    "hits": 237,
    "merged_into_existing": 155,
@@ -1054,5 +1189,5 @@
    "new_documents": 9
   }
  },
- "records": 20547
+ "records": 21177
 }
