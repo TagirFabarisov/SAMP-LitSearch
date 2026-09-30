@@ -35,8 +35,10 @@ scopus_view: COMPLETE          # abstracts and author list; needs the institutio
 scopus_page_size: 25           # maximum of the COMPLETE view
 scopus_order: "+coverDate"     # ascending publication date; ordering has no role in inclusion
 
-# DBLP public API
-dblp_api_base: "https://dblp.org/search/publ/api"
+# DBLP: official SPARQL endpoint (deviation 7); the JSON search API is behind a bot-check page
+dblp_sparql_endpoint: "https://sparql.dblp.org/sparql"
+dblp_sparql_max_rows: 1000
+dblp_api_base: "https://dblp.org/search/publ/api"   # kept for the dblp_json import format only
 dblp_page_size: 1000
 
 # Deduplication order (section 9 / brief section 10)

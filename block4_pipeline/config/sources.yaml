@@ -47,7 +47,7 @@ sources:
     display_name: DBLP
     role: domain
     access_mode: api
-    access_status: CONFIRMED          # public API, no key
+    access_status: CONFIRMED          # official SPARQL endpoint, no key (deviation 7, 30 Sep 2026)
     mandatory_for:
       - B4-D01
       - B4-D02
@@ -64,7 +64,7 @@ sources:
       - B4-D06
       - B4-D07
       - B4-D15
-    query_field: dblp
+    query_field: openalex_oql         # canonical Boolean, evaluated over DBLP titles via SPARQL (deviation 7)
     threshold_key: threshold_structured
 
   ieee:

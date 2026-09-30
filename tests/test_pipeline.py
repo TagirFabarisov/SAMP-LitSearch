@@ -12,7 +12,7 @@ from block4_pipeline import config_loader as cl
 from block4_pipeline import paths, storage
 from block4_pipeline.adapters.base import CountResult, PageResult, REFINEMENT_REQUIRED, MANUAL_EXPORT_REQUIRED
 from block4_pipeline.adapters.openalex import OpenAlexAdapter
-from block4_pipeline.adapters.dblp import DblpAdapter
+from block4_pipeline.adapters.dblp import DblpSparqlAdapter
 from block4_pipeline.pipeline import deduplicate, export, normalize, provenance, retrieve, status
 
 
@@ -24,9 +24,9 @@ def _stub_openalex(monkeypatch, fixtures, count=None):
 
 
 def _stub_dblp(monkeypatch, fixtures):
-    d = json.loads((fixtures / "dblp" / "publ_page_1.json").read_text())
-    monkeypatch.setattr(DblpAdapter, "count", lambda self, q, **kw: CountResult(count=2, raw=d, request={}))
-    monkeypatch.setattr(DblpAdapter, "pages", lambda self, q, **kw: iter([PageResult(1, d, d["result"]["hits"]["hit"], {})]))
+    d = json.loads((fixtures / "dblp" / "sparql_page_1.json").read_text())
+    monkeypatch.setattr(DblpSparqlAdapter, "count", lambda self, q, **kw: CountResult(count=2, raw=d, request={}))
+    monkeypatch.setattr(DblpSparqlAdapter, "pages", lambda self, q, **kw: iter([PageResult(1, d, d["results"]["bindings"], {})]))
 
 
 def _unlock_openalex(monkeypatch, tmp_path, cutoff="2026-10-01"):

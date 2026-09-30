@@ -1,0 +1,20 @@
+{
+  "recorded": false,
+  "note": "Hand-written in the shape of a SPARQL 1.1 JSON result from sparql.dblp.org (QLever), matching the SELECT of DblpSparqlAdapter.",
+  "head": {"vars": ["p", "t", "y", "doi", "venue", "type", "authors"]},
+  "results": {"bindings": [
+    {"p": {"type": "uri", "value": "https://dblp.org/rec/conf/exconf/ExampleS99"},
+     "t": {"type": "literal", "value": "Resource dependence between actors: a formal model."},
+     "y": {"type": "literal", "value": "1999"},
+     "doi": {"type": "uri", "value": "https://doi.org/10.1000/EXAMPLE.001"},
+     "venue": {"type": "literal", "value": "EXCONF"},
+     "type": {"type": "uri", "value": "http://purl.org/net/nknouf/ns/bibtex#Inproceedings"},
+     "authors": {"type": "literal", "value": "Ada Example; Bo Sample"}},
+    {"p": {"type": "uri", "value": "https://dblp.org/rec/journals/jex/Instance05"},
+     "t": {"type": "literal", "value": "Dependence Relations in Organisations."},
+     "y": {"type": "literal", "value": "2005"},
+     "venue": {"type": "literal", "value": "J. Ex."},
+     "type": {"type": "uri", "value": "http://purl.org/net/nknouf/ns/bibtex#Article"},
+     "authors": {"type": "literal", "value": "Cy Instance"}}
+  ]}
+}

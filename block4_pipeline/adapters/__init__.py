@@ -6,7 +6,7 @@ from typing import Dict
 
 from .base import BaseAdapter
 from .openalex import OpenAlexAdapter
-from .dblp import DblpAdapter
+from .dblp import DblpAdapter, DblpSparqlAdapter
 from .scopus import ScopusAdapter
 from .webofscience import WebOfScienceAdapter
 from .ieee import IeeeAdapter
@@ -18,7 +18,7 @@ def get_adapter(source: str, protocol: Dict, source_cfg: Dict) -> BaseAdapter:
     if source == "openalex":
         return OpenAlexAdapter(protocol, source_cfg)
     if source == "dblp":
-        return DblpAdapter(protocol, source_cfg)
+        return DblpSparqlAdapter(protocol, source_cfg)
     if source == "scopus" and mode == "api":
         return ScopusAdapter(protocol, source_cfg)
     if source == "wos" and mode == "api":
