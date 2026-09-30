@@ -264,3 +264,57 @@ def import_manual(source: str, query_id: str, file: str, fmt: Optional[str] = No
         protocol)
     return {"query_id": query_id, "source": source, "status": status, "format": fmt, "count": len(rows),
             "hits": len(hit_rows), "log_id": log_id, "run_dir": str(run_dir)}
+
+
+# ----------------------------------------------------------------------------- DBLP bundle import
+
+def split_json_bundle(text: str) -> List[Any]:
+    """Split a text holding several JSON objects pasted one after another into the objects."""
+    decoder = json.JSONDecoder()
+    objs: List[Any] = []
+    i = 0
+    n = len(text)
+    while i < n:
+        while i < n and text[i] not in "{[":
+            i += 1
+        if i >= n:
+            break
+        obj, end = decoder.raw_decode(text, i)
+        objs.append(obj)
+        i = end
+    return objs
+
+
+def import_dblp_bundle(file: str, export_date: Optional[str] = None) -> List[Dict[str, Any]]:
+    """One file with all DBLP API answers pasted in sequence; each answer is matched to its
+    query by the `result.query` string DBLP echoes, written to its own file, and imported."""
+    src = Path(file)
+    text = src.read_text(encoding="utf-8", errors="replace")
+    objs = split_json_bundle(text)
+    queries = cl.load_queries()
+    by_form = {str(q["dblp"]).strip(): q["id"] for q in queries}
+    out_dir = paths.imports_dir() / "dblp"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    results: List[Dict[str, Any]] = []
+    done = provenance.latest_by_query_source()
+    for obj in objs:
+        echoed = str(((obj.get("result") or {}).get("query")) or "").strip()
+        qid = by_form.get(echoed)
+        if not qid:
+            # DBLP normalises whitespace/quotes; try a loose match
+            norm = lambda s: " ".join(s.replace('"', "").split()).lower()
+            cand = [i for f, i in by_form.items() if norm(f) == norm(echoed)]
+            qid = cand[0] if len(cand) == 1 else None
+        if not qid:
+            results.append({"status": "unmatched", "echoed_query": echoed[:120]})
+            continue
+        if done.get((qid, "dblp"), {}).get("status") == DONE:
+            results.append({"query_id": qid, "status": "already_done"})
+            continue
+        part = out_dir / ("%s.json" % qid)
+        if part.exists():
+            part = out_dir / ("%s_%s.json" % (qid, storage.utc_stamp()))
+        part.write_text(json.dumps(obj, ensure_ascii=False, indent=1), encoding="utf-8")
+        results.append(import_manual("dblp", qid, str(part), fmt="dblp_json", export_date=export_date,
+                                     note="from bundle %s" % src.name))
+    return results

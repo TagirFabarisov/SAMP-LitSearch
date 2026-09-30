@@ -168,6 +168,22 @@ paywalled copies are obtained by hand (`PDF_NEEDED`).
 - Scopus: adapter ready; entitlement probe over split-tunnel VPN failed (COMPLETE view 401);
   to be run from campus. Web of Science: browser-assisted export via a-z.lu, login pending.
 
+## 4B run record, Scopus (30 September 2026, from the Uni.lu network)
+
+- Entitlement confirmed from campus (deviation 6: API mode). Bank run: 10 of 54 queries at or
+  below 300 (971 hits); 44 above, from 310 to 30,249 (about a third of the OpenAlex counts).
+- Refinement, same rules in Scopus syntax (`TITLE(...)`, `SUBJAREA(COMP OR ENGI OR DECI OR SOCI
+  OR BUSI OR ECON)`): 22 under 300 after step 1, 14 after step 2, 3 after step 3, 5 split;
+  57 runnable sub-queries, 5,219 hits. Sub-IDs (`.r1`, `.r4.n`) name the step applied and carry
+  one form per source, like the base queries; `refinements.yaml` keeps one entry per (sub-ID,
+  source) with its own count.
+- Parts above 300 after the first split, handled by the second-level split (deviation 5):
+  Q24.r4.1 (373) and .r4.4 (526), Q41.r4.4 (375), Q42.r4.1 (451), Q48.r4.1 (1,369),
+  XC01.r4.5 (712); see the search log for the outcome.
+- Overlap after Scopus: 2,695 documents found by both OpenAlex and Scopus, 3,053 by Scopus only,
+  7,149 by OpenAlex only (before the second-level split retrieval).
+- 46 Scopus records carry a cover date after the cutoff (in-press items), flagged `after_cutoff`.
+
 ## Not implemented on purpose
 
 - Browser-assisted export (brief section 8): not implemented until the licence permits it

@@ -211,11 +211,16 @@ def deduplicate() -> Dict[str, Any]:
             ta = normalize_title(a.get("title"))
             if not ta:
                 continue
+            wa = set(ta.split())
             for b in candidates:
                 if b is a or (a["document_id"], b["document_id"]) in seen_pairs or (b["document_id"], a["document_id"]) in seen_pairs:
                     continue
                 tb = normalize_title(b.get("title"))
                 if not tb or abs(len(ta) - len(tb)) > max(len(ta), len(tb)) * (1 - ratio_threshold):
+                    continue
+                # cheap prefilter: a pair above the ratio threshold shares most of its words
+                wb = set(tb.split())
+                if len(wa & wb) < 0.6 * max(len(wa), len(wb)):
                     continue
                 r = levenshtein_ratio(ta, tb)
                 if r > ratio_threshold:
