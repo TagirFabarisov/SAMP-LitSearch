@@ -307,7 +307,7 @@ def split_further(source: str, live: bool = False, max_levels: int = 3) -> List[
     results: List[Dict[str, Any]] = []
     for level in range(1, max_levels + 1):
         refs = load_refinements()
-        ids = {r["id"] for r in refs}
+        ids = {r["id"] for r in refs if r.get("applies_to_source") == source}
         pending = [r for r in refs if r.get("applies_to_source") == source and r.get("step") == 4
                    and not r.get("runnable") and not any(i.startswith(r["id"] + ".") for i in ids)
                    and not r.get("exhausted")]
