@@ -5080,3 +5080,588 @@ refinements:
   created_at: '2026-09-30T10:15:50Z'
   note: 'deviation entry 5: second-level split'
   exhausted: true
+- id: B4-Q25.r2
+  refinement_of: B4-Q25
+  direction: B4-D09
+  lens: A semantic
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: ("membership change" OR "joining and leaving" OR "join and leave" OR "partner entry" OR "partner exit" OR reconfiguration OR (reorganization OR reorganisation)) AND (collaboration* OR ("virtual organization" OR "virtual organizations" OR "virtual organisation" OR "virtual organisations") OR alliance* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational)) AND (model* OR formal* OR specification) AND ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra")
+  count: 12
+  runnable: true
+  basis: C6.5, C6.6, C7.5, C7.6, C11.7
+  community: change of who takes part and how the structure changes; collaborative networks, organizational MAS
+  register: P1
+  created_at: '2026-10-01T11:22:48Z'
+  note: mechanism group ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra") added
+- id: B4-Q26.r2
+  refinement_of: B4-Q26
+  direction: B4-D09
+  lens: B community
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: (("dynamic virtual organization" OR "dynamic virtual organizations" OR "dynamic virtual organisation" OR "dynamic virtual organisations") OR ("collaborative network" OR "collaborative networks") OR ("reorganization operation" OR "reorganisation operation" OR "reorganization operations" OR "reorganisation operations") OR ("organizational change" OR "organisational change") OR ("adaptive organization" OR "adaptive organizations" OR "adaptive organisation" OR "adaptive organisations")) AND (agent* OR formal* OR model*) AND (specification OR language OR semantics OR contract*) AND ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra")
+  count: 8
+  runnable: true
+  basis: C6.1, C6.5, C6.6, C7.4
+  community: 'community vocabulary: dynamic VOs, reorganization operations'
+  register: P1
+  created_at: '2026-10-01T11:22:52Z'
+  note: mechanism group ("graph transformation" OR "graph rewriting" OR bigraph* OR "formal model" OR "operational semantics" OR "process algebra") added
+- id: B4-Q31.r2
+  refinement_of: B4-Q31
+  direction: B4-D11
+  lens: A semantic
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: ("stage-gate" OR "phase gate" OR ("gate review" OR "gate reviews") OR ("milestone review" OR "milestone reviews") OR ("technical review" OR "technical reviews") OR "entrance criteria" OR "exit criteria" OR "acceptance review") AND (model* OR formal* OR framework OR method*) AND (("process model" OR "process models") OR ("Petri net" OR "Petri nets") OR workflow OR "state machine" OR ("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming"))
+  count: 41
+  runnable: true
+  basis: C9.1–C9.5, C9.12
+  community: gates and reviews as decision points; project management, systems engineering
+  register: P1
+  created_at: '2026-10-01T11:22:54Z'
+  note: mechanism group (("process model" OR "process models") OR ("Petri net" OR "Petri nets") OR workflow OR "state machine" OR ("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming")) added
+- id: B4-Q34.r2
+  refinement_of: B4-Q34
+  direction: B4-D12
+  lens: A semantic
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: ("configuration management" OR "change control" OR "engineering change" OR ("change request" OR "change requests") OR "configuration baseline" OR "change board") AND (model* OR ontolog* OR formal* OR metamodel) AND (ontolog* OR ("Petri net" OR "Petri nets") OR workflow OR ("process model" OR "process models") OR metamodel OR "business process")
+  count: 251
+  runnable: true
+  basis: C9.8–C9.11
+  community: controlled change of a baseline; systems engineering, ontology engineering
+  register: P1
+  created_at: '2026-10-01T11:22:55Z'
+  note: mechanism group (ontolog* OR ("Petri net" OR "Petri nets") OR workflow OR ("process model" OR "process models") OR metamodel OR "business process") added
+- id: B4-Q35.r2
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis) AND (ontolog* OR ("Petri net" OR "Petri nets") OR workflow OR ("process model" OR "process models") OR metamodel OR "business process")
+  count: 321
+  runnable: false
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-10-01T11:23:01Z'
+  note: mechanism group (ontolog* OR ("Petri net" OR "Petri nets") OR workflow OR ("process model" OR "process models") OR metamodel OR "business process") added
+- id: B4-Q35.r4.1
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis) AND (ontolog*)
+  count: 48
+  runnable: true
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-10-01T11:23:04Z'
+  note: group 4 split into 6 parts
+- id: B4-Q35.r4.2
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis) AND ("Petri net" OR "Petri nets")
+  count: 24
+  runnable: true
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-10-01T11:23:07Z'
+  note: group 4 split into 6 parts
+- id: B4-Q35.r4.3
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis) AND (workflow)
+  count: 62
+  runnable: true
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-10-01T11:23:09Z'
+  note: group 4 split into 6 parts
+- id: B4-Q35.r4.4
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis) AND ("process model" OR "process models")
+  count: 108
+  runnable: true
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-10-01T11:23:11Z'
+  note: group 4 split into 6 parts
+- id: B4-Q35.r4.5
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis) AND (metamodel)
+  count: 34
+  runnable: true
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-10-01T11:23:13Z'
+  note: group 4 split into 6 parts
+- id: B4-Q35.r4.6
+  refinement_of: B4-Q35
+  direction: B4-D12
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("engineering change propagation" OR "change propagation" OR "change impact" OR "dependency structure matrix" OR "design structure matrix") AND (change* OR modif*) AND (method* OR model* OR analysis) AND ("business process")
+  count: 86
+  runnable: true
+  basis: C9.9, C1.14, A3
+  community: 'community vocabulary: engineering change management and DSM'
+  register: P1
+  created_at: '2026-10-01T11:23:15Z'
+  note: group 4 split into 6 parts
+- id: B4-Q37.r2
+  refinement_of: B4-Q37
+  direction: B4-D13
+  lens: A semantic
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: (("real option" OR "real options") OR "option to defer" OR "option to abandon" OR "staged investment" OR "delayed commitment" OR "design freeze" OR "lock-in" OR "path dependence") AND (model* OR formal* OR framework) AND (engineering OR (project OR projects) OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR design) AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  count: 119
+  runnable: true
+  basis: C10.1–C10.8, C3.9, C9.6
+  community: when to commit and irreversibility; real options, engineering design, organization studies
+  register: P1
+  created_at: '2026-10-01T11:23:16Z'
+  note: mechanism group (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov) added
+- id: B4-Q38.r2
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: ("flexibility in engineering design" OR "real options in projects" OR "set-based design" OR "design for flexibility" OR changeability OR "engineering systems") AND (model* OR method* OR framework OR valuation) AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  count: 712
+  runnable: false
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-10-01T11:23:18Z'
+  note: mechanism group (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov) added
+- id: B4-Q38.r4.1
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("flexibility in engineering design") AND (model* OR method* OR framework OR valuation) AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  count: 2
+  runnable: true
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-10-01T11:23:18Z'
+  note: group 1 split into 6 parts
+- id: B4-Q38.r4.2
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("real options in projects") AND (model* OR method* OR framework OR valuation) AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  count: 0
+  runnable: true
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-10-01T11:23:19Z'
+  note: group 1 split into 6 parts
+- id: B4-Q38.r4.3
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("set-based design") AND (model* OR method* OR framework OR valuation) AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  count: 2
+  runnable: true
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-10-01T11:23:19Z'
+  note: group 1 split into 6 parts
+- id: B4-Q38.r4.4
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("design for flexibility") AND (model* OR method* OR framework OR valuation) AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  count: 0
+  runnable: true
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-10-01T11:23:20Z'
+  note: group 1 split into 6 parts
+- id: B4-Q38.r4.5
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: (changeability) AND (model* OR method* OR framework OR valuation) AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  count: 10
+  runnable: true
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-10-01T11:23:20Z'
+  note: group 1 split into 6 parts
+- id: B4-Q38.r4.6
+  refinement_of: B4-Q38
+  direction: B4-D13
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("engineering systems") AND (model* OR method* OR framework OR valuation) AND (("decision model" OR "decision models") OR ("stochastic program" OR "stochastic programs" OR "stochastic programming") OR ("decision tree" OR "decision trees") OR "dynamic programming" OR ("state model" OR "state models") OR Markov)
+  count: 698
+  runnable: false
+  basis: C10.2, C10.5, C10.6
+  community: 'community vocabulary: engineering systems, flexibility, set-based design'
+  register: P1
+  created_at: '2026-10-01T11:23:21Z'
+  note: group 1 split into 6 parts
+- id: B4-Q39.r4.1
+  refinement_of: B4-Q39
+  direction: B4-D13
+  lens: C mechanism
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: (("real option" OR "real options") OR "staged investment" OR irreversib* OR "option value") AND ("decision model" OR "decision models")
+  count: 30
+  runnable: true
+  basis: C10.1–C10.5
+  community: options as decision models; operations research, decision analysis
+  register: P1
+  created_at: '2026-10-01T11:23:22Z'
+  note: group 2 split into 6 parts
+- id: B4-Q39.r4.2
+  refinement_of: B4-Q39
+  direction: B4-D13
+  lens: C mechanism
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: (("real option" OR "real options") OR "staged investment" OR irreversib* OR "option value") AND ("stochastic program" OR "stochastic programs" OR "stochastic programming")
+  count: 4
+  runnable: true
+  basis: C10.1–C10.5
+  community: options as decision models; operations research, decision analysis
+  register: P1
+  created_at: '2026-10-01T11:23:22Z'
+  note: group 2 split into 6 parts
+- id: B4-Q39.r4.3
+  refinement_of: B4-Q39
+  direction: B4-D13
+  lens: C mechanism
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: (("real option" OR "real options") OR "staged investment" OR irreversib* OR "option value") AND ("decision tree" OR "decision trees")
+  count: 148
+  runnable: true
+  basis: C10.1–C10.5
+  community: options as decision models; operations research, decision analysis
+  register: P1
+  created_at: '2026-10-01T11:23:23Z'
+  note: group 2 split into 6 parts
+- id: B4-Q39.r4.4
+  refinement_of: B4-Q39
+  direction: B4-D13
+  lens: C mechanism
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: (("real option" OR "real options") OR "staged investment" OR irreversib* OR "option value") AND ("dynamic programming")
+  count: 70
+  runnable: true
+  basis: C10.1–C10.5
+  community: options as decision models; operations research, decision analysis
+  register: P1
+  created_at: '2026-10-01T11:23:23Z'
+  note: group 2 split into 6 parts
+- id: B4-Q39.r4.5
+  refinement_of: B4-Q39
+  direction: B4-D13
+  lens: C mechanism
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: (("real option" OR "real options") OR "staged investment" OR irreversib* OR "option value") AND ("state model" OR "state models")
+  count: 14
+  runnable: true
+  basis: C10.1–C10.5
+  community: options as decision models; operations research, decision analysis
+  register: P1
+  created_at: '2026-10-01T11:23:24Z'
+  note: group 2 split into 6 parts
+- id: B4-Q39.r4.6
+  refinement_of: B4-Q39
+  direction: B4-D13
+  lens: C mechanism
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: (("real option" OR "real options") OR "staged investment" OR irreversib* OR "option value") AND (Markov)
+  count: 81
+  runnable: true
+  basis: C10.1–C10.5
+  community: options as decision models; operations research, decision analysis
+  register: P1
+  created_at: '2026-10-01T11:23:24Z'
+  note: group 2 split into 6 parts
+- id: B4-Q43.r2
+  refinement_of: B4-Q43
+  direction: B4-D15
+  lens: A semantic
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: ("system of systems" OR "systems of systems") AND (constituent* OR autonomy OR "managerial independence" OR ownership OR joining OR leaving OR disengag*) AND (model* OR formal* OR architect* OR framework) AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")
+  count: 201
+  runnable: true
+  basis: C11.1, C11.2, C11.5–C11.7
+  community: constituent autonomy and participation; SoS engineering
+  register: P1
+  created_at: '2026-10-01T11:23:37Z'
+  note: mechanism group (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based") added
+- id: B4-Q44.r2
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: ieee
+  step: 2
+  step_name: add_mechanism_group
+  ieee: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("architecture description" OR "modeling language" OR "modelling language" OR ("reconfiguration pattern" OR "reconfiguration patterns") OR framework OR method*) AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")
+  count: 353
+  runnable: false
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-10-01T11:23:38Z'
+  note: mechanism group (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based") added
+- id: B4-Q44.r4.1
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("architecture description") AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")
+  count: 33
+  runnable: true
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-10-01T11:23:38Z'
+  note: group 2 split into 6 parts
+- id: B4-Q44.r4.2
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("modeling language") AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")
+  count: 85
+  runnable: true
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-10-01T11:23:39Z'
+  note: group 2 split into 6 parts
+- id: B4-Q44.r4.3
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("modelling language") AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")
+  count: 1
+  runnable: true
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-10-01T11:23:39Z'
+  note: group 2 split into 6 parts
+- id: B4-Q44.r4.4
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND ("reconfiguration pattern" OR "reconfiguration patterns") AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")
+  count: 1
+  runnable: true
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-10-01T11:23:40Z'
+  note: group 2 split into 6 parts
+- id: B4-Q44.r4.5
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND (framework) AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")
+  count: 147
+  runnable: true
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-10-01T11:23:40Z'
+  note: group 2 split into 6 parts
+- id: B4-Q44.r4.6
+  refinement_of: B4-Q44
+  direction: B4-D15
+  lens: B community
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("system of systems engineering" OR "SoS architecture" OR "dynamic reconfiguration" OR "evolutionary development" OR "SoS evolution") AND (method*) AND (("formal model" OR "formal models") OR rewriting OR "architecture description language" OR "agent-based" OR "graph transformation" OR "model-based")
+  count: 234
+  runnable: true
+  basis: C11.3, C11.4, C11.8
+  community: 'community vocabulary: SoS architecture and reconfiguration'
+  register: P1
+  created_at: '2026-10-01T11:23:41Z'
+  note: group 2 split into 6 parts
+- id: B4-BR02.r4.1
+  refinement_of: B4-BR02
+  direction: bridge
+  lens: RQ4.3
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("architecture design space") AND (stakeholder* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR decision* OR "design space")
+  count: 285
+  runnable: true
+  basis: RQ4.3, C9.9
+  community: architecture design spaces and optimization; system-architecting lines
+  register: BR
+  created_at: '2026-10-01T11:23:42Z'
+  note: group 1 split into 6 parts
+- id: B4-BR02.r4.2
+  refinement_of: B4-BR02
+  direction: bridge
+  lens: RQ4.3
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("system architecture optimization") AND (stakeholder* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR decision* OR "design space")
+  count: 11
+  runnable: true
+  basis: RQ4.3, C9.9
+  community: architecture design spaces and optimization; system-architecting lines
+  register: BR
+  created_at: '2026-10-01T11:23:42Z'
+  note: group 1 split into 6 parts
+- id: B4-BR02.r4.3
+  refinement_of: B4-BR02
+  direction: bridge
+  lens: RQ4.3
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("system architecture optimisation") AND (stakeholder* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR decision* OR "design space")
+  count: 0
+  runnable: true
+  basis: RQ4.3, C9.9
+  community: architecture design spaces and optimization; system-architecting lines
+  register: BR
+  created_at: '2026-10-01T11:23:43Z'
+  note: group 1 split into 6 parts
+- id: B4-BR02.r4.4
+  refinement_of: B4-BR02
+  direction: bridge
+  lens: RQ4.3
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("architecture enumeration") AND (stakeholder* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR decision* OR "design space")
+  count: 1
+  runnable: true
+  basis: RQ4.3, C9.9
+  community: architecture design spaces and optimization; system-architecting lines
+  register: BR
+  created_at: '2026-10-01T11:23:43Z'
+  note: group 1 split into 6 parts
+- id: B4-BR02.r4.5
+  refinement_of: B4-BR02
+  direction: bridge
+  lens: RQ4.3
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: (tradespace) AND (stakeholder* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR decision* OR "design space")
+  count: 56
+  runnable: true
+  basis: RQ4.3, C9.9
+  community: architecture design spaces and optimization; system-architecting lines
+  register: BR
+  created_at: '2026-10-01T11:23:44Z'
+  note: group 1 split into 6 parts
+- id: B4-BR02.r4.6
+  refinement_of: B4-BR02
+  direction: bridge
+  lens: RQ4.3
+  applies_to_source: ieee
+  step: 4
+  step_name: split_or_groups
+  ieee: ("architecting decisions") AND (stakeholder* OR (organization OR organizations OR organizational OR organisation OR organisations OR organisational) OR decision* OR "design space")
+  count: 1
+  runnable: true
+  basis: RQ4.3, C9.9
+  community: architecture design spaces and optimization; system-architecting lines
+  register: BR
+  created_at: '2026-10-01T11:23:44Z'
+  note: group 1 split into 6 parts
