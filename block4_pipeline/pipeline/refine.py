@@ -46,6 +46,12 @@ STEP_NAMES = ["title_restrict_free_group", "add_mechanism_group", "subject_area_
 # Scopus subject areas for the same six areas (ASJC codes): Computer Science, Engineering,
 # Decision Sciences, Social Sciences (includes Law), Business/Management/Accounting, Economics.
 SCOPUS_SUBJAREA_CLAUSE = "SUBJAREA(COMP OR ENGI OR DECI OR SOCI OR BUSI OR ECON)"
+# Web of Science Categories (WC=) covering the same six areas: computer science, engineering,
+# decision sciences (operations research & management science, management), social sciences
+# including law, business, economics.
+WOS_WC_CLAUSE = ('WC=("Computer Science*" OR "Engineering*" OR "Operations Research & Management Science" OR '
+                 '"Management" OR "Business*" OR "Economics" OR "Law" OR "Social Sciences*" OR '
+                 '"Political Science" OR "Public Administration" OR "Information Science & Library Science")')
 
 SYNTAX = {
     "openalex": {"field": "openalex_oql", "main": "title_and_abstract has", "title": "title has",
@@ -54,7 +60,7 @@ SYNTAX = {
                "subject": SCOPUS_SUBJAREA_CLAUSE, "prefix_re": r"^TITLE-ABS-KEY\s*\((.*)\)$"},
     # Web of Science: TS= topic (title, abstract, keywords), TI= title; the subject-area step is
     # applied in the interface with the "Web of Science Categories" refine panel, not as a string
-    "wos": {"field": "wos", "main": "TS=", "title": "TI=", "subject": None, "prefix_re": r"^TS=\s*\((.*)\)$"},
+    "wos": {"field": "wos", "main": "TS=", "title": "TI=", "subject": WOS_WC_CLAUSE, "prefix_re": r"^TS=\s*\((.*)\)$"},
     # IEEE Xplore API: querytext is the plain Boolean; a title-only clause cannot be combined with it
     # (field names inside querytext are not recognised, article_title takes one word), so step 1 is
     # recorded as not applicable; no subject-area filter exists either. Steps 2 and 4 apply.
