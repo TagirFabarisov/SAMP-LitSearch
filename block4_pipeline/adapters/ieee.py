@@ -130,6 +130,32 @@ def decompose_for_wildcards(expr: str, limit: int = MAX_WILDCARD_WORDS) -> List[
     return [render(p) for p in parts]
 
 
+# ----------------------------------------------------------------------------- daily call budget
+
+class IeeeQuotaExhausted(RuntimeError):
+    pass
+
+
+def _budget_tick(budget: int) -> None:
+    """Count today's calls in data/logs/ieee_calls_<UTC date>.json and refuse beyond the budget,
+    so a run never burns the key's 200 calls per day; the run resumes the next day."""
+    import json
+    from datetime import datetime, timezone
+    from .. import paths
+    day = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    f = paths.logs_dir() / ("ieee_calls_%s.json" % day)
+    n = 0
+    if f.exists():
+        try:
+            n = int(json.loads(f.read_text()).get("calls", 0))
+        except Exception:
+            n = 0
+    if n >= budget:
+        raise IeeeQuotaExhausted("IEEE daily call budget reached (%d of %d on %s); resume tomorrow" % (n, budget, day))
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps({"day": day, "calls": n + 1}))
+
+
 # ----------------------------------------------------------------------------- adapter
 
 class IeeeAdapter(BaseAdapter):
@@ -161,6 +187,7 @@ class IeeeAdapter(BaseAdapter):
 
     def _get(self, params: Dict[str, Any]) -> Dict[str, Any]:
         self.calls_made += 1
+        _budget_tick(int(self.protocol.get("ieee_daily_call_budget", 190)))
         resp = self._request("GET", self.url, params=params,
                              headers={"Accept": "application/json", "User-Agent": "block4_pipeline (SAMP RQ4.2 systematic search)"})
         if resp.status_code != 200:

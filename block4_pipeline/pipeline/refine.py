@@ -55,6 +55,10 @@ SYNTAX = {
     # Web of Science: TS= topic (title, abstract, keywords), TI= title; the subject-area step is
     # applied in the interface with the "Web of Science Categories" refine panel, not as a string
     "wos": {"field": "wos", "main": "TS=", "title": "TI=", "subject": None, "prefix_re": r"^TS=\s*\((.*)\)$"},
+    # IEEE Xplore API: querytext is the plain Boolean; a title-only clause cannot be combined with it
+    # (field names inside querytext are not recognised, article_title takes one word), so step 1 is
+    # recorded as not applicable; no subject-area filter exists either. Steps 2 and 4 apply.
+    "ieee": {"field": "ieee", "main": None, "title": None, "subject": None, "prefix_re": None},
 }
 
 
@@ -116,6 +120,8 @@ def parse_oql(form: str, source: str = "openalex") -> Tuple[List[str], List[str]
     clauses = split_top_level(expr, "AND")
     ta_groups: List[str] = []
     others: List[str] = []
+    if syn["prefix_re"] is None:  # plain Boolean: every top-level AND clause is a group
+        return [c.strip() for c in split_top_level(strip_outer_parens(expr), "AND")], []
     for c in clauses:
         m = re.match(syn["prefix_re"], c.strip(), re.S)
         if m:
@@ -128,6 +134,8 @@ def parse_oql(form: str, source: str = "openalex") -> Tuple[List[str], List[str]
 def build_oql(ta_groups: List[str], others: List[str], source: str = "openalex") -> str:
     syn = SYNTAX[source]
     clauses = []
+    if syn["main"] is None:
+        return " AND ".join(ta_groups + others)
     if ta_groups:
         body = " AND ".join(ta_groups)
         clauses.append("%s (%s)" % (syn["main"], body) if source == "openalex" else "%s(%s)" % (syn["main"], body))
@@ -154,6 +162,8 @@ def apply_step(step: int, ta_groups: List[str], others: List[str], mech_group: O
     """Return (list of (ta_groups, others) variants, note). None means the step is skipped."""
     syn = SYNTAX[source]
     if step == 1:
+        if not syn.get("title"):
+            return None, "title restriction not expressible for this source (recorded)"
         if len(ta_groups) < 2:
             return None, "no free group to move (single group)"
         free = ta_groups[-1]
