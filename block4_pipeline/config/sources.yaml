@@ -70,8 +70,8 @@ sources:
   ieee:
     display_name: IEEE Xplore
     role: domain
-    access_mode: manual_export
-    access_status: ACCESS_TO_CONFIRM
+    access_mode: api                  # IEEE Xplore Metadata API, personal key active 2026-10-01 (deviation 8)
+    access_status: CONFIRMED
     mandatory_for:
       - B4-D09
       - B4-D11

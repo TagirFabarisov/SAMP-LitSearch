@@ -35,6 +35,12 @@ scopus_view: COMPLETE          # abstracts and author list; needs the institutio
 scopus_page_size: 25           # maximum of the COMPLETE view
 scopus_order: "+coverDate"     # ascending publication date; ordering has no role in inclusion
 
+# IEEE Xplore Metadata API (deviation 8): 200 records per request, at most two wildcard words per
+# request (queries are decomposed exactly), sorted by article number (no date sort offered)
+ieee_api_base: "https://ieeexploreapi.ieee.org/api/v1/search/articles"
+ieee_page_size: 200
+ieee_sort_field: article_number
+
 # DBLP: official SPARQL endpoint (deviation 7); the JSON search API is behind a bot-check page
 dblp_sparql_endpoint: "https://sparql.dblp.org/sparql"
 dblp_sparql_max_rows: 1000
