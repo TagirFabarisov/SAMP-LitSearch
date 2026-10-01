@@ -209,6 +209,15 @@ def import_manual(source: str, query_id: str, file: str, fmt: Optional[str] = No
         raise RetrievalBlocked("protocol.yaml frozen is not true; import refused")
     queries = cl.load_queries()
     q = cl.query_by_id(queries, query_id)
+    if not q and "." in query_id:
+        # a refinement sub-query run by hand in a database interface: direction and lens come
+        # from the parent, the exact string from the count row recorded with `log-count`
+        parent = cl.query_by_id(queries, query_id.split(".")[0])
+        if not parent:
+            raise RetrievalBlocked("unknown parent query for %s" % query_id)
+        logged = provenance.latest_by_query_source().get((query_id, source))
+        q = {"id": query_id, "direction": parent.get("direction"), "lens": parent.get("lens"),
+             scfg.get("query_field", source): (logged or {}).get("exact_string_sent") or note}
     if not q and not query_id.startswith("B4-SN"):
         raise RetrievalBlocked("unknown query ID %s" % query_id)
     q = q or {"id": query_id, "direction": "snowball", "lens": None}
@@ -221,7 +230,7 @@ def import_manual(source: str, query_id: str, file: str, fmt: Optional[str] = No
 
     adapter = ManualImportAdapter(source, protocol, scfg)
     adapter.fmt = fmt
-    exact = str(q.get(scfg.get("query_field", source), "")) if q.get("id") in {x["id"] for x in queries} else note
+    exact = str(q.get(scfg.get("query_field", source), "") or note)
     threshold = int(protocol.get(scfg.get("threshold_key", "threshold_structured"), 300))
 
     ts = storage.utc_stamp()

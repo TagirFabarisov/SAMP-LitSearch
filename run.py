@@ -98,6 +98,29 @@ def cmd_import_manual(args) -> int:
     return 0
 
 
+def cmd_import_dblp_bundle(args) -> int:
+    try:
+        _print(retrieve.import_dblp_bundle(args.file, export_date=args.export_date))
+    except retrieve.RetrievalBlocked as exc:
+        print("BLOCKED: %s" % exc)
+        return 2
+    return 0
+
+
+def cmd_log_count(args) -> int:
+    """Record a count observed by a person in a database interface (e.g. Web of Science)."""
+    protocol = cl.load_protocol()
+    q = cl.query_by_id(cl.load_queries(include_refinements=True), args.query.split(".")[0]) or {}
+    log_id = provenance.append_search_log({
+        "query_id": args.query, "direction": q.get("direction"), "lens": q.get("lens"), "source": args.source,
+        "exact_string_sent": args.string, "original_count": args.count,
+        "refinement_steps": args.steps.split(",") if args.steps else None,
+        "status": "refinement_count" if "." in args.query else ("REFINEMENT_REQUIRED" if args.count > int(protocol["threshold_structured"]) else "counted"),
+        "note": args.note or "count read in the %s interface by a person" % args.source}, protocol)
+    print(log_id)
+    return 0
+
+
 def cmd_normalize(args) -> int:
     _print(normalize.normalize())
     return 0
@@ -192,6 +215,20 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--export-date", help="date the export was made, YYYY-MM-DD")
     s.add_argument("--note")
     s.set_defaults(fn=cmd_import_manual)
+
+    s = sub.add_parser("import-dblp-bundle", help="import one file holding all DBLP API answers pasted in sequence")
+    s.add_argument("--file", required=True)
+    s.add_argument("--export-date")
+    s.set_defaults(fn=cmd_import_dblp_bundle)
+
+    s = sub.add_parser("log-count", help="record a count observed in a database interface")
+    s.add_argument("--source", required=True)
+    s.add_argument("--query", required=True, help="query or sub-query ID, e.g. B4-Q01 or B4-Q01.r1")
+    s.add_argument("--count", required=True, type=int)
+    s.add_argument("--string", required=True, help="exact string sent")
+    s.add_argument("--steps", help="comma-separated refinement step names applied")
+    s.add_argument("--note")
+    s.set_defaults(fn=cmd_log_count)
 
     sub.add_parser("normalize").set_defaults(fn=cmd_normalize)
     sub.add_parser("deduplicate").set_defaults(fn=cmd_deduplicate)

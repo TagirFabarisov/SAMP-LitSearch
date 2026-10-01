@@ -1,0 +1,420 @@
+[
+  {
+    "query_id": "B4-Q25",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 818
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"graph transformation\" OR \"graph rewriting\" OR bigraph* OR \"formal model\" OR \"operational semantics\" OR \"process algebra\") added",
+        "counts": [
+          12
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q25.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q26",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 376
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (\"graph transformation\" OR \"graph rewriting\" OR bigraph* OR \"formal model\" OR \"operational semantics\" OR \"process algebra\") added",
+        "counts": [
+          8
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q26.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q31",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 702
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group ((\"process model\" OR \"process models\") OR (\"Petri net\" OR \"Petri nets\") OR workflow OR \"state machine\" OR (\"decision model\" OR \"decision models\") OR (\"stochastic program\" OR \"stochastic programs\" OR \"stochastic programming\")) added",
+        "counts": [
+          41
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q31.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q34",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1676
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (ontolog* OR (\"Petri net\" OR \"Petri nets\") OR workflow OR (\"process model\" OR \"process models\") OR metamodel OR \"business process\") added",
+        "counts": [
+          251
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q34.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q35",
+    "status": "split_6_parts_6_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 2149
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group (ontolog* OR (\"Petri net\" OR \"Petri nets\") OR workflow OR (\"process model\" OR \"process models\") OR metamodel OR \"business process\") added",
+        "counts": [
+          321
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "skipped": "subject-area limit applied in the interface, not as a query string"
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 4 split into 6 parts",
+        "counts": [
+          48,
+          24,
+          62,
+          108,
+          34,
+          86
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q35.r4.1",
+      "B4-Q35.r4.2",
+      "B4-Q35.r4.3",
+      "B4-Q35.r4.4",
+      "B4-Q35.r4.5",
+      "B4-Q35.r4.6"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q37",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 1877
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group ((\"decision model\" OR \"decision models\") OR (\"stochastic program\" OR \"stochastic programs\" OR \"stochastic programming\") OR (\"decision tree\" OR \"decision trees\") OR \"dynamic programming\" OR (\"state model\" OR \"state models\") OR Markov) added",
+        "counts": [
+          119
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q37.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q38",
+    "status": "split_6_parts_5_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 11604
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group ((\"decision model\" OR \"decision models\") OR (\"stochastic program\" OR \"stochastic programs\" OR \"stochastic programming\") OR (\"decision tree\" OR \"decision trees\") OR \"dynamic programming\" OR (\"state model\" OR \"state models\") OR Markov) added",
+        "counts": [
+          712
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "skipped": "subject-area limit applied in the interface, not as a query string"
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 6 parts",
+        "counts": [
+          2,
+          0,
+          2,
+          0,
+          10,
+          698
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q38.r4.1",
+      "B4-Q38.r4.2",
+      "B4-Q38.r4.3",
+      "B4-Q38.r4.4",
+      "B4-Q38.r4.5"
+    ],
+    "still_above": [
+      "B4-Q38.r4.6"
+    ]
+  },
+  {
+    "query_id": "B4-Q39",
+    "status": "split_6_parts_6_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 319
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "C query already carries its mechanism group"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "skipped": "subject-area limit applied in the interface, not as a query string"
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 2 split into 6 parts",
+        "counts": [
+          30,
+          4,
+          148,
+          70,
+          14,
+          81
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q39.r4.1",
+      "B4-Q39.r4.2",
+      "B4-Q39.r4.3",
+      "B4-Q39.r4.4",
+      "B4-Q39.r4.5",
+      "B4-Q39.r4.6"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q43",
+    "status": "refined_at_step_2",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 800
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group ((\"formal model\" OR \"formal models\") OR rewriting OR \"architecture description language\" OR \"agent-based\" OR \"graph transformation\" OR \"model-based\") added",
+        "counts": [
+          201
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q43.r2"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-Q44",
+    "status": "split_6_parts_6_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 3663
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "note": "mechanism group ((\"formal model\" OR \"formal models\") OR rewriting OR \"architecture description language\" OR \"agent-based\" OR \"graph transformation\" OR \"model-based\") added",
+        "counts": [
+          353
+        ]
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "skipped": "subject-area limit applied in the interface, not as a query string"
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 2 split into 6 parts",
+        "counts": [
+          33,
+          85,
+          1,
+          1,
+          147,
+          234
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-Q44.r4.1",
+      "B4-Q44.r4.2",
+      "B4-Q44.r4.3",
+      "B4-Q44.r4.4",
+      "B4-Q44.r4.5",
+      "B4-Q44.r4.6"
+    ],
+    "still_above": []
+  },
+  {
+    "query_id": "B4-BR02",
+    "status": "split_6_parts_6_runnable",
+    "trajectory": [
+      {
+        "step": 0,
+        "name": "original",
+        "count": 352
+      },
+      {
+        "step": 1,
+        "name": "title_restrict_free_group",
+        "skipped": "title restriction not expressible for this source (recorded)"
+      },
+      {
+        "step": 2,
+        "name": "add_mechanism_group",
+        "skipped": "no Q-C mechanism group for this direction"
+      },
+      {
+        "step": 3,
+        "name": "subject_area_limit",
+        "skipped": "subject-area limit applied in the interface, not as a query string"
+      },
+      {
+        "step": 4,
+        "name": "split_or_groups",
+        "note": "group 1 split into 6 parts",
+        "counts": [
+          285,
+          11,
+          0,
+          1,
+          56,
+          1
+        ]
+      }
+    ],
+    "runnable": [
+      "B4-BR02.r4.1",
+      "B4-BR02.r4.2",
+      "B4-BR02.r4.3",
+      "B4-BR02.r4.4",
+      "B4-BR02.r4.5",
+      "B4-BR02.r4.6"
+    ],
+    "still_above": []
+  }
+]
