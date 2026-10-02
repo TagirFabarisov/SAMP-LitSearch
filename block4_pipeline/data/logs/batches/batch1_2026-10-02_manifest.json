@@ -1,0 +1,63 @@
+{
+ "batch": "batch1",
+ "built": "2026-10-02",
+ "documents": 19232,
+ "no_abstract": 1398,
+ "documents_per_source": {
+  "dblp": 611,
+  "scopus": 7159,
+  "openalex": 9854,
+  "wos": 7691,
+  "ieee": 1128,
+  "heinonline": 259
+ },
+ "documents_found_by_one_source_only": {
+  "openalex": 6508,
+  "scopus": 2472,
+  "dblp": 266,
+  "ieee": 757,
+  "wos": 3819,
+  "heinonline": 238
+ },
+ "documents_per_direction": {
+  "B4-BR": 974,
+  "B4-D01": 846,
+  "B4-D02": 875,
+  "B4-D03": 591,
+  "B4-D04": 556,
+  "B4-D05": 849,
+  "B4-D06": 1072,
+  "B4-D07": 1469,
+  "B4-D08": 1588,
+  "B4-D09": 311,
+  "B4-D10": 953,
+  "B4-D11": 787,
+  "B4-D12": 1008,
+  "B4-D13": 988,
+  "B4-D14": 1137,
+  "B4-D15": 1063,
+  "B4-D16": 1938,
+  "B4-XC": 2715
+ },
+ "documents_in_several_directions": 446,
+ "years": {
+  "2000-2009": 3243,
+  "2010-2019": 6504,
+  "2020 onwards": 8399,
+  "before 2000": 1002,
+  "unknown": 84
+ },
+ "near_duplicate_pairs": 318,
+ "search_log_rows": 1230,
+ "deviations": 9,
+ "files": {
+  "s1_input_batch1.csv": "92aded5a606eaa016210ea0cf97c5ed23b619c5a7e1c648e622797b9b1d7062f",
+  "documents_for_s1_full.csv": "7f505566beb2646614e33fc362506608cb6db87b2c2c1c50c190b2427e81ac1f",
+  "batch1_2026-10-02_document_ids.txt": "bd5ce509eb784518be04412d91562abd06a9be84a2d50706ad1caf0c41c448e8"
+ },
+ "not_in_this_batch": [
+  "IEEE: 17 refinement sub-queries blocked by the rate limit on 2 Oct, plus the second-level split of B4-Q38.r4.6",
+  "Parts above 300 that cannot be split further (OpenAlex 13, Scopus 8, Web of Science 2): decision pending",
+  "Snowballing (citation chasing) from included documents"
+ ]
+}

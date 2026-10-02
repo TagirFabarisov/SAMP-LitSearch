@@ -25,6 +25,7 @@ offers no header form; every logged URL and request has it redacted.
 from __future__ import annotations
 
 import itertools
+import time
 import re
 from typing import Any, Dict, Iterator, List, Optional, Tuple
 
@@ -185,11 +186,33 @@ class IeeeAdapter(BaseAdapter):
         return {"method": "GET", "url": self.url, "parts": len(parts),
                 "params_per_part": [secrets.redact_obj(self._params(p, self.page_size, 1)) for p in parts]}
 
+    _last_call = 0.0
+
     def _get(self, params: Dict[str, Any]) -> Dict[str, Any]:
+        # IEEE answers HTTP 403 "Service Over Qps" when calls come too close together
+        # (seen 2 Oct 2026), so keep a minimum gap between calls
+        gap = float(self.protocol.get("ieee_min_interval_s", 1.0))
+        wait = IeeeAdapter._last_call + gap - time.time()
+        if wait > 0:
+            time.sleep(wait)
+        IeeeAdapter._last_call = time.time()
         self.calls_made += 1
         _budget_tick(int(self.protocol.get("ieee_daily_call_budget", 190)))
         resp = self._request("GET", self.url, params=params,
                              headers={"Accept": "application/json", "User-Agent": "block4_pipeline (SAMP RQ4.2 systematic search)"})
+        # rate limit: wait and try again twice, then stop the whole run rather than spend the
+        # day's call budget on refused calls
+        for pause in (5, 20):
+            if not (resp.status_code == 403 and "Over Qps" in resp.text):
+                break
+            time.sleep(pause)
+            IeeeAdapter._last_call = time.time()
+            self.calls_made += 1
+            _budget_tick(int(self.protocol.get("ieee_daily_call_budget", 190)))
+            resp = self._request("GET", self.url, params=params,
+                                 headers={"Accept": "application/json", "User-Agent": "block4_pipeline (SAMP RQ4.2 systematic search)"})
+        if resp.status_code == 403 and "Over Qps" in resp.text:
+            raise IeeeQuotaExhausted("IEEE rate limit (HTTP 403 Over Qps) persists after waiting; stopping the run")
         if resp.status_code != 200:
             raise RuntimeError("IEEE returned HTTP %d: %s" % (resp.status_code, secrets.redact_text(resp.text[:400])))
         data = resp.json()

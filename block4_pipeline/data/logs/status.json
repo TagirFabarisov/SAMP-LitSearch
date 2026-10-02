@@ -1,24 +1,67 @@
 {
  "access_to_confirm": [
   "wos",
-  "ieee",
   "acm",
   "heinonline",
   "ssrn",
   "scholar",
   "web"
  ],
- "deviations_recorded": 7,
- "failures": [],
+ "deviations_recorded": 8,
+ "failures": [
+  [
+   "B4-Q35",
+   "ieee",
+   "2026-10-02T09:08:31Z",
+   "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  ],
+  [
+   "B4-Q37",
+   "ieee",
+   "2026-10-02T09:08:43Z",
+   "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  ],
+  [
+   "B4-Q38",
+   "ieee",
+   "2026-10-02T09:08:45Z",
+   "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  ],
+  [
+   "B4-Q39",
+   "ieee",
+   "2026-10-02T09:08:48Z",
+   "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  ],
+  [
+   "B4-Q43",
+   "ieee",
+   "2026-10-02T09:08:52Z",
+   "IEEE daily call budget reached (190 of 190 on 2026-10-02); resume tomorrow"
+  ],
+  [
+   "B4-Q44",
+   "ieee",
+   "2026-10-02T09:08:54Z",
+   "IEEE daily call budget reached (190 of 190 on 2026-10-02); resume tomorrow"
+  ],
+  [
+   "B4-BR02",
+   "ieee",
+   "2026-10-02T09:08:59Z",
+   "IEEE daily call budget reached (190 of 190 on 2026-10-02); resume tomorrow"
+  ]
+ ],
  "frozen": true,
- "generated_at": "2026-09-30T11:34:02Z",
+ "generated_at": "2026-10-02T09:31:37Z",
  "mandatory_pairs_by_status": {
-  "MANUAL_EXPORT_REQUIRED": 85,
-  "done": 45,
-  "refined": 93
+  "MANUAL_EXPORT_REQUIRED": 12,
+  "done": 73,
+  "failed": 7,
+  "refined": 131
  },
  "openalex_construct_check_resolved": true,
- "pending_manual_imports": 85,
+ "pending_manual_imports": 12,
  "protocol_revision": 3,
  "refinement_required": [],
  "rows": [
@@ -49,17 +92,17 @@
    "status": "refined (1 sub-queries, 126 hits)"
   },
   {
-   "count": null,
+   "count": 603,
    "direction": "B4-D01",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T11:25:00Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the wos interface by a person",
    "query_id": "B4-Q01",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 87 hits)"
   },
   {
    "count": 1,
@@ -153,17 +196,17 @@
    "status": "refined (1 sub-queries, 182 hits)"
   },
   {
-   "count": null,
+   "count": 636,
    "direction": "B4-D01",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T11:37:28Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the wos interface by a person",
    "query_id": "B4-Q02",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 102 hits)"
   },
   {
    "count": 24,
@@ -257,17 +300,17 @@
    "status": "refined (1 sub-queries, 110 hits)"
   },
   {
-   "count": null,
+   "count": 282,
    "direction": "B4-D01",
-   "hits": null,
-   "last_run": null,
+   "hits": 282,
+   "last_run": "2026-10-02T07:59:07Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 228,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q03",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 1,
@@ -361,17 +404,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 26,
    "direction": "B4-D02",
-   "hits": null,
-   "last_run": null,
+   "hits": 26,
+   "last_run": "2026-10-02T08:00:03Z",
    "lens": "A semantic",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 1,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q04",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 1,
@@ -465,17 +508,17 @@
    "status": "refined (1 sub-queries, 88 hits)"
   },
   {
-   "count": null,
+   "count": 209,
    "direction": "B4-D02",
-   "hits": null,
-   "last_run": null,
+   "hits": 209,
+   "last_run": "2026-10-02T08:01:00Z",
    "lens": "B community",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 167,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q05",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 17,
@@ -569,17 +612,17 @@
    "status": "refined (1 sub-queries, 104 hits)"
   },
   {
-   "count": null,
+   "count": 268,
    "direction": "B4-D02",
-   "hits": null,
-   "last_run": null,
+   "hits": 268,
+   "last_run": "2026-10-02T08:12:19Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 183,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q06",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 3,
@@ -673,17 +716,17 @@
    "status": "refined (1 sub-queries, 144 hits)"
   },
   {
-   "count": null,
+   "count": 348,
    "direction": "B4-D03",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T11:44:03Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q07",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 79 hits)"
   },
   {
    "count": 15,
@@ -777,17 +820,17 @@
    "status": "refined (1 sub-queries, 129 hits)"
   },
   {
-   "count": null,
+   "count": 334,
    "direction": "B4-D03",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T11:57:12Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q08",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 67 hits)"
   },
   {
    "count": 5,
@@ -881,17 +924,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 23,
    "direction": "B4-D03",
-   "hits": null,
-   "last_run": null,
+   "hits": 23,
+   "last_run": "2026-10-02T08:15:03Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 2,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q09",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 1,
@@ -985,17 +1028,17 @@
    "status": "refined (1 sub-queries, 6 hits)"
   },
   {
-   "count": null,
+   "count": 5571,
    "direction": "B4-D04",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T11:58:15Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q10",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 5 hits)"
   },
   {
    "count": 17,
@@ -1089,17 +1132,17 @@
    "status": "refined (1 sub-queries, 91 hits)"
   },
   {
-   "count": null,
+   "count": 330,
    "direction": "B4-D04",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T11:59:21Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q11",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 47 hits)"
   },
   {
    "count": 18,
@@ -1193,17 +1236,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 32,
    "direction": "B4-D04",
-   "hits": null,
-   "last_run": null,
+   "hits": 32,
+   "last_run": "2026-10-02T08:16:58Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 4,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q12",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 1,
@@ -1297,17 +1340,17 @@
    "status": "refined (1 sub-queries, 76 hits)"
   },
   {
-   "count": null,
+   "count": 569,
    "direction": "B4-D05",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:00:28Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q13",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 55 hits)"
   },
   {
    "count": 0,
@@ -1401,17 +1444,17 @@
    "status": "refined (1 sub-queries, 288 hits)"
   },
   {
-   "count": null,
+   "count": 1282,
    "direction": "B4-D05",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:01:14Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q14",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 178 hits)"
   },
   {
    "count": 0,
@@ -1505,17 +1548,17 @@
    "status": "refined (1 sub-queries, 113 hits)"
   },
   {
-   "count": null,
+   "count": 329,
    "direction": "B4-D05",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:01:58Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q15",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 70 hits)"
   },
   {
    "count": 2,
@@ -1609,17 +1652,17 @@
    "status": "refined (1 sub-queries, 131 hits)"
   },
   {
-   "count": null,
+   "count": 1628,
    "direction": "B4-D06",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:03:08Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q16",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 237 hits)"
   },
   {
    "count": null,
@@ -1713,17 +1756,17 @@
    "status": "refined (1 sub-queries, 231 hits)"
   },
   {
-   "count": null,
+   "count": 1744,
    "direction": "B4-D06",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:03:58Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q17",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 150 hits)"
   },
   {
    "count": null,
@@ -1817,17 +1860,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 19,
    "direction": "B4-D06",
-   "hits": null,
-   "last_run": null,
+   "hits": 19,
+   "last_run": "2026-10-02T08:25:03Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 1,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q18",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -1921,17 +1964,17 @@
    "status": "refined (1 sub-queries, 236 hits)"
   },
   {
-   "count": null,
+   "count": 14566,
    "direction": "B4-D07",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:05:17Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q19",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 181 hits)"
   },
   {
    "count": null,
@@ -2025,17 +2068,17 @@
    "status": "refined (1 sub-queries, 71 hits)"
   },
   {
-   "count": null,
+   "count": 150,
    "direction": "B4-D07",
-   "hits": null,
-   "last_run": null,
+   "hits": 150,
+   "last_run": "2026-10-02T08:26:22Z",
    "lens": "B community",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 123,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q20",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -2129,17 +2172,17 @@
    "status": "refined (1 sub-queries, 71 hits)"
   },
   {
-   "count": null,
+   "count": 1366,
    "direction": "B4-D07",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:06:58Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q21",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 150 hits)"
   },
   {
    "count": null,
@@ -2233,17 +2276,17 @@
    "status": "refined (1 sub-queries, 3 hits)"
   },
   {
-   "count": null,
+   "count": 2324,
    "direction": "B4-D08",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:07:49Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q22",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 265 hits)"
   },
   {
    "count": 4,
@@ -2337,17 +2380,17 @@
    "status": "refined (1 sub-queries, 39 hits)"
   },
   {
-   "count": null,
+   "count": 188,
    "direction": "B4-D08",
-   "hits": null,
-   "last_run": null,
+   "hits": 188,
+   "last_run": "2026-10-02T08:28:12Z",
    "lens": "B community",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 153,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q23",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 3,
@@ -2441,17 +2484,17 @@
    "status": "refined (4 sub-queries, 275 hits)"
   },
   {
-   "count": null,
+   "count": 2556,
    "direction": "B4-D08",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:09:01Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q24",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (4 sub-queries, 669 hits)"
   },
   {
    "count": 37,
@@ -2545,17 +2588,17 @@
    "status": "refined (1 sub-queries, 10 hits)"
   },
   {
-   "count": null,
+   "count": 4238,
    "direction": "B4-D09",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:13:00Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q25",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 4 hits)"
   },
   {
    "count": 57,
@@ -2571,17 +2614,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 818,
    "direction": "B4-D09",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-10-02T09:07:32Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "sum of part counts 818 exceeds threshold 300 (upper bound of the union); nothing retrieved",
    "query_id": "B4-Q25",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 7 hits)"
   },
   {
    "count": null,
@@ -2649,17 +2692,17 @@
    "status": "refined (1 sub-queries, 95 hits)"
   },
   {
-   "count": null,
+   "count": 461,
    "direction": "B4-D09",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:13:00Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q26",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 61 hits)"
   },
   {
    "count": 3,
@@ -2675,17 +2718,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 376,
    "direction": "B4-D09",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-10-02T09:07:59Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "sum of part counts 376 exceeds threshold 300 (upper bound of the union); nothing retrieved",
    "query_id": "B4-Q26",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 4 hits)"
   },
   {
    "count": null,
@@ -2753,17 +2796,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 10,
    "direction": "B4-D09",
-   "hits": null,
-   "last_run": null,
+   "hits": 10,
+   "last_run": "2026-10-02T08:32:00Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 3,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q27",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 3,
@@ -2779,17 +2822,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 10,
    "direction": "B4-D09",
-   "hits": null,
-   "last_run": null,
+   "hits": 10,
+   "last_run": "2026-10-01T11:20:07Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 5,
+   "note": "union of 7 part(s); sum of part counts 11",
    "query_id": "B4-Q27",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -2857,17 +2900,17 @@
    "status": "refined (1 sub-queries, 50 hits)"
   },
   {
-   "count": null,
+   "count": 171,
    "direction": "B4-D10",
-   "hits": null,
-   "last_run": null,
+   "hits": 171,
+   "last_run": "2026-10-02T08:33:13Z",
    "lens": "A semantic",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 130,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q28",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 6,
@@ -2961,17 +3004,17 @@
    "status": "refined (1 sub-queries, 14 hits)"
   },
   {
-   "count": null,
+   "count": 612,
    "direction": "B4-D10",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:15:44Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q29",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 294 hits)"
   },
   {
    "count": 70,
@@ -3065,17 +3108,17 @@
    "status": "refined (1 sub-queries, 72 hits)"
   },
   {
-   "count": null,
+   "count": 278,
    "direction": "B4-D10",
-   "hits": null,
-   "last_run": null,
+   "hits": 278,
+   "last_run": "2026-10-02T08:33:50Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 152,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q30",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": 58,
@@ -3169,30 +3212,30 @@
    "status": "refined (1 sub-queries, 32 hits)"
   },
   {
-   "count": null,
+   "count": 1750,
    "direction": "B4-D11",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:16:23Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q31",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 17 hits)"
   },
   {
-   "count": null,
+   "count": 702,
    "direction": "B4-D11",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-10-02T09:08:19Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "sum of part counts 702 exceeds threshold 300 (upper bound of the union); nothing retrieved",
    "query_id": "B4-Q31",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 27 hits)"
   },
   {
    "count": null,
@@ -3260,30 +3303,30 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 31,
    "direction": "B4-D11",
-   "hits": null,
-   "last_run": null,
+   "hits": 31,
+   "last_run": "2026-10-02T08:34:28Z",
    "lens": "B community",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 5,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q32",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
-   "count": null,
+   "count": 40,
    "direction": "B4-D11",
-   "hits": null,
-   "last_run": null,
+   "hits": 40,
+   "last_run": "2026-10-01T11:20:09Z",
    "lens": "B community",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 20,
+   "note": "union of 1 part(s); sum of part counts 40",
    "query_id": "B4-Q32",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -3351,30 +3394,30 @@
    "status": "refined (1 sub-queries, 104 hits)"
   },
   {
-   "count": null,
+   "count": 300,
    "direction": "B4-D11",
-   "hits": null,
-   "last_run": null,
+   "hits": 300,
+   "last_run": "2026-10-02T08:35:43Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 210,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q33",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
-   "count": null,
+   "count": 157,
    "direction": "B4-D11",
-   "hits": null,
-   "last_run": null,
+   "hits": 157,
+   "last_run": "2026-10-01T11:20:13Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 124,
+   "note": "union of 1 part(s); sum of part counts 157",
    "query_id": "B4-Q33",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -3442,30 +3485,30 @@
    "status": "refined (1 sub-queries, 202 hits)"
   },
   {
-   "count": null,
+   "count": 1791,
    "direction": "B4-D12",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:17:57Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q34",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 109 hits)"
   },
   {
-   "count": null,
+   "count": 1676,
    "direction": "B4-D12",
-   "hits": null,
-   "last_run": null,
+   "hits": 0,
+   "last_run": "2026-10-02T09:08:21Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "sum of part counts 1676 exceeds threshold 300 (upper bound of the union); nothing retrieved",
    "query_id": "B4-Q34",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 192 hits)"
   },
   {
    "count": null,
@@ -3533,30 +3576,30 @@
    "status": "refined (1 sub-queries, 221 hits)"
   },
   {
-   "count": null,
+   "count": 6779,
    "direction": "B4-D12",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:18:38Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q35",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 96 hits)"
   },
   {
    "count": null,
    "direction": "B4-D12",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-02T09:08:31Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>",
    "query_id": "B4-Q35",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "failed"
   },
   {
    "count": null,
@@ -3624,30 +3667,30 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 143,
    "direction": "B4-D12",
-   "hits": null,
-   "last_run": null,
+   "hits": 143,
+   "last_run": "2026-10-02T08:37:07Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 22,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q36",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
-   "count": null,
+   "count": 77,
    "direction": "B4-D12",
-   "hits": null,
-   "last_run": null,
+   "hits": 77,
+   "last_run": "2026-10-01T11:20:18Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 31,
+   "note": "union of 1 part(s); sum of part counts 77",
    "query_id": "B4-Q36",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -3715,30 +3758,30 @@
    "status": "refined (1 sub-queries, 82 hits)"
   },
   {
-   "count": null,
+   "count": 4579,
    "direction": "B4-D13",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:20:03Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q37",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 68 hits)"
   },
   {
    "count": null,
    "direction": "B4-D13",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-02T09:08:43Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>",
    "query_id": "B4-Q37",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "failed"
   },
   {
    "count": null,
@@ -3806,30 +3849,30 @@
    "status": "refined (1 sub-queries, 162 hits)"
   },
   {
-   "count": null,
+   "count": 7179,
    "direction": "B4-D13",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:20:46Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q38",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 90 hits)"
   },
   {
    "count": null,
    "direction": "B4-D13",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-02T09:08:45Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>",
    "query_id": "B4-Q38",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "failed"
   },
   {
    "count": null,
@@ -3897,30 +3940,30 @@
    "status": "refined (1 sub-queries, 236 hits)"
   },
   {
-   "count": null,
+   "count": 1569,
    "direction": "B4-D13",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:22:11Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q39",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 199 hits)"
   },
   {
    "count": null,
    "direction": "B4-D13",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-02T09:08:48Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>",
    "query_id": "B4-Q39",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "failed"
   },
   {
    "count": null,
@@ -3988,17 +4031,17 @@
    "status": "refined (1 sub-queries, 23 hits)"
   },
   {
-   "count": null,
+   "count": 1636,
    "direction": "B4-D14",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:22:54Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q40",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 9 hits)"
   },
   {
    "count": 2,
@@ -4079,17 +4122,17 @@
    "status": "refined (14 sub-queries, 454 hits)"
   },
   {
-   "count": null,
+   "count": 15558,
    "direction": "B4-D14",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:24:10Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q41",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 258 hits)"
   },
   {
    "count": 45,
@@ -4170,17 +4213,17 @@
    "status": "refined (4 sub-queries, 68 hits)"
   },
   {
-   "count": null,
+   "count": 1796,
    "direction": "B4-D14",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:25:26Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q42",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 275 hits)"
   },
   {
    "count": 87,
@@ -4261,17 +4304,17 @@
    "status": "refined (1 sub-queries, 102 hits)"
   },
   {
-   "count": null,
+   "count": 487,
    "direction": "B4-D15",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:26:08Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q43",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 230 hits)"
   },
   {
    "count": null,
@@ -4290,14 +4333,14 @@
    "count": null,
    "direction": "B4-D15",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-02T09:08:52Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "IEEE daily call budget reached (190 of 190 on 2026-10-02); resume tomorrow",
    "query_id": "B4-Q43",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "failed"
   },
   {
    "count": null,
@@ -4365,17 +4408,17 @@
    "status": "refined (1 sub-queries, 68 hits)"
   },
   {
-   "count": null,
+   "count": 2169,
    "direction": "B4-D15",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:26:50Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q44",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 34 hits)"
   },
   {
    "count": null,
@@ -4394,14 +4437,14 @@
    "count": null,
    "direction": "B4-D15",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-02T09:08:54Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "IEEE daily call budget reached (190 of 190 on 2026-10-02); resume tomorrow",
    "query_id": "B4-Q44",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "failed"
   },
   {
    "count": null,
@@ -4469,17 +4512,17 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 111,
    "direction": "B4-D15",
-   "hits": null,
-   "last_run": null,
+   "hits": 111,
+   "last_run": "2026-10-02T08:42:47Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 8,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-Q45",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -4495,17 +4538,17 @@
    "status": "supplementary (on demand)"
   },
   {
-   "count": null,
+   "count": 203,
    "direction": "B4-D15",
-   "hits": null,
-   "last_run": null,
+   "hits": 203,
+   "last_run": "2026-10-01T11:20:29Z",
    "lens": "C mechanism",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 98,
+   "note": "union of 2 part(s); sum of part counts 246",
    "query_id": "B4-Q45",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -4573,17 +4616,17 @@
    "status": "refined (1 sub-queries, 265 hits)"
   },
   {
-   "count": null,
+   "count": 12928,
    "direction": "B4-D16",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:28:42Z",
    "lens": "A semantic",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q46",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 216 hits)"
   },
   {
    "count": null,
@@ -4651,17 +4694,17 @@
    "status": "refined (1 sub-queries, 288 hits)"
   },
   {
-   "count": null,
+   "count": 1205,
    "direction": "B4-D16",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:29:47Z",
    "lens": "B community",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q47",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 172 hits)"
   },
   {
    "count": 139,
@@ -4742,17 +4785,17 @@
    "status": "refined (4 sub-queries, 323 hits)"
   },
   {
-   "count": null,
+   "count": 10775,
    "direction": "B4-D16",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:30:52Z",
    "lens": "C mechanism",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-Q48",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (4 sub-queries, 203 hits)"
   },
   {
    "count": null,
@@ -4820,17 +4863,17 @@
    "status": "refined (10 sub-queries, 936 hits)"
   },
   {
-   "count": null,
+   "count": 6994,
    "direction": "cross-cutting",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:32:01Z",
    "lens": "modifier: noncompliance and reparation",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-XC01",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (7 sub-queries, 612 hits)"
   },
   {
    "count": 8,
@@ -4911,17 +4954,17 @@
    "status": "refined (1 sub-queries, 237 hits)"
   },
   {
-   "count": null,
+   "count": 1433,
    "direction": "cross-cutting",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-01T12:33:13Z",
    "lens": "modifier: automatic vs discretionary",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "count read in the Web of Science interface (Core Collection)",
    "query_id": "B4-XC02",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "refined (1 sub-queries, 249 hits)"
   },
   {
    "count": 0,
@@ -5002,30 +5045,30 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 12,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 12,
+   "last_run": "2026-10-02T08:49:10Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 3,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-BR01",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
-   "count": null,
+   "count": 24,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 24,
+   "last_run": "2026-10-01T11:20:32Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 11,
+   "note": "union of 3 part(s); sum of part counts 32",
    "query_id": "B4-BR01",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -5093,30 +5136,30 @@
    "status": "refined (1 sub-queries, 90 hits)"
   },
   {
-   "count": null,
+   "count": 259,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 259,
+   "last_run": "2026-10-02T08:49:48Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 199,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-BR02",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
    "direction": "bridge",
    "hits": null,
-   "last_run": null,
+   "last_run": "2026-10-02T09:08:59Z",
    "lens": "RQ4.3",
    "mandatory": true,
    "new_documents": null,
-   "note": "",
+   "note": "IEEE daily call budget reached (190 of 190 on 2026-10-02); resume tomorrow",
    "query_id": "B4-BR02",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "failed"
   },
   {
    "count": null,
@@ -5184,30 +5227,30 @@
    "status": "refined (1 sub-queries, 148 hits)"
   },
   {
-   "count": null,
+   "count": 162,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 162,
+   "last_run": "2026-10-02T08:50:25Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 90,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-BR03",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
-   "count": null,
+   "count": 72,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 72,
+   "last_run": "2026-10-01T11:20:36Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 52,
+   "note": "union of 3 part(s); sum of part counts 100",
    "query_id": "B4-BR03",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -5275,30 +5318,30 @@
    "status": "done"
   },
   {
-   "count": null,
+   "count": 49,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 49,
+   "last_run": "2026-10-02T08:51:02Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 5,
+   "note": "manual export (wos_tab), exported 2026-10-02. Web of Science Core Collection, Full Record, exported in the interface by ",
    "query_id": "B4-BR04",
    "source": "wos",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
-   "count": null,
+   "count": 50,
    "direction": "bridge",
-   "hits": null,
-   "last_run": null,
+   "hits": 50,
+   "last_run": "2026-10-01T11:20:45Z",
    "lens": "RQ4.3",
    "mandatory": true,
-   "new_documents": null,
-   "note": "",
+   "new_documents": 31,
+   "note": "union of 8 part(s); sum of part counts 54",
    "query_id": "B4-BR04",
    "source": "ieee",
-   "status": "MANUAL_EXPORT_REQUIRED"
+   "status": "done"
   },
   {
    "count": null,
@@ -5340,7 +5383,7 @@
    "status": "supplementary (on demand)"
   }
  ],
- "total_documents": 14342,
- "total_hits": 21177,
+ "total_documents": 19254,
+ "total_hits": 31161,
  "upper_cutoff_date": "2026-09-29"
 }

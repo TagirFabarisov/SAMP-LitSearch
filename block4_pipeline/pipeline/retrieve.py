@@ -161,6 +161,8 @@ def _run_one(adapter, source: str, scfg: Dict[str, Any], protocol: Dict[str, Any
             "query_id": qid, "direction": q.get("direction"), "lens": q.get("lens"), "source": source,
             "exact_string_sent": exact, "status": FAILED, "run_id": run_id, "run_dir": str(run_dir),
             "note": secrets.redact_text(str(exc))[:500]}, protocol)
+        if type(exc).__name__ == "IeeeQuotaExhausted":
+            raise  # daily budget or rate limit: stop the run instead of failing every remaining query
         return {"query_id": qid, "source": source, "status": FAILED, "error": secrets.redact_text(str(exc))}
 
     manifest["count_check.json"] = storage.write_raw_once(run_dir / "count_check.json", secrets.redact_obj(outcome.count_raw))

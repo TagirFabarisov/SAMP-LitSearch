@@ -201,6 +201,71 @@ Source sets: OpenAlex only 6,767; Scopus only 4,088; OpenAlex+Scopus 2,876; DBLP
 all three 149; DBLP+OpenAlex 61; DBLP+Scopus 59. Still to come: Web of Science (all 54,
 manual export), IEEE Xplore (19, API once the key is active), HeinOnline (12, manual).
 
+## 4B run record, IEEE Xplore (1 October 2026, API mode, deviation 8)
+
+- 19 mandatory queries. Bank run: 8 at or below 300 and retrieved (Q27, Q32, Q33, Q36, Q45,
+  BR01, BR03, BR04; 633 hits); 11 above, from 319 to 11,604. Q27 was accepted with three
+  wildcard words, so no decision was needed there.
+- Refinement in IEEE syntax: step 1 (title restriction) and step 3 (subject areas) cannot be
+  expressed in the API and are recorded as skipped; step 2 (mechanism group) and step 4 (OR
+  split) apply. 39 sub-queries counted: 35 runnable (2,210 hits, not yet retrieved), Q35.r2,
+  Q38.r2 and Q44.r2 above 300 and split, Q38.r4.6 (698) still above 300 and waiting for the
+  second-level split (deviation 5).
+- Call budget: the free key allows 200 calls per day; the adapter stops at 190 and records the
+  day's calls in `data/logs/ieee_calls_<date>.json`. 180 calls were used on 1 October, so the
+  retrieval of the 35 sub-queries (about 80 calls) runs on the next UTC day.
+
+## 4B run record, Web of Science (1 October 2026, licensed interface via a-z.lu)
+
+- Access through a-z.lu (uni.lu SSO) to the Core Collection advanced search; the pipeline
+  logs the counts and derives the refinement strings (`tools/wos_plan.py`), the search is run
+  and the export saved by hand in the interface. Tagir authorised tool-assisted use of the
+  interface with him present after registering at the LLC on 1 October.
+- Adaptations of the refinement steps to WoS syntax: step 1 becomes `TS=(...) AND TI=(free
+  group)`; step 3 uses the WoS categories (`WC=`) Computer Science, Engineering, Operations
+  Research & Management Science, Management, Business, Economics, Law, Social Sciences,
+  Political Science, Public Administration, Information Science & Library Science.
+- Bank run: 20 of 54 queries at or below 300; 34 above, from 329 to 15,558. Refinement: 17
+  under 300 after step 1, 13 after step 2, 1 after step 3, the rest split; 22 split parts
+  counted, 18 at or below 300 (3 of them empty), parts above 300 split again. Two parts stay
+  above 300 with no OR group left (not exported, Tagir's decision): Q48.r4.1.2 (471) and
+  Q48.r4.1.3 (490).
+- Export plan (`data/raw/manual_exports/wos/wos_export_plan.jsonl`): 69 entries, 66 with
+  records (8,255), of which Q01.r1 (87) and Q02.r1 (102) are imported; 64 exports (8,066
+  records) remain. Format: tab-delimited Full Record, imported with `--format wos_tab`.
+
+- Phase B (2 October 2026): all 66 exports with records imported (8,261 WoS hits), each file's
+  record count checked against the interface count. Six counts had grown by one record since the
+  count on 1 October and were exported at the new count: Q06 (267 to 268), Q19.r2 (180 to 181),
+  Q27 (9 to 10), Q33 (299 to 300, still within the limit), Q43.r1 (229 to 230), Q42.r3 (274 to 275).
+  The search log keeps both the count row of 1 October and the import row of 2 October.
+
+## Corpus after OpenAlex + Scopus + DBLP + IEEE (bank) + Web of Science (2 October 2026)
+
+30,071 hits, 18,578 unique documents. Largest source sets: OpenAlex only 6,520; WoS only 3,864;
+Scopus only 2,497; OpenAlex+Scopus+WoS 1,734; Scopus+WoS 1,493; OpenAlex+Scopus 1,057. Still to
+come: IEEE refinement sub-queries (35 runnable, about 2,200 hits), HeinOnline (12 queries).
+
+## HeinOnline (2 October 2026, deviation 9)
+
+Supplementary check, not a one-to-one run of the bank (Tagir's decision). Four merged searches in the
+Law Journal Library, one per direction, topic terms in the title combined with representation terms in
+the title or text: D03 89, D06 75, D07 62, D08 38 records (strings in
+`data/raw/manual_exports/heinonline/heinonline_plan.jsonl`). HeinOnline has no bulk citation export
+without a personal MyHein account, so the result lists were read from the interface pages (27 pages,
+two seconds apart) and saved as one CSV by Tagir. 264 hits; 238 documents found only in HeinOnline.
+
+## IEEE rate limit (2 October 2026)
+
+The retrieval of the refinement sub-queries ran into HTTP 403 "Service Over Qps" after about 20 calls;
+a one-second gap did not help and the day's call budget was spent on refused calls. 18 sub-queries
+were retrieved (826 hits); the rest resume on the next day. The adapter now waits and retries twice
+on this answer and then stops the whole run instead of failing every remaining query.
+
+## Corpus after all sources except the remaining IEEE sub-queries (2 October 2026)
+
+31,161 hits, 19,254 unique documents.
+
 ## Not implemented on purpose
 
 - Browser-assisted export (brief section 8): not implemented until the licence permits it

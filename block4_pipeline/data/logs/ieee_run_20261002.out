@@ -1,0 +1,601 @@
+/Users/tagir.fabarisov/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[
+  {
+    "query_id": "B4-Q01",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q02",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q03",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q04",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q05",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q06",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q07",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q08",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q09",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q10",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q11",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q12",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q13",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q14",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q15",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q16",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q17",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q18",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q19",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q20",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q21",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q22",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q23",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q24",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q25",
+    "source": "ieee",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 818,
+    "hits": 0,
+    "log_id": "B4-L01145",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q25/20261002T090523Z"
+  },
+  {
+    "query_id": "B4-Q25.r2",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q26",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q26.r2",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q27",
+    "source": "ieee",
+    "status": "already_done",
+    "log_id": "B4-L00896"
+  },
+  {
+    "query_id": "B4-Q28",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q29",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q30",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is supplementary for this query"
+  },
+  {
+    "query_id": "B4-Q31",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q31.r2",
+    "source": "ieee",
+    "status": "done",
+    "count": 27,
+    "hits": 27,
+    "log_id": "B4-L01150",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q31.r2/20261002T090533Z"
+  },
+  {
+    "query_id": "B4-Q32",
+    "source": "ieee",
+    "status": "already_done",
+    "log_id": "B4-L00898"
+  },
+  {
+    "query_id": "B4-Q33",
+    "source": "ieee",
+    "status": "already_done",
+    "log_id": "B4-L00899"
+  },
+  {
+    "query_id": "B4-Q34",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q34.r2",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q35",
+    "source": "ieee",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 2149,
+    "hits": 0,
+    "log_id": "B4-L01153",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q35/20261002T090538Z"
+  },
+  {
+    "query_id": "B4-Q35.r4.1",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q35.r4.2",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q35.r4.3",
+    "source": "ieee",
+    "status": "done",
+    "count": 38,
+    "hits": 38,
+    "log_id": "B4-L01156",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q35.r4.3/20261002T090545Z"
+  },
+  {
+    "query_id": "B4-Q35.r4.4",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q35.r4.5",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q35.r4.6",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q36",
+    "source": "ieee",
+    "status": "already_done",
+    "log_id": "B4-L00902"
+  },
+  {
+    "query_id": "B4-Q37",
+    "source": "ieee",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 1878,
+    "hits": 0,
+    "log_id": "B4-L01160",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q37/20261002T090553Z"
+  },
+  {
+    "query_id": "B4-Q37.r2",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q38",
+    "source": "ieee",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 11605,
+    "hits": 0,
+    "log_id": "B4-L01162",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q38/20261002T090558Z"
+  },
+  {
+    "query_id": "B4-Q38.r4.1",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q38.r4.2",
+    "source": "ieee",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L01164",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q38.r4.2/20261002T090559Z"
+  },
+  {
+    "query_id": "B4-Q38.r4.3",
+    "source": "ieee",
+    "status": "done",
+    "count": 2,
+    "hits": 2,
+    "log_id": "B4-L01165",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q38.r4.3/20261002T090603Z"
+  },
+  {
+    "query_id": "B4-Q38.r4.4",
+    "source": "ieee",
+    "status": "done",
+    "count": 0,
+    "hits": 0,
+    "log_id": "B4-L01166",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q38.r4.4/20261002T090604Z"
+  },
+  {
+    "query_id": "B4-Q38.r4.5",
+    "source": "ieee",
+    "status": "done",
+    "count": 10,
+    "hits": 10,
+    "log_id": "B4-L01167",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q38.r4.5/20261002T090607Z"
+  },
+  {
+    "query_id": "B4-Q39",
+    "source": "ieee",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 319,
+    "hits": 0,
+    "log_id": "B4-L01168",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q39/20261002T090608Z"
+  },
+  {
+    "query_id": "B4-Q39.r4.1",
+    "source": "ieee",
+    "status": "done",
+    "count": 30,
+    "hits": 30,
+    "log_id": "B4-L01169",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q39.r4.1/20261002T090608Z"
+  },
+  {
+    "query_id": "B4-Q39.r4.2",
+    "source": "ieee",
+    "status": "done",
+    "count": 4,
+    "hits": 4,
+    "log_id": "B4-L01170",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q39.r4.2/20261002T090610Z"
+  },
+  {
+    "query_id": "B4-Q39.r4.3",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q39.r4.4",
+    "source": "ieee",
+    "status": "done",
+    "count": 70,
+    "hits": 70,
+    "log_id": "B4-L01172",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q39.r4.4/20261002T090611Z"
+  },
+  {
+    "query_id": "B4-Q39.r4.5",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q39.r4.6",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q40",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q41",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q42",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q43",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q43.r2",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q44",
+    "source": "ieee",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 3668,
+    "hits": 0,
+    "log_id": "B4-L01177",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q44/20261002T090617Z"
+  },
+  {
+    "query_id": "B4-Q44.r4.1",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q44.r4.2",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q44.r4.3",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q44.r4.4",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-Q44.r4.5",
+    "source": "ieee",
+    "status": "done",
+    "count": 148,
+    "hits": 148,
+    "log_id": "B4-L01182",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q44.r4.5/20261002T090620Z"
+  },
+  {
+    "query_id": "B4-Q44.r4.6",
+    "source": "ieee",
+    "status": "done",
+    "count": 234,
+    "hits": 234,
+    "log_id": "B4-L01183",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-Q44.r4.6/20261002T090624Z"
+  },
+  {
+    "query_id": "B4-Q45",
+    "source": "ieee",
+    "status": "already_done",
+    "log_id": "B4-L00908"
+  },
+  {
+    "query_id": "B4-Q46",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q47",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-Q48",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-XC01",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-XC02",
+    "source": "ieee",
+    "status": "not_applicable",
+    "note": "source is not allocated for this query"
+  },
+  {
+    "query_id": "B4-BR01",
+    "source": "ieee",
+    "status": "already_done",
+    "log_id": "B4-L00909"
+  },
+  {
+    "query_id": "B4-BR02",
+    "source": "ieee",
+    "status": "REFINEMENT_REQUIRED",
+    "count": 352,
+    "hits": 0,
+    "log_id": "B4-L01184",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-BR02/20261002T090628Z"
+  },
+  {
+    "query_id": "B4-BR02.r4.1",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-BR02.r4.2",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-BR02.r4.3",
+    "source": "ieee",
+    "status": "failed",
+    "error": "IEEE returned HTTP 403: <h1>Service Over Qps</h1>"
+  },
+  {
+    "query_id": "B4-BR02.r4.4",
+    "source": "ieee",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L01188",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-BR02.r4.4/20261002T090631Z"
+  },
+  {
+    "query_id": "B4-BR02.r4.5",
+    "source": "ieee",
+    "status": "done",
+    "count": 56,
+    "hits": 56,
+    "log_id": "B4-L01189",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-BR02.r4.5/20261002T090633Z"
+  },
+  {
+    "query_id": "B4-BR02.r4.6",
+    "source": "ieee",
+    "status": "done",
+    "count": 1,
+    "hits": 1,
+    "log_id": "B4-L01190",
+    "run_dir": "/Users/tagir.fabarisov/Documents/SAMP-LitSearch/block4_pipeline/data/raw/ieee/B4-BR02.r4.6/20261002T090634Z"
+  },
+  {
+    "query_id": "B4-BR03",
+    "source": "ieee",
+    "status": "already_done",
+    "log_id": "B4-L00911"
+  },
+  {
+    "query_id": "B4-BR04",
+    "source": "ieee",
+    "status": "already_done",
+    "log_id": "B4-L00912"
+  }
+]
