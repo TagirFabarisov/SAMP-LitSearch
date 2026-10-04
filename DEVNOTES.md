@@ -266,6 +266,18 @@ on this answer and then stops the whole run instead of failing every remaining q
 
 31,161 hits, 19,254 unique documents.
 
+## S0 quality filter on batch 1 (4 October 2026, deviation 10)
+
+Applied mechanically by `block4_pipeline/tools/s0_filter.py` to the 19,232 batch-1 documents.
+Citation counts and subject labels come from OpenAlex (stored records, plus a DOI lookup that matched
+7,143 of 7,345 documents not retrieved through OpenAlex), otherwise Scopus/WoS; venue ranks from
+SJR 2025 (`data/reference/sjr_2025.csv`, downloaded by Tagir) and CORE 2023
+(`data/reference/core_2023.csv`); 1,267 of 5,916 conference records matched a CORE rank A*-C.
+Result: rule 1 162, rule 2 927, rule 3 3,066, rule 4 2,325, rule 5 2,620, rule 6 7,664 failed;
+**2,468 passed**. Rule 6 is applied literally: automat* also matches "automatic"/"automated" and
+logic* matches "the logic of …", so a few such titles pass. Files: `documents_s0.csv` (all records
+with `s0_pass`, `s0_reason`) and `s0_passed.csv` in `data/exports/batches/batch1_2026-10-02/`.
+
 ## Not implemented on purpose
 
 - Browser-assisted export (brief section 8): not implemented until the licence permits it

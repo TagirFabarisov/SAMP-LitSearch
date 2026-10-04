@@ -1,0 +1,17 @@
+{
+ "total": 19232,
+ "by_outcome": {
+  "passed": 2468,
+  "2 subject outside scope": 927,
+  "6 no representation term in the title": 7664,
+  "3 published 2023 or earlier": 3066,
+  "4 published 2023 or earlier": 2325,
+  "5 published 2024 or later": 2620,
+  "1 not a scholarly record": 162
+ },
+ "passed": 2468,
+ "sjr_loaded": true,
+ "conference_records": 5916,
+ "matched_to_core": 1267,
+ "tightened_rule4_would_pass": 2116
+}
