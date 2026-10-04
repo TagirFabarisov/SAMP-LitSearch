@@ -1,0 +1,16 @@
+{
+ "total": 19232,
+ "by_outcome": {
+  "passed": 12217,
+  "2 subject outside scope": 906,
+  "3 published 2023 or earlier": 3073,
+  "pending: SJR needed for rule 4": 2373,
+  "4 published 2023 or earlier": 501,
+  "1 not a scholarly record": 162
+ },
+ "passed": 12217,
+ "sjr_loaded": false,
+ "conference_records": 5916,
+ "matched_to_core": 1267,
+ "tightened_rule4_would_pass": 11146
+}
