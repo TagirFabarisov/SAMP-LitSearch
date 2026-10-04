@@ -64,6 +64,13 @@ REPOSITORY_NAME = re.compile(r"arxiv|ssrn|research square|zenodo|figshare|reposi
                              r"techrxiv|osf preprints|biorxiv|medrxiv|hal\b|e-?prints", re.I)
 
 
+# rule 6 (Tagir, 4 Oct 2026): terms that name a representation, matched in the title
+REPRESENTATION_TERMS = re.compile(
+    r"\b(formal\w*|logic\w*|ontolog\w*|semantic\w*|specification\w*|metamodel\w*|calcul\w*|"
+    r"automat\w*|petri|grammar\w*|notation\w*|model(l)?ing languages?|dsls?|uml|sysml|"
+    r"architecture descriptions?)\b", re.I)
+
+
 def norm_issn(s):
     s = re.sub(r"[^0-9Xx]", "", str(s or "")).upper()
     return s if len(s) == 8 else None
@@ -318,6 +325,12 @@ def main():
             reason = "4 published 2023 or earlier, unranked venue, %d citations" % cites
         elif old and cites is not None and cites <= 3 and ranked is None:
             reason = "pending: SJR needed for rule 4"
+        elif year is not None and year >= 2024 and cites == 0 and ranked is False:
+            reason = "5 published 2024 or later, 0 citations, unranked venue"
+        elif year is not None and year >= 2024 and cites == 0 and ranked is None:
+            reason = "pending: SJR needed for rule 5"
+        elif not REPRESENTATION_TERMS.search(title):
+            reason = "6 no representation term in the title"
         passed = reason == ""
         reasons[reason.split(" (")[0].split(",")[0] if reason else "passed"] += 1
         # tightened rule 4 (reported only): ranked = SJR Q1 or CORE A*/A, and 5 citations or fewer
